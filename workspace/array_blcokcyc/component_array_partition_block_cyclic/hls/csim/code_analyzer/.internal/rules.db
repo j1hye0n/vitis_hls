@@ -1,0 +1,234 @@
+{
+    "rules": {
+        "['/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/matmul_partition.cpp.0.o', '/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/matmul_partition.cpp.0.o.d']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/clang",
+                "-c",
+                "-MD",
+                "-MF",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/matmul_partition.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=/tools/xilinx/Vitis/2024.2/vcxx/data/include",
+                "-vitis-hls=/tools/xilinx/Vitis/2024.2",
+                "--gcc-toolchain=/tools/xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-fslxskipfunctionbody",
+                "-fhlstoplevel=matmul_partition",
+                "../matmul_partition.cpp",
+                "-o",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/matmul_partition.cpp.0.o"
+            ],
+            "exectime": 4.841944932937622,
+            "cwd": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic"
+        },
+        "['/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/matmul_partition.cpp.0.bc', '/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/matmul_partition.cpp.0.bc.d']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/clang",
+                "-c",
+                "-emit-llvm",
+                "-MD",
+                "-MF",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/matmul_partition.cpp.0.bc.d",
+                "-fhls",
+                "-hls-syn-headers-dir=/tools/xilinx/Vitis/2024.2/vcxx/data/autopilot",
+                "-vitis-hls=/tools/xilinx/Vitis/2024.2",
+                "--gcc-toolchain=/tools/xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+                "-hls-clock-period=10.0",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-fhlstoplevel=matmul_partition",
+                "../matmul_partition.cpp",
+                "-o",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/matmul_partition.cpp.0.bc"
+            ],
+            "exectime": 4.89227557182312,
+            "cwd": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic"
+        },
+        "['/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/matmul_partition_test.cpp.0.o', '/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/matmul_partition_test.cpp.0.o.d']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/clang",
+                "-c",
+                "-MD",
+                "-MF",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/matmul_partition_test.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=/tools/xilinx/Vitis/2024.2/vcxx/data/include",
+                "-vitis-hls=/tools/xilinx/Vitis/2024.2",
+                "--gcc-toolchain=/tools/xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-fslxskipfunctionbody",
+                "-fhlstoplevel=matmul_partition",
+                "/home/hyeon/workspace/array_blcokcyc/matmul_partition_test.cpp",
+                "-o",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/matmul_partition_test.cpp.0.o"
+            ],
+            "exectime": 7.912252187728882,
+            "cwd": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic"
+        },
+        "['/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/syn_srcs.bc']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/llvm-link",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/matmul_partition.cpp.0.bc",
+                "-o",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/syn_srcs.bc"
+            ],
+            "exectime": 0.1571969985961914,
+            "cwd": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic"
+        },
+        "['/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/opt",
+                "-check-single-toplevel",
+                "-make-non-toplevel-internal",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/syn_srcs.bc",
+                "-o",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc"
+            ],
+            "exectime": 0.6430115699768066,
+            "cwd": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic"
+        },
+        "['/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/app.exe']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/clang++",
+                "-o",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/app.exe",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/matmul_partition_test.cpp.0.o",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/matmul_partition.cpp.0.o",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc",
+                "-fhls",
+                "-fhlstoplevel=matmul_partition",
+                "-Wl,--as-needed",
+                "-L/tools/xilinx/Vitis/2024.2/lnx64/tools/dds_v6_0",
+                "-lIp_dds_compiler_v6_0_bitacc_cmodel",
+                "-Wl,--disable-new-dtags",
+                "-Wl,-rpath=/tools/xilinx/Vitis/2024.2/lnx64/tools/dds_v6_0",
+                "-L/tools/xilinx/Vitis/2024.2/lnx64/tools/fft_v9_1",
+                "-lIp_xfft_v9_1_bitacc_cmodel",
+                "-Wl,-rpath=/tools/xilinx/Vitis/2024.2/lnx64/tools/fft_v9_1",
+                "-L/tools/xilinx/Vitis/2024.2/lnx64/tools/fir_v7_0",
+                "-lIp_fir_compiler_v7_2_bitacc_cmodel",
+                "-Wl,-rpath=/tools/xilinx/Vitis/2024.2/lnx64/tools/fir_v7_0",
+                "-L/tools/xilinx/Vitis/2024.2/lnx64/tools/fpo_v7_1",
+                "-lIp_floating_point_v7_1_bitacc_cmodel",
+                "-Wl,-rpath=/tools/xilinx/Vitis/2024.2/lnx64/tools/fpo_v7_1",
+                "-lm",
+                "-L/tools/xilinx/Vitis/2024.2/lnx64/lib/csim",
+                "-lhlsm-GCC46",
+                "-Wl,-rpath=/tools/xilinx/Vitis/2024.2/lnx64/lib/csim",
+                "-lhlsmc++-GCC46",
+                "-lgmp",
+                "-lmpfr",
+                "-Wl,--no-as-needed",
+                "--gcc-toolchain=/tools/xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+                "-Wl,--disable-new-dtags",
+                "-Wl,-rpath=/tools/xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib64",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-Wl,-mllvm,-profilerOutputDirectory=/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/profiler/0",
+                "-fslxpthreads"
+            ],
+            "exectime": 2.5941998958587646,
+            "cwd": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic"
+        },
+        "['/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/instrument/app_0/hls_ir_info.json']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/irInfoDump",
+                "--ir-module",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/instrument/app_0/project.symbols.bc",
+                "--json-output",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/instrument/app_0/hls_ir_info.json",
+                "--hw-function",
+                "matmul_partition"
+            ],
+            "exectime": 0.139143705368042,
+            "cwd": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic"
+        },
+        "['/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/instrument/app_0/binary_dependencies.json']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/clang-scan-deps",
+                "--compilation-database=/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/instrument/app_0/compile_commands.json",
+                "--format=vitiscxx",
+                "--reuse-filemanager=false",
+                "--output=/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/instrument/app_0/binary_dependencies.json"
+            ],
+            "exectime": 0.2386760711669922,
+            "cwd": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic"
+        },
+        "['/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/bin/.tracing_stdout.txt', '/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/bin/.tracing_stderr.txt']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/rwd",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/build/app.exe"
+            ],
+            "exectime": 0.06780552864074707,
+            "cwd": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/tracing/csim/build"
+        },
+        "['/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/instrument/app_0/annotated.bc']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/optimizer",
+                "-DFGPass",
+                "-outputDir",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/output",
+                "-logDir",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/log",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/instrument/app_0/project.symbols.bc",
+                "-staticFile",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/instrument/app_0/static.xml",
+                "-traceFile",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/profiler/0/app_0_0/thread0000-trace.txt",
+                "-o",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/instrument/app_0/annotated.bc"
+            ],
+            "exectime": 0.3718099594116211,
+            "cwd": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic"
+        },
+        "['/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/dataflow/0/taskgraph.json']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/parallelismSelector",
+                "--basepath",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic",
+                "--fpga-part",
+                "xc7z020-clg400-1",
+                "--device-totals",
+                "/tools/xilinx/Vitis/2024.2/vcxx/data/platform/logic/fpga.devicetotals",
+                "--clock-frequency",
+                "100.0",
+                "--out-dir",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/output",
+                "--log-dir",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/log",
+                "--objective",
+                "none",
+                "--performance-target",
+                "target_both",
+                "--max-array-optimization-factor",
+                "1024",
+                "--complete-partition-limit",
+                "4",
+                "--lut-constraint",
+                "100.0",
+                "--ff-constraint",
+                "100.0",
+                "--dsp-constraint",
+                "100.0",
+                "--bram-constraint",
+                "100.0",
+                "--uram-constraint",
+                "100.0",
+                "--max-iterations",
+                "1000",
+                "--max-iterations-branch-full-log",
+                "20",
+                "--ir-module",
+                "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/.internal/instrument/app_0/annotated.bc",
+                "--df-id",
+                "0",
+                "--df-target",
+                "%F301"
+            ],
+            "exectime": 1.2312674522399902,
+            "cwd": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic"
+        }
+    }
+}

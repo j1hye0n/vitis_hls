@@ -1,0 +1,66 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="dct.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dct_1d" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=dct_coeff_table dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="dct.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dct_1d" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="dct.cpp:47:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dct_2d" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="dct.cpp:52:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dct_2d" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="dct.cpp:60:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dct_2d" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="dct.cpp:72:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_data" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="dct.cpp:75:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_data" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=buf dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="dct.cpp:87:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_data" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/workspace/dct/run_hls.tcl:60:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=dct" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="dct.cpp:93:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=input bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="dct.cpp:94:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=output bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="dct.cpp:95:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="dct.cpp:19:4" msg_body="Loop 'DCT_Outer_Loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="DCT_Outer_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="dct.cpp:22:19" msg_body="Loop 'VITIS_LOOP_22_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_22_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="dct.cpp:9:0" msg_body="Unrolling loop 'DCT_Outer_Loop' (dct.cpp:19:4) in function 'dct_1d' completely with a factor of 8">
+        <args Factor="8" LoopLoc="dct.cpp:19:4" LoopName="DCT_Outer_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_PIPELINE" msg_id="214-189" msg_severity="WARNING" msg_loc="dct.cpp:9:0" msg_body="Pipeline directive for loop 'DCT_Outer_Loop' (dct.cpp:19:4) in function 'dct_1d' has been removed because the loop is unrolled completely">
+        <args LoopLoc="dct.cpp:19:4" LoopName="DCT_Outer_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="dct.cpp:9:0" msg_body="Unrolling loop 'VITIS_LOOP_22_1' (dct.cpp:22:19) in function 'dct_1d' completely with a factor of 8">
+        <args Factor="8" LoopLoc="dct.cpp:22:19" LoopName="VITIS_LOOP_22_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dct.cpp:92:0" msg_body="Inlining function 'read_data(short*, short (*) [8])' into 'dct'">
+        <args Callee="read_data(short*, short (*) [8])" Callee-DebugLoc="File dct.cpp Line 65 Column 0" Caller="dct" Caller-DebugLoc="File dct.cpp Line 92 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dct.cpp:92:0" msg_body="Inlining function 'dct_2d(short (*) [8], short (*) [8])' into 'dct'">
+        <args Callee="dct_2d(short (*) [8], short (*) [8])" Callee-DebugLoc="File dct.cpp Line 32 Column 0" Caller="dct" Caller-DebugLoc="File dct.cpp Line 92 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dct.cpp:92:0" msg_body="Inlining function 'write_data(short (*) [8], short*)' into 'dct'">
+        <args Callee="write_data(short (*) [8], short*)" Callee-DebugLoc="File dct.cpp Line 80 Column 0" Caller="dct" Caller-DebugLoc="File dct.cpp Line 92 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="dct.cpp:97:8" msg_body="Applying array_partition to 'buf_2d_in': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="buf_2d_in"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

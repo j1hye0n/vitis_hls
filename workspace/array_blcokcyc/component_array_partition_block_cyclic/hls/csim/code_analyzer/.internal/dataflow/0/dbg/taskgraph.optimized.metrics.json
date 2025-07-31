@@ -1,0 +1,1607 @@
+[
+    {
+        "name": "_Z16matmul_partitionPiS_S_ii",
+        "df_function": "%F301",
+        "df_type": "Function",
+        "project": "SLX",
+        "processes": {
+            "1": {
+                "id": "1",
+                "name": "Artificial<Start>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                        "line": 24,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                        "line": 99,
+                        "column": 1
+                    }
+                },
+                "display_name": "<START>",
+                "kind": "start"
+            },
+            "2": {
+                "id": "2",
+                "name": "Artificial<End>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                        "line": 24,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                        "line": 99,
+                        "column": 1
+                    }
+                },
+                "display_name": "<END>",
+                "kind": "end"
+            },
+            "3": {
+                "id": "3",
+                "name": "Region<OutlineCall(R2 matmul_partition) BB 'codeRepl' [Switch,Atomic] 'Outline_T3_F301_R2_Loop'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                        "line": 46,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                        "line": 53,
+                        "column": 5
+                    }
+                },
+                "display_name": "Process 1",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                    "line": 24,
+                                    "column": 0
+                                },
+                                "id": "VId_282_*0(0,32)arg+?(?,32)",
+                                "name": "(*in1)",
+                                "display_name": "int *in1"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 52,
+                                        "column": 30
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 256
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 0
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                    "line": 29,
+                                    "column": 9
+                                },
+                                "id": "VId_287_[?(?,32)]",
+                                "name": "A[*]",
+                                "display_name": "int A[256]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 52,
+                                        "column": 28
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 256
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                    "line": 24,
+                                    "column": 0
+                                },
+                                "id": "VId_285_!c?(?,?)",
+                                "name": "dim",
+                                "display_name": "int dim"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 3
+                        }
+                    ]
+                },
+                "metrics": {
+                    "initiation_interval": 516
+                },
+                "subregions": [
+                    {
+                        "id": "%F302_R1",
+                        "description": "<switch>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 46,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 53,
+                                "column": 5
+                            }
+                        }
+                    },
+                    {
+                        "id": "%F302_R10",
+                        "description": "<function exit>"
+                    }
+                ],
+                "subdataflow": [],
+                "guidance": [
+                    {
+                        "type": "LoopGuidance",
+                        "ti": {
+                            "min": 512,
+                            "max": 512
+                        },
+                        "ii": {
+                            "min": 2,
+                            "max": 2
+                        },
+                        "effective_tc": {
+                            "min": 256,
+                            "max": 256
+                        },
+                        "tc": {
+                            "min": 256,
+                            "max": 256
+                        },
+                        "ureg_id": "%L18",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 46,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 53,
+                                "column": 5
+                            }
+                        },
+                        "details": [
+                            {
+                                "type": "MemPortContention",
+                                "available_ports": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "required_ports": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variable": {
+                                    "name": "in1",
+                                    "display_name": "in1",
+                                    "id": "291",
+                                    "location": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 24,
+                                        "column": 0
+                                    }
+                                }
+                            },
+                            {
+                                "type": "MemPortContention",
+                                "available_ports": {
+                                    "min": 2,
+                                    "max": 2
+                                },
+                                "required_ports": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variable": {
+                                    "name": "A",
+                                    "display_name": "A",
+                                    "id": "292",
+                                    "location": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 29,
+                                        "column": 0
+                                    }
+                                }
+                            },
+                            {
+                                "type": "CyclicDependence",
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variables": [
+                                    {
+                                        "name": "i [phi]",
+                                        "id": "<unknown>"
+                                    },
+                                    {
+                                        "name": "i [phi]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                            "line": 0,
+                                            "column": 0
+                                        }
+                                    },
+                                    {
+                                        "name": "inc [add]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                            "line": 50,
+                                            "column": 14
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "CyclicDependence",
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variables": [
+                                    {
+                                        "name": "j [phi]",
+                                        "id": "<unknown>"
+                                    },
+                                    {
+                                        "name": "j [phi]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                            "line": 0,
+                                            "column": 0
+                                        }
+                                    },
+                                    {
+                                        "name": "inc6 [add]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                            "line": 46,
+                                            "column": 62
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "4": {
+                "id": "4",
+                "name": "Region<OutlineCall(R3 matmul_partition) BB 'codeRepl1' [Switch,Atomic] 'Outline_T4_F301_R18_Loop'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                        "line": 57,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                        "line": 64,
+                        "column": 5
+                    }
+                },
+                "display_name": "Process 2",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                    "line": 24,
+                                    "column": 0
+                                },
+                                "id": "VId_283_*0(0,32)arg+?(?,32)",
+                                "name": "(*in2)",
+                                "display_name": "int *in2"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 63,
+                                        "column": 30
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 256
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 1
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                    "line": 30,
+                                    "column": 9
+                                },
+                                "id": "VId_288_[?(?,32)]",
+                                "name": "B[*]",
+                                "display_name": "int B[256]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 63,
+                                        "column": 28
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 256
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                    "line": 24,
+                                    "column": 0
+                                },
+                                "id": "VId_285_!c?(?,?)",
+                                "name": "dim",
+                                "display_name": "int dim"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 3
+                        }
+                    ]
+                },
+                "metrics": {
+                    "initiation_interval": 516
+                },
+                "subregions": [
+                    {
+                        "id": "%F303_R1",
+                        "description": "<switch>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 57,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 64,
+                                "column": 5
+                            }
+                        }
+                    },
+                    {
+                        "id": "%F303_R10",
+                        "description": "<function exit>"
+                    }
+                ],
+                "subdataflow": [],
+                "guidance": [
+                    {
+                        "type": "LoopGuidance",
+                        "ti": {
+                            "min": 512,
+                            "max": 512
+                        },
+                        "ii": {
+                            "min": 2,
+                            "max": 2
+                        },
+                        "effective_tc": {
+                            "min": 256,
+                            "max": 256
+                        },
+                        "tc": {
+                            "min": 256,
+                            "max": 256
+                        },
+                        "ureg_id": "%L17",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 57,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 64,
+                                "column": 5
+                            }
+                        },
+                        "details": [
+                            {
+                                "type": "MemPortContention",
+                                "available_ports": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "required_ports": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variable": {
+                                    "name": "in2",
+                                    "display_name": "in2",
+                                    "id": "294",
+                                    "location": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 24,
+                                        "column": 0
+                                    }
+                                }
+                            },
+                            {
+                                "type": "MemPortContention",
+                                "available_ports": {
+                                    "min": 2,
+                                    "max": 2
+                                },
+                                "required_ports": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variable": {
+                                    "name": "B",
+                                    "display_name": "B",
+                                    "id": "295",
+                                    "location": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 30,
+                                        "column": 0
+                                    }
+                                }
+                            },
+                            {
+                                "type": "CyclicDependence",
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variables": [
+                                    {
+                                        "name": "i8 [phi]",
+                                        "id": "<unknown>"
+                                    },
+                                    {
+                                        "name": "i8 [phi]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                            "line": 0,
+                                            "column": 0
+                                        }
+                                    },
+                                    {
+                                        "name": "inc16 [add]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                            "line": 61,
+                                            "column": 14
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "CyclicDependence",
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variables": [
+                                    {
+                                        "name": "j9 [phi]",
+                                        "id": "<unknown>"
+                                    },
+                                    {
+                                        "name": "j9 [phi]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                            "line": 0,
+                                            "column": 0
+                                        }
+                                    },
+                                    {
+                                        "name": "inc26 [add]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                            "line": 57,
+                                            "column": 62
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "5": {
+                "id": "5",
+                "name": "Region<OutlineCall(R4 matmul_partition) BB 'codeRepl2' [Switch,Atomic] 'Outline_T5_F301_R34_Loop'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                        "line": 67,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                        "line": 86,
+                        "column": 5
+                    }
+                },
+                "display_name": "Process 3",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                    "line": 31,
+                                    "column": 9
+                                },
+                                "id": "VId_289_[?(?,32)]",
+                                "name": "C[*]",
+                                "display_name": "int C[256]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 83,
+                                        "column": 36
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 4096
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                    "line": 29,
+                                    "column": 9
+                                },
+                                "id": "VId_287_[?(?,32)]",
+                                "name": "A[*]",
+                                "display_name": "int A[256]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 81,
+                                        "column": 31
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 65536
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                    "line": 30,
+                                    "column": 9
+                                },
+                                "id": "VId_288_[?(?,32)]",
+                                "name": "B[*]",
+                                "display_name": "int B[256]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 81,
+                                        "column": 52
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 65536
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                    "line": 24,
+                                    "column": 0
+                                },
+                                "id": "VId_286_!c?(?,?)",
+                                "name": "rep_count",
+                                "display_name": "int rep_count"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 4
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                    "line": 24,
+                                    "column": 0
+                                },
+                                "id": "VId_285_!c?(?,?)",
+                                "name": "dim",
+                                "display_name": "int dim"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 3
+                        }
+                    ]
+                },
+                "metrics": {
+                    "initiation_interval": 8198
+                },
+                "subregions": [
+                    {
+                        "id": "%F304_R1",
+                        "description": "<switch>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 67,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 86,
+                                "column": 5
+                            }
+                        }
+                    },
+                    {
+                        "id": "%F304_R19",
+                        "description": "<function exit>"
+                    }
+                ],
+                "subdataflow": [],
+                "guidance": [
+                    {
+                        "type": "LoopGuidance",
+                        "ti": {
+                            "min": 8194,
+                            "max": 8194
+                        },
+                        "ii": {
+                            "min": 8194,
+                            "max": 8194
+                        },
+                        "effective_tc": {
+                            "min": 1,
+                            "max": 1
+                        },
+                        "tc": {
+                            "min": 1,
+                            "max": 1
+                        },
+                        "ureg_id": "%L13",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 67,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 86,
+                                "column": 5
+                            }
+                        },
+                        "details": []
+                    },
+                    {
+                        "type": "LoopGuidance",
+                        "ti": {
+                            "min": 8192,
+                            "max": 8192
+                        },
+                        "ii": {
+                            "min": 512,
+                            "max": 512
+                        },
+                        "effective_tc": {
+                            "min": 16,
+                            "max": 16
+                        },
+                        "tc": {
+                            "min": 16,
+                            "max": 16
+                        },
+                        "ureg_id": "%L14",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 70,
+                                "column": 9
+                            },
+                            "end_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 85,
+                                "column": 9
+                            }
+                        },
+                        "details": []
+                    },
+                    {
+                        "type": "LoopGuidance",
+                        "ti": {
+                            "min": 512,
+                            "max": 512
+                        },
+                        "ii": {
+                            "min": 32,
+                            "max": 32
+                        },
+                        "effective_tc": {
+                            "min": 16,
+                            "max": 16
+                        },
+                        "tc": {
+                            "min": 16,
+                            "max": 16
+                        },
+                        "ureg_id": "%L15",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 75,
+                                "column": 13
+                            },
+                            "end_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 84,
+                                "column": 13
+                            }
+                        },
+                        "details": [
+                            {
+                                "type": "MemPortContention",
+                                "available_ports": {
+                                    "min": 2,
+                                    "max": 2
+                                },
+                                "required_ports": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variable": {
+                                    "name": "C",
+                                    "display_name": "C",
+                                    "id": "298",
+                                    "location": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 31,
+                                        "column": 0
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "type": "LoopGuidance",
+                        "ti": {
+                            "min": 32,
+                            "max": 32
+                        },
+                        "ii": {
+                            "min": 2,
+                            "max": 2
+                        },
+                        "effective_tc": {
+                            "min": 16,
+                            "max": 16
+                        },
+                        "tc": {
+                            "min": 16,
+                            "max": 16
+                        },
+                        "ureg_id": "%L16",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 79,
+                                "column": 17
+                            },
+                            "end_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 82,
+                                "column": 17
+                            }
+                        },
+                        "details": [
+                            {
+                                "type": "MemPortContention",
+                                "available_ports": {
+                                    "min": 2,
+                                    "max": 2
+                                },
+                                "required_ports": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variable": {
+                                    "name": "A",
+                                    "display_name": "A",
+                                    "id": "299",
+                                    "location": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 29,
+                                        "column": 0
+                                    }
+                                }
+                            },
+                            {
+                                "type": "MemPortContention",
+                                "available_ports": {
+                                    "min": 2,
+                                    "max": 2
+                                },
+                                "required_ports": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variable": {
+                                    "name": "B",
+                                    "display_name": "B",
+                                    "id": "300",
+                                    "location": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 30,
+                                        "column": 0
+                                    }
+                                }
+                            },
+                            {
+                                "type": "CyclicDependence",
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variables": [
+                                    {
+                                        "name": "result [phi]",
+                                        "id": "<unknown>"
+                                    },
+                                    {
+                                        "name": "add51 [add]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                            "line": 81,
+                                            "column": 28
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "6": {
+                "id": "6",
+                "name": "Region<OutlineCall(R5 matmul_partition) BB 'codeRepl3' [Switch,Atomic] 'Outline_T6_F301_R80_Loop'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                        "line": 91,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                        "line": 98,
+                        "column": 5
+                    }
+                },
+                "display_name": "Process 4",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                    "line": 31,
+                                    "column": 9
+                                },
+                                "id": "VId_289_[?(?,32)]",
+                                "name": "C[*]",
+                                "display_name": "int C[256]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 97,
+                                        "column": 22
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 256
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                    "line": 24,
+                                    "column": 0
+                                },
+                                "id": "VId_284_*0(0,32)arg+?(?,32)",
+                                "name": "(*out_r)",
+                                "display_name": "int *out_r"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 97,
+                                        "column": 20
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 256
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 2
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                    "line": 24,
+                                    "column": 0
+                                },
+                                "id": "VId_285_!c?(?,?)",
+                                "name": "dim",
+                                "display_name": "int dim"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 3
+                        }
+                    ]
+                },
+                "metrics": {
+                    "initiation_interval": 516
+                },
+                "subregions": [
+                    {
+                        "id": "%F305_R1",
+                        "description": "<switch>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 91,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 98,
+                                "column": 5
+                            }
+                        }
+                    },
+                    {
+                        "id": "%F305_R10",
+                        "description": "<function exit>"
+                    }
+                ],
+                "subdataflow": [],
+                "guidance": [
+                    {
+                        "type": "LoopGuidance",
+                        "ti": {
+                            "min": 512,
+                            "max": 512
+                        },
+                        "ii": {
+                            "min": 2,
+                            "max": 2
+                        },
+                        "effective_tc": {
+                            "min": 256,
+                            "max": 256
+                        },
+                        "tc": {
+                            "min": 256,
+                            "max": 256
+                        },
+                        "ureg_id": "%L12",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 91,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                "line": 98,
+                                "column": 5
+                            }
+                        },
+                        "details": [
+                            {
+                                "type": "MemPortContention",
+                                "available_ports": {
+                                    "min": 2,
+                                    "max": 2
+                                },
+                                "required_ports": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variable": {
+                                    "name": "C",
+                                    "display_name": "C",
+                                    "id": "302",
+                                    "location": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 31,
+                                        "column": 0
+                                    }
+                                }
+                            },
+                            {
+                                "type": "MemPortContention",
+                                "available_ports": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "required_ports": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variable": {
+                                    "name": "out_r",
+                                    "display_name": "out_r",
+                                    "id": "303",
+                                    "location": {
+                                        "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                        "line": 24,
+                                        "column": 0
+                                    }
+                                }
+                            },
+                            {
+                                "type": "CyclicDependence",
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variables": [
+                                    {
+                                        "name": "j70 [phi]",
+                                        "id": "<unknown>"
+                                    },
+                                    {
+                                        "name": "j70 [phi]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                            "line": 0,
+                                            "column": 0
+                                        }
+                                    },
+                                    {
+                                        "name": "inc87 [add]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                            "line": 91,
+                                            "column": 62
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "CyclicDependence",
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variables": [
+                                    {
+                                        "name": "i69 [phi]",
+                                        "id": "<unknown>"
+                                    },
+                                    {
+                                        "name": "i69 [phi]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                            "line": 0,
+                                            "column": 0
+                                        }
+                                    },
+                                    {
+                                        "name": "inc77 [add]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                                            "line": 95,
+                                            "column": 14
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "channels": {
+            "(*in1)_RAW_1_3_#0": {
+                "name": "(*in1)_RAW_1_3_#0",
+                "variable_id": "VId_282_*0(0,32)arg+?(?,32)",
+                "variable_name": "(*in1)",
+                "declaration": "int *in1",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                    "line": 24,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 8192,
+                    "channel_rate": 9.992681141741888E-1
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "dim_RAW_1_3_#1": {
+                "name": "dim_RAW_1_3_#1",
+                "variable_id": "VId_285_!c?(?,?)",
+                "variable_name": "dim",
+                "declaration": "int dim",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                    "line": 24,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 32,
+                    "channel_rate": 3.903391070992925E-3
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "(*in2)_RAW_1_4_#2": {
+                "name": "(*in2)_RAW_1_4_#2",
+                "variable_id": "VId_283_*0(0,32)arg+?(?,32)",
+                "variable_name": "(*in2)",
+                "declaration": "int *in2",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                    "line": 24,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 8192,
+                    "channel_rate": 9.992681141741888E-1
+                },
+                "source": "1",
+                "sink": "4"
+            },
+            "dim_RAR_3_4_#3": {
+                "name": "dim_RAR_3_4_#3",
+                "variable_id": "VId_285_!c?(?,?)",
+                "variable_name": "dim",
+                "declaration": "int dim",
+                "kind": "SSA",
+                "dependence": "RAR",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                    "line": 24,
+                    "column": 0
+                },
+                "source": "3",
+                "sink": "4"
+            },
+            "rep_count_RAW_1_5_#4": {
+                "name": "rep_count_RAW_1_5_#4",
+                "variable_id": "VId_286_!c?(?,?)",
+                "variable_name": "rep_count",
+                "declaration": "int rep_count",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                    "line": 24,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 32,
+                    "channel_rate": 3.903391070992925E-3
+                },
+                "source": "1",
+                "sink": "5"
+            },
+            "A[*]_RAW_3_5_#5": {
+                "name": "A[*]_RAW_3_5_#5",
+                "variable_id": "VId_287_[?(?,32)]",
+                "variable_name": "A[*]",
+                "declaration": "int A[256]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                    "line": 29,
+                    "column": 9
+                },
+                "metrics": {
+                    "volume": 2097152,
+                    "channel_rate": 2.5581263722859234E2
+                },
+                "source": "3",
+                "sink": "5"
+            },
+            "B[*]_RAW_4_5_#6": {
+                "name": "B[*]_RAW_4_5_#6",
+                "variable_id": "VId_288_[?(?,32)]",
+                "variable_name": "B[*]",
+                "declaration": "int B[256]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                    "line": 30,
+                    "column": 9
+                },
+                "metrics": {
+                    "volume": 2097152,
+                    "channel_rate": 2.5581263722859234E2
+                },
+                "source": "4",
+                "sink": "5"
+            },
+            "dim_RAR_4_5_#7": {
+                "name": "dim_RAR_4_5_#7",
+                "variable_id": "VId_285_!c?(?,?)",
+                "variable_name": "dim",
+                "declaration": "int dim",
+                "kind": "SSA",
+                "dependence": "RAR",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                    "line": 24,
+                    "column": 0
+                },
+                "source": "4",
+                "sink": "5"
+            },
+            "C[*]_RAW_5_6_#8": {
+                "name": "C[*]_RAW_5_6_#8",
+                "variable_id": "VId_289_[?(?,32)]",
+                "variable_name": "C[*]",
+                "declaration": "int C[256]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                    "line": 31,
+                    "column": 9
+                },
+                "metrics": {
+                    "volume": 8192,
+                    "channel_rate": 9.992681141741888E-1
+                },
+                "source": "5",
+                "sink": "6"
+            },
+            "dim_RAR_5_6_#9": {
+                "name": "dim_RAR_5_6_#9",
+                "variable_id": "VId_285_!c?(?,?)",
+                "variable_name": "dim",
+                "declaration": "int dim",
+                "kind": "SSA",
+                "dependence": "RAR",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                    "line": 24,
+                    "column": 0
+                },
+                "source": "5",
+                "sink": "6"
+            },
+            "(*out_r)_RAW_6_2_#10": {
+                "name": "(*out_r)_RAW_6_2_#10",
+                "variable_id": "VId_284_*0(0,32)arg+?(?,32)",
+                "variable_name": "(*out_r)",
+                "declaration": "int *out_r",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp",
+                    "line": 24,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 8192,
+                    "channel_rate": 9.992681141741888E-1
+                },
+                "source": "6",
+                "sink": "2"
+            }
+        },
+        "control": [
+            {
+                "source": "3",
+                "sink": "4"
+            },
+            {
+                "source": "4",
+                "sink": "5"
+            },
+            {
+                "source": "5",
+                "sink": "6"
+            },
+            {
+                "source": "1",
+                "sink": "3"
+            },
+            {
+                "source": "6",
+                "sink": "2"
+            }
+        ]
+    }
+]

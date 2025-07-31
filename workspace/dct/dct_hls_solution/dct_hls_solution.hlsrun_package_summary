@@ -1,0 +1,123 @@
+<ENTRY>
+{
+ "thisFile": "/home/hyeon/workspace/dct/dct_hls_solution/dct_hls_solution.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Jul 23 16:04:48 2025",
+ "timestampMillis": "1753254288556",
+ "buildStep": {
+  "cmdId": "d14e8fe5-3827-4255-a8c6-5234b0da8c5a",
+  "name": "vitis-run",
+  "logFile": "/home/hyeon/workspace/dct/logs/hls_run_csim.log",
+  "commandLine": "vitis-run --mode hls --tcl /home/hyeon/workspace/dct/run_hls.tcl",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/hyeon/workspace/dct"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 23 16:04:48 2025",
+ "timestampMillis": "1753254288557",
+ "status": {
+  "cmdId": "d14e8fe5-3827-4255-a8c6-5234b0da8c5a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Jul 23 16:04:48 2025",
+ "timestampMillis": "1753254288557",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "dct",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/hyeon/workspace/dct/dct.cpp",
+     "/home/hyeon/workspace/dct/dct_coeff_table.txt",
+     "/home/hyeon/workspace/dct/in.dat",
+     "/home/hyeon/workspace/dct/out.golden.dat"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Jul 23 16:04:48 2025",
+ "timestampMillis": "1753254288559",
+ "buildStep": {
+  "cmdId": "73625bd3-aaf5-443d-9dd3-2b40835024fd",
+  "name": "export_design",
+  "logFile": "/home/hyeon/workspace/dct/dct_hls_solution/hls/hls.log",
+  "commandLine": "export_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/hyeon/workspace/dct"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 23 16:04:48 2025",
+ "timestampMillis": "1753254288560",
+ "status": {
+  "cmdId": "73625bd3-aaf5-443d-9dd3-2b40835024fd",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 23 16:04:59 2025",
+ "timestampMillis": "1753254299689",
+ "status": {
+  "cmdId": "73625bd3-aaf5-443d-9dd3-2b40835024fd",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 23 16:04:59 2025",
+ "timestampMillis": "1753254299722",
+ "status": {
+  "cmdId": "d14e8fe5-3827-4255-a8c6-5234b0da8c5a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

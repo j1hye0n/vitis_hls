@@ -1,0 +1,11 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_example_ir
+Args:            
+  - Callee:          'example(char*, char*, char*)'
+    DebugLoc:        { File: ../adder.cpp, Line: 4, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_example_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...

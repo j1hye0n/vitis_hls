@@ -1,0 +1,354 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Jul 11 10:52:17 2025
+# Process ID         : 4500
+# Current directory  : /home/hyeon/workspace/sample1
+# Command line       : vivado
+# Log file           : /home/hyeon/workspace/sample1/vivado.log
+# Journal file       : /home/hyeon/workspace/sample1/vivado.jou
+# Running On         : DESKTOP-S15BKKL
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
+# CPU Frequency      : 2808.011 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 6
+# Host memory        : 4050 MB
+# Swap memory        : 1073 MB
+# Total Virtual      : 5124 MB
+# Available Virtual  : 4533 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/hyeon/IDEC/CNNverilog/lab1/lab1.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/hyeon/IDEC/CNNverilog/lab1/lab1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 7663.473 ; gain = 203.984 ; free physical = 113 ; free virtual = 3720
+update_compile_order -fileset sources_1
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/hyeon/IDEC/CNNverilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/hyeon/IDEC/CNNverilog/lab1/lab1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/hyeon/IDEC/CNNverilog/lab1/lab1.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/hyeon/IDEC/CNNverilog/lab1/lab1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ 0 +  0=  0
+ 0 +  1=  1
+ 0 +  2=  2
+ 0 +  3=  3
+ 0 +  4=  4
+ 0 +  5=  5
+ 0 +  6=  6
+ 0 +  7=  7
+ 0 +  8=  8
+ 0 +  9=  9
+ 0 + 10= 10
+ 0 + 11= 11
+ 0 + 12= 12
+ 0 + 13= 13
+ 0 + 14= 14
+ 0 + 15= 15
+ 1 +  0=  1
+ 1 +  1=  2
+ 1 +  2=  3
+ 1 +  3=  4
+ 1 +  4=  5
+ 1 +  5=  6
+ 1 +  6=  7
+ 1 +  7=  8
+ 1 +  8=  9
+ 1 +  9= 10
+ 1 + 10= 11
+ 1 + 11= 12
+ 1 + 12= 13
+ 1 + 13= 14
+ 1 + 14= 15
+ 1 + 15= 16
+ 2 +  0=  2
+ 2 +  1=  3
+ 2 +  2=  4
+ 2 +  3=  5
+ 2 +  4=  6
+ 2 +  5=  7
+ 2 +  6=  8
+ 2 +  7=  9
+ 2 +  8= 10
+ 2 +  9= 11
+ 2 + 10= 12
+ 2 + 11= 13
+ 2 + 12= 14
+ 2 + 13= 15
+ 2 + 14= 16
+ 2 + 15= 17
+ 3 +  0=  3
+ 3 +  1=  4
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 7773.652 ; gain = 82.730 ; free physical = 639 ; free virtual = 2807
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 7773.652 ; gain = 92.141 ; free physical = 639 ; free virtual = 2807
+reset_run impl_1
+launch_runs impl_1 -jobs 3
+[Fri Jul 11 11:04:02 2025] Launched impl_1...
+Run output will be captured here: /home/hyeon/IDEC/CNNverilog/lab1/lab1.runs/impl_1/runme.log
+run all
+ 3 +  2=  5
+ 3 +  3=  6
+ 3 +  4=  7
+ 3 +  5=  8
+ 3 +  6=  9
+ 3 +  7= 10
+ 3 +  8= 11
+ 3 +  9= 12
+ 3 + 10= 13
+ 3 + 11= 14
+ 3 + 12= 15
+ 3 + 13= 16
+ 3 + 14= 17
+ 3 + 15= 18
+ 4 +  0=  4
+ 4 +  1=  5
+ 4 +  2=  6
+ 4 +  3=  7
+ 4 +  4=  8
+ 4 +  5=  9
+ 4 +  6= 10
+ 4 +  7= 11
+ 4 +  8= 12
+ 4 +  9= 13
+ 4 + 10= 14
+ 4 + 11= 15
+ 4 + 12= 16
+ 4 + 13= 17
+ 4 + 14= 18
+ 4 + 15= 19
+ 5 +  0=  5
+ 5 +  1=  6
+ 5 +  2=  7
+ 5 +  3=  8
+ 5 +  4=  9
+ 5 +  5= 10
+ 5 +  6= 11
+ 5 +  7= 12
+ 5 +  8= 13
+ 5 +  9= 14
+ 5 + 10= 15
+ 5 + 11= 16
+ 5 + 12= 17
+ 5 + 13= 18
+ 5 + 14= 19
+ 5 + 15= 20
+ 6 +  0=  6
+ 6 +  1=  7
+ 6 +  2=  8
+ 6 +  3=  9
+ 6 +  4= 10
+ 6 +  5= 11
+ 6 +  6= 12
+ 6 +  7= 13
+ 6 +  8= 14
+ 6 +  9= 15
+ 6 + 10= 16
+ 6 + 11= 17
+ 6 + 12= 18
+ 6 + 13= 19
+ 6 + 14= 20
+ 6 + 15= 21
+ 7 +  0=  7
+ 7 +  1=  8
+ 7 +  2=  9
+ 7 +  3= 10
+ 7 +  4= 11
+ 7 +  5= 12
+ 7 +  6= 13
+ 7 +  7= 14
+ 7 +  8= 15
+ 7 +  9= 16
+ 7 + 10= 17
+ 7 + 11= 18
+ 7 + 12= 19
+ 7 + 13= 20
+ 7 + 14= 21
+ 7 + 15= 22
+ 8 +  0=  8
+ 8 +  1=  9
+ 8 +  2= 10
+ 8 +  3= 11
+ 8 +  4= 12
+ 8 +  5= 13
+ 8 +  6= 14
+ 8 +  7= 15
+ 8 +  8= 16
+ 8 +  9= 17
+ 8 + 10= 18
+ 8 + 11= 19
+ 8 + 12= 20
+ 8 + 13= 21
+ 8 + 14= 22
+ 8 + 15= 23
+ 9 +  0=  9
+ 9 +  1= 10
+ 9 +  2= 11
+ 9 +  3= 12
+ 9 +  4= 13
+ 9 +  5= 14
+ 9 +  6= 15
+ 9 +  7= 16
+ 9 +  8= 17
+ 9 +  9= 18
+ 9 + 10= 19
+ 9 + 11= 20
+ 9 + 12= 21
+ 9 + 13= 22
+ 9 + 14= 23
+ 9 + 15= 24
+10 +  0= 10
+10 +  1= 11
+10 +  2= 12
+10 +  3= 13
+10 +  4= 14
+10 +  5= 15
+10 +  6= 16
+10 +  7= 17
+10 +  8= 18
+10 +  9= 19
+10 + 10= 20
+10 + 11= 21
+10 + 12= 22
+10 + 13= 23
+10 + 14= 24
+10 + 15= 25
+11 +  0= 11
+11 +  1= 12
+11 +  2= 13
+11 +  3= 14
+11 +  4= 15
+11 +  5= 16
+11 +  6= 17
+11 +  7= 18
+11 +  8= 19
+11 +  9= 20
+11 + 10= 21
+11 + 11= 22
+11 + 12= 23
+11 + 13= 24
+11 + 14= 25
+11 + 15= 26
+12 +  0= 12
+12 +  1= 13
+12 +  2= 14
+12 +  3= 15
+12 +  4= 16
+12 +  5= 17
+12 +  6= 18
+12 +  7= 19
+12 +  8= 20
+12 +  9= 21
+12 + 10= 22
+12 + 11= 23
+12 + 12= 24
+12 + 13= 25
+12 + 14= 26
+12 + 15= 27
+13 +  0= 13
+13 +  1= 14
+13 +  2= 15
+13 +  3= 16
+13 +  4= 17
+13 +  5= 18
+13 +  6= 19
+13 +  7= 20
+13 +  8= 21
+13 +  9= 22
+13 + 10= 23
+13 + 11= 24
+13 + 12= 25
+13 + 13= 26
+13 + 14= 27
+13 + 15= 28
+14 +  0= 14
+14 +  1= 15
+14 +  2= 16
+14 +  3= 17
+14 +  4= 18
+14 +  5= 19
+14 +  6= 20
+14 +  7= 21
+14 +  8= 22
+14 +  9= 23
+14 + 10= 24
+14 + 11= 25
+14 + 12= 26
+14 + 13= 27
+14 + 14= 28
+14 + 15= 29
+15 +  0= 15
+15 +  1= 16
+15 +  2= 17
+15 +  3= 18
+15 +  4= 19
+15 +  5= 20
+15 +  6= 21
+15 +  7= 22
+15 +  8= 23
+15 +  9= 24
+15 + 10= 25
+15 + 11= 26
+15 + 12= 27
+15 + 13= 28
+15 + 14= 29
+15 + 15= 30
+$finish called at time : 5120 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 11 11:21:32 2025...

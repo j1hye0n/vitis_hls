@@ -1,0 +1,13 @@
+<pragmas>
+<pragma file="dct.cpp" line="21" pragmaType="pipeline" parentfunction="dct_1d" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="dct.cpp" line="16" pragmaType="array_partition" parentfunction="dct_1d" dim="2" factor="0" mode="complete" dynamic="0" variable="_ZZ6dct_1dPsS_E15dct_coeff_table"/>
+<pragma file="dct.cpp" line="72" pragmaType="pipeline" parentfunction="read_data" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="dct.cpp" line="75" pragmaType="array_partition" parentfunction="read_data" dim="2" factor="0" mode="complete" dynamic="0" variable="buf"/>
+<pragma file="dct.cpp" line="60" pragmaType="pipeline" parentfunction="dct_2d" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="dct.cpp" line="52" pragmaType="pipeline" parentfunction="dct_2d" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="dct.cpp" line="47" pragmaType="pipeline" parentfunction="dct_2d" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="dct.cpp" line="87" pragmaType="pipeline" parentfunction="write_data" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="dct.cpp" line="93" pragmaType="interface" parentfunction="dct" mode="s_axilite" port="input" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="dct.cpp" line="94" pragmaType="interface" parentfunction="dct" mode="s_axilite" port="output" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="dct.cpp" line="95" pragmaType="interface" parentfunction="dct" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+</pragmas>

@@ -1,0 +1,116 @@
+
+
+================================================================
+== Synthesis Summary Report of 'example'
+================================================================
++ General Information: 
+    * Date:           Fri Jul 11 11:47:10 2025
+    * Version:        2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:        example
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: azynq
+    * Target device:  xa7z010-clg225-1I
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |  Modules  | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |          |           |     |
+    |  & Loops  | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF    |    LUT    | URAM|
+    +-----------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |+ example  |     -|  1.63|        0|   0.000|         -|        1|     -|        no|     -|   -|  92 (~0%)|  120 (~0%)|    -|
+    +-----------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++-------------+------------+---------------+--------+----------+
+| Interface   | Data Width | Address Width | Offset | Register |
++-------------+------------+---------------+--------+----------+
+| s_axi_BUS_A | 32         | 6             | 16     | 0        |
++-------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++-------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface   | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++-------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_BUS_A | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_BUS_A | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_BUS_A | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_BUS_A | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_BUS_A | a        | 0x10   | 32    | W      | Data signal of a                 |                                                                      |
+| s_axi_BUS_A | b        | 0x18   | 32    | W      | Data signal of b                 |                                                                      |
+| s_axi_BUS_A | c_i      | 0x20   | 32    | W      | Data signal of c_i               |                                                                      |
+| s_axi_BUS_A | c_o      | 0x28   | 32    | R      | Data signal of c_o               |                                                                      |
+| s_axi_BUS_A | c_o_ctrl | 0x2c   | 32    | R      | Control signal of c_o            | 0=c_o_ap_vld                                                         |
++-------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| a        | in        | char*    |
+| b        | in        | char*    |
+| c        | inout     | char*    |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+--------------+----------+------------------------------------+
+| Argument | HW Interface | HW Type  | HW Info                            |
++----------+--------------+----------+------------------------------------+
+| a        | s_axi_BUS_A  | register | name=a offset=0x10 range=32        |
+| b        | s_axi_BUS_A  | register | name=b offset=0x18 range=32        |
+| c        | s_axi_BUS_A  | register | name=c_i offset=0x20 range=32      |
+| c        | s_axi_BUS_A  | register | name=c_o offset=0x28 range=32      |
+| c        | s_axi_BUS_A  | register | name=c_o_ctrl offset=0x2c range=32 |
++----------+--------------+----------+------------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
+  No bind op info in design
+
+================================================================
+== Storage Report
+================================================================
++-----------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name            | Usage     | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                 |           |           |      |      |        |          |      |         | Banks            |
++-----------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| + example       |           |           | 0    | 0    |        |          |      |         |                  |
+|   BUS_A_s_axi_U | interface | s_axilite |      |      |        |          |      |         |                  |
++-----------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+------------------------------------+-----------------------------------+
+| Type      | Options                            | Location                          |
++-----------+------------------------------------+-----------------------------------+
+| interface | s_axilite port=a bundle=BUS_A      | ../adder.cpp:5 in example, a      |
+| interface | s_axilite port=b bundle=BUS_A      | ../adder.cpp:6 in example, b      |
+| interface | s_axilite port=c bundle=BUS_A      | ../adder.cpp:7 in example, c      |
+| interface | s_axilite port=return bundle=BUS_A | ../adder.cpp:8 in example, return |
++-----------+------------------------------------+-----------------------------------+
+
+

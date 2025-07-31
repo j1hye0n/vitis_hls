@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/hyeon/workspace/sample1/hls_component/example/hls/./sim/autowrap/testbench/adder.cpp_pre.cpp.tb.cpp

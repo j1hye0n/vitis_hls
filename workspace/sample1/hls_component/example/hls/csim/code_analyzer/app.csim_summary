@@ -1,0 +1,80 @@
+<ENTRY>
+{
+ "thisFile": "/home/hyeon/workspace/sample1/hls_component/example/hls/csim/code_analyzer/app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri Jul 11 11:46:44 2025",
+ "timestampMillis": "1752202004089",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Jul 11 11:46:44 2025",
+ "timestampMillis": "1752202004094",
+ "buildStep": {
+  "cmdId": "47caa6e6-5e01-11f0-9fd4-6125f96ede31",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jul 11 11:46:44 2025",
+ "timestampMillis": "1752202004096",
+ "status": {
+  "cmdId": "47caa6e6-5e01-11f0-9fd4-6125f96ede31",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jul 11 11:46:44 2025",
+ "timestampMillis": "1752202004222",
+ "status": {
+  "cmdId": "47caa6e6-5e01-11f0-9fd4-6125f96ede31",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jul 11 11:46:44 2025",
+ "timestampMillis": "1752202004223",
+ "report": {
+  "path": "/home/hyeon/workspace/sample1/hls_component",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "VCXX_CODE_ANALYZER",
+  "cmdId": "47caa6e6-5e01-11f0-9fd4-6125f96ede31"
+ }
+}
+</ENTRY>

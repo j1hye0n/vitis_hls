@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Jul 22 13:10:53 2025
+# Process ID         : 18791
+# Current directory  : /home/hyeon/workspace/sample1/hls_component/example/hls/sim/verilog
+# Command line       : vivado -source open_wave.tcl
+# Log file           : /home/hyeon/workspace/sample1/hls_component/example/hls/sim/verilog/vivado.log
+# Journal file       : /home/hyeon/workspace/sample1/hls_component/example/hls/sim/verilog/vivado.jou
+# Running On         : DESKTOP-S15BKKL
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
+# CPU Frequency      : 2808.009 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 6
+# Host memory        : 4050 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 4050 MB
+# Available Virtual  : 1433 MB
+#-----------------------------------------------------------
+start_gui
+ERROR: [Common 17-211] Error loading jvm.
+source open_wave.tcl
+# current_fileset
+ERROR: [Project 1-848] Could not get a valid part for the project. Make sure you have the required part installed, use the get_parts command to see the list of valid parts.

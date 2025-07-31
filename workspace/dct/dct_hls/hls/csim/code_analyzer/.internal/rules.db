@@ -1,0 +1,234 @@
+{
+    "rules": {
+        "['/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/dct.cpp.0.bc', '/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/dct.cpp.0.bc.d']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/clang",
+                "-c",
+                "-emit-llvm",
+                "-MD",
+                "-MF",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/dct.cpp.0.bc.d",
+                "-fhls",
+                "-hls-syn-headers-dir=/tools/xilinx/Vitis/2024.2/vcxx/data/autopilot",
+                "-vitis-hls=/tools/xilinx/Vitis/2024.2",
+                "--gcc-toolchain=/tools/xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+                "-hls-clock-period=10.0",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-fhlstoplevel=dct",
+                "../dct.cpp",
+                "-o",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/dct.cpp.0.bc"
+            ],
+            "exectime": 3.3199374675750732,
+            "cwd": "/home/hyeon/workspace/dct/dct_hls"
+        },
+        "['/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/dct.cpp.0.o', '/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/dct.cpp.0.o.d']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/clang",
+                "-c",
+                "-MD",
+                "-MF",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/dct.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=/tools/xilinx/Vitis/2024.2/vcxx/data/include",
+                "-vitis-hls=/tools/xilinx/Vitis/2024.2",
+                "--gcc-toolchain=/tools/xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-fslxskipfunctionbody",
+                "-fhlstoplevel=dct",
+                "../dct.cpp",
+                "-o",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/dct.cpp.0.o"
+            ],
+            "exectime": 3.3183391094207764,
+            "cwd": "/home/hyeon/workspace/dct/dct_hls"
+        },
+        "['/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/dct_test.cpp.0.o', '/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/dct_test.cpp.0.o.d']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/clang",
+                "-c",
+                "-MD",
+                "-MF",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/dct_test.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=/tools/xilinx/Vitis/2024.2/vcxx/data/include",
+                "-vitis-hls=/tools/xilinx/Vitis/2024.2",
+                "--gcc-toolchain=/tools/xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-fslxskipfunctionbody",
+                "-fhlstoplevel=dct",
+                "/home/hyeon/workspace/dct/dct_test.cpp",
+                "-o",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/dct_test.cpp.0.o"
+            ],
+            "exectime": 3.321359157562256,
+            "cwd": "/home/hyeon/workspace/dct/dct_hls"
+        },
+        "['/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/syn_srcs.bc']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/llvm-link",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/dct.cpp.0.bc",
+                "-o",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/syn_srcs.bc"
+            ],
+            "exectime": 0.09607243537902832,
+            "cwd": "/home/hyeon/workspace/dct/dct_hls"
+        },
+        "['/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/opt",
+                "-check-single-toplevel",
+                "-make-non-toplevel-internal",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/syn_srcs.bc",
+                "-o",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc"
+            ],
+            "exectime": 0.44388794898986816,
+            "cwd": "/home/hyeon/workspace/dct/dct_hls"
+        },
+        "['/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/app.exe']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/clang++",
+                "-o",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/app.exe",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/dct_test.cpp.0.o",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/dct.cpp.0.o",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc",
+                "-fhls",
+                "-fhlstoplevel=dct",
+                "-Wl,--as-needed",
+                "-L/tools/xilinx/Vitis/2024.2/lnx64/tools/dds_v6_0",
+                "-lIp_dds_compiler_v6_0_bitacc_cmodel",
+                "-Wl,--disable-new-dtags",
+                "-Wl,-rpath=/tools/xilinx/Vitis/2024.2/lnx64/tools/dds_v6_0",
+                "-L/tools/xilinx/Vitis/2024.2/lnx64/tools/fft_v9_1",
+                "-lIp_xfft_v9_1_bitacc_cmodel",
+                "-Wl,-rpath=/tools/xilinx/Vitis/2024.2/lnx64/tools/fft_v9_1",
+                "-L/tools/xilinx/Vitis/2024.2/lnx64/tools/fir_v7_0",
+                "-lIp_fir_compiler_v7_2_bitacc_cmodel",
+                "-Wl,-rpath=/tools/xilinx/Vitis/2024.2/lnx64/tools/fir_v7_0",
+                "-L/tools/xilinx/Vitis/2024.2/lnx64/tools/fpo_v7_1",
+                "-lIp_floating_point_v7_1_bitacc_cmodel",
+                "-Wl,-rpath=/tools/xilinx/Vitis/2024.2/lnx64/tools/fpo_v7_1",
+                "-lm",
+                "-L/tools/xilinx/Vitis/2024.2/lnx64/lib/csim",
+                "-lhlsm-GCC46",
+                "-Wl,-rpath=/tools/xilinx/Vitis/2024.2/lnx64/lib/csim",
+                "-lhlsmc++-GCC46",
+                "-lgmp",
+                "-lmpfr",
+                "-Wl,--no-as-needed",
+                "--gcc-toolchain=/tools/xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+                "-Wl,--disable-new-dtags",
+                "-Wl,-rpath=/tools/xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib64",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-Wl,-mllvm,-profilerOutputDirectory=/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/profiler/0",
+                "-fslxpthreads"
+            ],
+            "exectime": 2.036104440689087,
+            "cwd": "/home/hyeon/workspace/dct/dct_hls"
+        },
+        "['/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/instrument/app_0/hls_ir_info.json']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/irInfoDump",
+                "--ir-module",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/instrument/app_0/project.symbols.bc",
+                "--json-output",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/instrument/app_0/hls_ir_info.json",
+                "--hw-function",
+                "dct"
+            ],
+            "exectime": 0.11994576454162598,
+            "cwd": "/home/hyeon/workspace/dct/dct_hls"
+        },
+        "['/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/instrument/app_0/binary_dependencies.json']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/clang-scan-deps",
+                "--compilation-database=/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/instrument/app_0/compile_commands.json",
+                "--format=vitiscxx",
+                "--reuse-filemanager=false",
+                "--output=/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/instrument/app_0/binary_dependencies.json"
+            ],
+            "exectime": 0.2520313262939453,
+            "cwd": "/home/hyeon/workspace/dct/dct_hls"
+        },
+        "['/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/bin/.tracing_stdout.txt', '/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/bin/.tracing_stderr.txt']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/rwd",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/build/app.exe"
+            ],
+            "exectime": 0.12360453605651855,
+            "cwd": "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/tracing/csim/build"
+        },
+        "['/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/instrument/app_0/annotated.bc']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/optimizer",
+                "-DFGPass",
+                "-outputDir",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/output",
+                "-logDir",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/log",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/instrument/app_0/project.symbols.bc",
+                "-staticFile",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/instrument/app_0/static.xml",
+                "-traceFile",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/profiler/0/app_0_0/thread0000-trace.txt",
+                "-o",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/instrument/app_0/annotated.bc"
+            ],
+            "exectime": 0.2406024932861328,
+            "cwd": "/home/hyeon/workspace/dct/dct_hls"
+        },
+        "['/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/dataflow/0/taskgraph.json']": {
+            "command": [
+                "/tools/xilinx/Vitis/2024.2/vcxx/libexec/parallelismSelector",
+                "--basepath",
+                "/home/hyeon/workspace/dct/dct_hls",
+                "--fpga-part",
+                "xa7z020-clg400-1I",
+                "--device-totals",
+                "/tools/xilinx/Vitis/2024.2/vcxx/data/platform/logic/fpga.devicetotals",
+                "--clock-frequency",
+                "100.0",
+                "--out-dir",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/output",
+                "--log-dir",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/log",
+                "--objective",
+                "none",
+                "--performance-target",
+                "target_both",
+                "--max-array-optimization-factor",
+                "1024",
+                "--complete-partition-limit",
+                "4",
+                "--lut-constraint",
+                "100.0",
+                "--ff-constraint",
+                "100.0",
+                "--dsp-constraint",
+                "100.0",
+                "--bram-constraint",
+                "100.0",
+                "--uram-constraint",
+                "100.0",
+                "--max-iterations",
+                "1000",
+                "--max-iterations-branch-full-log",
+                "20",
+                "--ir-module",
+                "/home/hyeon/workspace/dct/dct_hls/hls/csim/code_analyzer/.internal/instrument/app_0/annotated.bc",
+                "--df-id",
+                "0",
+                "--df-target",
+                "%F222"
+            ],
+            "exectime": 1.1397514343261719,
+            "cwd": "/home/hyeon/workspace/dct/dct_hls"
+        }
+    }
+}

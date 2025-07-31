@@ -1,0 +1,3 @@
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (/home/hyeon/workspace/dct/dct.cpp:75:1)
+parallelismSelector::WARNG: WARNING: [HLS 211-200] /home/hyeon/workspace/dct/dct.cpp:21:1: Ignoring pragma 'pipeline' because it conflicts with pragma 'pipeline' (/home/hyeon/workspace/dct/dct.cpp:52:1). Reason: Inner loop cannot be pipelined because at least one outer loop has been pipelined
+parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'array_partition' (/home/hyeon/workspace/dct/dct.cpp:16:1) as the variable is unused

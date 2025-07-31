@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../sha3_256_tb.c in debug mode
+   Compiling ../../../../sha3_256.c in debug mode
+   Compiling ../../../../fips202.c in debug mode
+   Generating csim.exe
+Test Passed: HW == SW
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

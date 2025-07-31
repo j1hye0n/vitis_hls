@@ -1,0 +1,76 @@
+{
+    "1": {
+        "name": "KeccakF1600_StatePermute",
+        "file": "fips202.c",
+        "fileloc": "83",
+        "instructions": "647",
+        "total_instructions": "647",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "2",
+            "L": "76"
+        },
+        "stores": {
+            "L": "77"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "sha3_256_hw_Pipeline_VITIS_LOOP_472_1",
+        "file": "..\/sha3_256.c",
+        "fileloc": "10",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "sha3_256_hw",
+        "file": "sha3_256.c",
+        "fileloc": "4",
+        "instructions": "145",
+        "total_instructions": "1500",
+        "calls": "2 1 1 3",
+        "basicblocks": "12",
+        "loads": {
+            "L": "6"
+        },
+        "stores": {
+            "L": "8"
+        },
+        "loops": {
+            "L": "2",
+            "N": "1"
+        }
+    },
+    "3": {
+        "name": "sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1",
+        "file": "..\/sha3_256.c",
+        "fileloc": "10",
+        "instructions": "45",
+        "total_instructions": "45",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

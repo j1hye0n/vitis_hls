@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "/home/hyeon/workspace/dct/dct_hls_solution",
+    "arguments": [
+      "/tools/xilinx/Vitis/2024.2/vcxx/libexec/clang++",
+      "--gcc-toolchain=/tools/xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/tools/xilinx/Vitis/2024.2/common/technology/autopilot",
+      "-fhlstoplevel=dct",
+      "-c",
+      "/home/hyeon/workspace/dct/dct_hls_solution/../dct.cpp"
+    ],
+    "file": "/home/hyeon/workspace/dct/dct_hls_solution/../dct.cpp"
+  },
+  {
+    "directory": "/home/hyeon/workspace/dct/dct_hls_solution",
+    "arguments": [
+      "/tools/xilinx/Vitis/2024.2/vcxx/libexec/clang++",
+      "--gcc-toolchain=/tools/xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/tools/xilinx/Vitis/2024.2/include",
+      "-c",
+      "/home/hyeon/workspace/dct/dct_hls_solution/../dct_test.cpp"
+    ],
+    "file": "/home/hyeon/workspace/dct/dct_hls_solution/../dct_test.cpp"
+  }
+]

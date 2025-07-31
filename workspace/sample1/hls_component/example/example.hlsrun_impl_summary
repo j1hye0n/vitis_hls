@@ -1,0 +1,268 @@
+<ENTRY>
+{
+ "thisFile": "/home/hyeon/workspace/sample1/hls_component/example/example.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Jul 11 15:03:32 2025",
+ "timestampMillis": "1752213812252",
+ "buildStep": {
+  "cmdId": "54eff5c0-62fc-4233-abf0-1ae8f13e6edb",
+  "name": "vitis-run",
+  "logFile": "/home/hyeon/workspace/sample1/hls_component/example/logs/example.steps.log",
+  "commandLine": "/tools/xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --impl --config /home/hyeon/workspace/sample1/hls_component/hls_config.cfg --work_dir example ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "/home/hyeon/workspace/sample1/hls_component/hls_config.cfg",
+   "--work_dir",
+   "example"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/hyeon/workspace/sample1/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jul 11 15:03:32 2025",
+ "timestampMillis": "1752213812253",
+ "status": {
+  "cmdId": "54eff5c0-62fc-4233-abf0-1ae8f13e6edb",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri Jul 11 15:03:42 2025",
+ "timestampMillis": "1752213822576",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "example",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/hyeon/workspace/sample1/adder.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Jul 11 15:03:42 2025",
+ "timestampMillis": "1752213822577",
+ "buildStep": {
+  "cmdId": "549b7bab-91a8-4acd-9a10-342ed70749d2",
+  "name": "",
+  "logFile": "/home/hyeon/workspace/sample1/hls_component/example/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/hyeon/workspace/sample1/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jul 11 15:03:42 2025",
+ "timestampMillis": "1752213822578",
+ "status": {
+  "cmdId": "549b7bab-91a8-4acd-9a10-342ed70749d2",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jul 11 15:03:42 2025",
+ "timestampMillis": "1752213822579",
+ "report": {
+  "path": "/home/hyeon/workspace/sample1/hls_component/example/hls/impl/verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jul 11 15:03:42 2025",
+ "timestampMillis": "1752213822580",
+ "report": {
+  "path": "/home/hyeon/workspace/sample1/hls_component/example/hls/impl/report/verilog/export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jul 11 15:03:42 2025",
+ "timestampMillis": "1752213822580",
+ "report": {
+  "path": "/home/hyeon/workspace/sample1/hls_component/example/hls/impl/report/verilog/export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jul 11 15:03:42 2025",
+ "timestampMillis": "1752213822581",
+ "report": {
+  "path": "/home/hyeon/workspace/sample1/hls_component/example/hls/impl/verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jul 11 15:03:42 2025",
+ "timestampMillis": "1752213822581",
+ "report": {
+  "path": "/home/hyeon/workspace/sample1/hls_component/example/hls/impl/report/verilog/export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jul 11 15:03:42 2025",
+ "timestampMillis": "1752213822582",
+ "report": {
+  "path": "/home/hyeon/workspace/sample1/hls_component/example/hls/impl/report/verilog/export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jul 11 15:09:16 2025",
+ "timestampMillis": "1752214156022",
+ "report": {
+  "path": "/home/hyeon/workspace/sample1/hls_component/example/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jul 11 15:09:16 2025",
+ "timestampMillis": "1752214156605",
+ "report": {
+  "path": "/home/hyeon/workspace/sample1/hls_component/example/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jul 11 15:09:16 2025",
+ "timestampMillis": "1752214156605",
+ "status": {
+  "cmdId": "549b7bab-91a8-4acd-9a10-342ed70749d2",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jul 11 15:09:24 2025",
+ "timestampMillis": "1752214164178",
+ "status": {
+  "cmdId": "54eff5c0-62fc-4233-abf0-1ae8f13e6edb",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jul 11 15:09:24 2025",
+ "timestampMillis": "1752214164355",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jul 11 15:09:24 2025",
+ "timestampMillis": "1752214164357",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

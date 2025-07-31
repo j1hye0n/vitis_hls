@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/hyeon/workspace/dct/dct_hls_solution/hls/./sim/autowrap/testbench/dct.cpp_pre.cpp.tb.cpp

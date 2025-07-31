@@ -1,0 +1,11 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <name>
+        <value string="hls"/>
+    </name>
+    <project>
+        <value string="sha3_256_hls"/>
+    </project>
+    <flowTarget value="vivado"/>
+    <writeConfigIni value="true"/>
+</AutoPilot:solution>
+

@@ -1,0 +1,13 @@
+---
+MainSourceFile:  /home/hyeon/workspace/dct/dct_hls_solution/hls/.autopilot/db/dct.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_22_1:  '
+    FileOffset:      22
+    FilePath:        dct.cpp
+    Replacements:    
+      - FilePath:        /home/hyeon/workspace/dct/dct_hls_solution/hls/.autopilot/db/dct.pp.0.cpp
+        Offset:          1060962
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_22_1: '
+...

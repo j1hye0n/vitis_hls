@@ -1,0 +1,102 @@
+<profile>
+<RunData>
+  <RUN_TYPE>synth</RUN_TYPE>
+  <VIVADO_VERSION>v.2024.2</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>NA</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>NA</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>NA</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>NA</SLACK_FINAL>
+  <SLACK_ROUTE></SLACK_ROUTE>
+  <SLACK_SYNTH>NA</SLACK_SYNTH>
+  <TIMING_MET>NA</TIMING_MET>
+  <TNS_FINAL>NA</TNS_FINAL>
+  <TNS_ROUTE>NA</TNS_ROUTE>
+  <TNS_SYNTH>NA</TNS_SYNTH>
+  <WNS_FINAL>NA</WNS_FINAL>
+  <WNS_ROUTE>NA</WNS_ROUTE>
+  <WNS_SYNTH>NA</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>0</BRAM>
+    <CLB>0</CLB>
+    <DSP>0</DSP>
+    <FF>61</FF>
+    <LATCH>0</LATCH>
+    <LUT>64</LUT>
+    <SRL>0</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>120</BRAM>
+    <CLB>0</CLB>
+    <DSP>80</DSP>
+    <FF>35200</FF>
+    <LUT>17600</LUT>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="example" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="1">BUS_A_s_axi_U</SubModules>
+    <Resources FF="61" LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/BUS_A_s_axi_U" DEPTH="1" FILE_NAME="example.v" ORIG_REF_NAME="example_BUS_A_s_axi">
+    <Resources FF="61" LUT="64" LogicLUT="64"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="3.164" DATAPATH_LOGIC_DELAY="1.780" DATAPATH_NET_DELAY="1.384" ENDPOINT_PIN="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[7]/D" LOGIC_LEVELS="4" MAX_FANOUT="4" SLACK="" STARTPOINT_PIN="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[3]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[3]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="example_BUS_A_s_axi.v" LINE_NUMBER="278"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[7]_i_4" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="example.v" LINE_NUMBER="119"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[7]_i_8" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="example.v" LINE_NUMBER="119"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="example_BUS_A_s_axi.v" LINE_NUMBER="150"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[7]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="example_BUS_A_s_axi.v" LINE_NUMBER="434"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="3.146" DATAPATH_LOGIC_DELAY="1.864" DATAPATH_NET_DELAY="1.282" ENDPOINT_PIN="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[5]/D" LOGIC_LEVELS="5" MAX_FANOUT="4" SLACK="" STARTPOINT_PIN="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[2]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[2]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="example_BUS_A_s_axi.v" LINE_NUMBER="278"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="example.v" LINE_NUMBER="119"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[3]_i_5" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="example.v" LINE_NUMBER="119"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="example_BUS_A_s_axi.v" LINE_NUMBER="150"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="example_BUS_A_s_axi.v" LINE_NUMBER="150"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[5]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="example_BUS_A_s_axi.v" LINE_NUMBER="434"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="3.100" DATAPATH_LOGIC_DELAY="1.716" DATAPATH_NET_DELAY="1.384" ENDPOINT_PIN="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[6]/D" LOGIC_LEVELS="4" MAX_FANOUT="4" SLACK="" STARTPOINT_PIN="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[3]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[3]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="example_BUS_A_s_axi.v" LINE_NUMBER="278"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[7]_i_4" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="example.v" LINE_NUMBER="119"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[7]_i_8" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="example.v" LINE_NUMBER="119"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="example_BUS_A_s_axi.v" LINE_NUMBER="150"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[6]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="example_BUS_A_s_axi.v" LINE_NUMBER="434"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="3.041" DATAPATH_LOGIC_DELAY="1.759" DATAPATH_NET_DELAY="1.282" ENDPOINT_PIN="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[4]/D" LOGIC_LEVELS="5" MAX_FANOUT="4" SLACK="" STARTPOINT_PIN="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[2]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[2]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="example_BUS_A_s_axi.v" LINE_NUMBER="278"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="example.v" LINE_NUMBER="119"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[3]_i_5" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="example.v" LINE_NUMBER="119"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="example_BUS_A_s_axi.v" LINE_NUMBER="150"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="example_BUS_A_s_axi.v" LINE_NUMBER="150"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[4]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="example_BUS_A_s_axi.v" LINE_NUMBER="434"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="2.808" DATAPATH_LOGIC_DELAY="1.648" DATAPATH_NET_DELAY="1.160" ENDPOINT_PIN="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[3]/D" LOGIC_LEVELS="3" MAX_FANOUT="4" SLACK="" STARTPOINT_PIN="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[0]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="example_BUS_A_s_axi.v" LINE_NUMBER="278"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[3]_i_4" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="example.v" LINE_NUMBER="119"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="example_BUS_A_s_axi.v" LINE_NUMBER="150"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[3]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="example_BUS_A_s_axi.v" LINE_NUMBER="434"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/example_design_analysis_synth.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/example_failfast_synth.rpt"/>
+  <ReportFile TYPE="power" PATH="verilog/report/example_power_synth.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/example_timing_synth.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/example_timing_paths_synth.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/example_utilization_synth.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/example_utilization_hierarchical_synth.rpt"/>
+</VivadoReportFiles>
+</profile>

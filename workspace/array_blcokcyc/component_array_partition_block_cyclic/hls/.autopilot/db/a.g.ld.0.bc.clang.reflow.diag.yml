@@ -1,0 +1,441 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_matmul_partition_ir
+Args:            
+  - Callee:          'matmul_partition(int*, int*, int*, int, int)'
+    DebugLoc:        { File: ../matmul_partition.cpp, Line: 24, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_matmul_partition_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../matmul_partition.cpp, Line: 29, Column: 6 }
+Function:        _Z16matmul_partitionPiS_S_ii
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          A
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '16'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../matmul_partition.cpp, Line: 30, Column: 9 }
+Function:        _Z16matmul_partitionPiS_S_ii
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          B
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Block
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '16'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../matmul_partition.cpp, Line: 46, Column: 5 }
+Function:        _Z16matmul_partitionPiS_S_ii
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        in124seq
+  - ArrayName:       in1
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        readA
+  - String:          ' '
+  - LoopLoc:         '../matmul_partition.cpp:46:5'
+  - String:          ' '
+  - Function:        'matmul_partition(int*, int*, int*, int, int)'
+    DebugLoc:        { File: ../matmul_partition.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ../matmul_partition.cpp, Line: 52, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.body.load.45
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../matmul_partition.cpp, Line: 57, Column: 5 }
+Function:        _Z16matmul_partitionPiS_S_ii
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        in225seq
+  - ArrayName:       in2
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        readB
+  - String:          ' '
+  - LoopLoc:         '../matmul_partition.cpp:57:5'
+  - String:          ' '
+  - Function:        'matmul_partition(int*, int*, int*, int, int)'
+    DebugLoc:        { File: ../matmul_partition.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ../matmul_partition.cpp, Line: 63, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.body14.load.45
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../matmul_partition.cpp, Line: 91, Column: 5 }
+Function:        _Z16matmul_partitionPiS_S_ii
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        out_r26seq
+  - ArrayName:       out_r
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        writeC
+  - String:          ' '
+  - LoopLoc:         '../matmul_partition.cpp:91:5'
+  - String:          ' '
+  - Function:        'matmul_partition(int*, int*, int*, int, int)'
+    DebugLoc:        { File: ../matmul_partition.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: ../matmul_partition.cpp, Line: 97, Column: 20 }
+  - OrigDirection:   write
+  - OrigID:          for.body80.store.18
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../matmul_partition.cpp, Line: 91, Column: 5 }
+Function:        _Z16matmul_partitionPiS_S_ii
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../matmul_partition.cpp, Line: 91, Column: 5 }
+  - OrigDirection:   write
+  - OrigID:          out_r26seq
+  - ArrayName:       out_r
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        writeC
+  - String:          ' '
+  - LoopLoc:         '../matmul_partition.cpp:91:5'
+  - String:          ' '
+  - Function:        'matmul_partition(int*, int*, int*, int, int)'
+    DebugLoc:        { File: ../matmul_partition.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../matmul_partition.cpp, Line: 57, Column: 5 }
+Function:        _Z16matmul_partitionPiS_S_ii
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../matmul_partition.cpp, Line: 57, Column: 5 }
+  - OrigDirection:   read
+  - OrigID:          in225seq
+  - ArrayName:       in2
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        readB
+  - String:          ' '
+  - LoopLoc:         '../matmul_partition.cpp:57:5'
+  - String:          ' '
+  - Function:        'matmul_partition(int*, int*, int*, int, int)'
+    DebugLoc:        { File: ../matmul_partition.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../matmul_partition.cpp, Line: 46, Column: 5 }
+Function:        _Z16matmul_partitionPiS_S_ii
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../matmul_partition.cpp, Line: 46, Column: 5 }
+  - OrigDirection:   read
+  - OrigID:          in124seq
+  - ArrayName:       in1
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        readA
+  - String:          ' '
+  - LoopLoc:         '../matmul_partition.cpp:46:5'
+  - String:          ' '
+  - Function:        'matmul_partition(int*, int*, int*, int, int)'
+    DebugLoc:        { File: ../matmul_partition.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        readA
+  - String:          '> at '
+  - LoopLoc:         '../matmul_partition.cpp:46:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        readB
+  - String:          '> at '
+  - LoopLoc:         '../matmul_partition.cpp:57:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        lreorder2
+  - String:          '> at '
+  - LoopLoc:         '../matmul_partition.cpp:75:13'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        writeC
+  - String:          '> at '
+  - LoopLoc:         '../matmul_partition.cpp:91:5'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../matmul_partition.cpp, Line: 79, Column: 17 }
+Function:        _Z16matmul_partitionPiS_S_ii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        lreorder3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../matmul_partition.cpp, Line: 24, Column: 0 }
+Function:        _Z16matmul_partitionPiS_S_ii
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        lreorder3
+  - String:          ''' ('
+  - LoopLoc:         '../matmul_partition.cpp:79:17'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matmul_partition
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../matmul_partition.cpp, Line: 46, Column: 5 }
+Function:        _Z16matmul_partitionPiS_S_ii
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        readA
+  - String:          ' '
+  - LoopLoc:         '../matmul_partition.cpp:46:5'
+  - String:          ' '
+  - Function:        'matmul_partition(int*, int*, int*, int, int)'
+    DebugLoc:        { File: ../matmul_partition.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../matmul_partition.cpp, Line: 46, Column: 5 }
+Function:        _Z16matmul_partitionPiS_S_ii
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        readA
+  - String:          '''('
+  - LoopLoc:         '../matmul_partition.cpp:46:5'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../matmul_partition.cpp, Line: 57, Column: 5 }
+Function:        _Z16matmul_partitionPiS_S_ii
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        readB
+  - String:          ' '
+  - LoopLoc:         '../matmul_partition.cpp:57:5'
+  - String:          ' '
+  - Function:        'matmul_partition(int*, int*, int*, int, int)'
+    DebugLoc:        { File: ../matmul_partition.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../matmul_partition.cpp, Line: 57, Column: 5 }
+Function:        _Z16matmul_partitionPiS_S_ii
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        readB
+  - String:          '''('
+  - LoopLoc:         '../matmul_partition.cpp:57:5'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../matmul_partition.cpp, Line: 91, Column: 5 }
+Function:        _Z16matmul_partitionPiS_S_ii
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq2
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        writeC
+  - String:          ' '
+  - LoopLoc:         '../matmul_partition.cpp:91:5'
+  - String:          ' '
+  - Function:        'matmul_partition(int*, int*, int*, int, int)'
+    DebugLoc:        { File: ../matmul_partition.cpp, Line: 24, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../matmul_partition.cpp, Line: 91, Column: 5 }
+Function:        _Z16matmul_partitionPiS_S_ii
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        writeC
+  - String:          '''('
+  - LoopLoc:         '../matmul_partition.cpp:91:5'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

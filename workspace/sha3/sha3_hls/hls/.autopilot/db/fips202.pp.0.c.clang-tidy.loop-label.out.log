@@ -1,0 +1,70 @@
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:443:3: warning: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
+  for(i=0;i<8;i++)
+  ^~~
+  VITIS_LOOP_26_1: 
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:443:3: note: FIX-IT applied suggested code changes
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:452:3: warning: Added loop label VITIS_LOOP_43_1:   [xilinx-label-all-loops]
+  for(i=0;i<8;i++)
+  ^~~
+  VITIS_LOOP_43_1: 
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:452:3: note: FIX-IT applied suggested code changes
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:754:3: warning: Added loop label VITIS_LOOP_359_1:   [xilinx-label-all-loops]
+  for(i=0;i<25;i++)
+  ^~~
+  VITIS_LOOP_359_1: 
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:754:3: note: FIX-IT applied suggested code changes
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:766:3: warning: Added loop label VITIS_LOOP_384_1:   [xilinx-label-all-loops]
+  while(pos+inlen >= r) {
+  ^~~~~
+  VITIS_LOOP_384_1: 
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:766:3: note: FIX-IT applied suggested code changes
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:767:5: warning: Added loop label VITIS_LOOP_385_2:   [xilinx-label-all-loops]
+    for(i=pos;i<r;i++)
+    ^~~
+    VITIS_LOOP_385_2: 
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:767:5: note: FIX-IT applied suggested code changes
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:774:3: warning: Added loop label VITIS_LOOP_392_3:   [xilinx-label-all-loops]
+  for(i=pos;i<pos+inlen;i++)
+  ^~~
+  VITIS_LOOP_392_3: 
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:774:3: note: FIX-IT applied suggested code changes
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:794:3: warning: Added loop label VITIS_LOOP_437_1:   [xilinx-label-all-loops]
+  while(outlen) {
+  ^~~~~
+  VITIS_LOOP_437_1: 
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:794:3: note: FIX-IT applied suggested code changes
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:799:5: warning: Added loop label VITIS_LOOP_442_2:   [xilinx-label-all-loops]
+    for(i=pos;i < r && i < pos+outlen; i++)
+    ^~~
+    VITIS_LOOP_442_2: 
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:799:5: note: FIX-IT applied suggested code changes
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:816:3: warning: Added loop label VITIS_LOOP_472_1:   [xilinx-label-all-loops]
+  for(i=0;i<25;i++)
+  ^~~
+  VITIS_LOOP_472_1: 
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:816:3: note: FIX-IT applied suggested code changes
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:823:2: warning: Added loop label VITIS_LOOP_479_2:   [xilinx-label-all-loops]
+ for (int j=inlen ; j>=r ; j-=r){
+ ^~~
+ VITIS_LOOP_479_2: 
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:823:2: note: FIX-IT applied suggested code changes
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:847:3: warning: Added loop label VITIS_LOOP_516_1:   [xilinx-label-all-loops]
+  while(nblocks) {
+  ^~~~~
+  VITIS_LOOP_516_1: 
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:847:3: note: FIX-IT applied suggested code changes
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:849:5: warning: Added loop label VITIS_LOOP_518_2:   [xilinx-label-all-loops]
+    for(i=0;i<r/8;i++)
+    ^~~
+    VITIS_LOOP_518_2: 
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:849:5: note: FIX-IT applied suggested code changes
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:955:3: warning: Added loop label VITIS_LOOP_761_1:   [xilinx-label-all-loops]
+  for(i=0;i<4;i++)
+  ^~~
+  VITIS_LOOP_761_1: 
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:955:3: note: FIX-IT applied suggested code changes
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:966:3: warning: Added loop label VITIS_LOOP_781_1:   [xilinx-label-all-loops]
+  for(i=0;i<8;i++)
+  ^~~
+  VITIS_LOOP_781_1: 
+/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c:966:3: note: FIX-IT applied suggested code changes

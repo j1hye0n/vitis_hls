@@ -1,0 +1,8 @@
+<pragmas>
+<pragma file="fips.c" line="489" pragmaType="pipeline" parentfunction="keccak_absorb_once" off="1" ii="0" rewind="0" style=""/>
+<pragma file="fips.c" line="481" pragmaType="pipeline" parentfunction="keccak_absorb_once" off="1" ii="0" rewind="0" style=""/>
+<pragma file="fips.c" line="473" pragmaType="pipeline" parentfunction="keccak_absorb_once" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="fips.c" line="44" pragmaType="pipeline" parentfunction="store64" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="fips.c" line="129" pragmaType="unroll" parentfunction="KeccakF1600_StatePermute" factor="1" skip_exit_check="0"/>
+<pragma file="fips.c" line="128" pragmaType="pipeline" parentfunction="KeccakF1600_StatePermute" off="1" ii="0" rewind="0" style=""/>
+</pragmas>

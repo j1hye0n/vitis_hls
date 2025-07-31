@@ -1,0 +1,61 @@
+INFO-FLOW: Workspace /home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls opened at Wed Jul 30 17:40:24 KST 2025
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute       write_ini /home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls_config.cfg -apsfile /home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/hls.aps -filepaths relative -quiet 
+Command     open_solution done; 0.24 sec.
+Execute     set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+Execute       create_platform xc7z020clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: /tools/xilinx/Vitis/2024.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/xilinx/Vivado/2024.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command       create_platform done; 2.88 sec.
+Execute       source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.22 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 3.12 sec.
+Execute     create_clock -period 10 
+INFO: [HLS 200-1510] Running: create_clock -period 10 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     csim_design 
+INFO: [HLS 200-1510] Running: csim_design 
+Execute       ::AP::init_summary_file csim 
+Execute         AP::app_get_file_relativeroot [AP::app_get_root] {}
+Command       AP::init_summary_file done; 2.65 sec.
+Execute       write_ini /home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls_config.cfg -apsfile /home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/hls.aps -filepaths relative -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+Execute       send_msg_by_id ERROR @200-627@ 
+ERROR: [HLS 200-627] Cannot find C test bench. Please specify test bench files using 'add_files -tb'.
+INFO-FLOW: AESL_CSIM::c_sim errorInfo:
+NONE
+    while executing
+"::AESL_CSIM::c_sim "$argn" "
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command     csim_design done; error code: 2; 2.88 sec.
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:02; Allocated memory: 16.000 MB.
+Command   ap_source done; error code: 1; 6.45 sec.
+Execute   cleanup_all 

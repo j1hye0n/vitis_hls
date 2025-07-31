@@ -1,0 +1,230 @@
+{
+    "top_level_hw_fn_id": 222,
+    "functions": {
+        "200": {
+            "fn_id": 200,
+            "mangled_name": "_GLOBAL__sub_I_dct_test.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_dct_test",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "/home/hyeon/workspace/dct/dct_test.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "201": {
+            "fn_id": 201,
+            "mangled_name": "__cxx_global_var_init",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "/home/hyeon/workspace/dct/dct_test.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "212": {
+            "fn_id": 212,
+            "mangled_name": "_GLOBAL__sub_I_dct.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_dct",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "/home/hyeon/workspace/dct/dct.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "213": {
+            "fn_id": 213,
+            "mangled_name": "__cxx_global_var_init.2",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "/home/hyeon/workspace/dct/dct.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "17": {
+            "fn_id": 17,
+            "mangled_name": "llvm.memcpy.p0i8.p0i8.i64",
+            "fully_qualified_name": "llvm.memcpy.p0i8.p0i8.i64",
+            "is_sys": true,
+            "is_declaration": true,
+            "supports_dataflow": false
+        },
+        "218": {
+            "fn_id": 218,
+            "mangled_name": "_GLOBAL__sub_I_dct.cpp.5",
+            "fully_qualified_name": "_GLOBAL__sub_I_dct",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "/home/hyeon/workspace/dct/dct.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "219": {
+            "fn_id": 219,
+            "mangled_name": "__cxx_global_var_init.6",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "/home/hyeon/workspace/dct/dct.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "220": {
+            "fn_id": 220,
+            "mangled_name": "__dtor__ZStL8__ioinit",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "/tools/xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "222": {
+            "fn_id": 222,
+            "mangled_name": "dct",
+            "fully_qualified_name": "dct",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "/home/hyeon/workspace/dct/dct.cpp",
+                "line": 92,
+                "column": 1
+            }
+        },
+        "223": {
+            "fn_id": 223,
+            "mangled_name": "_Z9read_dataPsPA8_s",
+            "fully_qualified_name": "read_data",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "/home/hyeon/workspace/dct/dct.cpp",
+                "line": 64,
+                "column": 1
+            }
+        },
+        "224": {
+            "fn_id": 224,
+            "mangled_name": "_Z6dct_2dPA8_sS0_",
+            "fully_qualified_name": "dct_2d",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "/home/hyeon/workspace/dct/dct.cpp",
+                "line": 30,
+                "column": 1
+            }
+        },
+        "225": {
+            "fn_id": 225,
+            "mangled_name": "_Z10write_dataPA8_sPs",
+            "fully_qualified_name": "write_data",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "/home/hyeon/workspace/dct/dct.cpp",
+                "line": 79,
+                "column": 1
+            }
+        },
+        "226": {
+            "fn_id": 226,
+            "mangled_name": "_Z6dct_1dPsS_",
+            "fully_qualified_name": "dct_1d",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "/home/hyeon/workspace/dct/dct.cpp",
+                "line": 8,
+                "column": 1
+            }
+        }
+    },
+    "loops": {
+        "18": {
+            "fn_id": 223,
+            "lp_id": 18,
+            "label": "RD_Loop_Row"
+        },
+        "19": {
+            "fn_id": 223,
+            "lp_id": 19,
+            "label": "RD_Loop_Col"
+        },
+        "20": {
+            "fn_id": 224,
+            "lp_id": 20,
+            "label": "Xpose_Col_Outer_Loop"
+        },
+        "21": {
+            "fn_id": 224,
+            "lp_id": 21,
+            "label": "Xpose_Col_Inner_Loop"
+        },
+        "22": {
+            "fn_id": 224,
+            "lp_id": 22,
+            "label": "Col_DCT_Loop"
+        },
+        "23": {
+            "fn_id": 224,
+            "lp_id": 23,
+            "label": "Xpose_Row_Outer_Loop"
+        },
+        "24": {
+            "fn_id": 224,
+            "lp_id": 24,
+            "label": "Xpose_Row_Inner_Loop"
+        },
+        "25": {
+            "fn_id": 224,
+            "lp_id": 25,
+            "label": "Row_DCT_Loop"
+        },
+        "26": {
+            "fn_id": 225,
+            "lp_id": 26,
+            "label": "WR_Loop_Row"
+        },
+        "27": {
+            "fn_id": 225,
+            "lp_id": 27,
+            "label": "WR_Loop_Col"
+        },
+        "28": {
+            "fn_id": 226,
+            "lp_id": 28,
+            "label": "DCT_Outer_Loop"
+        },
+        "29": {
+            "fn_id": 226,
+            "lp_id": 29
+        }
+    }
+}

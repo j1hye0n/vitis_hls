@@ -1,0 +1,7 @@
+sv work "glbl.v"
+sv xil_defaultlib "example_BUS_A_s_axi.v"
+sv xil_defaultlib "AESL_axi_slave_BUS_A.v"
+sv xil_defaultlib "example.v"
+sv xil_defaultlib "example.autotb.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+

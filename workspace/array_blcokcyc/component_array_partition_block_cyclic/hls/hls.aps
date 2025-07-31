@@ -1,0 +1,24 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <name>
+        <value string="hls"/>
+    </name>
+    <project>
+        <value string="component_array_partition_block_cyclic"/>
+    </project>
+    <flowTarget value="vivado"/>
+    <targetInfo>
+        <TargetInfo value="xc7z020:-clg400:-1"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/zynq/zynq" name="DefaultPlatform"/>
+    </libraryList>
+    <clockList>
+        <clock name="default" period="10ns" default="false"/>
+    </clockList>
+    <config>
+        <config_cosim trace_level="all" wave_debug="1"/>
+        <config_csim code_analyzer="1"/>
+        <config_export flow="impl"/>
+    </config>
+</AutoPilot:solution>
+

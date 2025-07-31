@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic",
+    "arguments": [
+      "/tools/xilinx/Vitis/2024.2/vcxx/libexec/clang++",
+      "--gcc-toolchain=/tools/xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/tools/xilinx/Vitis/2024.2/common/technology/autopilot",
+      "-fhlstoplevel=matmul_partition",
+      "-c",
+      "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/../matmul_partition.cpp"
+    ],
+    "file": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/../matmul_partition.cpp"
+  },
+  {
+    "directory": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic",
+    "arguments": [
+      "/tools/xilinx/Vitis/2024.2/vcxx/libexec/clang++",
+      "--gcc-toolchain=/tools/xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/tools/xilinx/Vitis/2024.2/include",
+      "-c",
+      "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/../matmul_partition_test.cpp"
+    ],
+    "file": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/../matmul_partition_test.cpp"
+  }
+]

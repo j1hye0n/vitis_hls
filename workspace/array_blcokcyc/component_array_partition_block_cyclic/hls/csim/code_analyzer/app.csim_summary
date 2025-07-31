@@ -1,0 +1,80 @@
+<ENTRY>
+{
+ "thisFile": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/csim/code_analyzer/app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Jul 21 16:25:21 2025",
+ "timestampMillis": "1753082721849",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Jul 21 16:25:21 2025",
+ "timestampMillis": "1753082721852",
+ "buildStep": {
+  "cmdId": "dc7bb65e-6603-11f0-81db-356bea69b329",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jul 21 16:25:21 2025",
+ "timestampMillis": "1753082721853",
+ "status": {
+  "cmdId": "dc7bb65e-6603-11f0-81db-356bea69b329",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jul 21 16:25:21 2025",
+ "timestampMillis": "1753082721986",
+ "status": {
+  "cmdId": "dc7bb65e-6603-11f0-81db-356bea69b329",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jul 21 16:25:21 2025",
+ "timestampMillis": "1753082721987",
+ "report": {
+  "path": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "VCXX_CODE_ANALYZER",
+  "cmdId": "dc7bb65e-6603-11f0-81db-356bea69b329"
+ }
+}
+</ENTRY>

@@ -1,0 +1,21 @@
+Execute         source -notrace -encoding utf-8 /tools/xilinx/Vitis/2024.2/tps/tcl/tcl8.6/clock.tcl 
+Execute           source -encoding utf-8 /tools/xilinx/Vitis/2024.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+INFO-FLOW: Workspace /home/hyeon/workspace/sha3_syn/sha3_256_hls2/hls opened at Wed Jul 30 15:04:23 KST 2025
+Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute         write_ini /home/hyeon/workspace/sha3_syn/sha3_256_hls2/hls_config.cfg -apsfile /home/hyeon/workspace/sha3_syn/sha3_256_hls2/hls/hls.aps -filepaths relative -quiet 
+Command       open_solution done; 0.16 sec.
+Command     open_component done; 0.18 sec.
+Execute     add_files fips.c 
+INFO: [HLS 200-1510] Running: add_files fips.c 
+INFO: [HLS 200-10] Adding design file 'fips.c' to the project
+Execute     add_files fips202.h 
+INFO: [HLS 200-1510] Running: add_files fips202.h 
+INFO: [HLS 200-10] Adding design file 'fips202.h' to the project
+Execute     set_top sha3_256_hw 
+INFO: [HLS 200-1510] Running: set_top sha3_256_hw 
+Execute     open_solution -reset _solution2 
+INFO: [HLS 200-1510] Running: open_solution -reset _solution2 
+Execute       write_ini /home/hyeon/workspace/sha3_syn/sha3_256_hls2_solution2/hls_config.cfg -apsfile /home/hyeon/workspace/sha3_syn/sha3_256_hls2_solution2/hls/hls.aps -filepaths relative -quiet 
+Execute       cleanup_all 
+Execute       cleanup_all 

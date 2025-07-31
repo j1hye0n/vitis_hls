@@ -1,0 +1,19 @@
+{
+  "0": {
+    "basicblocks": 53,
+    "calls": "",
+    "file": "matmul_partition.cpp",
+    "fileloc": 24,
+    "instructions": 451,
+    "loads": {
+      "L": 33,
+      "T": 2
+    },
+    "name": "matmul_partition",
+    "stores": {
+      "L": 33,
+      "T": 1
+    },
+    "total_instructions": 451
+  }
+}

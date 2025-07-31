@@ -1,0 +1,261 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fips.c, Line: 482, Column: 10 }
+Function:        keccak_absorb_once
+Args:            
+  - Callee:          load64
+    DebugLoc:        { File: fips.c, Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          keccak_absorb_once
+    DebugLoc:        { File: fips.c, Line: 469, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fips.c, Line: 485, Column: 5 }
+Function:        keccak_absorb_once
+Args:            
+  - Callee:          KeccakF1600_StatePermute
+    DebugLoc:        { File: fips.c, Line: 84, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          keccak_absorb_once
+    DebugLoc:        { File: fips.c, Line: 469, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fips.c, Line: 759, Column: 3 }
+Function:        sha3_256_hw
+Args:            
+  - Callee:          keccak_absorb_once
+    DebugLoc:        { File: fips.c, Line: 469, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          sha3_256_hw
+    DebugLoc:        { File: fips.c, Line: 755, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fips.c, Line: 760, Column: 3 }
+Function:        sha3_256_hw
+Args:            
+  - Callee:          KeccakF1600_StatePermute
+    DebugLoc:        { File: fips.c, Line: 84, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          sha3_256_hw
+    DebugLoc:        { File: fips.c, Line: 755, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fips.c, Line: 762, Column: 5 }
+Function:        sha3_256_hw
+Args:            
+  - Callee:          store64
+    DebugLoc:        { File: fips.c, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          sha3_256_hw
+    DebugLoc:        { File: fips.c, Line: 755, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fips.c, Line: 482, Column: 10 }
+Function:        keccak_absorb_once
+Args:            
+  - Callee:          load64
+    DebugLoc:        { File: fips.c, Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          keccak_absorb_once
+    DebugLoc:        { File: fips.c, Line: 469, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fips.c, Line: 485, Column: 5 }
+Function:        keccak_absorb_once
+Args:            
+  - Callee:          KeccakF1600_StatePermute
+    DebugLoc:        { File: fips.c, Line: 84, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          keccak_absorb_once
+    DebugLoc:        { File: fips.c, Line: 469, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fips.c, Line: 759, Column: 3 }
+Function:        sha3_256_hw
+Args:            
+  - Callee:          keccak_absorb_once
+    DebugLoc:        { File: fips.c, Line: 469, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          sha3_256_hw
+    DebugLoc:        { File: fips.c, Line: 755, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fips.c, Line: 760, Column: 3 }
+Function:        sha3_256_hw
+Args:            
+  - Callee:          KeccakF1600_StatePermute
+    DebugLoc:        { File: fips.c, Line: 84, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          sha3_256_hw
+    DebugLoc:        { File: fips.c, Line: 755, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fips.c, Line: 762, Column: 5 }
+Function:        sha3_256_hw
+Args:            
+  - Callee:          store64
+    DebugLoc:        { File: fips.c, Line: 40, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          sha3_256_hw
+    DebugLoc:        { File: fips.c, Line: 755, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_sha3_256_hw_ir
+Args:            
+  - Callee:          sha3_256_hw
+    DebugLoc:        { File: fips.c, Line: 755, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_sha3_256_hw_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: fips.c, Line: 469, Column: 0 }
+Function:        keccak_absorb_once
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          load64
+    DebugLoc:        { File: fips.c, Line: 22, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          keccak_absorb_once
+    DebugLoc:        { File: fips.c, Line: 469, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: fips.c, Line: 755, Column: 0 }
+Function:        sha3_256_hw
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          keccak_absorb_once
+    DebugLoc:        { File: fips.c, Line: 469, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          sha3_256_hw
+    DebugLoc:        { File: fips.c, Line: 755, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: fips.c, Line: 755, Column: 0 }
+Function:        sha3_256_hw
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          store64
+    DebugLoc:        { File: fips.c, Line: 40, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          sha3_256_hw
+    DebugLoc:        { File: fips.c, Line: 755, Column: 0 }
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: fips.c, Line: 27, Column: 20 }
+Function:        sha3_256_hw
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          in
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            AdderessOnRegister
+DebugLoc:        { File: fips.c, Line: 27, Column: 20 }
+Function:        sha3_256_hw
+Args:            
+  - String:          Ignore address on register port
+  - String:          ' '''
+  - String:          in
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            AdderessOnRegister
+DebugLoc:        { File: fips.c, Line: 490, Column: 22 }
+Function:        sha3_256_hw
+Args:            
+  - String:          Ignore address on register port
+  - String:          ' '''
+  - String:          in
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            AdderessOnRegister
+DebugLoc:        { File: fips.c, Line: 27, Column: 20 }
+Function:        sha3_256_hw
+Args:            
+  - String:          Ignore address on register port
+  - String:          ' '''
+  - String:          in
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            AdderessOnRegister
+DebugLoc:        { File: fips.c, Line: 490, Column: 22 }
+Function:        sha3_256_hw
+Args:            
+  - String:          Ignore address on register port
+  - String:          ' '''
+  - String:          in
+  - String:          ''''
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_26_1
+  - String:          '> at '
+  - LoopLoc:         'fips.c:26:20'
+  - String:          ' '
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fips.c, Line: 485, Column: 5 }
+Function:        sha3_256_hw
+Args:            
+  - Callee:          KeccakF1600_StatePermute
+    DebugLoc:        { File: fips.c, Line: 84, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          sha3_256_hw
+    DebugLoc:        { File: fips.c, Line: 755, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

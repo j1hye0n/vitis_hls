@@ -1,0 +1,2 @@
+14:24:59 INFO  : updated workspace path: 
+14:24:59 INFO  : bash, -c, source /tools/xilinx/Vitis/2024.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/xilinx/Vitis/2024.2/data/embeddedsw/scripts/pyesw//repo.py -st  /tools/xilinx/Vitis/2024.2/data/embeddedsw && deactivate

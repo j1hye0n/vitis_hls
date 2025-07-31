@@ -1,0 +1,49 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'matmul_partition'" level="0">
+<item name = "Date">Mon Jul 21 16:25:51 2025
+</item>
+<item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
+<item name = "Project">component_array_partition_block_cyclic</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">547, 1083, 5.470 us, 10.830 us, 548, 1084, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_matmul_partition_Pipeline_readA_fu_259">matmul_partition_Pipeline_readA, 259, 259, 2.590 us, 2.590 us, 257, 257, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_matmul_partition_Pipeline_readB_fu_284">matmul_partition_Pipeline_readB, 259, 259, 2.590 us, 2.590 us, 257, 257, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_matmul_partition_Pipeline_loop2_lreorder1_lreorder2_fu_309">matmul_partition_Pipeline_loop2_lreorder1_lreorder2, 266, 266, 2.660 us, 2.660 us, 257, 257, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_matmul_partition_Pipeline_writeC_fu_349">matmul_partition_Pipeline_writeC, 261, 261, 2.610 us, 2.610 us, 257, 257, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -1,0 +1,240 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.2 (64-bit)
+  **** SW Build 5238294 on Nov  8 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed Jul 30 13:28:27 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /tools/xilinx/Vitis/2024.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'hyeon' on host 'DESKTOP-S15BKKL.localdomain' (Linux_x86_64 version 6.6.87.2-microsoft-standard-WSL2) on Wed Jul 30 13:28:28 KST 2025
+INFO: [HLS 200-10] On os Ubuntu 22.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/hyeon/workspace/sha3_syn'
+WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'run.tcl'
+INFO: [HLS 200-1510] Running: open_component -reset sha3_256_hls -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening project '/home/hyeon/workspace/sha3_syn/sha3_256_hls'.
+INFO: [HLS 200-10] Opening and resetting solution '/home/hyeon/workspace/sha3_syn/sha3_256_hls/hls'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: add_files fips202.c 
+INFO: [HLS 200-10] Adding design file 'fips202.c' to the project
+INFO: [HLS 200-1510] Running: add_files fips202.h 
+INFO: [HLS 200-10] Adding design file 'fips202.h' to the project
+INFO: [HLS 200-1510] Running: set_top sha3_256_hw 
+INFO: [HLS 200-1510] Running: open_solution -reset solution 
+INFO: [HLS 200-10] Opening and resetting solution '/home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.09 seconds. CPU system time: 0.02 seconds. Elapsed time: 2.62 seconds; current allocated memory: 327.109 MB.
+INFO: [HLS 200-10] Analyzing design file 'fips202.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.35 seconds. CPU system time: 0.4 seconds. Elapsed time: 1 seconds; current allocated memory: 329.129 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 1,277 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,310 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,193 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,176 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,176 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,177 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,177 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,177 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,177 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,233 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,233 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,245 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,243 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,243 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,205 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,224 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-178] Inlining function 'load64' into 'keccak_absorb_once' (fips202.c:466:0)
+INFO: [HLS 214-178] Inlining function 'keccak_absorb_once' into 'sha3_256_hw' (fips202.c:746:0)
+INFO: [HLS 214-178] Inlining function 'store64' into 'sha3_256_hw' (fips202.c:746:0)
+WARNING: [HLS 214-167] The program may have out of bound array access on variable 'in' (fips202.c:27:20)
+WARNING: [HLS 214-450] Ignore address on register port 'in' (fips202.c:27:20)
+WARNING: [HLS 214-450] Ignore address on register port 'in' (fips202.c:481:25)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_469_1> at fips202.c:469:21 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_473_3> at fips202.c:473:23 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_126_1> at fips202.c:126:27 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_480_4> at fips202.c:480:21 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_752_1> at fips202.c:752:21 
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_43_1' is marked as complete unroll implied by the pipeline pragma (fips202.c:43:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_26_1' is marked as complete unroll implied by the pipeline pragma (fips202.c:26:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_43_1' (fips202.c:43:20) in function 'sha3_256_hw' completely with a factor of 8 (fips202.c:746:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_26_1' (fips202.c:26:20) in function 'sha3_256_hw' completely with a factor of 8 (fips202.c:746:0)
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'VITIS_LOOP_472_2'. (fips202.c:472:21)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.68 seconds. CPU system time: 0.54 seconds. Elapsed time: 7.76 seconds; current allocated memory: 338.719 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 338.719 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.05 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.44 seconds; current allocated memory: 339.578 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 339.695 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'KeccakF1600_StatePermute' (fips202.c:82:1)...70 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.12 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.16 seconds; current allocated memory: 357.473 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.18 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.28 seconds; current allocated memory: 425.734 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sha3_256_hw' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sha3_256_hw_Pipeline_VITIS_LOOP_469_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_469_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_469_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.44 seconds; current allocated memory: 426.512 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 426.512 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sha3_256_hw_Pipeline_VITIS_LOOP_473_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_473_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_473_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 426.516 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 426.516 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_126_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_126_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_126_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.91 seconds. CPU system time: 0.12 seconds. Elapsed time: 1.07 seconds; current allocated memory: 480.730 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 480.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'KeccakF1600_StatePermute' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 480.730 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 480.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sha3_256_hw_Pipeline_VITIS_LOOP_480_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_480_4'.
+WARNING: [HLS 200-880] The II Violation in module 'sha3_256_hw_Pipeline_VITIS_LOOP_480_4' (loop 'VITIS_LOOP_480_4'): Unable to enforce a carried dependence constraint (II = 1, distance = 2, offset = 1) between 'store' operation 0 bit ('s_addr_write_ln481', fips202.c:481->fips202.c:750) of variable 'xor_ln481', fips202.c:481->fips202.c:750 on array 's' and 'load' operation 64 bit ('s_load', fips202.c:481->fips202.c:750) on array 's'.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 4, loop 'VITIS_LOOP_480_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 480.730 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 480.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sha3_256_hw_Pipeline_VITIS_LOOP_752_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_752_1'.
+WARNING: [HLS 200-885] The II Violation in module 'sha3_256_hw_Pipeline_VITIS_LOOP_752_1' (loop 'VITIS_LOOP_752_1'): Unable to schedule 'store' operation 0 bit ('h_addr_1_write_ln44', fips202.c:44->fips202.c:753) of variable 'trunc_ln44_1', fips202.c:44->fips202.c:753 on array 'h' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'h'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'sha3_256_hw_Pipeline_VITIS_LOOP_752_1' (loop 'VITIS_LOOP_752_1'): Unable to schedule 'store' operation 0 bit ('h_addr_3_write_ln44', fips202.c:44->fips202.c:753) of variable 'trunc_ln44_3', fips202.c:44->fips202.c:753 on array 'h' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'h'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'sha3_256_hw_Pipeline_VITIS_LOOP_752_1' (loop 'VITIS_LOOP_752_1'): Unable to schedule 'store' operation 0 bit ('h_addr_5_write_ln44', fips202.c:44->fips202.c:753) of variable 'trunc_ln44_5', fips202.c:44->fips202.c:753 on array 'h' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'h'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 4, Depth = 5, loop 'VITIS_LOOP_752_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 480.730 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 480.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sha3_256_hw' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 480.730 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 480.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sha3_256_hw_Pipeline_VITIS_LOOP_469_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sha3_256_hw_Pipeline_VITIS_LOOP_469_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 480.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sha3_256_hw_Pipeline_VITIS_LOOP_473_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sha3_256_hw_Pipeline_VITIS_LOOP_473_3' pipeline 'VITIS_LOOP_473_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sha3_256_hw_Pipeline_VITIS_LOOP_473_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 480.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_126_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_126_1_KeccakF_RoundConstants_ROM_AUTO_1R' to 'KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_126_1_KeccakF_RoundConstants_ROMbkb' due to the length limit 80
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_126_1' pipeline 'VITIS_LOOP_126_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_126_1'.
+INFO: [HLS 200-2168] Implementing memory 'sha3_256_hw_KeccakF1600_StatePermute_Pipeline_VITIS_LOOP_126_1_KeccakF_RoundConstants_ROMbkb' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.14 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.26 seconds; current allocated memory: 480.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'KeccakF1600_StatePermute' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'KeccakF1600_StatePermute'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.24 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.27 seconds; current allocated memory: 480.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sha3_256_hw_Pipeline_VITIS_LOOP_480_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sha3_256_hw_Pipeline_VITIS_LOOP_480_4' pipeline 'VITIS_LOOP_480_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sha3_256_hw_Pipeline_VITIS_LOOP_480_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 480.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sha3_256_hw_Pipeline_VITIS_LOOP_752_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sha3_256_hw_Pipeline_VITIS_LOOP_752_1' pipeline 'VITIS_LOOP_752_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sha3_256_hw_Pipeline_VITIS_LOOP_752_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 480.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sha3_256_hw' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'sha3_256_hw/h' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'sha3_256_hw/in_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'sha3_256_hw/inlen' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'sha3_256_hw' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'urem_64ns_9ns_64_68_seq_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sha3_256_hw'.
+INFO: [RTMG 210-278] Implementing memory 'sha3_256_hw_s_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 480.730 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.31 seconds; current allocated memory: 480.730 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.32 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.43 seconds; current allocated memory: 480.730 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for sha3_256_hw.
+INFO: [VLOG 209-307] Generating Verilog RTL for sha3_256_hw.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 138.62 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:16; Allocated memory: 169.621 MB.
+INFO: [HLS 200-112] Total CPU user time: 9.43 seconds. Total CPU system time: 1.89 seconds. Total elapsed time: 19.78 seconds; peak allocated memory: 480.730 MB.

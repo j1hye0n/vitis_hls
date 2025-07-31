@@ -1,0 +1,23 @@
+<dict>
+  <key>main-file</key>
+  <string>/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/fips202.pp.0.c</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../fips202.c</string>
+      <key>line</key>
+      <integer>478</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>&apos;#pragma HLS loop_flatten&apos; can only be applied inside loop body</string>
+      <key>ID</key>
+      <integer>5589</integer>
+      <key>WarningOption</key>
+      <string>invalid-hls-pragmas</string>
+    </dict>
+  </array>
+</dict>

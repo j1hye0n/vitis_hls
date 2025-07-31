@@ -1,0 +1,1068 @@
+<profile>
+    <ReportVersion>
+        <Version>2024.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z020-clg400-1</Part>
+        <TopModelName>sha3_256_hw</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>6.917</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>undef</Best-caseLatency>
+            <Average-caseLatency>undef</Average-caseLatency>
+            <Worst-caseLatency>undef</Worst-caseLatency>
+            <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+            <Interval-min>undef</Interval-min>
+            <Interval-max>undef</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfLoopLatency>
+            <VITIS_LOOP_479_2>
+                <Slack>7.30</Slack>
+                <TripCount>
+                    <range>
+                        <min>1</min>
+                        <max>31580642</max>
+                    </range>
+                </TripCount>
+                <Latency>
+                    <range>
+                        <min>203</min>
+                        <max>6410870326</max>
+                    </range>
+                </Latency>
+                <AbsoluteTimeLatency>
+                    <range>
+                        <min>2030</min>
+                        <max>64108703260</max>
+                    </range>
+                </AbsoluteTimeLatency>
+                <IterationLatency>203</IterationLatency>
+                <InstanceList/>
+                <absorb_loop2_VITIS_LOOP_26_1>
+                    <Slack>7.30</Slack>
+                    <TripCount>136</TripCount>
+                    <Latency>137</Latency>
+                    <AbsoluteTimeLatency>1370</AbsoluteTimeLatency>
+                    <PipelineII>1</PipelineII>
+                    <PipelineDepth>3</PipelineDepth>
+                    <InstanceList/>
+                </absorb_loop2_VITIS_LOOP_26_1>
+            </VITIS_LOOP_479_2>
+            <absorb_loop3>
+                <Slack>7.30</Slack>
+                <TripCount>undef</TripCount>
+                <Latency>undef</Latency>
+                <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                <IterationLatency>3</IterationLatency>
+                <InstanceList/>
+            </absorb_loop3>
+        </SummaryOfLoopLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>fips.c:479~fips.c:759</SourceLocation>
+            <SummaryOfLoopViolations>
+                <VITIS_LOOP_479_2>
+                    <Name>VITIS_LOOP_479_2</Name>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>fips.c:479~fips.c:759</SourceLocation>
+                    <absorb_loop2_VITIS_LOOP_26_1>
+                        <Name>absorb_loop2_VITIS_LOOP_26_1</Name>
+                        <IssueType>-</IssueType>
+                        <ViolationType>-</ViolationType>
+                        <SourceLocation>fips.c:480~fips.c:759</SourceLocation>
+                    </absorb_loop2_VITIS_LOOP_26_1>
+                </VITIS_LOOP_479_2>
+                <absorb_loop3>
+                    <Name>absorb_loop3</Name>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>fips.c:490~fips.c:759</SourceLocation>
+                </absorb_loop3>
+            </SummaryOfLoopViolations>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>6</BRAM_18K>
+            <DSP>4</DSP>
+            <FF>4278</FF>
+            <LUT>19066</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>280</BRAM_18K>
+            <DSP>220</DSP>
+            <FF>106400</FF>
+            <LUT>53200</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>sha3_256_hw</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>sha3_256_hw</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>sha3_256_hw</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>sha3_256_hw</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>sha3_256_hw</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>sha3_256_hw</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>h_address0</name>
+            <Object>h</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>5</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>h_ce0</name>
+            <Object>h</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>h_we0</name>
+            <Object>h</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>h_d0</name>
+            <Object>h</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_r</name>
+            <Object>in_r</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inlen</name>
+            <Object>inlen</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="3">
+            <ModuleName>sha3_256_hw</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_sha3_256_hw_Pipeline_VITIS_LOOP_472_1_fu_228</InstName>
+                    <ModuleName>sha3_256_hw_Pipeline_VITIS_LOOP_472_1</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>228</ID>
+                    <BindInstances>icmp_ln472_fu_54_p2 add_ln472_fu_60_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_KeccakF1600_StatePermute_fu_234</InstName>
+                    <ModuleName>KeccakF1600_StatePermute</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>234</ID>
+                    <BindInstances>icmp_ln127_fu_820_p2 xor_ln131_fu_852_p2 xor_ln131_1_fu_858_p2 xor_ln131_2_fu_864_p2 BCa_fu_870_p2 xor_ln132_fu_876_p2 xor_ln132_1_fu_882_p2 xor_ln132_2_fu_888_p2 BCe_fu_894_p2 xor_ln133_fu_900_p2 xor_ln133_1_fu_906_p2 xor_ln133_2_fu_912_p2 BCi_fu_918_p2 xor_ln134_fu_924_p2 xor_ln134_1_fu_930_p2 xor_ln134_2_fu_936_p2 BCo_fu_942_p2 xor_ln135_fu_948_p2 xor_ln135_1_fu_954_p2 xor_ln135_2_fu_960_p2 BCu_fu_966_p2 Da_fu_992_p2 De_fu_1018_p2 Di_fu_1044_p2 Do_fu_1070_p2 Du_fu_1096_p2 Aba_4_fu_1102_p2 Age_2_fu_1108_p2 Aki_2_fu_1136_p2 Amo_2_fu_1164_p2 Asu_2_fu_1192_p2 xor_ln155_fu_1220_p2 and_ln155_fu_1226_p2 xor_ln155_1_fu_1232_p2 Eba_fu_1238_p2 xor_ln156_fu_1244_p2 and_ln156_fu_1250_p2 Ebe_fu_1256_p2 xor_ln157_fu_1262_p2 and_ln157_fu_1268_p2 Ebi_fu_1274_p2 xor_ln158_fu_1280_p2 and_ln158_fu_1286_p2 Ebo_fu_1292_p2 xor_ln159_fu_1298_p2 and_ln159_fu_1304_p2 Ebu_fu_1310_p2 Abo_2_fu_1316_p2 Agu_2_fu_1336_p2 Aka_2_fu_1356_p2 Ame_2_fu_1376_p2 Asi_2_fu_1396_p2 xor_ln171_fu_1756_p2 and_ln171_fu_1762_p2 Ega_fu_1768_p2 xor_ln172_fu_1774_p2 and_ln172_fu_1780_p2 Ege_fu_1786_p2 xor_ln173_fu_1792_p2 and_ln173_fu_1798_p2 Egi_fu_1804_p2 xor_ln174_fu_1810_p2 and_ln174_fu_1816_p2 Ego_fu_1822_p2 xor_ln175_fu_1828_p2 and_ln175_fu_1834_p2 Egu_fu_1840_p2 Abe_2_fu_1416_p2 Agi_2_fu_1434_p2 Ako_2_fu_1454_p2 Amu_2_fu_1474_p2 Asa_2_fu_1494_p2 xor_ln187_fu_1876_p2 and_ln187_fu_1882_p2 Eka_fu_1888_p2 xor_ln188_fu_1894_p2 and_ln188_fu_1900_p2 Eke_fu_1906_p2 xor_ln189_fu_1912_p2 and_ln189_fu_1918_p2 Eki_fu_1924_p2 xor_ln190_fu_1930_p2 and_ln190_fu_1936_p2 Eko_fu_1942_p2 xor_ln191_fu_1948_p2 and_ln191_fu_1954_p2 Eku_fu_1960_p2 Abu_2_fu_1514_p2 Aga_2_fu_1534_p2 Ake_2_fu_1554_p2 Ami_2_fu_1574_p2 Aso_2_fu_1594_p2 xor_ln203_fu_1996_p2 and_ln203_fu_2002_p2 Ema_fu_2008_p2 xor_ln204_fu_2014_p2 and_ln204_fu_2020_p2 Eme_fu_2026_p2 xor_ln205_fu_2032_p2 and_ln205_fu_2038_p2 Emi_fu_2044_p2 xor_ln206_fu_2050_p2 and_ln206_fu_2056_p2 Emo_fu_2062_p2 xor_ln207_fu_2068_p2 and_ln207_fu_2074_p2 Emu_fu_2080_p2 Abi_2_fu_1614_p2 Ago_2_fu_1634_p2 Aku_2_fu_1654_p2 Ama_2_fu_1674_p2 Ase_2_fu_1694_p2 xor_ln219_fu_2116_p2 and_ln219_fu_2122_p2 Esa_fu_2128_p2 xor_ln220_fu_2134_p2 and_ln220_fu_2140_p2 Ese_fu_2146_p2 xor_ln221_fu_2152_p2 and_ln221_fu_2158_p2 Esi_fu_2164_p2 xor_ln222_fu_2170_p2 and_ln222_fu_2176_p2 Eso_fu_2182_p2 xor_ln223_fu_2188_p2 and_ln223_fu_2194_p2 Esu_fu_2200_p2 xor_ln226_fu_2206_p2 xor_ln226_1_fu_2212_p2 xor_ln226_2_fu_2217_p2 BCa_6_fu_2223_p2 xor_ln227_fu_2229_p2 xor_ln227_1_fu_2235_p2 xor_ln227_2_fu_2240_p2 BCe_6_fu_2246_p2 xor_ln228_fu_2252_p2 xor_ln228_1_fu_2257_p2 xor_ln228_2_fu_2263_p2 BCi_6_fu_2269_p2 xor_ln229_fu_2275_p2 xor_ln229_1_fu_2281_p2 xor_ln229_2_fu_2287_p2 BCo_6_fu_2292_p2 xor_ln230_fu_2298_p2 xor_ln230_1_fu_2303_p2 xor_ln230_2_fu_2309_p2 BCu_6_fu_2315_p2 Da_1_fu_2341_p2 De_1_fu_2367_p2 Di_1_fu_2393_p2 Do_1_fu_2419_p2 Du_1_fu_2445_p2 Eba_2_fu_2451_p2 Ege_1_fu_2456_p2 Eki_1_fu_2484_p2 Emo_1_fu_2512_p2 Esu_1_fu_2540_p2 xor_ln250_fu_2568_p2 and_ln250_fu_2574_p2 xor_ln250_1_fu_2580_p2 Aba_3_fu_2586_p2 xor_ln251_fu_2592_p2 and_ln251_fu_2598_p2 Abe_3_fu_2604_p2 xor_ln252_fu_2610_p2 and_ln252_fu_2616_p2 Abi_3_fu_2622_p2 xor_ln253_fu_2628_p2 and_ln253_fu_2634_p2 Abo_3_fu_2640_p2 xor_ln254_fu_2646_p2 and_ln254_fu_2652_p2 Abu_3_fu_2658_p2 Ebo_1_fu_2664_p2 Egu_1_fu_2691_p2 Eka_1_fu_2719_p2 Eme_1_fu_2747_p2 Esi_1_fu_2775_p2 xor_ln266_fu_2803_p2 and_ln266_fu_2809_p2 Aga_3_fu_2815_p2 xor_ln267_fu_2821_p2 and_ln267_fu_2827_p2 Age_3_fu_2833_p2 xor_ln268_fu_2839_p2 and_ln268_fu_2845_p2 Agi_3_fu_2851_p2 xor_ln269_fu_2857_p2 and_ln269_fu_2863_p2 Ago_3_fu_2869_p2 xor_ln270_fu_2875_p2 and_ln270_fu_2881_p2 Agu_3_fu_2887_p2 Ebe_1_fu_2893_p2 Egi_1_fu_2918_p2 Eko_1_fu_2946_p2 Emu_1_fu_2974_p2 Esa_1_fu_3002_p2 xor_ln282_fu_3030_p2 and_ln282_fu_3036_p2 Aka_3_fu_3042_p2 xor_ln283_fu_3048_p2 and_ln283_fu_3054_p2 Ake_3_fu_3060_p2 xor_ln284_fu_3066_p2 and_ln284_fu_3072_p2 Aki_3_fu_3078_p2 xor_ln285_fu_3084_p2 and_ln285_fu_3090_p2 Ako_3_fu_3096_p2 xor_ln286_fu_3102_p2 and_ln286_fu_3108_p2 Aku_3_fu_3114_p2 Ebu_1_fu_3120_p2 Ega_1_fu_3147_p2 Eke_1_fu_3175_p2 Emi_1_fu_3203_p2 Eso_1_fu_3231_p2 xor_ln298_fu_3259_p2 and_ln298_fu_3265_p2 Ama_3_fu_3271_p2 xor_ln299_fu_3277_p2 and_ln299_fu_3283_p2 Ame_3_fu_3289_p2 xor_ln300_fu_3295_p2 and_ln300_fu_3301_p2 Ami_3_fu_3307_p2 xor_ln301_fu_3313_p2 and_ln301_fu_3319_p2 Amo_3_fu_3325_p2 xor_ln302_fu_3331_p2 and_ln302_fu_3337_p2 Amu_3_fu_3343_p2 Ebi_1_fu_3349_p2 Ego_1_fu_3376_p2 Eku_1_fu_3404_p2 Ema_1_fu_3432_p2 Ese_1_fu_3460_p2 xor_ln314_fu_3488_p2 and_ln314_fu_3494_p2 Asa_3_fu_3500_p2 xor_ln315_fu_3506_p2 and_ln315_fu_3512_p2 Ase_3_fu_3518_p2 xor_ln316_fu_3524_p2 and_ln316_fu_3530_p2 Asi_3_fu_3536_p2 xor_ln317_fu_3542_p2 and_ln317_fu_3548_p2 Aso_3_fu_3554_p2 xor_ln318_fu_3560_p2 and_ln318_fu_3566_p2 Asu_3_fu_3572_p2 add_ln127_fu_841_p2 KeccakF_RoundConstants_U</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1_fu_241</InstName>
+                    <ModuleName>sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>241</ID>
+                    <BindInstances>icmp_ln761_fu_104_p2 add_ln761_fu_110_p2 icmp_ln43_fu_127_p2 select_ln756_fu_133_p3 add_ln761_1_fu_141_p2 select_ln761_fu_147_p3 lshr_ln45_fu_213_p2 add_ln45_fu_180_p2 add_ln43_fu_186_p2</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>s_U empty_fu_257_p2 mul_32ns_34ns_65_2_1_U6 select_ln479_fu_282_p3 add_ln467_fu_331_p2 icmp_ln479_fu_339_p2 icmp_ln480_fu_350_p2 add_ln480_fu_356_p2 icmp_ln26_fu_362_p2 select_ln481_fu_368_p3 select_ln481_1_fu_411_p3 add_ln480_1_fu_376_p2 select_ln480_fu_382_p3 shl_ln27_fu_429_p2 r_1_fu_434_p2 add_ln26_fu_399_p2 icmp_ln26_1_fu_405_p2 xor_ln482_fu_440_p2 j_4_fu_446_p2 icmp_ln488_fu_463_p2 i_4_fu_468_p2 shl_ln490_fu_526_p2 xor_ln490_fu_531_p2 shl_ln492_fu_548_p2 xor_ln492_fu_558_p2 xor_ln493_fu_576_p2</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>sha3_256_hw_Pipeline_VITIS_LOOP_472_1</Name>
+            <Loops>
+                <VITIS_LOOP_472_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.622</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>27</Best-caseLatency>
+                    <Average-caseLatency>27</Average-caseLatency>
+                    <Worst-caseLatency>27</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.270 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.270 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.270 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>26</PipelineInitiationInterval>
+                    <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_472_1>
+                        <Name>VITIS_LOOP_472_1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>25</TripCount>
+                        <Latency>25</Latency>
+                        <AbsoluteTimeLatency>0.250 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_472_1>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>fips.c:470~fips.c:759</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_472_1>
+                            <Name>VITIS_LOOP_472_1</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>fips.c:472~fips.c:759</SourceLocation>
+                        </VITIS_LOOP_472_1>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>7</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>53</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_472_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln472_fu_54_p2" SOURCE="fips.c:472" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln472" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_472_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln472_fu_60_p2" SOURCE="fips.c:472" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln472" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>KeccakF1600_StatePermute</Name>
+            <Loops>
+                <state_permute/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.538</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>62</Best-caseLatency>
+                    <Average-caseLatency>62</Average-caseLatency>
+                    <Worst-caseLatency>62</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.620 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.620 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.620 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>62</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <state_permute>
+                        <Name>state_permute</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>12</TripCount>
+                        <Latency>36</Latency>
+                        <AbsoluteTimeLatency>0.360 us</AbsoluteTimeLatency>
+                        <IterationLatency>3</IterationLatency>
+                        <PipelineDepth>3</PipelineDepth>
+                        <PipelineType>no</PipelineType>
+                        <InstanceList/>
+                    </state_permute>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>fips.c:91</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <state_permute>
+                            <Name>state_permute</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>fips.c:127</SourceLocation>
+                        </state_permute>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>2</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>~0</UTIL_BRAM>
+                    <FF>3238</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>3</UTIL_FF>
+                    <LUT>16900</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>31</UTIL_LUT>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln127_fu_820_p2" SOURCE="fips.c:127" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln127" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln131_fu_852_p2" SOURCE="fips.c:131" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln131" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln131_1_fu_858_p2" SOURCE="fips.c:131" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln131_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln131_2_fu_864_p2" SOURCE="fips.c:131" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln131_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="BCa_fu_870_p2" SOURCE="fips.c:131" STORAGESUBTYPE="" URAM="0" VARIABLE="BCa" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln132_fu_876_p2" SOURCE="fips.c:132" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln132" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln132_1_fu_882_p2" SOURCE="fips.c:132" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln132_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln132_2_fu_888_p2" SOURCE="fips.c:132" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln132_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="BCe_fu_894_p2" SOURCE="fips.c:132" STORAGESUBTYPE="" URAM="0" VARIABLE="BCe" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln133_fu_900_p2" SOURCE="fips.c:133" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln133" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln133_1_fu_906_p2" SOURCE="fips.c:133" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln133_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln133_2_fu_912_p2" SOURCE="fips.c:133" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln133_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="BCi_fu_918_p2" SOURCE="fips.c:133" STORAGESUBTYPE="" URAM="0" VARIABLE="BCi" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln134_fu_924_p2" SOURCE="fips.c:134" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln134" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln134_1_fu_930_p2" SOURCE="fips.c:134" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln134_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln134_2_fu_936_p2" SOURCE="fips.c:134" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln134_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="BCo_fu_942_p2" SOURCE="fips.c:134" STORAGESUBTYPE="" URAM="0" VARIABLE="BCo" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln135_fu_948_p2" SOURCE="fips.c:135" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln135" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln135_1_fu_954_p2" SOURCE="fips.c:135" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln135_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln135_2_fu_960_p2" SOURCE="fips.c:135" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln135_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="BCu_fu_966_p2" SOURCE="fips.c:135" STORAGESUBTYPE="" URAM="0" VARIABLE="BCu" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Da_fu_992_p2" SOURCE="fips.c:138" STORAGESUBTYPE="" URAM="0" VARIABLE="Da" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="De_fu_1018_p2" SOURCE="fips.c:139" STORAGESUBTYPE="" URAM="0" VARIABLE="De" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Di_fu_1044_p2" SOURCE="fips.c:140" STORAGESUBTYPE="" URAM="0" VARIABLE="Di" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Do_fu_1070_p2" SOURCE="fips.c:141" STORAGESUBTYPE="" URAM="0" VARIABLE="Do" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Du_fu_1096_p2" SOURCE="fips.c:142" STORAGESUBTYPE="" URAM="0" VARIABLE="Du" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Aba_4_fu_1102_p2" SOURCE="fips.c:144" STORAGESUBTYPE="" URAM="0" VARIABLE="Aba_4" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Age_2_fu_1108_p2" SOURCE="fips.c:146" STORAGESUBTYPE="" URAM="0" VARIABLE="Age_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Aki_2_fu_1136_p2" SOURCE="fips.c:148" STORAGESUBTYPE="" URAM="0" VARIABLE="Aki_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Amo_2_fu_1164_p2" SOURCE="fips.c:150" STORAGESUBTYPE="" URAM="0" VARIABLE="Amo_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Asu_2_fu_1192_p2" SOURCE="fips.c:152" STORAGESUBTYPE="" URAM="0" VARIABLE="Asu_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln155_fu_1220_p2" SOURCE="fips.c:155" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln155" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln155_fu_1226_p2" SOURCE="fips.c:155" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln155" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln155_1_fu_1232_p2" SOURCE="fips.c:155" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln155_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Eba_fu_1238_p2" SOURCE="fips.c:155" STORAGESUBTYPE="" URAM="0" VARIABLE="Eba" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln156_fu_1244_p2" SOURCE="fips.c:156" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln156" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln156_fu_1250_p2" SOURCE="fips.c:156" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln156" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ebe_fu_1256_p2" SOURCE="fips.c:156" STORAGESUBTYPE="" URAM="0" VARIABLE="Ebe" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln157_fu_1262_p2" SOURCE="fips.c:157" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln157" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln157_fu_1268_p2" SOURCE="fips.c:157" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln157" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ebi_fu_1274_p2" SOURCE="fips.c:157" STORAGESUBTYPE="" URAM="0" VARIABLE="Ebi" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln158_fu_1280_p2" SOURCE="fips.c:158" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln158" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln158_fu_1286_p2" SOURCE="fips.c:158" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln158" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ebo_fu_1292_p2" SOURCE="fips.c:158" STORAGESUBTYPE="" URAM="0" VARIABLE="Ebo" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln159_fu_1298_p2" SOURCE="fips.c:159" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln159" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln159_fu_1304_p2" SOURCE="fips.c:159" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln159" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ebu_fu_1310_p2" SOURCE="fips.c:159" STORAGESUBTYPE="" URAM="0" VARIABLE="Ebu" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Abo_2_fu_1316_p2" SOURCE="fips.c:161" STORAGESUBTYPE="" URAM="0" VARIABLE="Abo_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Agu_2_fu_1336_p2" SOURCE="fips.c:163" STORAGESUBTYPE="" URAM="0" VARIABLE="Agu_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Aka_2_fu_1356_p2" SOURCE="fips.c:165" STORAGESUBTYPE="" URAM="0" VARIABLE="Aka_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ame_2_fu_1376_p2" SOURCE="fips.c:167" STORAGESUBTYPE="" URAM="0" VARIABLE="Ame_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Asi_2_fu_1396_p2" SOURCE="fips.c:169" STORAGESUBTYPE="" URAM="0" VARIABLE="Asi_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln171_fu_1756_p2" SOURCE="fips.c:171" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln171" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln171_fu_1762_p2" SOURCE="fips.c:171" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln171" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ega_fu_1768_p2" SOURCE="fips.c:171" STORAGESUBTYPE="" URAM="0" VARIABLE="Ega" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln172_fu_1774_p2" SOURCE="fips.c:172" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln172" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln172_fu_1780_p2" SOURCE="fips.c:172" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln172" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ege_fu_1786_p2" SOURCE="fips.c:172" STORAGESUBTYPE="" URAM="0" VARIABLE="Ege" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln173_fu_1792_p2" SOURCE="fips.c:173" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln173" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln173_fu_1798_p2" SOURCE="fips.c:173" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln173" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Egi_fu_1804_p2" SOURCE="fips.c:173" STORAGESUBTYPE="" URAM="0" VARIABLE="Egi" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln174_fu_1810_p2" SOURCE="fips.c:174" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln174" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln174_fu_1816_p2" SOURCE="fips.c:174" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln174" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ego_fu_1822_p2" SOURCE="fips.c:174" STORAGESUBTYPE="" URAM="0" VARIABLE="Ego" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln175_fu_1828_p2" SOURCE="fips.c:175" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln175" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln175_fu_1834_p2" SOURCE="fips.c:175" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln175" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Egu_fu_1840_p2" SOURCE="fips.c:175" STORAGESUBTYPE="" URAM="0" VARIABLE="Egu" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Abe_2_fu_1416_p2" SOURCE="fips.c:177" STORAGESUBTYPE="" URAM="0" VARIABLE="Abe_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Agi_2_fu_1434_p2" SOURCE="fips.c:179" STORAGESUBTYPE="" URAM="0" VARIABLE="Agi_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ako_2_fu_1454_p2" SOURCE="fips.c:181" STORAGESUBTYPE="" URAM="0" VARIABLE="Ako_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Amu_2_fu_1474_p2" SOURCE="fips.c:183" STORAGESUBTYPE="" URAM="0" VARIABLE="Amu_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Asa_2_fu_1494_p2" SOURCE="fips.c:185" STORAGESUBTYPE="" URAM="0" VARIABLE="Asa_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln187_fu_1876_p2" SOURCE="fips.c:187" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln187" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln187_fu_1882_p2" SOURCE="fips.c:187" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln187" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Eka_fu_1888_p2" SOURCE="fips.c:187" STORAGESUBTYPE="" URAM="0" VARIABLE="Eka" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln188_fu_1894_p2" SOURCE="fips.c:188" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln188" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln188_fu_1900_p2" SOURCE="fips.c:188" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln188" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Eke_fu_1906_p2" SOURCE="fips.c:188" STORAGESUBTYPE="" URAM="0" VARIABLE="Eke" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln189_fu_1912_p2" SOURCE="fips.c:189" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln189" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln189_fu_1918_p2" SOURCE="fips.c:189" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln189" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Eki_fu_1924_p2" SOURCE="fips.c:189" STORAGESUBTYPE="" URAM="0" VARIABLE="Eki" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln190_fu_1930_p2" SOURCE="fips.c:190" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln190" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln190_fu_1936_p2" SOURCE="fips.c:190" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln190" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Eko_fu_1942_p2" SOURCE="fips.c:190" STORAGESUBTYPE="" URAM="0" VARIABLE="Eko" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln191_fu_1948_p2" SOURCE="fips.c:191" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln191" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln191_fu_1954_p2" SOURCE="fips.c:191" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln191" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Eku_fu_1960_p2" SOURCE="fips.c:191" STORAGESUBTYPE="" URAM="0" VARIABLE="Eku" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Abu_2_fu_1514_p2" SOURCE="fips.c:193" STORAGESUBTYPE="" URAM="0" VARIABLE="Abu_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Aga_2_fu_1534_p2" SOURCE="fips.c:195" STORAGESUBTYPE="" URAM="0" VARIABLE="Aga_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ake_2_fu_1554_p2" SOURCE="fips.c:197" STORAGESUBTYPE="" URAM="0" VARIABLE="Ake_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ami_2_fu_1574_p2" SOURCE="fips.c:199" STORAGESUBTYPE="" URAM="0" VARIABLE="Ami_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Aso_2_fu_1594_p2" SOURCE="fips.c:201" STORAGESUBTYPE="" URAM="0" VARIABLE="Aso_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln203_fu_1996_p2" SOURCE="fips.c:203" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln203" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln203_fu_2002_p2" SOURCE="fips.c:203" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln203" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ema_fu_2008_p2" SOURCE="fips.c:203" STORAGESUBTYPE="" URAM="0" VARIABLE="Ema" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln204_fu_2014_p2" SOURCE="fips.c:204" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln204" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln204_fu_2020_p2" SOURCE="fips.c:204" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln204" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Eme_fu_2026_p2" SOURCE="fips.c:204" STORAGESUBTYPE="" URAM="0" VARIABLE="Eme" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln205_fu_2032_p2" SOURCE="fips.c:205" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln205" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln205_fu_2038_p2" SOURCE="fips.c:205" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln205" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Emi_fu_2044_p2" SOURCE="fips.c:205" STORAGESUBTYPE="" URAM="0" VARIABLE="Emi" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln206_fu_2050_p2" SOURCE="fips.c:206" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln206" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln206_fu_2056_p2" SOURCE="fips.c:206" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln206" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Emo_fu_2062_p2" SOURCE="fips.c:206" STORAGESUBTYPE="" URAM="0" VARIABLE="Emo" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln207_fu_2068_p2" SOURCE="fips.c:207" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln207" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln207_fu_2074_p2" SOURCE="fips.c:207" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln207" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Emu_fu_2080_p2" SOURCE="fips.c:207" STORAGESUBTYPE="" URAM="0" VARIABLE="Emu" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Abi_2_fu_1614_p2" SOURCE="fips.c:209" STORAGESUBTYPE="" URAM="0" VARIABLE="Abi_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ago_2_fu_1634_p2" SOURCE="fips.c:211" STORAGESUBTYPE="" URAM="0" VARIABLE="Ago_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Aku_2_fu_1654_p2" SOURCE="fips.c:213" STORAGESUBTYPE="" URAM="0" VARIABLE="Aku_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ama_2_fu_1674_p2" SOURCE="fips.c:215" STORAGESUBTYPE="" URAM="0" VARIABLE="Ama_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ase_2_fu_1694_p2" SOURCE="fips.c:217" STORAGESUBTYPE="" URAM="0" VARIABLE="Ase_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln219_fu_2116_p2" SOURCE="fips.c:219" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln219" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln219_fu_2122_p2" SOURCE="fips.c:219" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln219" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Esa_fu_2128_p2" SOURCE="fips.c:219" STORAGESUBTYPE="" URAM="0" VARIABLE="Esa" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln220_fu_2134_p2" SOURCE="fips.c:220" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln220" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln220_fu_2140_p2" SOURCE="fips.c:220" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln220" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ese_fu_2146_p2" SOURCE="fips.c:220" STORAGESUBTYPE="" URAM="0" VARIABLE="Ese" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln221_fu_2152_p2" SOURCE="fips.c:221" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln221" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln221_fu_2158_p2" SOURCE="fips.c:221" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln221" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Esi_fu_2164_p2" SOURCE="fips.c:221" STORAGESUBTYPE="" URAM="0" VARIABLE="Esi" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln222_fu_2170_p2" SOURCE="fips.c:222" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln222" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln222_fu_2176_p2" SOURCE="fips.c:222" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln222" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Eso_fu_2182_p2" SOURCE="fips.c:222" STORAGESUBTYPE="" URAM="0" VARIABLE="Eso" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln223_fu_2188_p2" SOURCE="fips.c:223" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln223" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln223_fu_2194_p2" SOURCE="fips.c:223" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln223" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Esu_fu_2200_p2" SOURCE="fips.c:223" STORAGESUBTYPE="" URAM="0" VARIABLE="Esu" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln226_fu_2206_p2" SOURCE="fips.c:226" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln226" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln226_1_fu_2212_p2" SOURCE="fips.c:226" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln226_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln226_2_fu_2217_p2" SOURCE="fips.c:226" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln226_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="BCa_6_fu_2223_p2" SOURCE="fips.c:226" STORAGESUBTYPE="" URAM="0" VARIABLE="BCa_6" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln227_fu_2229_p2" SOURCE="fips.c:227" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln227" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln227_1_fu_2235_p2" SOURCE="fips.c:227" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln227_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln227_2_fu_2240_p2" SOURCE="fips.c:227" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln227_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="BCe_6_fu_2246_p2" SOURCE="fips.c:227" STORAGESUBTYPE="" URAM="0" VARIABLE="BCe_6" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln228_fu_2252_p2" SOURCE="fips.c:228" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln228" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln228_1_fu_2257_p2" SOURCE="fips.c:228" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln228_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln228_2_fu_2263_p2" SOURCE="fips.c:228" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln228_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="BCi_6_fu_2269_p2" SOURCE="fips.c:228" STORAGESUBTYPE="" URAM="0" VARIABLE="BCi_6" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln229_fu_2275_p2" SOURCE="fips.c:229" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln229" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln229_1_fu_2281_p2" SOURCE="fips.c:229" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln229_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln229_2_fu_2287_p2" SOURCE="fips.c:229" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln229_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="BCo_6_fu_2292_p2" SOURCE="fips.c:229" STORAGESUBTYPE="" URAM="0" VARIABLE="BCo_6" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln230_fu_2298_p2" SOURCE="fips.c:230" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln230" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln230_1_fu_2303_p2" SOURCE="fips.c:230" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln230_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln230_2_fu_2309_p2" SOURCE="fips.c:230" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln230_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="BCu_6_fu_2315_p2" SOURCE="fips.c:230" STORAGESUBTYPE="" URAM="0" VARIABLE="BCu_6" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Da_1_fu_2341_p2" SOURCE="fips.c:233" STORAGESUBTYPE="" URAM="0" VARIABLE="Da_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="De_1_fu_2367_p2" SOURCE="fips.c:234" STORAGESUBTYPE="" URAM="0" VARIABLE="De_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Di_1_fu_2393_p2" SOURCE="fips.c:235" STORAGESUBTYPE="" URAM="0" VARIABLE="Di_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Do_1_fu_2419_p2" SOURCE="fips.c:236" STORAGESUBTYPE="" URAM="0" VARIABLE="Do_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Du_1_fu_2445_p2" SOURCE="fips.c:237" STORAGESUBTYPE="" URAM="0" VARIABLE="Du_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Eba_2_fu_2451_p2" SOURCE="fips.c:239" STORAGESUBTYPE="" URAM="0" VARIABLE="Eba_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ege_1_fu_2456_p2" SOURCE="fips.c:241" STORAGESUBTYPE="" URAM="0" VARIABLE="Ege_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Eki_1_fu_2484_p2" SOURCE="fips.c:243" STORAGESUBTYPE="" URAM="0" VARIABLE="Eki_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Emo_1_fu_2512_p2" SOURCE="fips.c:245" STORAGESUBTYPE="" URAM="0" VARIABLE="Emo_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Esu_1_fu_2540_p2" SOURCE="fips.c:247" STORAGESUBTYPE="" URAM="0" VARIABLE="Esu_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln250_fu_2568_p2" SOURCE="fips.c:250" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln250" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln250_fu_2574_p2" SOURCE="fips.c:250" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln250" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln250_1_fu_2580_p2" SOURCE="fips.c:250" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln250_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Aba_3_fu_2586_p2" SOURCE="fips.c:250" STORAGESUBTYPE="" URAM="0" VARIABLE="Aba_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln251_fu_2592_p2" SOURCE="fips.c:251" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln251" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln251_fu_2598_p2" SOURCE="fips.c:251" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln251" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Abe_3_fu_2604_p2" SOURCE="fips.c:251" STORAGESUBTYPE="" URAM="0" VARIABLE="Abe_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln252_fu_2610_p2" SOURCE="fips.c:252" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln252" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln252_fu_2616_p2" SOURCE="fips.c:252" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln252" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Abi_3_fu_2622_p2" SOURCE="fips.c:252" STORAGESUBTYPE="" URAM="0" VARIABLE="Abi_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln253_fu_2628_p2" SOURCE="fips.c:253" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln253" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln253_fu_2634_p2" SOURCE="fips.c:253" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln253" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Abo_3_fu_2640_p2" SOURCE="fips.c:253" STORAGESUBTYPE="" URAM="0" VARIABLE="Abo_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln254_fu_2646_p2" SOURCE="fips.c:254" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln254" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln254_fu_2652_p2" SOURCE="fips.c:254" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln254" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Abu_3_fu_2658_p2" SOURCE="fips.c:254" STORAGESUBTYPE="" URAM="0" VARIABLE="Abu_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ebo_1_fu_2664_p2" SOURCE="fips.c:256" STORAGESUBTYPE="" URAM="0" VARIABLE="Ebo_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Egu_1_fu_2691_p2" SOURCE="fips.c:258" STORAGESUBTYPE="" URAM="0" VARIABLE="Egu_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Eka_1_fu_2719_p2" SOURCE="fips.c:260" STORAGESUBTYPE="" URAM="0" VARIABLE="Eka_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Eme_1_fu_2747_p2" SOURCE="fips.c:262" STORAGESUBTYPE="" URAM="0" VARIABLE="Eme_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Esi_1_fu_2775_p2" SOURCE="fips.c:264" STORAGESUBTYPE="" URAM="0" VARIABLE="Esi_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln266_fu_2803_p2" SOURCE="fips.c:266" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln266" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln266_fu_2809_p2" SOURCE="fips.c:266" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln266" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Aga_3_fu_2815_p2" SOURCE="fips.c:266" STORAGESUBTYPE="" URAM="0" VARIABLE="Aga_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln267_fu_2821_p2" SOURCE="fips.c:267" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln267" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln267_fu_2827_p2" SOURCE="fips.c:267" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln267" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Age_3_fu_2833_p2" SOURCE="fips.c:267" STORAGESUBTYPE="" URAM="0" VARIABLE="Age_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln268_fu_2839_p2" SOURCE="fips.c:268" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln268" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln268_fu_2845_p2" SOURCE="fips.c:268" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln268" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Agi_3_fu_2851_p2" SOURCE="fips.c:268" STORAGESUBTYPE="" URAM="0" VARIABLE="Agi_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln269_fu_2857_p2" SOURCE="fips.c:269" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln269" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln269_fu_2863_p2" SOURCE="fips.c:269" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln269" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ago_3_fu_2869_p2" SOURCE="fips.c:269" STORAGESUBTYPE="" URAM="0" VARIABLE="Ago_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln270_fu_2875_p2" SOURCE="fips.c:270" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln270" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln270_fu_2881_p2" SOURCE="fips.c:270" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln270" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Agu_3_fu_2887_p2" SOURCE="fips.c:270" STORAGESUBTYPE="" URAM="0" VARIABLE="Agu_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ebe_1_fu_2893_p2" SOURCE="fips.c:272" STORAGESUBTYPE="" URAM="0" VARIABLE="Ebe_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Egi_1_fu_2918_p2" SOURCE="fips.c:274" STORAGESUBTYPE="" URAM="0" VARIABLE="Egi_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Eko_1_fu_2946_p2" SOURCE="fips.c:276" STORAGESUBTYPE="" URAM="0" VARIABLE="Eko_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Emu_1_fu_2974_p2" SOURCE="fips.c:278" STORAGESUBTYPE="" URAM="0" VARIABLE="Emu_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Esa_1_fu_3002_p2" SOURCE="fips.c:280" STORAGESUBTYPE="" URAM="0" VARIABLE="Esa_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln282_fu_3030_p2" SOURCE="fips.c:282" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln282" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln282_fu_3036_p2" SOURCE="fips.c:282" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln282" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Aka_3_fu_3042_p2" SOURCE="fips.c:282" STORAGESUBTYPE="" URAM="0" VARIABLE="Aka_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln283_fu_3048_p2" SOURCE="fips.c:283" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln283" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln283_fu_3054_p2" SOURCE="fips.c:283" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln283" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ake_3_fu_3060_p2" SOURCE="fips.c:283" STORAGESUBTYPE="" URAM="0" VARIABLE="Ake_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln284_fu_3066_p2" SOURCE="fips.c:284" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln284" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln284_fu_3072_p2" SOURCE="fips.c:284" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln284" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Aki_3_fu_3078_p2" SOURCE="fips.c:284" STORAGESUBTYPE="" URAM="0" VARIABLE="Aki_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln285_fu_3084_p2" SOURCE="fips.c:285" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln285" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln285_fu_3090_p2" SOURCE="fips.c:285" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln285" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ako_3_fu_3096_p2" SOURCE="fips.c:285" STORAGESUBTYPE="" URAM="0" VARIABLE="Ako_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln286_fu_3102_p2" SOURCE="fips.c:286" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln286" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln286_fu_3108_p2" SOURCE="fips.c:286" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln286" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Aku_3_fu_3114_p2" SOURCE="fips.c:286" STORAGESUBTYPE="" URAM="0" VARIABLE="Aku_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ebu_1_fu_3120_p2" SOURCE="fips.c:288" STORAGESUBTYPE="" URAM="0" VARIABLE="Ebu_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ega_1_fu_3147_p2" SOURCE="fips.c:290" STORAGESUBTYPE="" URAM="0" VARIABLE="Ega_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Eke_1_fu_3175_p2" SOURCE="fips.c:292" STORAGESUBTYPE="" URAM="0" VARIABLE="Eke_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Emi_1_fu_3203_p2" SOURCE="fips.c:294" STORAGESUBTYPE="" URAM="0" VARIABLE="Emi_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Eso_1_fu_3231_p2" SOURCE="fips.c:296" STORAGESUBTYPE="" URAM="0" VARIABLE="Eso_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln298_fu_3259_p2" SOURCE="fips.c:298" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln298" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln298_fu_3265_p2" SOURCE="fips.c:298" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln298" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ama_3_fu_3271_p2" SOURCE="fips.c:298" STORAGESUBTYPE="" URAM="0" VARIABLE="Ama_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln299_fu_3277_p2" SOURCE="fips.c:299" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln299" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln299_fu_3283_p2" SOURCE="fips.c:299" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln299" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ame_3_fu_3289_p2" SOURCE="fips.c:299" STORAGESUBTYPE="" URAM="0" VARIABLE="Ame_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln300_fu_3295_p2" SOURCE="fips.c:300" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln300" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln300_fu_3301_p2" SOURCE="fips.c:300" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln300" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ami_3_fu_3307_p2" SOURCE="fips.c:300" STORAGESUBTYPE="" URAM="0" VARIABLE="Ami_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln301_fu_3313_p2" SOURCE="fips.c:301" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln301" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln301_fu_3319_p2" SOURCE="fips.c:301" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln301" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Amo_3_fu_3325_p2" SOURCE="fips.c:301" STORAGESUBTYPE="" URAM="0" VARIABLE="Amo_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln302_fu_3331_p2" SOURCE="fips.c:302" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln302" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln302_fu_3337_p2" SOURCE="fips.c:302" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln302" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Amu_3_fu_3343_p2" SOURCE="fips.c:302" STORAGESUBTYPE="" URAM="0" VARIABLE="Amu_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ebi_1_fu_3349_p2" SOURCE="fips.c:304" STORAGESUBTYPE="" URAM="0" VARIABLE="Ebi_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ego_1_fu_3376_p2" SOURCE="fips.c:306" STORAGESUBTYPE="" URAM="0" VARIABLE="Ego_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Eku_1_fu_3404_p2" SOURCE="fips.c:308" STORAGESUBTYPE="" URAM="0" VARIABLE="Eku_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ema_1_fu_3432_p2" SOURCE="fips.c:310" STORAGESUBTYPE="" URAM="0" VARIABLE="Ema_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ese_1_fu_3460_p2" SOURCE="fips.c:312" STORAGESUBTYPE="" URAM="0" VARIABLE="Ese_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln314_fu_3488_p2" SOURCE="fips.c:314" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln314" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln314_fu_3494_p2" SOURCE="fips.c:314" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln314" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Asa_3_fu_3500_p2" SOURCE="fips.c:314" STORAGESUBTYPE="" URAM="0" VARIABLE="Asa_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln315_fu_3506_p2" SOURCE="fips.c:315" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln315" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln315_fu_3512_p2" SOURCE="fips.c:315" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln315" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Ase_3_fu_3518_p2" SOURCE="fips.c:315" STORAGESUBTYPE="" URAM="0" VARIABLE="Ase_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln316_fu_3524_p2" SOURCE="fips.c:316" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln316" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln316_fu_3530_p2" SOURCE="fips.c:316" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln316" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Asi_3_fu_3536_p2" SOURCE="fips.c:316" STORAGESUBTYPE="" URAM="0" VARIABLE="Asi_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln317_fu_3542_p2" SOURCE="fips.c:317" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln317" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln317_fu_3548_p2" SOURCE="fips.c:317" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln317" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Aso_3_fu_3554_p2" SOURCE="fips.c:317" STORAGESUBTYPE="" URAM="0" VARIABLE="Aso_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln318_fu_3560_p2" SOURCE="fips.c:318" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln318" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="and" PRAGMA="" RTLNAME="and_ln318_fu_3566_p2" SOURCE="fips.c:318" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln318" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="state_permute" OPTYPE="xor" PRAGMA="" RTLNAME="Asu_3_fu_3572_p2" SOURCE="fips.c:318" STORAGESUBTYPE="" URAM="0" VARIABLE="Asu_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="state_permute" OPTYPE="add" PRAGMA="" RTLNAME="add_ln127_fu_841_p2" SOURCE="fips.c:127" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln127" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="KeccakF_RoundConstants_U" SOURCE="" STORAGESIZE="64 24 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="KeccakF_RoundConstants" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1</Name>
+            <Loops>
+                <VITIS_LOOP_761_1_VITIS_LOOP_43_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.917</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>36</Best-caseLatency>
+                    <Average-caseLatency>36</Average-caseLatency>
+                    <Worst-caseLatency>36</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.360 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.360 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.360 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>33</PipelineInitiationInterval>
+                    <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_761_1_VITIS_LOOP_43_1>
+                        <Name>VITIS_LOOP_761_1_VITIS_LOOP_43_1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>32</TripCount>
+                        <Latency>34</Latency>
+                        <AbsoluteTimeLatency>0.340 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>4</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_761_1_VITIS_LOOP_43_1>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>fips.c:41~fips.c:762</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_761_1_VITIS_LOOP_43_1>
+                            <Name>VITIS_LOOP_761_1_VITIS_LOOP_43_1</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>fips.c:761</SourceLocation>
+                        </VITIS_LOOP_761_1_VITIS_LOOP_43_1>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>100</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>323</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_761_1_VITIS_LOOP_43_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln761_fu_104_p2" SOURCE="fips.c:761" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln761" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_761_1_VITIS_LOOP_43_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln761_fu_110_p2" SOURCE="fips.c:761" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln761" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_761_1_VITIS_LOOP_43_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln43_fu_127_p2" SOURCE="fips.c:43" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln43" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_761_1_VITIS_LOOP_43_1" OPTYPE="select" PRAGMA="" RTLNAME="select_ln756_fu_133_p3" SOURCE="fips.c:756" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln756" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_761_1_VITIS_LOOP_43_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln761_1_fu_141_p2" SOURCE="fips.c:761" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln761_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_761_1_VITIS_LOOP_43_1" OPTYPE="select" PRAGMA="" RTLNAME="select_ln761_fu_147_p3" SOURCE="fips.c:761" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln761" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op lshr" DSP="0" ID="" IMPL="auto_pipe" LATENCY="0" LOOP="VITIS_LOOP_761_1_VITIS_LOOP_43_1" OPTYPE="lshr" PRAGMA="" RTLNAME="lshr_ln45_fu_213_p2" SOURCE="fips.c:45" STORAGESUBTYPE="" URAM="0" VARIABLE="lshr_ln45" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_761_1_VITIS_LOOP_43_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_fu_180_p2" SOURCE="fips.c:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_761_1_VITIS_LOOP_43_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln43_fu_186_p2" SOURCE="fips.c:43" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln43" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>sha3_256_hw</Name>
+            <Loops>
+                <VITIS_LOOP_479_2>
+                    <absorb_loop2_VITIS_LOOP_26_1/>
+                </VITIS_LOOP_479_2>
+                <absorb_loop3/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.917</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_479_2>
+                        <Name>VITIS_LOOP_479_2</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>
+                            <range>
+                                <min>1</min>
+                                <max>31580642</max>
+                            </range>
+                        </TripCount>
+                        <Latency>203 ~ 6410870326</Latency>
+                        <AbsoluteTimeLatency>2.030 us ~ 64.109 sec</AbsoluteTimeLatency>
+                        <IterationLatency>203</IterationLatency>
+                        <PipelineDepth>203</PipelineDepth>
+                        <PipelineType>no</PipelineType>
+                        <InstanceList>
+                            <Instance>grp_KeccakF1600_StatePermute_fu_234</Instance>
+                        </InstanceList>
+                        <absorb_loop2_VITIS_LOOP_26_1>
+                            <Name>absorb_loop2_VITIS_LOOP_26_1</Name>
+                            <Slack>7.30</Slack>
+                            <TripCount>136</TripCount>
+                            <Latency>137</Latency>
+                            <AbsoluteTimeLatency>1.370 us</AbsoluteTimeLatency>
+                            <PipelineII>1</PipelineII>
+                            <PipelineDepth>3</PipelineDepth>
+                            <PipelineType>yes</PipelineType>
+                            <InstanceList/>
+                        </absorb_loop2_VITIS_LOOP_26_1>
+                    </VITIS_LOOP_479_2>
+                    <absorb_loop3>
+                        <Name>absorb_loop3</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>undef</TripCount>
+                        <Latency>undef</Latency>
+                        <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                        <IterationLatency>3</IterationLatency>
+                        <PipelineDepth>3</PipelineDepth>
+                        <PipelineType>no</PipelineType>
+                        <InstanceList/>
+                    </absorb_loop3>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>fips.c:479~fips.c:759</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_479_2>
+                            <Name>VITIS_LOOP_479_2</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>fips.c:479~fips.c:759</SourceLocation>
+                            <absorb_loop2_VITIS_LOOP_26_1>
+                                <Name>absorb_loop2_VITIS_LOOP_26_1</Name>
+                                <IssueType>-</IssueType>
+                                <ViolationType>-</ViolationType>
+                                <SourceLocation>fips.c:480~fips.c:759</SourceLocation>
+                            </absorb_loop2_VITIS_LOOP_26_1>
+                        </VITIS_LOOP_479_2>
+                        <absorb_loop3>
+                            <Name>absorb_loop3</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>fips.c:490~fips.c:759</SourceLocation>
+                        </absorb_loop3>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>6</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>2</UTIL_BRAM>
+                    <DSP>4</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>1</UTIL_DSP>
+                    <FF>4278</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>4</UTIL_FF>
+                    <LUT>19066</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>35</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="storage" BRAM="4" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="s_U" SOURCE="fips.c:757" STORAGESIZE="64 25 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="s" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setlt" PRAGMA="" RTLNAME="empty_fu_257_p2" SOURCE="fips.c:479" STORAGESUBTYPE="" URAM="0" VARIABLE="empty" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_34ns_65_2_1_U6" SOURCE="fips.c:479" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln479" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln479_fu_282_p3" SOURCE="fips.c:479" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln479" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln467_fu_331_p2" SOURCE="fips.c:467" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln467" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_479_2" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln479_fu_339_p2" SOURCE="fips.c:479" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln479" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="absorb_loop2_VITIS_LOOP_26_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln480_fu_350_p2" SOURCE="fips.c:480" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln480" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="absorb_loop2_VITIS_LOOP_26_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln480_fu_356_p2" SOURCE="fips.c:480" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln480" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="absorb_loop2_VITIS_LOOP_26_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln26_fu_362_p2" SOURCE="fips.c:26" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln26" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="absorb_loop2_VITIS_LOOP_26_1" OPTYPE="select" PRAGMA="" RTLNAME="select_ln481_fu_368_p3" SOURCE="fips.c:481" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln481" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="absorb_loop2_VITIS_LOOP_26_1" OPTYPE="select" PRAGMA="" RTLNAME="select_ln481_1_fu_411_p3" SOURCE="fips.c:481" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln481_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="absorb_loop2_VITIS_LOOP_26_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln480_1_fu_376_p2" SOURCE="fips.c:480" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln480_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="absorb_loop2_VITIS_LOOP_26_1" OPTYPE="select" PRAGMA="" RTLNAME="select_ln480_fu_382_p3" SOURCE="fips.c:480" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln480" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op shl" DSP="0" ID="" IMPL="auto_pipe" LATENCY="0" LOOP="absorb_loop2_VITIS_LOOP_26_1" OPTYPE="shl" PRAGMA="" RTLNAME="shl_ln27_fu_429_p2" SOURCE="fips.c:27" STORAGESUBTYPE="" URAM="0" VARIABLE="shl_ln27" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="absorb_loop2_VITIS_LOOP_26_1" OPTYPE="or" PRAGMA="" RTLNAME="r_1_fu_434_p2" SOURCE="fips.c:27" STORAGESUBTYPE="" URAM="0" VARIABLE="r_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="absorb_loop2_VITIS_LOOP_26_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln26_fu_399_p2" SOURCE="fips.c:26" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln26" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="absorb_loop2_VITIS_LOOP_26_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln26_1_fu_405_p2" SOURCE="fips.c:26" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln26_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="absorb_loop2_VITIS_LOOP_26_1" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln482_fu_440_p2" SOURCE="fips.c:482" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln482" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_479_2" OPTYPE="add" PRAGMA="" RTLNAME="j_4_fu_446_p2" SOURCE="fips.c:479" STORAGESUBTYPE="" URAM="0" VARIABLE="j_4" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="absorb_loop3" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln488_fu_463_p2" SOURCE="fips.c:488" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln488" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="absorb_loop3" OPTYPE="add" PRAGMA="" RTLNAME="i_4_fu_468_p2" SOURCE="fips.c:488" STORAGESUBTYPE="" URAM="0" VARIABLE="i_4" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op shl" DSP="0" ID="" IMPL="auto_pipe" LATENCY="0" LOOP="absorb_loop3" OPTYPE="shl" PRAGMA="" RTLNAME="shl_ln490_fu_526_p2" SOURCE="fips.c:490" STORAGESUBTYPE="" URAM="0" VARIABLE="shl_ln490" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="absorb_loop3" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln490_fu_531_p2" SOURCE="fips.c:490" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln490" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op shl" DSP="0" ID="" IMPL="auto_pipe" LATENCY="0" LOOP="" OPTYPE="shl" PRAGMA="" RTLNAME="shl_ln492_fu_548_p2" SOURCE="fips.c:492" STORAGESUBTYPE="" URAM="0" VARIABLE="shl_ln492" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln492_fu_558_p2" SOURCE="fips.c:492" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln492" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln493_fu_576_p2" SOURCE="fips.c:493" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln493" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands/>
+    <Args>
+        <Arg ArgName="h" index="0" direction="out" srcType="unsigned char*" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="h_address0" name="h_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="h_ce0" name="h_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="h_we0" name="h_we0" usage="control" direction="out"/>
+                <hwRef type="port" interface="h_d0" name="h_d0" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="in" index="1" direction="in" srcType="unsigned char const *" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="in_r" name="in_r" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="inlen" index="2" direction="in" srcType="long unsigned int" srcSize="64">
+            <hwRefs>
+                <hwRef type="port" interface="inlen" name="inlen" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="h_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="5">
+            <portMaps>
+                <portMap portMapName="h_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>h_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="h"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="h_d0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="h_d0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>h_d0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="h"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_r" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="in_r">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_r</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="inlen" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="64">
+            <portMaps>
+                <portMap portMapName="inlen">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>inlen</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="inlen"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AP_MEMORY">
+                <table>
+                    <keys size="3">Port, Direction, Bitwidth</keys>
+                    <column name="h_address0">out, 5</column>
+                    <column name="h_d0">out, 8</column>
+                </table>
+            </item>
+            <item name="Other Ports">
+                <table>
+                    <keys size="4">Port, Mode, Direction, Bitwidth</keys>
+                    <column name="in_r">ap_none, in, 8</column>
+                    <column name="inlen">ap_none, in, 64</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="h">out, unsigned char*</column>
+                    <column name="in">in, unsigned char const *</column>
+                    <column name="inlen">in, long unsigned int</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="4">Argument, HW Interface, HW Type, HW Usage</keys>
+                    <column name="h">h_address0, port, offset</column>
+                    <column name="h">h_ce0, port, </column>
+                    <column name="h">h_we0, port, </column>
+                    <column name="h">h_d0, port, </column>
+                    <column name="in">in_r, port, </column>
+                    <column name="inlen">inlen, port, </column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="pipeline" location="fips.c:44" status="valid" parentFunction="store64" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="fips.c:128" status="valid" parentFunction="keccakf1600_statepermute" variable="" isDirective="0" options="off"/>
+        <Pragma type="unroll" location="fips.c:129" status="valid" parentFunction="keccakf1600_statepermute" variable="" isDirective="0" options="off=true"/>
+        <Pragma type="pipeline" location="fips.c:473" status="valid" parentFunction="keccak_absorb_once" variable="" isDirective="0" options=""/>
+        <Pragma type="loop_flatten" location="fips.c:478" status="warning" parentFunction="keccak_absorb_once" variable="" isDirective="0" options="">
+            <Msg msg_id="207-5589" msg_severity="WARNING" msg_body="'#pragma HLS loop_flatten' can only be applied inside loop body"/>
+        </Pragma>
+        <Pragma type="pipeline" location="fips.c:481" status="valid" parentFunction="keccak_absorb_once" variable="" isDirective="0" options="off"/>
+        <Pragma type="pipeline" location="fips.c:489" status="valid" parentFunction="keccak_absorb_once" variable="" isDirective="0" options="off"/>
+    </PragmaReport>
+</profile>
+

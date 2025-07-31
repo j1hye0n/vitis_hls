@@ -1,0 +1,69 @@
+{
+  "0": {
+    "basicblocks": 6,
+    "calls": "2 4 1",
+    "file": "fips.c",
+    "fileloc": 754,
+    "instructions": 25,
+    "loads": {
+      "L": 1
+    },
+    "name": "sha3_256_hw",
+    "total_instructions": 1281
+  },
+  "1": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "fips.c",
+    "fileloc": 40,
+    "instructions": 16,
+    "name": "store64",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 16
+  },
+  "2": {
+    "basicblocks": 22,
+    "calls": "3 4",
+    "file": "fips.c",
+    "fileloc": 464,
+    "instructions": 88,
+    "loads": {
+      "L": 5
+    },
+    "name": "keccak_absorb_once",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 673
+  },
+  "3": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "fips.c",
+    "fileloc": 22,
+    "instructions": 18,
+    "loads": {
+      "L": 1
+    },
+    "name": "load64",
+    "total_instructions": 18
+  },
+  "4": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "fips.c",
+    "fileloc": 83,
+    "instructions": 567,
+    "loads": {
+      "G": 2,
+      "L": 25
+    },
+    "name": "KeccakF1600_StatePermute",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 567
+  }
+}

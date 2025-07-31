@@ -1,0 +1,158 @@
+<ENTRY>
+{
+ "thisFile": "/home/hyeon/workspace/sha3/sha3_hls/sha3_hls.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Jul 30 14:24:21 2025",
+ "timestampMillis": "1753853061493",
+ "buildStep": {
+  "cmdId": "d710e16f-d940-4cbf-baac-87b4c7ecde66",
+  "name": "vitis-run",
+  "logFile": "/home/hyeon/workspace/sha3/sha3_hls/logs/sha3_hls.steps.log",
+  "commandLine": "/tools/xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/hyeon/workspace/sha3/sha3_hls/hls_config.cfg --work_dir . ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/hyeon/workspace/sha3/sha3_hls/hls_config.cfg",
+   "--work_dir",
+   "."
+  ],
+  "iniFiles": [],
+  "cwd": "/home/hyeon/workspace/sha3/sha3_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 30 14:24:21 2025",
+ "timestampMillis": "1753853061494",
+ "status": {
+  "cmdId": "d710e16f-d940-4cbf-baac-87b4c7ecde66",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Jul 30 14:24:28 2025",
+ "timestampMillis": "1753853068264",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "sha3_256_hw",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/hyeon/workspace/sha3/fips202.c",
+     "/home/hyeon/workspace/sha3/fips202.h",
+     "/home/hyeon/workspace/sha3/sha3_256.c"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Jul 30 14:24:28 2025",
+ "timestampMillis": "1753853068265",
+ "buildStep": {
+  "cmdId": "90b02944-8786-4cca-ba79-bc4b74411a25",
+  "name": "",
+  "logFile": "/home/hyeon/workspace/sha3/sha3_hls/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/hyeon/workspace/sha3/sha3_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 30 14:24:28 2025",
+ "timestampMillis": "1753853068266",
+ "status": {
+  "cmdId": "90b02944-8786-4cca-ba79-bc4b74411a25",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 30 14:24:45 2025",
+ "timestampMillis": "1753853085161",
+ "status": {
+  "cmdId": "90b02944-8786-4cca-ba79-bc4b74411a25",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 30 14:24:45 2025",
+ "timestampMillis": "1753853085520",
+ "status": {
+  "cmdId": "d710e16f-d940-4cbf-baac-87b4c7ecde66",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jul 30 14:24:45 2025",
+ "timestampMillis": "1753853085521",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jul 30 14:24:45 2025",
+ "timestampMillis": "1753853085521",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

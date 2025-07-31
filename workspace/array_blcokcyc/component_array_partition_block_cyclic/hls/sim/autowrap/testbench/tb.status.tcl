@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/./sim/autowrap/testbench/matmul_partition.cpp_pre.cpp.tb.cpp

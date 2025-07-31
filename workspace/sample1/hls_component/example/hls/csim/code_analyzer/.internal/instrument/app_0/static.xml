@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<staticProfResults:Results xmlns:staticProfResults="staticProfResults" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ProfileMemoryAccess="true">
+<TracingVersion>5</TracingVersion>
+
+<DataType ID="0" Name="void"/>
+<DataType ID="1" Name="bool"/>
+<DataType ID="2" Name="char"/>
+<DataType ID="3" Name="short"/>
+<DataType ID="4" Name="int"/>
+<DataType ID="5" Name="long"/>
+<DataType ID="6" Name="float"/>
+<DataType ID="7" Name="double"/>
+<DataType ID="8" Name="pointer"/>
+<DataType ID="9" Name="reference"/>
+<DataType ID="10" Name="array"/>
+<DataType ID="11" Name="vector"/>
+<DataType ID="12" Name="struct"/>
+<DataType ID="13" Name="union"/>
+<DataType ID="14" Name="enum"/>
+<DataType ID="15" Name="function"/>
+<DataType ID="16" Name="label"/>
+<DataType ID="17" Name="long double"/>
+<DataType ID="18" Name="unsupported"/><UserDataType ID="0" xsi:type="staticProfResults:DataTypeType">
+<DisplayName>Unsupported</DisplayName>
+</UserDataType>
+<UserDataType ID="1" xsi:type="staticProfResults:ImplementationType" >
+<DisplayName>void</DisplayName>
+<LLVMTypeID>0</LLVMTypeID>
+</UserDataType>
+<UserDataType ID="2" xsi:type="staticProfResults:PointerType" >
+<DisplayName></DisplayName>
+<LLVMTypeID>8</LLVMTypeID>
+<Size>0</Size>
+<RefTypeID>1</RefTypeID>
+</UserDataType>
+<UserDataType ID="3" xsi:type="staticProfResults:NumberType" >
+<DisplayName>char</DisplayName>
+<LLVMTypeID>2</LLVMTypeID>
+<Size>1</Size>
+<BitSize>8</BitSize>
+<IsSigned>true</IsSigned>
+</UserDataType>
+<UserDataType ID="4" xsi:type="staticProfResults:PointerType" >
+<DisplayName></DisplayName>
+<LLVMTypeID>8</LLVMTypeID>
+<Size>8</Size>
+<RefTypeID>3</RefTypeID>
+</UserDataType>
+
+<File ID="0">
+  <Name>unknown</Name>
+</File>
+<File ID="1">
+  <Name>intrinsic</Name>
+</File>
+<File ID="2">
+  <Name>../test_adder.cpp</Name>
+</File>
+<File ID="3">
+  <Name>../adder.cpp</Name>
+</File><function global_id="200" Name="main" File="2" CUFile="2" arguments="0" HasArtificialBody="false" HasArtificialDeclaration="false" SIMDInstructionsPercentage="0" FullyQualifiedName="main" DisplayName="main" isDeclaration="false">
+<BBData ID="0" Name="entry" RegionId="0" IsLoopHeader="false" IsFunctionExit="false">
+<Successor>1</Successor>
+<Successor>2</Successor>
+<FirstStmtId>1</FirstStmtId>
+<LastStmtId>46</LastStmtId>
+<LocalVariable ArgNumber="0" DeclaredElementCount="0" File="2" InstrId="1" IsArtificial="true" IsConstant="false" Line="5" LocalIdInFunc="0" MayBeAliased="false" Name="unnamed" Size="0" Type="2" global_id="5"/>
+<LocalVariable ArgNumber="0" DeclaredElementCount="0" File="2" InstrId="2" IsArtificial="false" IsConstant="false" Line="7" LocalIdInFunc="1" MayBeAliased="true" Name="a" Size="1" Type="3" global_id="1"/>
+<LocalVariable ArgNumber="0" DeclaredElementCount="0" File="2" InstrId="3" IsArtificial="false" IsConstant="false" Line="8" LocalIdInFunc="2" MayBeAliased="true" Name="b" Size="1" Type="3" global_id="2"/>
+<LocalVariable ArgNumber="0" DeclaredElementCount="0" File="2" InstrId="4" IsArtificial="false" IsConstant="false" Line="9" LocalIdInFunc="3" MayBeAliased="true" Name="c" Size="1" Type="3" global_id="3"/>
+<LocalVariable ArgNumber="0" DeclaredElementCount="0" File="2" InstrId="5" IsArtificial="false" IsConstant="false" Line="10" LocalIdInFunc="4" MayBeAliased="false" Name="d" Size="1" Type="3" global_id="4"/>
+<TraceRecord Type="0" Mark="4"  StmtID="6"  Line="7" StaticOnly="true"  MemAddressType="3" RW="1"  Size="4"  PtrUID="5"  VarUID="5" Offset="0" />
+<TraceRecord Type="4" Mark="0"  StmtID="13"  Line="13" StaticOnly="true"  FuncCall="201" hasFrame="true">
+<ArgumentAddress Index="0" MemAddressType="1"/>
+</TraceRecord>
+<TraceRecord Type="4" Mark="0"  StmtID="15"  Line="14" StaticOnly="true"  FuncCall="201" hasFrame="true">
+<ArgumentAddress Index="0" MemAddressType="1"/>
+</TraceRecord>
+<TraceRecord Type="4" Mark="0"  StmtID="17"  Line="15" StaticOnly="true"  FuncCall="201" hasFrame="true">
+<ArgumentAddress Index="0" MemAddressType="1"/>
+</TraceRecord>
+<TraceRecord Type="0" Mark="4"  StmtID="19"  Line="17" StaticOnly="true"  MemAddressType="3" RW="1"  Size="1"  PtrUID="1"  VarUID="1" Offset="0" />
+<TraceRecord Type="0" Mark="4"  StmtID="20"  Line="18" StaticOnly="true"  MemAddressType="3" RW="1"  Size="1"  PtrUID="2"  VarUID="2" Offset="0" />
+<TraceRecord Type="0" Mark="4"  StmtID="21"  Line="19" StaticOnly="true"  MemAddressType="3" RW="1"  Size="1"  PtrUID="3"  VarUID="3" Offset="0" />
+<TraceRecord Type="0" Mark="4"  StmtID="22"  Line="20" StaticOnly="true"  MemAddressType="3" RW="1"  Size="1"  PtrUID="4"  VarUID="4" Offset="0" />
+<TraceRecord Type="4" Mark="0"  StmtID="24"  Line="22" StaticOnly="true"  FuncCall="202" hasFrame="true">
+<ArgumentAddress Index="0" VarUID="1" Offset="0" MemAddressType="3"/>
+<ArgumentAddress Index="1" VarUID="2" Offset="0" MemAddressType="3"/>
+<ArgumentAddress Index="2" VarUID="3" Offset="0" MemAddressType="3"/>
+</TraceRecord>
+<TraceRecord Type="0" Mark="4"  StmtID="26"  Line="23" StaticOnly="true"  MemAddressType="3" RW="0"  Size="1"  PtrUID="1"  VarUID="1" Offset="0" />
+<TraceRecord Type="0" Mark="4"  StmtID="27"  Line="23" StaticOnly="true"  MemAddressType="3" RW="0"  Size="1"  PtrUID="2"  VarUID="2" Offset="0" />
+<TraceRecord Type="0" Mark="4"  StmtID="29"  Line="23" StaticOnly="true"  MemAddressType="3" RW="0"  Size="1"  PtrUID="4"  VarUID="4" Offset="0" />
+<TraceRecord Type="0" Mark="4"  StmtID="31"  Line="23" StaticOnly="true"  MemAddressType="3" RW="1"  Size="1"  PtrUID="4"  VarUID="4" Offset="0" />
+<TraceRecord Type="0" Mark="4"  StmtID="33"  Line="25" StaticOnly="true"  MemAddressType="3" RW="0"  Size="1"  PtrUID="3"  VarUID="3" Offset="0" />
+<TraceRecord Type="4" Mark="0"  StmtID="35"  Line="25" StaticOnly="true"  FuncCall="201" hasFrame="true">
+<ArgumentAddress Index="0" MemAddressType="1"/>
+</TraceRecord>
+<TraceRecord Type="0" Mark="4"  StmtID="37"  Line="26" StaticOnly="true"  MemAddressType="3" RW="0"  Size="1"  PtrUID="4"  VarUID="4" Offset="0" />
+<TraceRecord Type="4" Mark="0"  StmtID="39"  Line="26" StaticOnly="true"  FuncCall="201" hasFrame="true">
+<ArgumentAddress Index="0" MemAddressType="1"/>
+</TraceRecord>
+<TraceRecord Type="0" Mark="4"  StmtID="41"  Line="28" StaticOnly="true"  MemAddressType="3" RW="0"  Size="1"  PtrUID="4"  VarUID="4" Offset="0" />
+<TraceRecord Type="0" Mark="4"  StmtID="43"  Line="28" StaticOnly="true"  MemAddressType="3" RW="0"  Size="1"  PtrUID="3"  VarUID="3" Offset="0" />
+<SourceRange BeginLine="5" BeginColumn="0" EndLine="28" EndColumn="12"/>
+</BBData>
+<BBData ID="1" Name="if.then" RegionId="0" IsLoopHeader="false" IsFunctionExit="false">
+<Predecessor>0</Predecessor>
+<Successor>3</Successor>
+<FirstStmtId>47</FirstStmtId>
+<LastStmtId>51</LastStmtId>
+<TraceRecord Type="4" Mark="0"  StmtID="48"  Line="29" StaticOnly="true"  FuncCall="201" hasFrame="true">
+<ArgumentAddress Index="0" MemAddressType="1"/>
+</TraceRecord>
+<TraceRecord Type="0" Mark="4"  StmtID="50"  Line="30" StaticOnly="true"  MemAddressType="3" RW="1"  Size="4"  PtrUID="5"  VarUID="5" Offset="0" />
+<TraceRecord Type="6" Mark="1"  StmtID="51"  Line="30"  DestBB="3"/>
+<SourceRange BeginLine="29" BeginColumn="9" EndLine="30" EndColumn="16"/>
+</BBData>
+<BBData ID="2" Name="if.else" RegionId="0" IsLoopHeader="false" IsFunctionExit="false">
+<Predecessor>0</Predecessor>
+<Successor>3</Successor>
+<FirstStmtId>52</FirstStmtId>
+<LastStmtId>56</LastStmtId>
+<TraceRecord Type="4" Mark="0"  StmtID="53"  Line="33" StaticOnly="true"  FuncCall="201" hasFrame="true">
+<ArgumentAddress Index="0" MemAddressType="1"/>
+</TraceRecord>
+<TraceRecord Type="0" Mark="4"  StmtID="55"  Line="34" StaticOnly="true"  MemAddressType="3" RW="1"  Size="4"  PtrUID="5"  VarUID="5" Offset="0" />
+<TraceRecord Type="6" Mark="1"  StmtID="56"  Line="34"  DestBB="3"/>
+<SourceRange BeginLine="33" BeginColumn="9" EndLine="34" EndColumn="16"/>
+</BBData>
+<BBData ID="3" Name="return" RegionId="0" IsLoopHeader="false" IsFunctionExit="true">
+<Predecessor>2</Predecessor>
+<Predecessor>1</Predecessor>
+<FirstStmtId>57</FirstStmtId>
+<LastStmtId>59</LastStmtId>
+<TraceRecord Type="0" Mark="4"  StmtID="58"  Line="36" StaticOnly="true"  MemAddressType="3" RW="0"  Size="4"  PtrUID="5"  VarUID="5" Offset="0" />
+<SourceRange BeginLine="36" BeginColumn="1" EndLine="36" EndColumn="1"/>
+</BBData>
+<Region ID="0" Boundary="0" Parent="0" LoopId="0" Header="0" HasBlockSchema="false" Kind="Function">
+<SourceRange BeginLine="5" BeginColumn="0" EndLine="36" EndColumn="1"/>
+</Region>
+<SourceRange BeginLine="5" BeginColumn="0" EndLine="36" EndColumn="1"/>
+</function>
+<function global_id="201" Name="printf" File="0" CUFile="0" arguments="1" HasArtificialBody="false" HasArtificialDeclaration="false" SIMDInstructionsPercentage="0" FullyQualifiedName="printf" isDeclaration="true">
+<SourceRange BeginLine="0" BeginColumn="0" EndLine="0" EndColumn="0"/>
+</function>
+<function global_id="202" Name="_Z7examplePcS_S_" File="3" CUFile="3" arguments="3" HasArtificialBody="false" HasArtificialDeclaration="false" SIMDInstructionsPercentage="0" FullyQualifiedName="example" IsNonSys="true" DisplayName="example" isDeclaration="false">
+<BBData ID="0" Name="entry" RegionId="0" IsLoopHeader="false" IsFunctionExit="true">
+<FirstStmtId>60</FirstStmtId>
+<LastStmtId>84</LastStmtId>
+<LocalVariable ArgNumber="1" DeclaredElementCount="0" File="3" InstrId="60" IsArtificial="false" IsConstant="false" Line="3" LlvmArgNumber="0" LocalIdInFunc="0" MayBeAliased="false" MayPointeeBeAliasedFurther="false" Name="a" Size="8" Type="4" global_id="6"/>
+<LocalVariable ArgNumber="2" DeclaredElementCount="0" File="3" InstrId="61" IsArtificial="false" IsConstant="false" Line="3" LlvmArgNumber="1" LocalIdInFunc="1" MayBeAliased="false" MayPointeeBeAliasedFurther="false" Name="b" Size="8" Type="4" global_id="7"/>
+<LocalVariable ArgNumber="3" DeclaredElementCount="0" File="3" InstrId="62" IsArtificial="false" IsConstant="false" Line="3" LlvmArgNumber="2" LocalIdInFunc="2" MayBeAliased="false" MayPointeeBeAliasedFurther="false" Name="c" Size="8" Type="4" global_id="8"/>
+<TraceRecord Type="6" Mark="44"  StmtID="63"  Line="3" StaticOnly="true" SymUID="0" ArgumentAsAddress="0"/>
+<TraceRecord Type="0" Mark="4"  StmtID="63"  Line="3" StaticOnly="true"  MemAddressType="3" RW="1"  Size="8"  PtrUID="6"  VarUID="6" Offset="0" />
+<TraceRecord Type="6" Mark="44"  StmtID="65"  Line="3" StaticOnly="true" SymUID="1" ArgumentAsAddress="1"/>
+<TraceRecord Type="0" Mark="4"  StmtID="65"  Line="3" StaticOnly="true"  MemAddressType="3" RW="1"  Size="8"  PtrUID="7"  VarUID="7" Offset="0" />
+<TraceRecord Type="6" Mark="44"  StmtID="67"  Line="3" StaticOnly="true" SymUID="2" ArgumentAsAddress="2"/>
+<TraceRecord Type="0" Mark="4"  StmtID="67"  Line="3" StaticOnly="true"  MemAddressType="3" RW="1"  Size="8"  PtrUID="8"  VarUID="8" Offset="0" />
+<TraceRecord Type="4" Mark="0"  StmtID="69"  Line="5" StaticOnly="true"  FuncCall="203" hasFrame="true"/>
+<TraceRecord Type="4" Mark="0"  StmtID="70"  Line="6" StaticOnly="true"  FuncCall="203" hasFrame="true"/>
+<TraceRecord Type="4" Mark="0"  StmtID="71"  Line="7" StaticOnly="true"  FuncCall="203" hasFrame="true"/>
+<TraceRecord Type="4" Mark="0"  StmtID="72"  Line="8" StaticOnly="true"  FuncCall="203" hasFrame="true"/>
+<TraceRecord Type="0" Mark="4"  StmtID="74"  Line="10" StaticOnly="true"  MemAddressType="3" RW="0"  Size="8"  PtrUID="6"  VarUID="6" Offset="0" />
+<TraceRecord Type="0" Mark="4"  StmtID="75"  Line="10" StaticOnly="true"  MemAddressType="2" RW="0"  Size="1"  PtrUID="6"  SymUID="0"  Offset="0" >
+</TraceRecord>
+<TraceRecord Type="0" Mark="4"  StmtID="76"  Line="10" StaticOnly="true"  MemAddressType="3" RW="0"  Size="8"  PtrUID="7"  VarUID="7" Offset="0" />
+<TraceRecord Type="0" Mark="4"  StmtID="77"  Line="10" StaticOnly="true"  MemAddressType="2" RW="0"  Size="1"  PtrUID="7"  SymUID="1"  Offset="0" >
+</TraceRecord>
+<TraceRecord Type="0" Mark="4"  StmtID="79"  Line="10" StaticOnly="true"  MemAddressType="3" RW="0"  Size="8"  PtrUID="8"  VarUID="8" Offset="0" />
+<TraceRecord Type="0" Mark="4"  StmtID="80"  Line="10" StaticOnly="true"  MemAddressType="2" RW="0"  Size="1"  PtrUID="8"  SymUID="2"  Offset="0" >
+</TraceRecord>
+<TraceRecord Type="0" Mark="4"  StmtID="82"  Line="10" StaticOnly="true"  MemAddressType="2" RW="1"  Size="1"  PtrUID="8"  SymUID="2"  Offset="0" >
+</TraceRecord>
+<SourceRange BeginLine="3" BeginColumn="0" EndLine="10" EndColumn="17"/>
+</BBData>
+<Region ID="0" Boundary="0" Parent="0" LoopId="0" Header="0" HasBlockSchema="true" Kind="Function">
+<SourceRange BeginLine="3" BeginColumn="0" EndLine="10" EndColumn="17"/>
+</Region>
+<SourceRange BeginLine="3" BeginColumn="0" EndLine="10" EndColumn="17"/>
+</function>
+<function global_id="203" Name="llvm.sideeffect" File="1" CUFile="1" arguments="0" HasArtificialBody="false" HasArtificialDeclaration="false" SIMDInstructionsPercentage="0" FullyQualifiedName="llvm.sideeffect" isDeclaration="true">
+<SourceRange BeginLine="0" BeginColumn="0" EndLine="0" EndColumn="0"/>
+</function>
+<SymbolicIdCount>3</SymbolicIdCount>
+</staticProfResults:Results>

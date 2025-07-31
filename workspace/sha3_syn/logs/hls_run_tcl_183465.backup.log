@@ -1,0 +1,40 @@
+  **** HLS Build v2024.2 5238294
+Sourcing Tcl script '/home/hyeon/workspace/sha3_syn/run2.tcl'
+INFO: [HLS 200-1510] Running: open_component -reset sha3_256_hls2 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening project '/home/hyeon/workspace/sha3_syn/sha3_256_hls2'.
+INFO: [HLS 200-10] Creating and opening solution '/home/hyeon/workspace/sha3_syn/sha3_256_hls2/hls'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: add_files fips.c 
+INFO: [HLS 200-10] Adding design file 'fips.c' to the project
+INFO: [HLS 200-1510] Running: add_files fips202.h 
+INFO: [HLS 200-10] Adding design file 'fips202.h' to the project
+INFO: [HLS 200-1510] Running: set_top sha3_256_hw 
+INFO: [HLS 200-1510] Running: open_solution -reset _solution2 
+INFO: [HLS 200-10] Creating and opening solution '/home/hyeon/workspace/sha3_syn/sha3_256_hls2_solution2/hls'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.07 seconds. CPU system time: 0.05 seconds. Elapsed time: 2.74 seconds; current allocated memory: 327.262 MB.
+INFO: [HLS 200-10] Analyzing design file 'fips.c' ... 
+WARNING: [HLS 207-5589] '#pragma HLS loop_flatten' can only be applied inside loop body (fips.c:478:9)
+WARNING: [HLS 200-1986] Could not apply TOP directive, invalid function, label, or variable (/home/hyeon/workspace/sha3_syn/run2.tcl:49)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.47 seconds. CPU system time: 0.85 seconds. Elapsed time: 4.47 seconds; current allocated memory: 329.066 MB.
+ERROR: [HLS 214-157] Top function not found: there is no function named 'sha3_256_hw'
+error: Top function not found: there is no function named 'sha3_256_hw'
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:10; Allocated memory: 18.027 MB.
+Error in opt
+    while executing
+"source /home/hyeon/workspace/sha3_syn/run2.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $tclfile] "
+
+INFO: [HLS 200-112] Total CPU user time: 6.29 seconds. Total CPU system time: 2.81 seconds. Total elapsed time: 28.52 seconds; peak allocated memory: 329.289 MB.
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

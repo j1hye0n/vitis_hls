@@ -1,0 +1,121 @@
+<ENTRY>
+{
+ "thisFile": "/home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/sha3_256_hlssolution.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Jul 30 17:40:30 2025",
+ "timestampMillis": "1753864830610",
+ "buildStep": {
+  "cmdId": "9e55ae76-ec10-4df5-af33-51bc24230eb9",
+  "name": "vitis-run",
+  "logFile": "/home/hyeon/workspace/sha3_syn/logs/hls_run_csim.log",
+  "commandLine": "vitis-run --mode hls --tcl /home/hyeon/workspace/sha3_syn/run.tcl",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/hyeon/workspace/sha3_syn"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 30 17:40:30 2025",
+ "timestampMillis": "1753864830612",
+ "status": {
+  "cmdId": "9e55ae76-ec10-4df5-af33-51bc24230eb9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Jul 30 17:40:30 2025",
+ "timestampMillis": "1753864830613",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "sha3_256_hw",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/hyeon/workspace/sha3_syn/fips202.c",
+     "/home/hyeon/workspace/sha3_syn/fips202.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Jul 30 17:40:30 2025",
+ "timestampMillis": "1753864830615",
+ "buildStep": {
+  "cmdId": "203e428a-6a84-4f46-ba10-f7e51c9a78cb",
+  "name": "csim_design",
+  "logFile": "/home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/hyeon/workspace/sha3_syn"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 30 17:40:30 2025",
+ "timestampMillis": "1753864830616",
+ "status": {
+  "cmdId": "203e428a-6a84-4f46-ba10-f7e51c9a78cb",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 30 17:40:30 2025",
+ "timestampMillis": "1753864830846",
+ "status": {
+  "cmdId": "203e428a-6a84-4f46-ba10-f7e51c9a78cb",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 30 17:40:30 2025",
+ "timestampMillis": "1753864830849",
+ "status": {
+  "cmdId": "9e55ae76-ec10-4df5-af33-51bc24230eb9",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>

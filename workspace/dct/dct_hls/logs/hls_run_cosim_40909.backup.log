@@ -1,0 +1,258 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir /home/hyeon/workspace/dct/dct_hls 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/dct.cpp' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(5)
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/dct.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/dct.h' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(6)
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/dct.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/dct_coeff_table.txt' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/dct_coeff_table.txt' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/in.dat' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/in.dat' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/out.golden.dat' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/out.golden.dat' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/hyeon/workspace/dct/dct_test.cpp' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file '/home/hyeon/workspace/dct/dct_test.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=dct' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying ini 'cosim.wave_debug=1' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(12)
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/tools/xilinx/Vitis/2024.2/vcxx/libexec//clang++"
+   Compiling apatb_dct.cpp
+   Compiling dct.cpp_pre.cpp.tb.cpp
+   Compiling dct_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_dct_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Checkpoint: i = 0
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Copying array b to b_prime
+Checkpoint: i = 1
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 2
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 3
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 4
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 5
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 6
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 7
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 8
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 9
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Test passed !
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_dct_top glbl -Oenable_linking_all_libraries -prj dct.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib ieee_proposed=./ieee_proposed -s dct -debug all 
+Multi-threading is on. Using 4 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_ama_submuladd_16s_16s_13ns_29s_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_ama_submuladd_16s_16s_13ns_29s_29_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module dct_ama_submuladd_16s_16s_13ns_29s_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_mac_muladd_16s_14ns_29s_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_14ns_29s_29_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_14ns_29s_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_mac_muladd_16s_15s_13ns_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_13ns_29_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_13ns_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_dct_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_dct_Pipeline_RD_Loop_Row_RD_Loop_Col.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_dct_Pipeline_RD_Loop_Row_RD_Loop_Col
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_mul_17s_13ns_29_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mul_17s_13ns_29_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_control_s_axi
+INFO: [VRFC 10-311] analyzing module dct_control_s_axi_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_mul_16s_15ns_29_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mul_16s_15ns_29_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_mac_muladd_17s_12ns_29s_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_17s_12ns_29s_29_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_17s_12ns_29s_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_mac_muladd_18s_14ns_13ns_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_18s_14ns_13ns_29_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_18s_14ns_13ns_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_mac_muladd_17s_13ns_13ns_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_17s_13ns_13ns_29_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_17s_13ns_13ns_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_mac_muladd_17s_13ns_29s_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_17s_13ns_29s_29_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_17s_13ns_29s_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_ama_addmuladd_18s_16s_13ns_29ns_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_ama_addmuladd_18s_16s_13ns_29ns_29_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module dct_ama_addmuladd_18s_16s_13ns_29ns_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_dct_Pipeline_Col_DCT_Loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_dct_Pipeline_Col_DCT_Loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_row_outbuf_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_row_outbuf_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_ama_submuladd_16s_16s_12ns_29s_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_ama_submuladd_16s_16s_12ns_29s_29_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module dct_ama_submuladd_16s_16s_12ns_29s_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_mac_muladd_16s_15s_29s_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_29s_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_col_inbuf_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_col_inbuf_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_mul_17s_14ns_29_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mul_17s_14ns_29_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_buf_2d_out_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_buf_2d_out_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_mul_16s_15s_29_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mul_16s_15s_29_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_mac_muladd_16s_15s_29ns_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_29ns_29_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_29ns_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_ama_submuladd_18s_16s_14ns_29ns_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_ama_submuladd_18s_16s_14ns_29ns_29_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module dct_ama_submuladd_18s_16s_14ns_29ns_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_mac_muladd_18s_13ns_13ns_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_18s_13ns_13ns_29_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_18s_13ns_13ns_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_mac_muladd_17s_12ns_13ns_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_17s_12ns_13ns_29_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_17s_12ns_13ns_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_dct_Pipeline_Row_DCT_Loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_dct_Pipeline_Row_DCT_Loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_dct_Pipeline_WR_Loop_Row_WR_Loop_Col.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_dct_Pipeline_WR_Loop_Row_WR_Loop_Col
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_dct_1d.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_dct_1d
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_mac_muladd_16s_14ns_29ns_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_14ns_29ns_29_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_14ns_29ns_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-9543] actual bit length 16 differs from formal bit length 32 for port 'd0' [/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_control_s_axi.v:161]
+WARNING: [VRFC 10-9543] actual bit length 16 differs from formal bit length 32 for port 'd1' [/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/dct_control_s_axi.v:187]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.dct_row_outbuf_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.dct_col_inbuf_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.dct_buf_2d_out_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.dct_flow_control_loop_pipe_seque...
+Compiling module xil_defaultlib.dct_dct_Pipeline_RD_Loop_Row_RD_...
+Compiling module xil_defaultlib.dct_mul_16s_15ns_29_1_1(NUM_STAG...
+Compiling module xil_defaultlib.dct_mul_16s_15s_29_1_1(NUM_STAGE...
+Compiling module xil_defaultlib.dct_mul_17s_14ns_29_1_1(NUM_STAG...
+Compiling module xil_defaultlib.dct_mul_17s_13ns_29_1_1(NUM_STAG...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_13ns_29_4...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_13ns_29_4...
+Compiling module xil_defaultlib.dct_ama_submuladd_16s_16s_12ns_2...
+Compiling module xil_defaultlib.dct_ama_submuladd_16s_16s_12ns_2...
+Compiling module xil_defaultlib.dct_ama_submuladd_16s_16s_13ns_2...
+Compiling module xil_defaultlib.dct_ama_submuladd_16s_16s_13ns_2...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_29s_29_4_...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_29s_29_4_...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_14ns_29s_29_4...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_14ns_29s_29_4...
+Compiling module xil_defaultlib.dct_mac_muladd_17s_12ns_29s_29_4...
+Compiling module xil_defaultlib.dct_mac_muladd_17s_12ns_29s_29_4...
+Compiling module xil_defaultlib.dct_mac_muladd_17s_13ns_13ns_29_...
+Compiling module xil_defaultlib.dct_mac_muladd_17s_13ns_13ns_29_...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_14ns_29ns_29_...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_14ns_29ns_29_...
+Compiling module xil_defaultlib.dct_mac_muladd_18s_14ns_13ns_29_...
+Compiling module xil_defaultlib.dct_mac_muladd_18s_14ns_13ns_29_...
+Compiling module xil_defaultlib.dct_mac_muladd_17s_12ns_13ns_29_...
+Compiling module xil_defaultlib.dct_mac_muladd_17s_12ns_13ns_29_...
+Compiling module xil_defaultlib.dct_ama_addmuladd_18s_16s_13ns_2...
+Compiling module xil_defaultlib.dct_ama_addmuladd_18s_16s_13ns_2...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_29ns_29_4...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_29ns_29_4...
+Compiling module xil_defaultlib.dct_mac_muladd_18s_13ns_13ns_29_...
+Compiling module xil_defaultlib.dct_mac_muladd_18s_13ns_13ns_29_...
+Compiling module xil_defaultlib.dct_mac_muladd_17s_13ns_29s_29_4...
+Compiling module xil_defaultlib.dct_mac_muladd_17s_13ns_29s_29_4...
+Compiling module xil_defaultlib.dct_ama_submuladd_18s_16s_14ns_2...
+Compiling module xil_defaultlib.dct_ama_submuladd_18s_16s_14ns_2...
+Compiling module xil_defaultlib.dct_dct_1d
+Compiling module xil_defaultlib.dct_dct_Pipeline_Row_DCT_Loop
+Compiling module xil_defaultlib.dct_dct_Pipeline_Xpose_Row_Outer...
+Compiling module xil_defaultlib.dct_dct_Pipeline_Col_DCT_Loop
+Compiling module xil_defaultlib.dct_dct_Pipeline_Xpose_Col_Outer...
+Compiling module xil_defaultlib.dct_dct_Pipeline_WR_Loop_Row_WR_...
+Compiling module xil_defaultlib.dct_control_s_axi_ram(MEM_TYPE="...
+Compiling module xil_defaultlib.dct_control_s_axi_ram(DEPTH=32)
+Compiling module xil_defaultlib.dct_control_s_axi
+Compiling module xil_defaultlib.dct
+Compiling module xil_defaultlib.AESL_axi_slave_control
+WARNING: [XSIM 43-3373] "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/AESL_axi_slave_control.v" Line 642. System function $fread is used as system task. This system function should have a LHS e.g. x=$fread().
+WARNING: [XSIM 43-3373] "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/AESL_axi_slave_control.v" Line 651. System function $fread is used as system task. This system function should have a LHS e.g. x=$fread().
+WARNING: [XSIM 43-3373] "/home/hyeon/workspace/dct/dct_hls/hls/sim/verilog/AESL_axi_slave_control.v" Line 692. System function $fread is used as system task. This system function should have a LHS e.g. x=$fread().
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=4)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_dct_top
+Compiling module work.glbl
+Built simulation snapshot dct
+
+****** xsim v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed Jul 23 15:38:23 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+start_gui
+INFO: [Common 17-206] Exiting xsim at Wed Jul 23 15:40:04 2025...
+INFO: [COSIM 212-316] Starting C post checking ...
+Checkpoint: i = 0
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Copying array b to b_prime
+Checkpoint: i = 1
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 2
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 3
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 4
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 5
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 6
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 7
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 8
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 9
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Test passed !
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-112] Total CPU user time: 89.98 seconds. Total CPU system time: 9.21 seconds. Total elapsed time: 159.33 seconds; peak allocated memory: 384.629 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 2m 39s

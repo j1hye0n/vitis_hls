@@ -1,0 +1,5 @@
+/home/hyeon/workspace/dct/dct_hls_solution/hls/.autopilot/db/dct.pp.0.cpp:38507:2: warning: Added loop label VITIS_LOOP_22_1:   [xilinx-label-all-loops]
+ for(n = 0, tmp = 0; n < 8; n++) {
+ ^~~
+ VITIS_LOOP_22_1: 
+/home/hyeon/workspace/dct/dct_hls_solution/hls/.autopilot/db/dct.pp.0.cpp:38507:2: note: FIX-IT applied suggested code changes

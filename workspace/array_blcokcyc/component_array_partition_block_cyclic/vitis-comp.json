@@ -1,0 +1,9 @@
+{
+  "name": "component_array_partition_block_cyclic",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["hls_config.cfg"],
+    "work_dir": "."
+  }
+}

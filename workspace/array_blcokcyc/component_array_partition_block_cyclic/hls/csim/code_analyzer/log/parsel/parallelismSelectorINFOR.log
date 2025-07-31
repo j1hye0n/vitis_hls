@@ -1,0 +1,3 @@
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp:34:1)
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp:37:1)
+parallelismSelector::WARNG: WARNING: [HLS 211-200] /home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp:68:1: Pragma 'tripcount' has been kept but may be incorrect: The maximum tripcount in the pragma (1) is less than the maximum dynamic tripcount computed for the loop (16)

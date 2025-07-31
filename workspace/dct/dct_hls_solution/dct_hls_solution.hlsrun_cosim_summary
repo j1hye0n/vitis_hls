@@ -1,0 +1,193 @@
+<ENTRY>
+{
+ "thisFile": "/home/hyeon/workspace/dct/dct_hls_solution/dct_hls_solution.hlsrun_cosim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Jul 23 16:04:04 2025",
+ "timestampMillis": "1753254244331",
+ "buildStep": {
+  "cmdId": "af5d0967-f92f-4a62-8a56-c8a23ebd0c48",
+  "name": "vitis-run",
+  "logFile": "/home/hyeon/workspace/dct/logs/hls_run_csim.log",
+  "commandLine": "vitis-run --mode hls --tcl /home/hyeon/workspace/dct/run_hls.tcl",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/hyeon/workspace/dct"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 23 16:04:04 2025",
+ "timestampMillis": "1753254244331",
+ "status": {
+  "cmdId": "af5d0967-f92f-4a62-8a56-c8a23ebd0c48",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Jul 23 16:04:04 2025",
+ "timestampMillis": "1753254244332",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_RTL_COSIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "dct",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/hyeon/workspace/dct/dct.cpp",
+     "/home/hyeon/workspace/dct/dct_coeff_table.txt",
+     "/home/hyeon/workspace/dct/in.dat",
+     "/home/hyeon/workspace/dct/out.golden.dat"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Jul 23 16:04:04 2025",
+ "timestampMillis": "1753254244332",
+ "buildStep": {
+  "cmdId": "6b4465a8-0154-4f5c-a598-00e0965d03f0",
+  "name": "cosim_design",
+  "logFile": "/home/hyeon/workspace/dct/dct_hls_solution/hls/hls.log",
+  "commandLine": "cosim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/hyeon/workspace/dct"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 23 16:04:04 2025",
+ "timestampMillis": "1753254244333",
+ "status": {
+  "cmdId": "6b4465a8-0154-4f5c-a598-00e0965d03f0",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jul 23 16:04:04 2025",
+ "timestampMillis": "1753254244333",
+ "report": {
+  "path": "/home/hyeon/workspace/dct/dct_hls_solution/hls/sim/report/dct_cosim.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_COSIMULATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jul 23 16:04:04 2025",
+ "timestampMillis": "1753254244334",
+ "report": {
+  "path": "/home/hyeon/workspace/dct/dct_hls_solution/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jul 23 16:04:04 2025",
+ "timestampMillis": "1753254244334",
+ "report": {
+  "path": "/home/hyeon/workspace/dct/dct_hls_solution/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH_COSIM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jul 23 16:04:04 2025",
+ "timestampMillis": "1753254244335",
+ "report": {
+  "path": "/home/hyeon/workspace/dct/dct_hls_solution/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_TIMELINE_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jul 23 16:04:04 2025",
+ "timestampMillis": "1753254244335",
+ "report": {
+  "path": "/home/hyeon/workspace/dct/dct_hls_solution/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_WAVE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 23 16:04:45 2025",
+ "timestampMillis": "1753254285988",
+ "status": {
+  "cmdId": "6b4465a8-0154-4f5c-a598-00e0965d03f0",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 23 16:04:46 2025",
+ "timestampMillis": "1753254286009",
+ "status": {
+  "cmdId": "af5d0967-f92f-4a62-8a56-c8a23ebd0c48",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

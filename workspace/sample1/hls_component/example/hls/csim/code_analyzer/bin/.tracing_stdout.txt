@@ -1,0 +1,6 @@
+HLS AXI-Lite Exmaple
+Function c += a+ b
+Initial values a = 5, b = 10, c = 0
+HW reuslt = 15
+SW result = 15
+Success SW and HW results match

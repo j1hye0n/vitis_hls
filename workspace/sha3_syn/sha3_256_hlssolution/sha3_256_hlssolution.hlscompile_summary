@@ -1,0 +1,205 @@
+<ENTRY>
+{
+ "thisFile": "/home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/sha3_256_hlssolution.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Jul 30 13:28:32 2025",
+ "timestampMillis": "1753849712369",
+ "buildStep": {
+  "cmdId": "fb8afa20-e00b-4d57-b42f-0a6bfb1fa824",
+  "name": "vitis_hls",
+  "logFile": "/home/hyeon/workspace/sha3_syn/vitis_hls.log",
+  "commandLine": "vitis_hls -f run.tcl",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/hyeon/workspace/sha3_syn"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 30 13:28:32 2025",
+ "timestampMillis": "1753849712369",
+ "status": {
+  "cmdId": "fb8afa20-e00b-4d57-b42f-0a6bfb1fa824",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Jul 30 13:28:32 2025",
+ "timestampMillis": "1753849712370",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "sha3_256_hw",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/hyeon/workspace/sha3_syn/fips202.c",
+     "/home/hyeon/workspace/sha3_syn/fips202.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Jul 30 13:28:32 2025",
+ "timestampMillis": "1753849712370",
+ "buildStep": {
+  "cmdId": "0a5f85be-498f-459b-ab82-bbab9507b5df",
+  "name": "csynth_design",
+  "logFile": "/home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/hyeon/workspace/sha3_syn"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 30 13:28:32 2025",
+ "timestampMillis": "1753849712371",
+ "status": {
+  "cmdId": "0a5f85be-498f-459b-ab82-bbab9507b5df",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jul 30 13:28:32 2025",
+ "timestampMillis": "1753849712371",
+ "report": {
+  "path": "/home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jul 30 13:28:32 2025",
+ "timestampMillis": "1753849712371",
+ "report": {
+  "path": "/home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jul 30 13:28:32 2025",
+ "timestampMillis": "1753849712372",
+ "report": {
+  "path": "/home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jul 30 13:28:45 2025",
+ "timestampMillis": "1753849725871",
+ "report": {
+  "path": "/home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jul 30 13:28:45 2025",
+ "timestampMillis": "1753849725871",
+ "report": {
+  "path": "/home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jul 30 13:28:45 2025",
+ "timestampMillis": "1753849725872",
+ "report": {
+  "path": "/home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 30 13:28:45 2025",
+ "timestampMillis": "1753849725872",
+ "status": {
+  "cmdId": "0a5f85be-498f-459b-ab82-bbab9507b5df",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul 30 13:28:45 2025",
+ "timestampMillis": "1753849725893",
+ "status": {
+  "cmdId": "fb8afa20-e00b-4d57-b42f-0a6bfb1fa824",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

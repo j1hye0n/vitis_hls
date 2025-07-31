@@ -1,0 +1,25 @@
+Wed Jul 30 17:40:29 2025: Running xcd server. This server was built by gradle.
+Wed Jul 30 17:40:29 2025: Server was asked to start on port: '42011'
+Wed Jul 30 17:40:29 2025: Server is using token UUID: 'f66bd404-e7d3-4cbb-bb2e-7934fe20b17d'
+Wed Jul 30 17:40:29 2025: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Wed Jul 30 17:40:29 2025: Attempting to start server on port '42011'
+Wed Jul 30 17:40:29 2025: XCD main fifo: created main fifo '/tmp/xcdmainf66bd404-e7d3-4cbb-bb2e-7934fe20b17d', fd read = 14
+Wed Jul 30 17:40:29 2025: Running Dispatch Server
+Wed Jul 30 17:40:29 2025: Version 2.2.0
+Wed Jul 30 17:40:30 2025: Dispatch Server: Accepted socket connection from client
+Wed Jul 30 17:40:30 2025: Starting Socket connection
+Wed Jul 30 17:40:30 2025: EXCHANGE_TOKEN received, server token: f66bd404-e7d3-4cbb-bb2e-7934fe20b17d, passed token: f66bd404-e7d3-4cbb-bb2e-7934fe20b17d
+Wed Jul 30 17:40:30 2025: SESSION_MGR: creating session with session uuid: 'deb73ef7-9058-4447-8de8-d28fe5db76c0' and name 'vitis_hls'
+Wed Jul 30 17:40:30 2025: KERNEL_SVC: creating session with uuid: 'deb73ef7-9058-4447-8de8-d28fe5db76c0' and name 'vitis_hls'
+Wed Jul 30 17:40:30 2025: GUIDANCE_SMGR: creating guidance session with uuid: 'deb73ef7-9058-4447-8de8-d28fe5db76c0' and name 'vitis_hls'
+Wed Jul 30 17:40:31 2025: STOP_SERVER received, server token: f66bd404-e7d3-4cbb-bb2e-7934fe20b17d, passed token: f66bd404-e7d3-4cbb-bb2e-7934fe20b17d
+Wed Jul 30 17:40:31 2025: Socket received request to stop server.
+Wed Jul 30 17:40:31 2025: Dispatch Server: do_await_stop
+Wed Jul 30 17:40:31 2025: Dispatch Server: stopping mainFifo_
+Wed Jul 30 17:40:31 2025: XCD main fifo: Stopping
+Wed Jul 30 17:40:31 2025: XCD main fifo: do_read error code: Operation canceled
+Wed Jul 30 17:40:31 2025: XCD main fifo: bytes_transferred: 0
+Wed Jul 30 17:40:31 2025: SERVER: destructor for server bound to port 42011
+Wed Jul 30 17:40:31 2025: XCD main fifo: Good unlink of /tmp/xcdmainf66bd404-e7d3-4cbb-bb2e-7934fe20b17d
+Wed Jul 30 17:40:31 2025: Server exiting with status 0.
+Wed Jul 30 17:40:31 2025: Closing log file.

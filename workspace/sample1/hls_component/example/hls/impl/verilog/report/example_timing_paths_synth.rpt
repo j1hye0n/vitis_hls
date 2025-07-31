@@ -1,0 +1,247 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Fri Jul 11 15:07:38 2025
+| Host         : DESKTOP-S15BKKL running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_timing -max_paths 10 -file ./report/example_timing_paths_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xa7z010-clg225
+| Speed File   : -1I  PRODUCTION 1.09 2019-11-22
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[7]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        3.164ns  (logic 1.780ns (56.258%)  route 1.384ns (43.742%))
+  Logic Levels:           4  (CARRY4=1 FDRE=1 LUT3=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDRE                         0.000     0.000 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[3]/C
+                         FDRE (Prop_fdre_C_Q)         0.496     0.496 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[3]/Q
+                         net (fo=4, unplaced)         0.765     1.261    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/c_i[3]
+                         LUT3 (Prop_lut3_I0_O)        0.321     1.582 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[7]_i_4/O
+                         net (fo=2, unplaced)         0.619     2.201    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[7]_i_4_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.355     2.556 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[7]_i_8/O
+                         net (fo=1, unplaced)         0.000     2.556    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[7]_i_8_n_0
+                         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.608     3.164 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[7]_i_1/O[3]
+                         net (fo=1, unplaced)         0.000     3.164    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/c_o[7]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[5]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        3.146ns  (logic 1.864ns (59.250%)  route 1.282ns (40.750%))
+  Logic Levels:           5  (CARRY4=2 FDRE=1 LUT3=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDRE                         0.000     0.000 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[2]/C
+                         FDRE (Prop_fdre_C_Q)         0.496     0.496 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[2]/Q
+                         net (fo=4, unplaced)         0.765     1.261    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/c_i[2]
+                         LUT3 (Prop_lut3_I0_O)        0.324     1.585 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[3]_i_2/O
+                         net (fo=2, unplaced)         0.517     2.102    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[3]_i_2_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.331     2.433 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[3]_i_5/O
+                         net (fo=1, unplaced)         0.000     2.433    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[3]_i_5_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376     2.809 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[3]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     2.809    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[3]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     3.146 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[7]_i_1/O[1]
+                         net (fo=1, unplaced)         0.000     3.146    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/c_o[5]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[6]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        3.100ns  (logic 1.716ns (55.355%)  route 1.384ns (44.645%))
+  Logic Levels:           4  (CARRY4=1 FDRE=1 LUT3=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDRE                         0.000     0.000 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[3]/C
+                         FDRE (Prop_fdre_C_Q)         0.496     0.496 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[3]/Q
+                         net (fo=4, unplaced)         0.765     1.261    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/c_i[3]
+                         LUT3 (Prop_lut3_I0_O)        0.321     1.582 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[7]_i_4/O
+                         net (fo=2, unplaced)         0.619     2.201    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[7]_i_4_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.355     2.556 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[7]_i_8/O
+                         net (fo=1, unplaced)         0.000     2.556    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[7]_i_8_n_0
+                         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.544     3.100 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[7]_i_1/O[2]
+                         net (fo=1, unplaced)         0.000     3.100    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/c_o[6]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[4]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        3.041ns  (logic 1.759ns (57.843%)  route 1.282ns (42.157%))
+  Logic Levels:           5  (CARRY4=2 FDRE=1 LUT3=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDRE                         0.000     0.000 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[2]/C
+                         FDRE (Prop_fdre_C_Q)         0.496     0.496 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[2]/Q
+                         net (fo=4, unplaced)         0.765     1.261    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/c_i[2]
+                         LUT3 (Prop_lut3_I0_O)        0.324     1.585 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[3]_i_2/O
+                         net (fo=2, unplaced)         0.517     2.102    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[3]_i_2_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.331     2.433 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[3]_i_5/O
+                         net (fo=1, unplaced)         0.000     2.433    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[3]_i_5_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376     2.809 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[3]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     2.809    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[3]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.232     3.041 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[7]_i_1/O[0]
+                         net (fo=1, unplaced)         0.000     3.041    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/c_o[4]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[3]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.808ns  (logic 1.648ns (58.689%)  route 1.160ns (41.311%))
+  Logic Levels:           3  (CARRY4=1 FDRE=1 LUT3=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDRE                         0.000     0.000 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[0]/C
+                         FDRE (Prop_fdre_C_Q)         0.496     0.496 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[0]/Q
+                         net (fo=4, unplaced)         0.765     1.261    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/c_i[0]
+                         LUT3 (Prop_lut3_I0_O)        0.319     1.580 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[3]_i_4/O
+                         net (fo=2, unplaced)         0.395     1.975    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[3]_i_4_n_0
+                         CARRY4 (Prop_carry4_DI[1]_O[3])
+                                                      0.833     2.808 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[3]_i_1/O[3]
+                         net (fo=1, unplaced)         0.000     2.808    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/c_o[3]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[2]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.745ns  (logic 1.585ns (57.741%)  route 1.160ns (42.259%))
+  Logic Levels:           3  (CARRY4=1 FDRE=1 LUT3=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDRE                         0.000     0.000 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[0]/C
+                         FDRE (Prop_fdre_C_Q)         0.496     0.496 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_i_reg[0]/Q
+                         net (fo=4, unplaced)         0.765     1.261    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/c_i[0]
+                         LUT3 (Prop_lut3_I0_O)        0.319     1.580 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[3]_i_4/O
+                         net (fo=2, unplaced)         0.395     1.975    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o[3]_i_4_n_0
+                         CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.770     2.745 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[3]_i_1/O[2]
+                         net (fo=1, unplaced)         0.000     2.745    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/c_o[2]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_c_o_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_a_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.647ns  (logic 0.915ns (34.567%)  route 1.732ns (65.433%))
+  Logic Levels:           3  (FDRE=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDRE                         0.000     0.000 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_a_reg[0]/C
+                         FDRE (Prop_fdre_C_Q)         0.496     0.496 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_a_reg[0]/Q
+                         net (fo=4, unplaced)         0.830     1.326    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/a[0]
+                         LUT5 (Prop_lut5_I0_O)        0.295     1.621 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata[0]_i_2/O
+                         net (fo=1, unplaced)         0.902     2.523    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata[0]_i_2_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124     2.647 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata[0]_i_1/O
+                         net (fo=1, unplaced)         0.000     2.647    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata[0]_i_1_n_0
+                         FDRE                                         r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_b_reg[4]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata_reg[4]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.353ns  (logic 0.915ns (38.887%)  route 1.438ns (61.113%))
+  Logic Levels:           3  (FDRE=1 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDRE                         0.000     0.000 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_b_reg[4]/C
+                         FDRE (Prop_fdre_C_Q)         0.496     0.496 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_b_reg[4]/Q
+                         net (fo=4, unplaced)         0.989     1.485    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/b[4]
+                         LUT6 (Prop_lut6_I0_O)        0.295     1.780 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata[4]_i_2/O
+                         net (fo=1, unplaced)         0.449     2.229    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata[4]_i_2_n_0
+                         LUT6 (Prop_lut6_I5_O)        0.124     2.353 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata[4]_i_1/O
+                         net (fo=1, unplaced)         0.000     2.353    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata[4]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_b_reg[5]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata_reg[5]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.353ns  (logic 0.915ns (38.887%)  route 1.438ns (61.113%))
+  Logic Levels:           3  (FDRE=1 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDRE                         0.000     0.000 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_b_reg[5]/C
+                         FDRE (Prop_fdre_C_Q)         0.496     0.496 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_b_reg[5]/Q
+                         net (fo=4, unplaced)         0.989     1.485    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/b[5]
+                         LUT6 (Prop_lut6_I0_O)        0.295     1.780 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata[5]_i_2/O
+                         net (fo=1, unplaced)         0.449     2.229    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata[5]_i_2_n_0
+                         LUT6 (Prop_lut6_I5_O)        0.124     2.353 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata[5]_i_1/O
+                         net (fo=1, unplaced)         0.000     2.353    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata[5]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_b_reg[6]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata_reg[6]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.353ns  (logic 0.915ns (38.887%)  route 1.438ns (61.113%))
+  Logic Levels:           3  (FDRE=1 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDRE                         0.000     0.000 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_b_reg[6]/C
+                         FDRE (Prop_fdre_C_Q)         0.496     0.496 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/int_b_reg[6]/Q
+                         net (fo=4, unplaced)         0.989     1.485    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/b[6]
+                         LUT6 (Prop_lut6_I0_O)        0.295     1.780 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata[6]_i_2/O
+                         net (fo=1, unplaced)         0.449     2.229    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata[6]_i_2_n_0
+                         LUT6 (Prop_lut6_I5_O)        0.124     2.353 r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata[6]_i_1/O
+                         net (fo=1, unplaced)         0.000     2.353    bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata[6]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/BUS_A_s_axi_U/rdata_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+

@@ -1,0 +1,245 @@
+<ENTRY>
+{
+ "thisFile": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/component_array_partition_block_cyclic.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Jul 21 16:25:35 2025",
+ "timestampMillis": "1753082735028",
+ "buildStep": {
+  "cmdId": "3c4d4c0f-cef9-4f94-a3d3-d0ba3fd90407",
+  "name": "v++",
+  "logFile": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/logs/component_array_partition_block_cyclic.steps.log",
+  "commandLine": "/tools/xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls_config.cfg --work_dir . ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls_config.cfg",
+   "--work_dir",
+   "."
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls_config.cfg",
+    "content": "part=xc7z020-clg400-1\n\n[hls]\nparam.hls.enable_hidden_option_error=false\nclock=10ns\nflow_target=vivado\nsyn.file=../matmul_partition.cpp\nsyn.top=matmul_partition\ntb.file=../matmul_partition_test.cpp\ncsim.code_analyzer=1\ncosim.wave_debug=1\ncosim.trace_level=all"
+   }
+  ],
+  "cwd": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jul 21 16:25:35 2025",
+ "timestampMillis": "1753082735028",
+ "status": {
+  "cmdId": "3c4d4c0f-cef9-4f94-a3d3-d0ba3fd90407",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Jul 21 16:25:41 2025",
+ "timestampMillis": "1753082741770",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matmul_partition",
+     "file": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/matmul_partition.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/hyeon/workspace/array_blcokcyc/matmul_partition.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jul 21 16:25:41 2025",
+ "timestampMillis": "1753082741773",
+ "buildStep": {
+  "cmdId": "49aafe23-396a-430a-b275-c8559c24d033",
+  "name": "",
+  "logFile": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jul 21 16:25:41 2025",
+ "timestampMillis": "1753082741773",
+ "status": {
+  "cmdId": "49aafe23-396a-430a-b275-c8559c24d033",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jul 21 16:25:41 2025",
+ "timestampMillis": "1753082741774",
+ "report": {
+  "path": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jul 21 16:25:41 2025",
+ "timestampMillis": "1753082741774",
+ "report": {
+  "path": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jul 21 16:25:41 2025",
+ "timestampMillis": "1753082741775",
+ "report": {
+  "path": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jul 21 16:25:53 2025",
+ "timestampMillis": "1753082753630",
+ "report": {
+  "path": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jul 21 16:25:53 2025",
+ "timestampMillis": "1753082753631",
+ "report": {
+  "path": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jul 21 16:25:53 2025",
+ "timestampMillis": "1753082753631",
+ "report": {
+  "path": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jul 21 16:25:53 2025",
+ "timestampMillis": "1753082753632",
+ "status": {
+  "cmdId": "49aafe23-396a-430a-b275-c8559c24d033",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jul 21 16:26:22 2025",
+ "timestampMillis": "1753082782177",
+ "status": {
+  "cmdId": "3c4d4c0f-cef9-4f94-a3d3-d0ba3fd90407",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jul 21 16:26:22 2025",
+ "timestampMillis": "1753082782477",
+ "report": {
+  "path": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/reports/v++_compile_component_array_partition_block_cyclic_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jul 21 16:26:22 2025",
+ "timestampMillis": "1753082782477",
+ "report": {
+  "path": "/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/reports/.db/v++_compile_component_array_partition_block_cyclic_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

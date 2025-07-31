@@ -1,0 +1,306 @@
+Execute         source -notrace -encoding utf-8 /tools/xilinx/Vitis/2024.2/tps/tcl/tcl8.6/clock.tcl 
+Execute           source -encoding utf-8 /tools/xilinx/Vitis/2024.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+INFO-FLOW: Workspace /home/hyeon/workspace/dct/dct_hls/hls opened at Wed Jul 23 16:03:21 KST 2025
+Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute         write_ini /home/hyeon/workspace/dct/dct_hls/hls_config.cfg -apsfile /home/hyeon/workspace/dct/dct_hls/hls/hls.aps -filepaths relative -quiet 
+Command       open_solution done; 0.12 sec.
+Command     open_component done; 0.13 sec.
+Execute     add_files dct.cpp 
+INFO: [HLS 200-1510] Running: add_files dct.cpp 
+INFO: [HLS 200-10] Adding design file 'dct.cpp' to the project
+Execute     add_files dct_coeff_table.txt 
+INFO: [HLS 200-1510] Running: add_files dct_coeff_table.txt 
+INFO: [HLS 200-10] Adding design file 'dct_coeff_table.txt' to the project
+Execute     add_files in.dat 
+INFO: [HLS 200-1510] Running: add_files in.dat 
+INFO: [HLS 200-10] Adding design file 'in.dat' to the project
+Execute     add_files out.golden.dat 
+INFO: [HLS 200-1510] Running: add_files out.golden.dat 
+INFO: [HLS 200-10] Adding design file 'out.golden.dat' to the project
+Execute     add_files -tb dct_test.cpp 
+INFO: [HLS 200-1510] Running: add_files -tb dct_test.cpp 
+INFO: [HLS 200-10] Adding test bench file 'dct_test.cpp' to the project
+Execute     set_top dct 
+INFO: [HLS 200-1510] Running: set_top dct 
+Execute     open_solution -reset _solution 
+INFO: [HLS 200-1510] Running: open_solution -reset _solution 
+Execute       write_ini /home/hyeon/workspace/dct/dct_hls_solution/hls_config.cfg -apsfile /home/hyeon/workspace/dct/dct_hls_solution/hls/hls.aps -filepaths relative -quiet 
+Execute       cleanup_all 
+Execute       cleanup_all 
+Execute     source -notrace -encoding utf-8 /tools/xilinx/Vitis/2024.2/tps/tcl/tcl8.6/clock.tcl 
+Execute       source -encoding utf-8 /tools/xilinx/Vitis/2024.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+INFO-FLOW: Workspace /home/hyeon/workspace/dct/dct_hls/hls opened at Thu Jul 24 15:08:07 KST 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Command   open_solution done; 0.13 sec.
+Execute   apply_ini /home/hyeon/workspace/dct/dct_hls/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/hyeon/workspace/dct/dct.cpp' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(3) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/dct.cpp' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(3)
+Execute     add_files /home/hyeon/workspace/dct/dct.cpp 
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/dct.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/hyeon/workspace/dct/dct.h' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/dct.h' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(4)
+Execute     add_files /home/hyeon/workspace/dct/dct.h 
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/dct.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/hyeon/workspace/dct/dct_coeff_table.txt' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/dct_coeff_table.txt' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(5)
+Execute     add_files /home/hyeon/workspace/dct/dct_coeff_table.txt 
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/dct_coeff_table.txt' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/hyeon/workspace/dct/in.dat' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(6) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/in.dat' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(6)
+Execute     add_files /home/hyeon/workspace/dct/in.dat 
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/in.dat' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/hyeon/workspace/dct/out.golden.dat' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/out.golden.dat' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(7)
+Execute     add_files /home/hyeon/workspace/dct/out.golden.dat 
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/out.golden.dat' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=/home/hyeon/workspace/dct/dct_test.cpp' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/hyeon/workspace/dct/dct_test.cpp' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(8)
+Execute     add_files -tb /home/hyeon/workspace/dct/dct_test.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/hyeon/workspace/dct/dct_test.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(2) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(2)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(9)
+Execute     config_csim -code_analyzer=1 
+Execute   apply_ini /home/hyeon/workspace/dct/dct_hls/hls/config.cmdline 
+Execute   ::AP::init_summary_file csim 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute   csim_design 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO-FLOW: ::SLX::run_csim failed: child process exited abnormally
+INFO-FLOW: Caught error in csim_design: Problem running csim: child process exited abnormally
+    while executing
+"error "Problem running $stage: $result""
+    (procedure "::AP::hls_slx_hook" line 55)
+    invoked from within
+"::AP::hls_slx_hook csim $config_value_dict replace_flow"
+    (procedure "ap_internal_csim_design" line 100)
+    invoked from within
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 4.6 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+Execute     source -notrace -encoding utf-8 /tools/xilinx/Vitis/2024.2/tps/tcl/tcl8.6/clock.tcl 
+Execute       source -encoding utf-8 /tools/xilinx/Vitis/2024.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+INFO-FLOW: Workspace /home/hyeon/workspace/dct/dct_hls/hls opened at Thu Jul 24 15:08:50 KST 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini /home/hyeon/workspace/dct/dct_hls/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/hyeon/workspace/dct/dct.cpp' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(3) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/dct.cpp' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(3)
+Execute     add_files /home/hyeon/workspace/dct/dct.cpp 
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/dct.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/hyeon/workspace/dct/dct.h' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/dct.h' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(4)
+Execute     add_files /home/hyeon/workspace/dct/dct.h 
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/dct.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/hyeon/workspace/dct/dct_coeff_table.txt' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/dct_coeff_table.txt' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(5)
+Execute     add_files /home/hyeon/workspace/dct/dct_coeff_table.txt 
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/dct_coeff_table.txt' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/hyeon/workspace/dct/in.dat' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(6) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/in.dat' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(6)
+Execute     add_files /home/hyeon/workspace/dct/in.dat 
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/in.dat' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/hyeon/workspace/dct/out.golden.dat' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/out.golden.dat' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(7)
+Execute     add_files /home/hyeon/workspace/dct/out.golden.dat 
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/out.golden.dat' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=/home/hyeon/workspace/dct/dct_test.cpp' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/hyeon/workspace/dct/dct_test.cpp' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(8)
+Execute     add_files -tb /home/hyeon/workspace/dct/dct_test.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/hyeon/workspace/dct/dct_test.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=dct' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=dct' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(10)
+Execute     set_top dct 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(2) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(2)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(9)
+Execute     config_csim -code_analyzer=1 
+Execute   apply_ini /home/hyeon/workspace/dct/dct_hls/hls/config.cmdline 
+Execute   ::AP::init_summary_file csim 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute   csim_design 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO-FLOW: ::SLX::run_csim failed: child process exited abnormally
+INFO-FLOW: Caught error in csim_design: Problem running csim: child process exited abnormally
+    while executing
+"error "Problem running $stage: $result""
+    (procedure "::AP::hls_slx_hook" line 55)
+    invoked from within
+"::AP::hls_slx_hook csim $config_value_dict replace_flow"
+    (procedure "ap_internal_csim_design" line 100)
+    invoked from within
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 11.08 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+Execute     source -notrace -encoding utf-8 /tools/xilinx/Vitis/2024.2/tps/tcl/tcl8.6/clock.tcl 
+Execute       source -encoding utf-8 /tools/xilinx/Vitis/2024.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+INFO-FLOW: Workspace /home/hyeon/workspace/dct/dct_hls/hls opened at Thu Jul 24 15:12:42 KST 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini /home/hyeon/workspace/dct/dct_hls/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/hyeon/workspace/dct/dct.cpp' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/dct.cpp' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(5)
+Execute     add_files /home/hyeon/workspace/dct/dct.cpp 
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/dct.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/hyeon/workspace/dct/dct.h' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(6) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/dct.h' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(6)
+Execute     add_files /home/hyeon/workspace/dct/dct.h 
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/dct.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/hyeon/workspace/dct/dct_coeff_table.txt' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/dct_coeff_table.txt' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(7)
+Execute     add_files /home/hyeon/workspace/dct/dct_coeff_table.txt 
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/dct_coeff_table.txt' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/hyeon/workspace/dct/in.dat' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/in.dat' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(8)
+Execute     add_files /home/hyeon/workspace/dct/in.dat 
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/in.dat' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/hyeon/workspace/dct/out.golden.dat' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/out.golden.dat' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(9)
+Execute     add_files /home/hyeon/workspace/dct/out.golden.dat 
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/out.golden.dat' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=/home/hyeon/workspace/dct/dct_test.cpp' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/hyeon/workspace/dct/dct_test.cpp' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(10)
+Execute     add_files -tb /home/hyeon/workspace/dct/dct_test.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/hyeon/workspace/dct/dct_test.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=dct' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=dct' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(12)
+Execute     set_top dct 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xa7z020clg400-1I' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xa7z020clg400-1I' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(1)
+Execute     set_part xa7z020clg400-1I 
+Execute       create_platform xa7z020clg400-1I -board  
+DBG:HLSDevice: Trying to load device library: /tools/xilinx/Vitis/2024.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/xilinx/Vivado/2024.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xa7z020-clg400-1I'
+Command       create_platform done; 1.94 sec.
+Execute       source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.14 sec.
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.31 sec.
+Execute       ap_part_info -name xa7z020-clg400-1I -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.28 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(11)
+Execute     config_csim -code_analyzer=1 
+Command   apply_ini done; 2.32 sec.
+Execute   apply_ini /home/hyeon/workspace/dct/dct_hls/hls/config.cmdline 
+Execute   ::AP::init_summary_file csim 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute   csim_design 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO-FLOW: SLX proc replaces csim
+Command   csim_design done; 5.74 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+Execute     source -notrace -encoding utf-8 /tools/xilinx/Vitis/2024.2/tps/tcl/tcl8.6/clock.tcl 
+Execute       source -encoding utf-8 /tools/xilinx/Vitis/2024.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+INFO-FLOW: Workspace /home/hyeon/workspace/dct/dct_hls/hls opened at Thu Jul 24 15:13:15 KST 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini /home/hyeon/workspace/dct/dct_hls/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/hyeon/workspace/dct/dct.cpp' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/dct.cpp' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(5)
+Execute     add_files /home/hyeon/workspace/dct/dct.cpp 
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/dct.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/hyeon/workspace/dct/dct.h' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(6) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/dct.h' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(6)
+Execute     add_files /home/hyeon/workspace/dct/dct.h 
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/dct.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/hyeon/workspace/dct/dct_coeff_table.txt' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/dct_coeff_table.txt' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(7)
+Execute     add_files /home/hyeon/workspace/dct/dct_coeff_table.txt 
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/dct_coeff_table.txt' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/hyeon/workspace/dct/in.dat' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/in.dat' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(8)
+Execute     add_files /home/hyeon/workspace/dct/in.dat 
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/in.dat' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/hyeon/workspace/dct/out.golden.dat' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/dct/out.golden.dat' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(9)
+Execute     add_files /home/hyeon/workspace/dct/out.golden.dat 
+INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/dct/out.golden.dat' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=/home/hyeon/workspace/dct/dct_test.cpp' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/hyeon/workspace/dct/dct_test.cpp' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(10)
+Execute     add_files -tb /home/hyeon/workspace/dct/dct_test.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/hyeon/workspace/dct/dct_test.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=dct' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=dct' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(12)
+Execute     set_top dct 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xa7z020clg400-1I' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xa7z020clg400-1I' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(1)
+Execute     set_part xa7z020clg400-1I 
+Execute       create_platform xa7z020clg400-1I -board  
+DBG:HLSDevice: Trying to load device library: /tools/xilinx/Vitis/2024.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/xilinx/Vivado/2024.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xa7z020-clg400-1I'
+Command       create_platform done; 1.58 sec.
+Execute       source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/xilinx/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.13 sec.
+Execute       ap_part_info -name xa7z020-clg400-1I -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.72 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'cosim.wave_debug=1' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'cosim.wave_debug=1' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(13)
+Execute     config_cosim -wave_debug=1 
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from /home/hyeon/workspace/dct/dct_hls/hls_config.cfg(11)
+Execute     config_csim -code_analyzer=1 
+Command   apply_ini done; 1.76 sec.
+Execute   apply_ini /home/hyeon/workspace/dct/dct_hls/hls/config.cmdline 
+Execute   ::AP::init_summary_file csim 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute   csim_design 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO-FLOW: SLX proc replaces csim
+Command   csim_design done; 3 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 

@@ -1,0 +1,38 @@
+  **** HLS Build v2024.2 5238294
+Sourcing Tcl script '/home/hyeon/workspace/sha3_syn/run.tcl'
+INFO: [HLS 200-1510] Running: open_component -reset sha3_256_hls -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening project '/home/hyeon/workspace/sha3_syn/sha3_256_hls'.
+INFO: [HLS 200-10] Opening and resetting solution '/home/hyeon/workspace/sha3_syn/sha3_256_hls/hls'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: add_files fips202.c 
+INFO: [HLS 200-10] Adding design file 'fips202.c' to the project
+INFO: [HLS 200-1510] Running: add_files fips202.h 
+INFO: [HLS 200-10] Adding design file 'fips202.h' to the project
+INFO: [HLS 200-1510] Running: set_top sha3_256_hw 
+INFO: [HLS 200-1510] Running: open_solution -reset solution 
+INFO: [HLS 200-10] Opening and resetting solution '/home/hyeon/workspace/sha3_syn/sha3_256_hlssolution/hls'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+ERROR: [HLS 200-627] Cannot find C test bench. Please specify test bench files using 'add_files -tb'.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:02; Allocated memory: 16.000 MB.
+4
+    while executing
+"source /home/hyeon/workspace/sha3_syn/run.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $tclfile] "
+
+INFO: [HLS 200-112] Total CPU user time: 3.84 seconds. Total CPU system time: 1.38 seconds. Total elapsed time: 16.15 seconds; peak allocated memory: 324.141 MB.
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

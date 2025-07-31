@@ -1,0 +1,3 @@
+relativeroot=/home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic
+original_argv=--mode hls --impl --config /home/hyeon/workspace/array_blcokcyc/component_array_partition_block_cyclic/hls_config.cfg --work_dir . 
+

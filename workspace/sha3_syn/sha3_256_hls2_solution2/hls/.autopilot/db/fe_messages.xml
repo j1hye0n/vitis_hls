@@ -1,0 +1,42 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5589" msg_severity="WARNING" msg_loc="fips.c:478:9" msg_body="'#pragma HLS loop_flatten' can only be applied inside loop body">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fips.c:44:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="store64" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fips.c:128:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="KeccakF1600_StatePermute" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fips.c:129:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="KeccakF1600_StatePermute" ARG_PragmaIsValid="1" ARG_PragmaOptions="off=true" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fips.c:473:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keccak_absorb_once" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fips.c:478:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keccak_absorb_once" ARG_PragmaIsValid="1" ARG_PragmaType="loop_flatten" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fips.c:481:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keccak_absorb_once" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fips.c:489:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keccak_absorb_once" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/hyeon/workspace/sha3_syn/run2.tcl:49:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sha3_256_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=sha3_256_hw" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="fips.c:469:0" msg_body="Inlining function 'load64' into 'keccak_absorb_once'">
+        <args Callee="load64" Callee-DebugLoc="File fips.c Line 22 Column 0" Caller="keccak_absorb_once" Caller-DebugLoc="File fips.c Line 469 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="fips.c:755:0" msg_body="Inlining function 'keccak_absorb_once' into 'sha3_256_hw'">
+        <args Callee="keccak_absorb_once" Callee-DebugLoc="File fips.c Line 469 Column 0" Caller="sha3_256_hw" Caller-DebugLoc="File fips.c Line 755 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="fips.c:755:0" msg_body="Inlining function 'store64' into 'sha3_256_hw'">
+        <args Callee="store64" Callee-DebugLoc="File fips.c Line 40 Column 0" Caller="sha3_256_hw" Caller-DebugLoc="File fips.c Line 755 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="fips.c:27:20" msg_body="The program may have out of bound array access on variable 'in'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="fips.c:27:20" msg_body="Ignore address on register port 'in'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="fips.c:490:22" msg_body="Ignore address on register port 'in'"/>
+</xilinx:hls_fe_msgs>
+

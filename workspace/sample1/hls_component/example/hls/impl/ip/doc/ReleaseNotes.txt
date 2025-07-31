@@ -1,0 +1,5 @@
+
+Family       : azynq
+Device       : xa7z010
+Package      : -clg225
+Speed Grade  : -1I
