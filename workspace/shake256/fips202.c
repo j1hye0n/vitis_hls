@@ -41,7 +41,6 @@ static void store64(uint8_t x[8], uint64_t u) {
   unsigned int i;
 
   for(i=0;i<8;i++)
-#pragma HLS pipeline
     x[i] = u >> 8*i;
 }
 
@@ -434,7 +433,8 @@ static unsigned int keccak_squeeze(uint8_t *out,
 {
   unsigned int i;
 
-  while(outlen) {
+  // it's fixed from while to for-loop same reason
+  for (int j=outlen; j>=0 ; j=i-pos){
     if(pos == r) {
       KeccakF1600_StatePermute(s);
       pos = 0;
@@ -448,6 +448,19 @@ static unsigned int keccak_squeeze(uint8_t *out,
   return pos;
 }
 
+//   while(outlen) {
+//     if(pos == r) {
+//       KeccakF1600_StatePermute(s);
+//       pos = 0;
+//     }
+//     for(i=pos;i < r && i < pos+outlen; i++)
+//       *out++ = s[i/8] >> 8*(i%8);
+//     outlen -= i-pos;
+//     pos = i;
+//   }
+// 
+//   return pos;
+// }
 
 /*************************************************
 * Name:        keccak_absorb_once
@@ -511,7 +524,8 @@ static void keccak_squeezeblocks(uint8_t *out,
 {
   unsigned int i;
 
-  while(nblocks) {
+  // fix while -> for but i'm not confident about while convert hls
+  for (int j=nblocks ; j>0 ; j-=1){
     KeccakF1600_StatePermute(s);
     for(i=0;i<r/8;i++)
       store64(out+8*i, s[i]);
@@ -519,6 +533,14 @@ static void keccak_squeezeblocks(uint8_t *out,
     nblocks -= 1;
   }
 }
+//  while(nblocks) {
+//    KeccakF1600_StatePermute(s);
+//    for(i=0;i<r/8;i++)
+//      store64(out+8*i, s[i]);
+//    out += r;
+//    nblocks -= 1;
+//  }
+//}
 
 /*************************************************
 * Name:        shake128_init
