@@ -1,0 +1,223 @@
+
+
+================================================================
+== Vitis HLS Report for 'KeccakF1600_StatePermute_HLS'
+================================================================
+* Date:           Tue Aug  5 17:14:38 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        sha3_256_hls
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: azynq
+* Target device:  xa7z010-clg400-1I
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.930 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       34|       34|  0.340 us|  0.340 us|   34|   34|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------------------------------------------+-----------------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+        |                                                                |                                                     |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+        |                            Instance                            |                        Module                       |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+        +----------------------------------------------------------------+-----------------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+        |grp_KeccakF1600_StatePermute_HLS_Pipeline_state_permute_fu_392  |KeccakF1600_StatePermute_HLS_Pipeline_state_permute  |       27|       27|  0.270 us|  0.270 us|   26|   26|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        +----------------------------------------------------------------+-----------------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP|   FF  |  LUT  | URAM|
++-----------------+---------+----+-------+-------+-----+
+|DSP              |        -|   -|      -|      -|    -|
+|Expression       |        -|   -|      -|      -|    -|
+|FIFO             |        -|   -|      -|      -|    -|
+|Instance         |        -|   -|   3471|  16561|    -|
+|Memory           |        -|   -|      -|      -|    -|
+|Multiplexer      |        -|   -|      0|    528|    -|
+|Register         |        -|   -|   1609|      -|    -|
++-----------------+---------+----+-------+-------+-----+
+|Total            |        0|   0|   5080|  17089|    0|
++-----------------+---------+----+-------+-------+-----+
+|Available        |      120|  80|  35200|  17600|    0|
++-----------------+---------+----+-------+-------+-----+
+|Utilization (%)  |        0|   0|     14|     97|    0|
++-----------------+---------+----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------------------------------------------+-----------------------------------------------------+---------+----+------+-------+-----+
+    |                            Instance                            |                        Module                       | BRAM_18K| DSP|  FF  |  LUT  | URAM|
+    +----------------------------------------------------------------+-----------------------------------------------------+---------+----+------+-------+-----+
+    |grp_KeccakF1600_StatePermute_HLS_Pipeline_state_permute_fu_392  |KeccakF1600_StatePermute_HLS_Pipeline_state_permute  |        0|   0|  3471|  16561|    0|
+    +----------------------------------------------------------------+-----------------------------------------------------+---------+----+------+-------+-----+
+    |Total                                                           |                                                     |        0|   0|  3471|  16561|    0|
+    +----------------------------------------------------------------+-----------------------------------------------------+---------+----+------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +------------------------+----+-----------+-----+-----------+
+    |          Name          | LUT| Input Size| Bits| Total Bits|
+    +------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm               |  48|          9|    1|          9|
+    |state_0_address0_local  |  31|          6|    3|         18|
+    |state_0_address1_local  |  31|          6|    3|         18|
+    |state_0_d0_local        |  14|          3|   64|        192|
+    |state_0_d1_local        |  20|          4|   64|        256|
+    |state_1_address0_local  |  31|          6|    3|         18|
+    |state_1_address1_local  |  31|          6|    3|         18|
+    |state_1_d0_local        |  14|          3|   64|        192|
+    |state_1_d1_local        |  20|          4|   64|        256|
+    |state_2_address0_local  |  31|          6|    3|         18|
+    |state_2_address1_local  |  31|          6|    3|         18|
+    |state_2_d0_local        |  14|          3|   64|        192|
+    |state_2_d1_local        |  20|          4|   64|        256|
+    |state_3_address0_local  |  31|          6|    3|         18|
+    |state_3_address1_local  |  31|          6|    3|         18|
+    |state_3_d0_local        |  14|          3|   64|        192|
+    |state_3_d1_local        |  20|          4|   64|        256|
+    |state_4_address0_local  |  31|          6|    3|         18|
+    |state_4_address1_local  |  31|          6|    3|         18|
+    |state_4_d0_local        |  14|          3|   64|        192|
+    |state_4_d1_local        |  20|          4|   64|        256|
+    +------------------------+----+-----------+-----+-----------+
+    |Total                   | 528|        104|  671|       2429|
+    +------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                     Name                                    | FF | LUT| Bits| Const Bits|
+    +-----------------------------------------------------------------------------+----+----+-----+-----------+
+    |Aba_reg_731                                                                  |  64|   0|   64|          0|
+    |Abe_reg_736                                                                  |  64|   0|   64|          0|
+    |Abi_reg_741                                                                  |  64|   0|   64|          0|
+    |Abo_reg_746                                                                  |  64|   0|   64|          0|
+    |Abu_reg_751                                                                  |  64|   0|   64|          0|
+    |Aga_reg_806                                                                  |  64|   0|   64|          0|
+    |Age_reg_811                                                                  |  64|   0|   64|          0|
+    |Agi_reg_816                                                                  |  64|   0|   64|          0|
+    |Ago_reg_821                                                                  |  64|   0|   64|          0|
+    |Agu_reg_826                                                                  |  64|   0|   64|          0|
+    |Aka_reg_831                                                                  |  64|   0|   64|          0|
+    |Ake_reg_836                                                                  |  64|   0|   64|          0|
+    |Aki_reg_841                                                                  |  64|   0|   64|          0|
+    |Ako_reg_846                                                                  |  64|   0|   64|          0|
+    |Aku_reg_851                                                                  |  64|   0|   64|          0|
+    |Ama_reg_911                                                                  |  64|   0|   64|          0|
+    |Ame_reg_916                                                                  |  64|   0|   64|          0|
+    |Ami_reg_921                                                                  |  64|   0|   64|          0|
+    |Amo_reg_926                                                                  |  64|   0|   64|          0|
+    |Amu_reg_931                                                                  |  64|   0|   64|          0|
+    |Asa_reg_936                                                                  |  64|   0|   64|          0|
+    |Ase_reg_941                                                                  |  64|   0|   64|          0|
+    |Asi_reg_946                                                                  |  64|   0|   64|          0|
+    |Aso_reg_951                                                                  |  64|   0|   64|          0|
+    |Asu_reg_956                                                                  |  64|   0|   64|          0|
+    |ap_CS_fsm                                                                    |   8|   0|    8|          0|
+    |grp_KeccakF1600_StatePermute_HLS_Pipeline_state_permute_fu_392_ap_start_reg  |   1|   0|    1|          0|
+    +-----------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                        |1609|   0| 1609|          0|
+    +-----------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------+-----+-----+------------+------------------------------+--------------+
+|     RTL Ports    | Dir | Bits|  Protocol  |         Source Object        |    C Type    |
++------------------+-----+-----+------------+------------------------------+--------------+
+|ap_clk            |   in|    1|  ap_ctrl_hs|  KeccakF1600_StatePermute_HLS|  return value|
+|ap_rst            |   in|    1|  ap_ctrl_hs|  KeccakF1600_StatePermute_HLS|  return value|
+|ap_start          |   in|    1|  ap_ctrl_hs|  KeccakF1600_StatePermute_HLS|  return value|
+|ap_done           |  out|    1|  ap_ctrl_hs|  KeccakF1600_StatePermute_HLS|  return value|
+|ap_idle           |  out|    1|  ap_ctrl_hs|  KeccakF1600_StatePermute_HLS|  return value|
+|ap_ready          |  out|    1|  ap_ctrl_hs|  KeccakF1600_StatePermute_HLS|  return value|
+|state_0_address0  |  out|    3|   ap_memory|                       state_0|         array|
+|state_0_ce0       |  out|    1|   ap_memory|                       state_0|         array|
+|state_0_we0       |  out|    1|   ap_memory|                       state_0|         array|
+|state_0_d0        |  out|   64|   ap_memory|                       state_0|         array|
+|state_0_q0        |   in|   64|   ap_memory|                       state_0|         array|
+|state_0_address1  |  out|    3|   ap_memory|                       state_0|         array|
+|state_0_ce1       |  out|    1|   ap_memory|                       state_0|         array|
+|state_0_we1       |  out|    1|   ap_memory|                       state_0|         array|
+|state_0_d1        |  out|   64|   ap_memory|                       state_0|         array|
+|state_0_q1        |   in|   64|   ap_memory|                       state_0|         array|
+|state_1_address0  |  out|    3|   ap_memory|                       state_1|         array|
+|state_1_ce0       |  out|    1|   ap_memory|                       state_1|         array|
+|state_1_we0       |  out|    1|   ap_memory|                       state_1|         array|
+|state_1_d0        |  out|   64|   ap_memory|                       state_1|         array|
+|state_1_q0        |   in|   64|   ap_memory|                       state_1|         array|
+|state_1_address1  |  out|    3|   ap_memory|                       state_1|         array|
+|state_1_ce1       |  out|    1|   ap_memory|                       state_1|         array|
+|state_1_we1       |  out|    1|   ap_memory|                       state_1|         array|
+|state_1_d1        |  out|   64|   ap_memory|                       state_1|         array|
+|state_1_q1        |   in|   64|   ap_memory|                       state_1|         array|
+|state_2_address0  |  out|    3|   ap_memory|                       state_2|         array|
+|state_2_ce0       |  out|    1|   ap_memory|                       state_2|         array|
+|state_2_we0       |  out|    1|   ap_memory|                       state_2|         array|
+|state_2_d0        |  out|   64|   ap_memory|                       state_2|         array|
+|state_2_q0        |   in|   64|   ap_memory|                       state_2|         array|
+|state_2_address1  |  out|    3|   ap_memory|                       state_2|         array|
+|state_2_ce1       |  out|    1|   ap_memory|                       state_2|         array|
+|state_2_we1       |  out|    1|   ap_memory|                       state_2|         array|
+|state_2_d1        |  out|   64|   ap_memory|                       state_2|         array|
+|state_2_q1        |   in|   64|   ap_memory|                       state_2|         array|
+|state_3_address0  |  out|    3|   ap_memory|                       state_3|         array|
+|state_3_ce0       |  out|    1|   ap_memory|                       state_3|         array|
+|state_3_we0       |  out|    1|   ap_memory|                       state_3|         array|
+|state_3_d0        |  out|   64|   ap_memory|                       state_3|         array|
+|state_3_q0        |   in|   64|   ap_memory|                       state_3|         array|
+|state_3_address1  |  out|    3|   ap_memory|                       state_3|         array|
+|state_3_ce1       |  out|    1|   ap_memory|                       state_3|         array|
+|state_3_we1       |  out|    1|   ap_memory|                       state_3|         array|
+|state_3_d1        |  out|   64|   ap_memory|                       state_3|         array|
+|state_3_q1        |   in|   64|   ap_memory|                       state_3|         array|
+|state_4_address0  |  out|    3|   ap_memory|                       state_4|         array|
+|state_4_ce0       |  out|    1|   ap_memory|                       state_4|         array|
+|state_4_we0       |  out|    1|   ap_memory|                       state_4|         array|
+|state_4_d0        |  out|   64|   ap_memory|                       state_4|         array|
+|state_4_q0        |   in|   64|   ap_memory|                       state_4|         array|
+|state_4_address1  |  out|    3|   ap_memory|                       state_4|         array|
+|state_4_ce1       |  out|    1|   ap_memory|                       state_4|         array|
+|state_4_we1       |  out|    1|   ap_memory|                       state_4|         array|
+|state_4_d1        |  out|   64|   ap_memory|                       state_4|         array|
+|state_4_q1        |   in|   64|   ap_memory|                       state_4|         array|
++------------------+-----+-----+------------+------------------------------+--------------+
+

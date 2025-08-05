@@ -1,0 +1,50 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'keccak_absorb_once_hls'" level="0">
+<item name = "Date">Tue Aug  5 17:14:37 2025
+</item>
+<item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
+<item name = "Project">sha3_256_hls</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">azynq</item>
+<item name = "Target device">xa7z010-clg400-1I</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.580 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_keccak_absorb_once_hls_Pipeline_init_state_fu_184">keccak_absorb_once_hls_Pipeline_init_state, 27, 27, 0.270 us, 0.270 us, 26, 26, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_keccak_absorb_once_hls_Pipeline_absorb_remaining_fu_198">keccak_absorb_once_hls_Pipeline_absorb_remaining, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_keccak_absorb_once_hls_Pipeline_absorb_word_loop_fu_216">keccak_absorb_once_hls_Pipeline_absorb_word_loop, 71, 71, 0.710 us, 0.710 us, 70, 70, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_KeccakF1600_StatePermute_HLS_fu_233">KeccakF1600_StatePermute_HLS, 34, 34, 0.340 us, 0.340 us, 34, 34, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- absorb_blocks">110, 1760, 110, -, -, 1 ~ 16, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

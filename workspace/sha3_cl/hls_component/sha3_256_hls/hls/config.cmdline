@@ -1,0 +1,3 @@
+relativeroot=/home/hyeon/vitis_hls/workspace/sha3_opt/hls_component
+original_argv=-c --mode hls --config /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg --work_dir sha3_256_hls 
+

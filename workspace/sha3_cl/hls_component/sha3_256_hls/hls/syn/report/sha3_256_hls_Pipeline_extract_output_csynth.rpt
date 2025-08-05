@@ -1,0 +1,206 @@
+
+
+================================================================
+== Vitis HLS Report for 'sha3_256_hls_Pipeline_extract_output'
+================================================================
+* Date:           Tue Aug  5 17:14:39 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        sha3_256_hls
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: azynq
+* Target device:  xa7z010-clg400-1I
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.741 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min    |    max    | min | max |                      Type                      |
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+    |        5|        5|  50.000 ns|  50.000 ns|    4|    4|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                  |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name    |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- extract_output  |        3|        3|         1|          1|          1|     4|       yes|
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP|   FF  |  LUT  | URAM|
++-----------------+---------+----+-------+-------+-----+
+|DSP              |        -|   -|      -|      -|    -|
+|Expression       |        -|   -|      0|     20|    -|
+|FIFO             |        -|   -|      -|      -|    -|
+|Instance         |        -|   -|      0|     20|    -|
+|Memory           |        -|   -|      -|      -|    -|
+|Multiplexer      |        -|   -|      0|     27|    -|
+|Register         |        -|   -|      4|      -|    -|
++-----------------+---------+----+-------+-------+-----+
+|Total            |        0|   0|      4|     67|    0|
++-----------------+---------+----+-------+-------+-----+
+|Available        |      120|  80|  35200|  17600|    0|
++-----------------+---------+----+-------+-------+-----+
+|Utilization (%)  |        0|   0|     ~0|     ~0|    0|
++-----------------+---------+----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------+----------------------+---------+----+---+----+-----+
+    |          Instance         |        Module        | BRAM_18K| DSP| FF| LUT| URAM|
+    +---------------------------+----------------------+---------+----+---+----+-----+
+    |sparsemux_9_2_64_1_1_U101  |sparsemux_9_2_64_1_1  |        0|   0|  0|  20|    0|
+    +---------------------------+----------------------+---------+----+---+----+-----+
+    |Total                      |                      |        0|   0|  0|  20|    0|
+    +---------------------------+----------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |i_fu_524_p2           |         +|   0|  0|  10|           2|           1|
+    |icmp_ln325_fu_530_p2  |      icmp|   0|  0|  10|           2|           2|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  20|           4|           3|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------+----+-----------+-----+-----------+
+    |           Name           | LUT| Input Size| Bits| Total Bits|
+    +--------------------------+----+-----------+-----+-----------+
+    |ap_done_int               |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i1_load  |   9|          2|    2|          4|
+    |i1_fu_134                 |   9|          2|    2|          4|
+    +--------------------------+----+-----------+-----+-----------+
+    |Total                     |  27|          6|    5|         10|
+    +--------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+---+----+-----+-----------+
+    |     Name    | FF| LUT| Bits| Const Bits|
+    +-------------+---+----+-----+-----------+
+    |ap_CS_fsm    |  1|   0|    1|          0|
+    |ap_done_reg  |  1|   0|    1|          0|
+    |i1_fu_134    |  2|   0|    2|          0|
+    +-------------+---+----+-----+-----------+
+    |Total        |  4|   0|    4|          0|
+    +-------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------+-----+-----+------------+--------------------------------------+--------------+
+|  RTL Ports  | Dir | Bits|  Protocol  |             Source Object            |    C Type    |
++-------------+-----+-----+------------+--------------------------------------+--------------+
+|ap_clk       |   in|    1|  ap_ctrl_hs|  sha3_256_hls_Pipeline_extract_output|  return value|
+|ap_rst       |   in|    1|  ap_ctrl_hs|  sha3_256_hls_Pipeline_extract_output|  return value|
+|ap_start     |   in|    1|  ap_ctrl_hs|  sha3_256_hls_Pipeline_extract_output|  return value|
+|ap_done      |  out|    1|  ap_ctrl_hs|  sha3_256_hls_Pipeline_extract_output|  return value|
+|ap_idle      |  out|    1|  ap_ctrl_hs|  sha3_256_hls_Pipeline_extract_output|  return value|
+|ap_ready     |  out|    1|  ap_ctrl_hs|  sha3_256_hls_Pipeline_extract_output|  return value|
+|h_31         |  out|    8|      ap_vld|                                  h_31|       pointer|
+|h_31_ap_vld  |  out|    1|      ap_vld|                                  h_31|       pointer|
+|h_30         |  out|    8|      ap_vld|                                  h_30|       pointer|
+|h_30_ap_vld  |  out|    1|      ap_vld|                                  h_30|       pointer|
+|h_29         |  out|    8|      ap_vld|                                  h_29|       pointer|
+|h_29_ap_vld  |  out|    1|      ap_vld|                                  h_29|       pointer|
+|h_28         |  out|    8|      ap_vld|                                  h_28|       pointer|
+|h_28_ap_vld  |  out|    1|      ap_vld|                                  h_28|       pointer|
+|h_27         |  out|    8|      ap_vld|                                  h_27|       pointer|
+|h_27_ap_vld  |  out|    1|      ap_vld|                                  h_27|       pointer|
+|h_26         |  out|    8|      ap_vld|                                  h_26|       pointer|
+|h_26_ap_vld  |  out|    1|      ap_vld|                                  h_26|       pointer|
+|h_25         |  out|    8|      ap_vld|                                  h_25|       pointer|
+|h_25_ap_vld  |  out|    1|      ap_vld|                                  h_25|       pointer|
+|h_24         |  out|    8|      ap_vld|                                  h_24|       pointer|
+|h_24_ap_vld  |  out|    1|      ap_vld|                                  h_24|       pointer|
+|h_23         |  out|    8|      ap_vld|                                  h_23|       pointer|
+|h_23_ap_vld  |  out|    1|      ap_vld|                                  h_23|       pointer|
+|h_22         |  out|    8|      ap_vld|                                  h_22|       pointer|
+|h_22_ap_vld  |  out|    1|      ap_vld|                                  h_22|       pointer|
+|h_21         |  out|    8|      ap_vld|                                  h_21|       pointer|
+|h_21_ap_vld  |  out|    1|      ap_vld|                                  h_21|       pointer|
+|h_20         |  out|    8|      ap_vld|                                  h_20|       pointer|
+|h_20_ap_vld  |  out|    1|      ap_vld|                                  h_20|       pointer|
+|h_19         |  out|    8|      ap_vld|                                  h_19|       pointer|
+|h_19_ap_vld  |  out|    1|      ap_vld|                                  h_19|       pointer|
+|h_18         |  out|    8|      ap_vld|                                  h_18|       pointer|
+|h_18_ap_vld  |  out|    1|      ap_vld|                                  h_18|       pointer|
+|h_17         |  out|    8|      ap_vld|                                  h_17|       pointer|
+|h_17_ap_vld  |  out|    1|      ap_vld|                                  h_17|       pointer|
+|h_16         |  out|    8|      ap_vld|                                  h_16|       pointer|
+|h_16_ap_vld  |  out|    1|      ap_vld|                                  h_16|       pointer|
+|h_15         |  out|    8|      ap_vld|                                  h_15|       pointer|
+|h_15_ap_vld  |  out|    1|      ap_vld|                                  h_15|       pointer|
+|h_14         |  out|    8|      ap_vld|                                  h_14|       pointer|
+|h_14_ap_vld  |  out|    1|      ap_vld|                                  h_14|       pointer|
+|h_13         |  out|    8|      ap_vld|                                  h_13|       pointer|
+|h_13_ap_vld  |  out|    1|      ap_vld|                                  h_13|       pointer|
+|h_12         |  out|    8|      ap_vld|                                  h_12|       pointer|
+|h_12_ap_vld  |  out|    1|      ap_vld|                                  h_12|       pointer|
+|h_11         |  out|    8|      ap_vld|                                  h_11|       pointer|
+|h_11_ap_vld  |  out|    1|      ap_vld|                                  h_11|       pointer|
+|h_10         |  out|    8|      ap_vld|                                  h_10|       pointer|
+|h_10_ap_vld  |  out|    1|      ap_vld|                                  h_10|       pointer|
+|h_9          |  out|    8|      ap_vld|                                   h_9|       pointer|
+|h_9_ap_vld   |  out|    1|      ap_vld|                                   h_9|       pointer|
+|h_8          |  out|    8|      ap_vld|                                   h_8|       pointer|
+|h_8_ap_vld   |  out|    1|      ap_vld|                                   h_8|       pointer|
+|h_7          |  out|    8|      ap_vld|                                   h_7|       pointer|
+|h_7_ap_vld   |  out|    1|      ap_vld|                                   h_7|       pointer|
+|h_6          |  out|    8|      ap_vld|                                   h_6|       pointer|
+|h_6_ap_vld   |  out|    1|      ap_vld|                                   h_6|       pointer|
+|h_5          |  out|    8|      ap_vld|                                   h_5|       pointer|
+|h_5_ap_vld   |  out|    1|      ap_vld|                                   h_5|       pointer|
+|h_4          |  out|    8|      ap_vld|                                   h_4|       pointer|
+|h_4_ap_vld   |  out|    1|      ap_vld|                                   h_4|       pointer|
+|h_3          |  out|    8|      ap_vld|                                   h_3|       pointer|
+|h_3_ap_vld   |  out|    1|      ap_vld|                                   h_3|       pointer|
+|h_2          |  out|    8|      ap_vld|                                   h_2|       pointer|
+|h_2_ap_vld   |  out|    1|      ap_vld|                                   h_2|       pointer|
+|h_1          |  out|    8|      ap_vld|                                   h_1|       pointer|
+|h_1_ap_vld   |  out|    1|      ap_vld|                                   h_1|       pointer|
+|h_0          |  out|    8|      ap_vld|                                   h_0|       pointer|
+|h_0_ap_vld   |  out|    1|      ap_vld|                                   h_0|       pointer|
+|s_load       |   in|   64|     ap_none|                                s_load|        scalar|
+|s_1_load     |   in|   64|     ap_none|                              s_1_load|        scalar|
+|s_2_load     |   in|   64|     ap_none|                              s_2_load|        scalar|
+|s_3_load     |   in|   64|     ap_none|                              s_3_load|        scalar|
++-------------+-----+-----+------------+--------------------------------------+--------------+
+

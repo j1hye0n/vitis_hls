@@ -1,0 +1,26 @@
+<pragmas>
+<pragma file="../fips202.c" line="71" pragmaType="inline" parentfunction="KeccakF1600_StatePermute_HLS" off="1" region="0" recursive="0"/>
+<pragma file="../fips202.c" line="99" pragmaType="pipeline" parentfunction="KeccakF1600_StatePermute_HLS" off="0" ii="2" rewind="0" style=""/>
+<pragma file="../fips202.c" line="100" pragmaType="loop_tripcount" parentfunction="KeccakF1600_StatePermute_HLS" min="12" max="12" avg="12"/>
+<pragma file="../fips202.c" line="72" pragmaType="array_partition" parentfunction="KeccakF1600_StatePermute_HLS" dim="1" factor="5" mode="cyclic" dynamic="0" variable="state"/>
+<pragma file="../fips202.c" line="73" pragmaType="array_partition" parentfunction="KeccakF1600_StatePermute_HLS" dim="1" factor="0" mode="complete" dynamic="0" variable="KeccakF_RoundConstants"/>
+<pragma file="../fips202.c" line="263" pragmaType="inline" parentfunction="keccak_absorb_once_hls" off="1" region="0" recursive="0"/>
+<pragma file="../fips202.c" line="293" pragmaType="pipeline" parentfunction="keccak_absorb_once_hls" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../fips202.c" line="278" pragmaType="loop_tripcount" parentfunction="keccak_absorb_once_hls" min="1" max="16" avg="8"/>
+<pragma file="../fips202.c" line="282" pragmaType="pipeline" parentfunction="keccak_absorb_once_hls" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../fips202.c" line="269" pragmaType="pipeline" parentfunction="keccak_absorb_once_hls" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../fips202.c" line="265" pragmaType="array_partition" parentfunction="keccak_absorb_once_hls" dim="1" factor="5" mode="cyclic" dynamic="0" variable="s"/>
+<pragma file="../fips202.c" line="20" pragmaType="inline" parentfunction="load64_hls" off="0" region="0" recursive="0"/>
+<pragma file="../fips202.c" line="26" pragmaType="unroll" parentfunction="load64_hls" factor="-1" skip_exit_check="0"/>
+<pragma file="../fips202.c" line="21" pragmaType="array_partition" parentfunction="load64_hls" dim="1" factor="0" mode="complete" dynamic="0" variable="x"/>
+<pragma file="../fips202.c" line="326" pragmaType="pipeline" parentfunction="sha3_256_hls" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../fips202.c" line="312" pragmaType="interface" parentfunction="sha3_256_hls" mode="ap_ctrl_hs" port="return" name=""/>
+<pragma file="../fips202.c" line="313" pragmaType="interface" parentfunction="sha3_256_hls" mode="ap_memory" port="h" storage_type="-1" impl="-1" latency="-1" name="" depth="32"/>
+<pragma file="../fips202.c" line="314" pragmaType="interface" parentfunction="sha3_256_hls" mode="ap_memory" port="in" storage_type="-1" impl="-1" latency="-1" name="" depth="2048"/>
+<pragma file="../fips202.c" line="315" pragmaType="interface" parentfunction="sha3_256_hls" mode="ap_none" port="inlen" name="" register="0"/>
+<pragma file="../fips202.c" line="316" pragmaType="array_partition" parentfunction="sha3_256_hls" dim="1" factor="0" mode="complete" dynamic="0" variable="h"/>
+<pragma file="../fips202.c" line="319" pragmaType="array_partition" parentfunction="sha3_256_hls" dim="1" factor="5" mode="cyclic" dynamic="0" variable="s"/>
+<pragma file="../fips202.c" line="41" pragmaType="inline" parentfunction="store64_hls" off="0" region="0" recursive="0"/>
+<pragma file="../fips202.c" line="46" pragmaType="unroll" parentfunction="store64_hls" factor="-1" skip_exit_check="0"/>
+<pragma file="../fips202.c" line="42" pragmaType="array_partition" parentfunction="store64_hls" dim="1" factor="0" mode="complete" dynamic="0" variable="x"/>
+</pragmas>

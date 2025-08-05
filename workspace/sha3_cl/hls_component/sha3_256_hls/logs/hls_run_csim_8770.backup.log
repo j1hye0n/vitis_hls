@@ -1,0 +1,33 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/sha3_256_hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file '/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.h' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file '/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/hyeon/vitis_hls/workspace/sha3_opt/fips202_tb.c' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file '/home/hyeon/vitis_hls/workspace/sha3_opt/fips202_tb.c' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=sha3_256_hls' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xa7z010clg400-1I' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xa7z010-clg400-1I'
+INFO: [HLS 200-1465] Applying ini 'cosim.trace_level=all' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'cosim.wave_debug=1' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [HLS 211-200] Compiling source code ../fips202.c as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code /home/hyeon/vitis_hls/workspace/sha3_opt/fips202_tb.c as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code ../fips202.c as test bench code with instrumentation
+/home/hyeon/vitis_hls/workspace/sha3_opt/fips202_tb.c:5:9: error: ''fips202.c' file not found, did you mean 'fips202.c'?
+#include"'fips202.c"
+        ^~~~~~~~~~~~
+        "fips202.c"
+1 error generated.
+slxcmd:0:0: warning: Non-zero exit code: 1 returned by 'INFO: [HLS 211-200] Compiling source code /home/hyeon/vitis_hls/workspace/sha3_opt/fips202_tb.c as test bench code with instrumentation'
+ERROR: [SIM 211-200] Code Analyzer execution failed. Consider running the classic C simulation instead by disabling the hls.csim.code_analyzer option in the config file.
+ERROR: Problem running csim: child process exited abnormally
+INFO: [HLS 200-112] Total CPU user time: 7.35 seconds. Total CPU system time: 1.12 seconds. Total elapsed time: 9.46 seconds; peak allocated memory: 322.949 MB.

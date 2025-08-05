@@ -1,2 +1,3 @@
 # vitis_hls
-wsl
+## sha3 folder
+sha3_opt is final project

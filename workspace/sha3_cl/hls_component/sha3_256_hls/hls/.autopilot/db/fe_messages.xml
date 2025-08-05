@@ -1,0 +1,125 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load64_hls" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load64_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:26:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load64_hls" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:41:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="store64_hls" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:42:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="store64_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:46:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="store64_hls" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:71:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="KeccakF1600_StatePermute_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:72:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="KeccakF1600_StatePermute_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=state cyclic factor=5 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:73:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="KeccakF1600_StatePermute_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=KeccakF_RoundConstants complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:99:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="KeccakF1600_StatePermute_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=2" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:100:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="KeccakF1600_StatePermute_HLS" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=12 max=12" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:263:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keccak_absorb_once_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:264:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keccak_absorb_once_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_memory port=in depth=2048" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:265:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keccak_absorb_once_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=s cyclic factor=5 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:269:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keccak_absorb_once_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:278:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keccak_absorb_once_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=16" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:282:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keccak_absorb_once_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:293:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keccak_absorb_once_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sha3_256_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=sha3_256_hls" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:312:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha3_256_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_hs port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:313:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha3_256_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_memory port=h depth=32" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:314:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha3_256_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_memory port=in depth=2048" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:315:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha3_256_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=inlen" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:316:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha3_256_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=h complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:319:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha3_256_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=s cyclic factor=5 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:326:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha3_256_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../fips202.c:283:10" msg_body="Inlining function 'load64_hls' into 'keccak_absorb_once_hls'">
+        <args Callee="load64_hls" Callee-DebugLoc="File ../fips202.c Line 19 Column 0" Caller="keccak_absorb_once_hls" Caller-DebugLoc="File ../fips202.c Line 262 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../fips202.c:327:2" msg_body="Inlining function 'store64_hls' into 'sha3_256_hls'">
+        <args Callee="store64_hls" Callee-DebugLoc="File ../fips202.c Line 40 Column 0" Caller="sha3_256_hls" Caller-DebugLoc="File ../fips202.c Line 311 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../fips202.c:45:15" msg_body="Loop 'store_bytes' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="store_bytes"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../fips202.c:25:17" msg_body="Loop 'load_bytes' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="load_bytes"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../fips202.c:311:0" msg_body="Unrolling loop 'store_bytes' (../fips202.c:45:15) in function 'sha3_256_hls' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../fips202.c:45:15" LoopName="store_bytes"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../fips202.c:262:0" msg_body="Unrolling loop 'load_bytes' (../fips202.c:25:17) in function 'keccak_absorb_once_hls' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../fips202.c:25:17" LoopName="load_bytes"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="../fips202.c:27:17" msg_body="Ignore address on register port 'in'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-450" msg_severity="WARNING" msg_loc="../fips202.c:294:22" msg_body="Ignore address on register port 'in'"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-253" msg_severity="WARNING" msg_loc="../fips202.c:321:2" msg_body="Ignored unsupported array_partition pragma on variable 'in'. This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.">
+        <args Name="in" PragmaName="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-253" msg_severity="WARNING" msg_loc="../fips202.c:42:9" msg_body="Ignored unsupported array_partition pragma on variable 'h'. This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.">
+        <args Name="h" PragmaName="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../fips202.c:52:0" msg_body="Applying array_partition to 'KeccakF_RoundConstants': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="KeccakF_RoundConstants"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../fips202.c:318:11" msg_body="Applying array_partition to 's': Cyclic partitioning with factor 5 on dimension 1.">
+        <args Dim="1" Factor="5" Mode="Cyclic" UOName="s"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../fips202.c:311:0" msg_body="Applying array_partition to 'h': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="h"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-322" msg_severity="WARNING" msg_loc="../fips202.c:313:9" msg_body="Unsuported scalar variable on pragma 'ap_memory Interface', ignore it.">
+        <args Name="ap_memory Interface"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="../fips202.c:277:20" msg_body="Automatically disabling loop flattening for loop 'absorb_blocks'.">
+        <args LoopName="absorb_blocks"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../fips202.c:277:20" msg_body="loop_flatten 0 1 keccak_absorb_once_hls ../fips202.c:277:20absorb_blocks ../fips202.c:277:20">
+        <args LoopLoc="../fips202.c:277:20" LoopLoc-DebugLoc="File ../fips202.c Line 277 Column 20" LoopName="absorb_blocks" PragmaFunction="keccak_absorb_once_hls" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="../fips202.c:277:20" PragmaSrcLoc-DebugLoc="File ../fips202.c Line 277 Column 20" PragmaType="loop_flatten"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

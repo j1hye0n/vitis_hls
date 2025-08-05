@@ -1,0 +1,10 @@
+parallelismSelector::WARNG: Variable 'in' /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/../fips202.c:311:0 VariableId 55 is not part of the design space!--
+                            
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c:316:1)
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c:42:1)
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c:319:1)
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c:265:1)
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c:72:1)
+parallelismSelector::WARNG: WARNING: [HLS 211-200] /home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c:278:1: Pragma 'tripcount' has been kept but may be incorrect: The minimum tripcount in the pragma (1) is greater than the mininum dynamic tripcount computed for the loop (0)
+parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'array_partition' (/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c:21:1) as it applies to incomplete arrays or arrays declared as members of a struct or class (variable in)
+parallelismSelector::WARNG: WARNING: [SIM 211-200] /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/../fips202.c:292:23: the dynamic loop had a trip count of min=0 max=135 during C simulation. (#pragma HLS loop_tripcount min=0 max=135)

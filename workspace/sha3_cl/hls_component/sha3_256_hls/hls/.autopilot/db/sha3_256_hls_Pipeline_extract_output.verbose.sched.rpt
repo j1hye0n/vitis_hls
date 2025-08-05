@@ -1,0 +1,178 @@
+
+
+================================================================
+== Vitis HLS Report for 'sha3_256_hls_Pipeline_extract_output'
+================================================================
+* Date:           Tue Aug  5 17:14:37 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        sha3_256_hls
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: azynq
+* Target device:  xa7z010-clg400-1I
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.741 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min    |    max    | min | max |                      Type                      |
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+    |        5|        5|  50.000 ns|  50.000 ns|    4|    4|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                  |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name    |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- extract_output  |        3|        3|         1|          1|          1|     4|       yes|
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.74>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%i1 = alloca i32 1"   --->   Operation 4 'alloca' 'i1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%s_3_load_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %s_3_load"   --->   Operation 5 'read' 's_3_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%s_2_load_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %s_2_load"   --->   Operation 6 'read' 's_2_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%s_1_load_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %s_1_load"   --->   Operation 7 'read' 's_1_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%s_load_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %s_load"   --->   Operation 8 'read' 's_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (1.58ns)   --->   "%store_ln0 = store i2 0, i2 %i1"   --->   Operation 9 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body.split"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%i1_load = load i2 %i1" [../fips202.c:325]   --->   Operation 11 'load' 'i1_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specpipeline_ln326 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_0" [../fips202.c:326]   --->   Operation 12 'specpipeline' 'specpipeline_ln326' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%speclooptripcount_ln325 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 4, i64 4, i64 4" [../fips202.c:325]   --->   Operation 13 'speclooptripcount' 'speclooptripcount_ln325' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specloopname_ln325 = specloopname void @_ssdm_op_SpecLoopName, void @empty_10" [../fips202.c:325]   --->   Operation 14 'specloopname' 'specloopname_ln325' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (1.82ns)   --->   "%u_assign = sparsemux i64 @_ssdm_op_SparseMux.ap_auto.4i64.i64.i2, i2 0, i64 %s_load_read, i2 1, i64 %s_1_load_read, i2 2, i64 %s_2_load_read, i2 3, i64 %s_3_load_read, i64 0, i2 %i1_load" [../fips202.c:327]   --->   Operation 15 'sparsemux' 'u_assign' <Predicate = true> <Delay = 1.82> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%trunc_ln47 = trunc i64 %u_assign" [../fips202.c:47->../fips202.c:327]   --->   Operation 16 'trunc' 'trunc_ln47' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%trunc_ln47_1 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %u_assign, i32 8, i32 15" [../fips202.c:47->../fips202.c:327]   --->   Operation 17 'partselect' 'trunc_ln47_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%trunc_ln47_2 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %u_assign, i32 16, i32 23" [../fips202.c:47->../fips202.c:327]   --->   Operation 18 'partselect' 'trunc_ln47_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%trunc_ln47_3 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %u_assign, i32 24, i32 31" [../fips202.c:47->../fips202.c:327]   --->   Operation 19 'partselect' 'trunc_ln47_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%trunc_ln47_4 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %u_assign, i32 32, i32 39" [../fips202.c:47->../fips202.c:327]   --->   Operation 20 'partselect' 'trunc_ln47_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%trunc_ln47_5 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %u_assign, i32 40, i32 47" [../fips202.c:47->../fips202.c:327]   --->   Operation 21 'partselect' 'trunc_ln47_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%trunc_ln47_6 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %u_assign, i32 48, i32 55" [../fips202.c:47->../fips202.c:327]   --->   Operation 22 'partselect' 'trunc_ln47_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%trunc_ln47_7 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %u_assign, i32 56, i32 63" [../fips202.c:47->../fips202.c:327]   --->   Operation 23 'partselect' 'trunc_ln47_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (1.56ns)   --->   "%i = add i2 %i1_load, i2 1" [../fips202.c:325]   --->   Operation 24 'add' 'i' <Predicate = true> <Delay = 1.56> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (1.56ns)   --->   "%switch_ln47 = switch i2 %i1_load, void %arrayidx.i1.78.case.31, i2 0, void %arrayidx.i1.78.case.7, i2 1, void %arrayidx.i1.78.case.15, i2 2, void %arrayidx.i1.78.case.23" [../fips202.c:47->../fips202.c:327]   --->   Operation 25 'switch' 'switch_ln47' <Predicate = true> <Delay = 1.56>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_16, i8 %trunc_ln47" [../fips202.c:47->../fips202.c:327]   --->   Operation 26 'write' 'write_ln47' <Predicate = (i1_load == 2)> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_17, i8 %trunc_ln47_1" [../fips202.c:47->../fips202.c:327]   --->   Operation 27 'write' 'write_ln47' <Predicate = (i1_load == 2)> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_18, i8 %trunc_ln47_2" [../fips202.c:47->../fips202.c:327]   --->   Operation 28 'write' 'write_ln47' <Predicate = (i1_load == 2)> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_19, i8 %trunc_ln47_3" [../fips202.c:47->../fips202.c:327]   --->   Operation 29 'write' 'write_ln47' <Predicate = (i1_load == 2)> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_20, i8 %trunc_ln47_4" [../fips202.c:47->../fips202.c:327]   --->   Operation 30 'write' 'write_ln47' <Predicate = (i1_load == 2)> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_21, i8 %trunc_ln47_5" [../fips202.c:47->../fips202.c:327]   --->   Operation 31 'write' 'write_ln47' <Predicate = (i1_load == 2)> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_22, i8 %trunc_ln47_6" [../fips202.c:47->../fips202.c:327]   --->   Operation 32 'write' 'write_ln47' <Predicate = (i1_load == 2)> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_23, i8 %trunc_ln47_7" [../fips202.c:47->../fips202.c:327]   --->   Operation 33 'write' 'write_ln47' <Predicate = (i1_load == 2)> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%br_ln47 = br void %arrayidx.i1.78.exit" [../fips202.c:47->../fips202.c:327]   --->   Operation 34 'br' 'br_ln47' <Predicate = (i1_load == 2)> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_8, i8 %trunc_ln47" [../fips202.c:47->../fips202.c:327]   --->   Operation 35 'write' 'write_ln47' <Predicate = (i1_load == 1)> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_9, i8 %trunc_ln47_1" [../fips202.c:47->../fips202.c:327]   --->   Operation 36 'write' 'write_ln47' <Predicate = (i1_load == 1)> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_10, i8 %trunc_ln47_2" [../fips202.c:47->../fips202.c:327]   --->   Operation 37 'write' 'write_ln47' <Predicate = (i1_load == 1)> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_11, i8 %trunc_ln47_3" [../fips202.c:47->../fips202.c:327]   --->   Operation 38 'write' 'write_ln47' <Predicate = (i1_load == 1)> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_12, i8 %trunc_ln47_4" [../fips202.c:47->../fips202.c:327]   --->   Operation 39 'write' 'write_ln47' <Predicate = (i1_load == 1)> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_13, i8 %trunc_ln47_5" [../fips202.c:47->../fips202.c:327]   --->   Operation 40 'write' 'write_ln47' <Predicate = (i1_load == 1)> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_14, i8 %trunc_ln47_6" [../fips202.c:47->../fips202.c:327]   --->   Operation 41 'write' 'write_ln47' <Predicate = (i1_load == 1)> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_15, i8 %trunc_ln47_7" [../fips202.c:47->../fips202.c:327]   --->   Operation 42 'write' 'write_ln47' <Predicate = (i1_load == 1)> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%br_ln47 = br void %arrayidx.i1.78.exit" [../fips202.c:47->../fips202.c:327]   --->   Operation 43 'br' 'br_ln47' <Predicate = (i1_load == 1)> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_0, i8 %trunc_ln47" [../fips202.c:47->../fips202.c:327]   --->   Operation 44 'write' 'write_ln47' <Predicate = (i1_load == 0)> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_1, i8 %trunc_ln47_1" [../fips202.c:47->../fips202.c:327]   --->   Operation 45 'write' 'write_ln47' <Predicate = (i1_load == 0)> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_2, i8 %trunc_ln47_2" [../fips202.c:47->../fips202.c:327]   --->   Operation 46 'write' 'write_ln47' <Predicate = (i1_load == 0)> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_3, i8 %trunc_ln47_3" [../fips202.c:47->../fips202.c:327]   --->   Operation 47 'write' 'write_ln47' <Predicate = (i1_load == 0)> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_4, i8 %trunc_ln47_4" [../fips202.c:47->../fips202.c:327]   --->   Operation 48 'write' 'write_ln47' <Predicate = (i1_load == 0)> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_5, i8 %trunc_ln47_5" [../fips202.c:47->../fips202.c:327]   --->   Operation 49 'write' 'write_ln47' <Predicate = (i1_load == 0)> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_6, i8 %trunc_ln47_6" [../fips202.c:47->../fips202.c:327]   --->   Operation 50 'write' 'write_ln47' <Predicate = (i1_load == 0)> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_7, i8 %trunc_ln47_7" [../fips202.c:47->../fips202.c:327]   --->   Operation 51 'write' 'write_ln47' <Predicate = (i1_load == 0)> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%br_ln47 = br void %arrayidx.i1.78.exit" [../fips202.c:47->../fips202.c:327]   --->   Operation 52 'br' 'br_ln47' <Predicate = (i1_load == 0)> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_24, i8 %trunc_ln47" [../fips202.c:47->../fips202.c:327]   --->   Operation 53 'write' 'write_ln47' <Predicate = (i1_load == 3)> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_25, i8 %trunc_ln47_1" [../fips202.c:47->../fips202.c:327]   --->   Operation 54 'write' 'write_ln47' <Predicate = (i1_load == 3)> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_26, i8 %trunc_ln47_2" [../fips202.c:47->../fips202.c:327]   --->   Operation 55 'write' 'write_ln47' <Predicate = (i1_load == 3)> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_27, i8 %trunc_ln47_3" [../fips202.c:47->../fips202.c:327]   --->   Operation 56 'write' 'write_ln47' <Predicate = (i1_load == 3)> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_28, i8 %trunc_ln47_4" [../fips202.c:47->../fips202.c:327]   --->   Operation 57 'write' 'write_ln47' <Predicate = (i1_load == 3)> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_29, i8 %trunc_ln47_5" [../fips202.c:47->../fips202.c:327]   --->   Operation 58 'write' 'write_ln47' <Predicate = (i1_load == 3)> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_30, i8 %trunc_ln47_6" [../fips202.c:47->../fips202.c:327]   --->   Operation 59 'write' 'write_ln47' <Predicate = (i1_load == 3)> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%write_ln47 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %h_31, i8 %trunc_ln47_7" [../fips202.c:47->../fips202.c:327]   --->   Operation 60 'write' 'write_ln47' <Predicate = (i1_load == 3)> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%br_ln47 = br void %arrayidx.i1.78.exit" [../fips202.c:47->../fips202.c:327]   --->   Operation 61 'br' 'br_ln47' <Predicate = (i1_load == 3)> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (1.56ns)   --->   "%icmp_ln325 = icmp_eq  i2 %i1_load, i2 3" [../fips202.c:325]   --->   Operation 62 'icmp' 'icmp_ln325' <Predicate = true> <Delay = 1.56> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 63 [1/1] (1.58ns)   --->   "%store_ln325 = store i2 %i, i2 %i1" [../fips202.c:325]   --->   Operation 63 'store' 'store_ln325' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%br_ln325 = br i1 %icmp_ln325, void %for.body.split, void %for.end.exitStub" [../fips202.c:325]   --->   Operation 64 'br' 'br_ln325' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 65 'ret' 'ret_ln0' <Predicate = (icmp_ln325)> <Delay = 1.58>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 4.741ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln0') of constant 0 on local variable 'i1' [42]  (1.588 ns)
+	'load' operation 2 bit ('i1_load', ../fips202.c:325) on local variable 'i1' [45]  (0.000 ns)
+	'add' operation 2 bit ('i', ../fips202.c:325) [58]  (1.565 ns)
+	'store' operation 0 bit ('store_ln325', ../fips202.c:325) of variable 'i', ../fips202.c:325 on local variable 'i1' [102]  (1.588 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

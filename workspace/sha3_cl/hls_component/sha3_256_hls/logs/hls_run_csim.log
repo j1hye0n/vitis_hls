@@ -1,0 +1,98 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/sha3_256_hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file '/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.h' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file '/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/hyeon/vitis_hls/workspace/sha3_opt/fips202_tb.c' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file '/home/hyeon/vitis_hls/workspace/sha3_opt/fips202_tb.c' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=sha3_256_hls' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xa7z010clg400-1I' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xa7z010-clg400-1I'
+INFO: [HLS 200-1465] Applying ini 'cosim.trace_level=all' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'cosim.wave_debug=1' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [HLS 211-200] Compiling source code /home/hyeon/vitis_hls/workspace/sha3_opt/fips202_tb.c as test bench code with instrumentation
+INFO: [HLS 211-200] Linking executable
+INFO: [HLS 211-200] Computing HLS IR Information
+INFO: [HLS 211-200] Determining source code dependencies
+INFO: [SIM 211-200] Running executable
+=== SHA3-256 HLS Testbench ===
+
+Test 1: Empty string
+  Input: 
+  Expected: a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a
+  Got     : a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a
+  ✓ PASS
+
+Test 2: Single byte 'a'
+  Input: 61
+  Expected: 80084bf2fba02475726feb2cab2d8215eab14bc6bdd8bfb2c8151257032ecd8b
+  Got     : 80084bf2fba02475726feb2cab2d8215eab14bc6bdd8bfb2c8151257032ecd8b
+  ✓ PASS
+
+Test 3: Three bytes 'abc'
+  Input: 616263
+  Expected: 3a985da74fe225b2045c172d6bd390bd855f086e3e9d525b46bfe24511431532
+  Got     : 3a985da74fe225b2045c172d6bd390bd855f086e3e9d525b46bfe24511431532
+  ✓ PASS
+
+=== Performance Tests ===
+Performance test: 64 bytes
+  Input: 64 bytes of pattern data
+  Result: c8ad478f4e1dd9d47dfc3b985708d92db1f8db48fe9cddd459e63c321f490402
+
+Performance test: 128 bytes
+  Input: 128 bytes of pattern data
+  Result: bec3ebfba06834f224543cca2a427cb9329147be93e19aeb0e33a7119c7f63ef
+
+Performance test: 256 bytes
+  Input: 256 bytes of pattern data
+  Result: 9b04c091da96b997afb8f2585d608aebe9c4a904f7d52c8f28c7e4d2dd9fba5f
+
+Performance test: 512 bytes
+  Input: 512 bytes of pattern data
+  Result: d4728ea5e9f3819f2b4760151a8f802dbe9f941fd6fb59b3715892436555772a
+
+Performance test: 1024 bytes
+  Input: 1024 bytes of pattern data
+  Result: b6c70631c6ff932b9f380d9cde8750eb9bea393817a9aea410c2119eb7b9b870
+
+=== Edge Case Tests ===
+Edge case 1: 135 bytes (one block - 1)
+  Result: ebd08676b9832c35f61b7b04b483e7b977912830e4262eca483487dc4f6796b1
+
+Edge case 2: 137 bytes (one block + 1)
+  Result: 8611644f227795f56dfad95f527229cc70a104c10f1319bf9b8e26c98bcf545f
+
+Edge case 3: 272 bytes (exactly 2 blocks)
+  Result: 0b21ec4a8eff6d179e09ba9fe0ab08515b24e0923fbf419f5c30a38e64577db5
+
+=== Test Summary ===
+NIST Test Vectors: 3 passed, 0 failed
+Performance Tests: 5 completed
+Edge Case Tests: 3 completed
+
+🎉 ALL TESTS PASSED! 🎉
+INFO: [SIM 211-200] Analyzing trace data
+INFO: [SIM 211-208] Running Code Analyzer
+Variable 'in' /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/../fips202.c:311:0 VariableId 55 is not part of the design space!--
+
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c:316:1)
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c:42:1)
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c:319:1)
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c:265:1)
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c:72:1)
+WARNING: [HLS 211-200] /home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c:278:1: Pragma 'tripcount' has been kept but may be incorrect: The minimum tripcount in the pragma (1) is greater than the mininum dynamic tripcount computed for the loop (0)
+WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'array_partition' (/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c:21:1) as it applies to incomplete arrays or arrays declared as members of a struct or class (variable in)
+WARNING: [SIM 211-200] /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/../fips202.c:292:23: the dynamic loop had a trip count of min=0 max=135 during C simulation. (#pragma HLS loop_tripcount min=0 max=135)
+INFO: [SIM 211-210] Code Analyzer finished
+INFO: [HLS 200-112] Total CPU user time: 7.8 seconds. Total CPU system time: 1.35 seconds. Total elapsed time: 9.55 seconds; peak allocated memory: 322.949 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 14s

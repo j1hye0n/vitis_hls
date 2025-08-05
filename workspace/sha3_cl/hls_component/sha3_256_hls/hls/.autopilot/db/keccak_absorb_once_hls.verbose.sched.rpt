@@ -1,0 +1,1462 @@
+
+
+================================================================
+== Vitis HLS Report for 'keccak_absorb_once_hls'
+================================================================
+* Date:           Tue Aug  5 17:14:37 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        sha3_256_hls
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: azynq
+* Target device:  xa7z010-clg400-1I
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.580 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------+---------+---------+----------+-----------+-----------+--------+----------+
+        |                 |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip  |          |
+        |    Loop Name    |   min   |   max   |  Latency |  achieved |   target  |  Count | Pipelined|
+        +-----------------+---------+---------+----------+-----------+-----------+--------+----------+
+        |- absorb_blocks  |      110|     1760|       110|          -|          -|  1 ~ 16|        no|
+        +-----------------+---------+---------+----------+-----------+-----------+--------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 142
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 42 
+42 --> 43 
+43 --> 44 
+44 --> 45 
+45 --> 46 
+46 --> 47 
+47 --> 48 
+48 --> 49 
+49 --> 50 
+50 --> 51 
+51 --> 52 
+52 --> 53 
+53 --> 54 
+54 --> 55 
+55 --> 56 
+56 --> 57 
+57 --> 58 
+58 --> 59 
+59 --> 60 
+60 --> 61 
+61 --> 62 
+62 --> 63 
+63 --> 64 
+64 --> 65 
+65 --> 66 
+66 --> 67 
+67 --> 68 
+68 --> 69 
+69 --> 70 
+70 --> 71 
+71 --> 72 76 
+72 --> 73 
+73 --> 74 
+74 --> 75 
+75 --> 71 
+76 --> 77 
+77 --> 78 
+78 --> 79 
+79 --> 80 
+80 --> 81 
+81 --> 82 
+82 --> 83 
+83 --> 84 
+84 --> 85 
+85 --> 86 
+86 --> 87 
+87 --> 88 
+88 --> 89 
+89 --> 90 
+90 --> 91 
+91 --> 92 
+92 --> 93 
+93 --> 94 
+94 --> 95 
+95 --> 96 
+96 --> 97 
+97 --> 98 
+98 --> 99 
+99 --> 100 
+100 --> 101 
+101 --> 102 
+102 --> 103 
+103 --> 104 
+104 --> 105 
+105 --> 106 
+106 --> 107 
+107 --> 108 
+108 --> 109 
+109 --> 110 
+110 --> 111 
+111 --> 112 
+112 --> 113 
+113 --> 114 
+114 --> 115 
+115 --> 116 
+116 --> 117 
+117 --> 118 
+118 --> 119 
+119 --> 120 
+120 --> 121 
+121 --> 122 
+122 --> 123 
+123 --> 124 
+124 --> 125 
+125 --> 126 
+126 --> 127 
+127 --> 128 
+128 --> 129 
+129 --> 130 
+130 --> 131 
+131 --> 132 
+132 --> 133 
+133 --> 134 
+134 --> 135 
+135 --> 136 
+136 --> 137 
+137 --> 138 
+138 --> 139 
+139 --> 140 
+140 --> 141 
+141 --> 142 
+142 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.52>
+ST_1 : Operation 143 [1/1] (0.00ns)   --->   "%inlen_assign_1 = alloca i32 1" [../fips202.c:262]   --->   Operation 143 'alloca' 'inlen_assign_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 144 [1/1] (0.00ns)   --->   "%pos = alloca i32 1" [../fips202.c:275]   --->   Operation 144 'alloca' 'pos' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 145 [1/1] (0.00ns)   --->   "%inlen_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %inlen" [../fips202.c:262]   --->   Operation 145 'read' 'inlen_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 146 [2/2] (0.00ns)   --->   "%call_ln0 = call void @keccak_absorb_once_hls_Pipeline_init_state, i64 %s_4, i64 %s_3, i64 %s_2, i64 %s_1, i64 %s_0"   --->   Operation 146 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 147 [1/1] (3.52ns)   --->   "%empty = icmp_ult  i64 %inlen_read, i64 135" [../fips202.c:262]   --->   Operation 147 'icmp' 'empty' <Predicate = true> <Delay = 3.52> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 148 [1/1] (1.58ns)   --->   "%store_ln275 = store i64 0, i64 %pos" [../fips202.c:275]   --->   Operation 148 'store' 'store_ln275' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 149 [1/1] (1.58ns)   --->   "%store_ln262 = store i64 %inlen_read, i64 %inlen_assign_1" [../fips202.c:262]   --->   Operation 149 'store' 'store_ln262' <Predicate = true> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 6.55>
+ST_2 : Operation 150 [1/2] (4.95ns)   --->   "%call_ln0 = call void @keccak_absorb_once_hls_Pipeline_init_state, i64 %s_4, i64 %s_3, i64 %s_2, i64 %s_1, i64 %s_0"   --->   Operation 150 'call' 'call_ln0' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 151 [1/1] (1.48ns)   --->   "%select_ln277 = select i1 %empty, i64 135, i64 %inlen_read" [../fips202.c:277]   --->   Operation 151 'select' 'select_ln277' <Predicate = true> <Delay = 1.48> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 152 [68/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 152 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 5.07>
+ST_3 : Operation 153 [67/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 153 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 5.07>
+ST_4 : Operation 154 [66/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 154 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 5.07>
+ST_5 : Operation 155 [65/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 155 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 5.07>
+ST_6 : Operation 156 [64/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 156 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 5.07>
+ST_7 : Operation 157 [63/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 157 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 5.07>
+ST_8 : Operation 158 [62/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 158 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 5.07>
+ST_9 : Operation 159 [61/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 159 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 5.07>
+ST_10 : Operation 160 [60/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 160 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 5.07>
+ST_11 : Operation 161 [59/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 161 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 5.07>
+ST_12 : Operation 162 [58/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 162 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 5.07>
+ST_13 : Operation 163 [57/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 163 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 5.07>
+ST_14 : Operation 164 [56/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 164 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 5.07>
+ST_15 : Operation 165 [55/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 165 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 5.07>
+ST_16 : Operation 166 [54/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 166 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 5.07>
+ST_17 : Operation 167 [53/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 167 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 5.07>
+ST_18 : Operation 168 [52/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 168 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 5.07>
+ST_19 : Operation 169 [51/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 169 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 5.07>
+ST_20 : Operation 170 [50/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 170 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 5.07>
+ST_21 : Operation 171 [49/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 171 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 22 <SV = 21> <Delay = 5.07>
+ST_22 : Operation 172 [48/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 172 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 22> <Delay = 5.07>
+ST_23 : Operation 173 [47/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 173 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 24 <SV = 23> <Delay = 5.07>
+ST_24 : Operation 174 [46/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 174 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 24> <Delay = 5.07>
+ST_25 : Operation 175 [45/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 175 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 25> <Delay = 5.07>
+ST_26 : Operation 176 [44/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 176 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 27 <SV = 26> <Delay = 5.07>
+ST_27 : Operation 177 [43/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 177 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 28 <SV = 27> <Delay = 5.07>
+ST_28 : Operation 178 [42/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 178 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 29 <SV = 28> <Delay = 5.07>
+ST_29 : Operation 179 [41/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 179 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 30 <SV = 29> <Delay = 5.07>
+ST_30 : Operation 180 [40/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 180 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 31 <SV = 30> <Delay = 5.07>
+ST_31 : Operation 181 [39/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 181 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 32 <SV = 31> <Delay = 5.07>
+ST_32 : Operation 182 [38/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 182 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 33 <SV = 32> <Delay = 5.07>
+ST_33 : Operation 183 [37/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 183 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 34 <SV = 33> <Delay = 5.07>
+ST_34 : Operation 184 [36/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 184 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 35 <SV = 34> <Delay = 5.07>
+ST_35 : Operation 185 [35/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 185 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 36 <SV = 35> <Delay = 5.07>
+ST_36 : Operation 186 [34/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 186 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 37 <SV = 36> <Delay = 5.07>
+ST_37 : Operation 187 [33/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 187 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 38 <SV = 37> <Delay = 5.07>
+ST_38 : Operation 188 [32/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 188 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 39 <SV = 38> <Delay = 5.07>
+ST_39 : Operation 189 [31/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 189 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 40 <SV = 39> <Delay = 5.07>
+ST_40 : Operation 190 [30/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 190 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 41 <SV = 40> <Delay = 5.07>
+ST_41 : Operation 191 [29/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 191 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 42 <SV = 41> <Delay = 5.07>
+ST_42 : Operation 192 [28/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 192 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 43 <SV = 42> <Delay = 5.07>
+ST_43 : Operation 193 [27/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 193 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 44 <SV = 43> <Delay = 5.07>
+ST_44 : Operation 194 [26/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 194 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 45 <SV = 44> <Delay = 5.07>
+ST_45 : Operation 195 [25/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 195 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 46 <SV = 45> <Delay = 5.07>
+ST_46 : Operation 196 [24/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 196 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 47 <SV = 46> <Delay = 5.07>
+ST_47 : Operation 197 [23/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 197 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 48 <SV = 47> <Delay = 5.07>
+ST_48 : Operation 198 [22/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 198 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 49 <SV = 48> <Delay = 5.07>
+ST_49 : Operation 199 [21/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 199 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 50 <SV = 49> <Delay = 5.07>
+ST_50 : Operation 200 [20/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 200 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 51 <SV = 50> <Delay = 5.07>
+ST_51 : Operation 201 [19/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 201 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 52 <SV = 51> <Delay = 5.07>
+ST_52 : Operation 202 [18/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 202 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 53 <SV = 52> <Delay = 5.07>
+ST_53 : Operation 203 [17/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 203 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 54 <SV = 53> <Delay = 5.07>
+ST_54 : Operation 204 [16/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 204 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 55 <SV = 54> <Delay = 5.07>
+ST_55 : Operation 205 [15/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 205 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 56 <SV = 55> <Delay = 5.07>
+ST_56 : Operation 206 [14/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 206 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 57 <SV = 56> <Delay = 5.07>
+ST_57 : Operation 207 [13/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 207 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 58 <SV = 57> <Delay = 5.07>
+ST_58 : Operation 208 [12/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 208 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 59 <SV = 58> <Delay = 5.07>
+ST_59 : Operation 209 [11/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 209 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 60 <SV = 59> <Delay = 5.07>
+ST_60 : Operation 210 [10/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 210 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 61 <SV = 60> <Delay = 5.07>
+ST_61 : Operation 211 [9/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 211 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 62 <SV = 61> <Delay = 5.07>
+ST_62 : Operation 212 [8/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 212 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 63 <SV = 62> <Delay = 5.07>
+ST_63 : Operation 213 [7/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 213 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 64 <SV = 63> <Delay = 5.07>
+ST_64 : Operation 214 [6/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 214 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 65 <SV = 64> <Delay = 5.07>
+ST_65 : Operation 215 [5/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 215 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 66 <SV = 65> <Delay = 5.07>
+ST_66 : Operation 216 [4/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 216 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 67 <SV = 66> <Delay = 5.07>
+ST_67 : Operation 217 [3/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 217 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 68 <SV = 67> <Delay = 5.07>
+ST_68 : Operation 218 [2/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 218 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 69 <SV = 68> <Delay = 5.07>
+ST_69 : Operation 219 [1/68] (5.07ns)   --->   "%urem_ln277 = urem i64 %select_ln277, i64 136" [../fips202.c:277]   --->   Operation 219 'urem' 'urem_ln277' <Predicate = true> <Delay = 5.07> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 67> <II = 64> <Delay = 5.07> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 70 <SV = 69> <Delay = 7.04>
+ST_70 : Operation 220 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %in_r, void @empty_1, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 220 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_70 : Operation 221 [1/1] (3.52ns)   --->   "%icmp_ln277 = icmp_ugt  i64 %inlen_read, i64 135" [../fips202.c:277]   --->   Operation 221 'icmp' 'icmp_ln277' <Predicate = true> <Delay = 3.52> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_70 : Operation 222 [1/1] (3.52ns)   --->   "%sub_ln277 = sub i64 %select_ln277, i64 %urem_ln277" [../fips202.c:277]   --->   Operation 222 'sub' 'sub_ln277' <Predicate = true> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_70 : Operation 223 [1/1] (3.52ns)   --->   "%sub_ln262 = sub i64 %inlen_read, i64 %sub_ln277" [../fips202.c:262]   --->   Operation 223 'sub' 'sub_ln262' <Predicate = true> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_70 : Operation 224 [1/1] (0.00ns)   --->   "%br_ln277 = br void %absorb_word_loop" [../fips202.c:277]   --->   Operation 224 'br' 'br_ln277' <Predicate = true> <Delay = 0.00>
+
+State 71 <SV = 70> <Delay = 6.91>
+ST_71 : Operation 225 [1/1] (0.00ns)   --->   "%inlen_assign_1_load = load i64 %inlen_assign_1" [../fips202.c:287]   --->   Operation 225 'load' 'inlen_assign_1_load' <Predicate = true> <Delay = 0.00>
+ST_71 : Operation 226 [1/1] (3.52ns)   --->   "%icmp_ln277_1 = icmp_ugt  i64 %inlen_assign_1_load, i64 135" [../fips202.c:277]   --->   Operation 226 'icmp' 'icmp_ln277_1' <Predicate = true> <Delay = 3.52> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_71 : Operation 227 [1/1] (0.00ns)   --->   "%br_ln277 = br i1 %icmp_ln277_1, void %absorb_remaining.loopexit, void %absorb_word_loop.split" [../fips202.c:277]   --->   Operation 227 'br' 'br_ln277' <Predicate = true> <Delay = 0.00>
+ST_71 : Operation 228 [1/1] (3.52ns)   --->   "%add_ln287 = add i64 %inlen_assign_1_load, i64 18446744073709551480" [../fips202.c:287]   --->   Operation 228 'add' 'add_ln287' <Predicate = (icmp_ln277_1)> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_71 : Operation 229 [1/1] (1.58ns)   --->   "%store_ln262 = store i64 %add_ln287, i64 %inlen_assign_1" [../fips202.c:262]   --->   Operation 229 'store' 'store_ln262' <Predicate = (icmp_ln277_1)> <Delay = 1.58>
+ST_71 : Operation 230 [1/1] (0.00ns)   --->   "%trunc_ln292 = trunc i64 %sub_ln277" [../fips202.c:292]   --->   Operation 230 'trunc' 'trunc_ln292' <Predicate = (!icmp_ln277_1 & icmp_ln277)> <Delay = 0.00>
+ST_71 : Operation 231 [1/1] (0.69ns)   --->   "%pos_0_lcssa_sel = select i1 %icmp_ln277, i11 %trunc_ln292, i11 0" [../fips202.c:277]   --->   Operation 231 'select' 'pos_0_lcssa_sel' <Predicate = (!icmp_ln277_1)> <Delay = 0.69> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_71 : Operation 232 [2/2] (0.00ns)   --->   "%call_ln262 = call void @keccak_absorb_once_hls_Pipeline_absorb_remaining, i64 %sub_ln262, i11 %pos_0_lcssa_sel, i8 %in_r, i64 %s_0, i64 %s_1, i64 %s_2, i64 %s_3, i64 %s_4" [../fips202.c:262]   --->   Operation 232 'call' 'call_ln262' <Predicate = (!icmp_ln277_1)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_71 : Operation 233 [1/1] (0.00ns)   --->   "%trunc_ln298 = trunc i64 %sub_ln262" [../fips202.c:298]   --->   Operation 233 'trunc' 'trunc_ln298' <Predicate = (!icmp_ln277_1)> <Delay = 0.00>
+ST_71 : Operation 234 [1/1] (0.00ns)   --->   "%trunc_ln5 = partselect i61 @_ssdm_op_PartSelect.i61.i64.i32.i32, i64 %sub_ln262, i32 3, i32 63" [../fips202.c:298]   --->   Operation 234 'partselect' 'trunc_ln5' <Predicate = (!icmp_ln277_1)> <Delay = 0.00>
+ST_71 : Operation 235 [1/1] (0.00ns)   --->   "%zext_ln298_3 = zext i61 %trunc_ln5" [../fips202.c:298]   --->   Operation 235 'zext' 'zext_ln298_3' <Predicate = (!icmp_ln277_1)> <Delay = 0.00>
+ST_71 : Operation 236 [5/5] (6.91ns)   --->   "%mul_ln298 = mul i123 %zext_ln298_3, i123 3689348814741910324" [../fips202.c:298]   --->   Operation 236 'mul' 'mul_ln298' <Predicate = (!icmp_ln277_1)> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_71 : Operation 237 [65/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 237 'urem' 'urem_ln298' <Predicate = (!icmp_ln277_1)> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 72 <SV = 71> <Delay = 5.10>
+ST_72 : Operation 238 [1/1] (0.00ns)   --->   "%pos_load = load i64 %pos" [../fips202.c:277]   --->   Operation 238 'load' 'pos_load' <Predicate = true> <Delay = 0.00>
+ST_72 : Operation 239 [1/1] (0.00ns)   --->   "%trunc_ln277 = trunc i64 %pos_load" [../fips202.c:277]   --->   Operation 239 'trunc' 'trunc_ln277' <Predicate = true> <Delay = 0.00>
+ST_72 : Operation 240 [2/2] (4.89ns)   --->   "%call_ln277 = call void @keccak_absorb_once_hls_Pipeline_absorb_word_loop, i64 %s_4, i64 %s_3, i64 %s_2, i64 %s_1, i64 %s_0, i11 %trunc_ln277, i8 %in_r" [../fips202.c:277]   --->   Operation 240 'call' 'call_ln277' <Predicate = true> <Delay = 4.89> <CoreType = "Generic">   --->   Generic Core
+ST_72 : Operation 241 [1/1] (3.52ns)   --->   "%add_ln286 = add i64 %pos_load, i64 136" [../fips202.c:286]   --->   Operation 241 'add' 'add_ln286' <Predicate = true> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_72 : Operation 242 [1/1] (1.58ns)   --->   "%store_ln275 = store i64 %add_ln286, i64 %pos" [../fips202.c:275]   --->   Operation 242 'store' 'store_ln275' <Predicate = true> <Delay = 1.58>
+
+State 73 <SV = 72> <Delay = 0.00>
+ST_73 : Operation 243 [1/2] (0.00ns)   --->   "%call_ln277 = call void @keccak_absorb_once_hls_Pipeline_absorb_word_loop, i64 %s_4, i64 %s_3, i64 %s_2, i64 %s_1, i64 %s_0, i11 %trunc_ln277, i8 %in_r" [../fips202.c:277]   --->   Operation 243 'call' 'call_ln277' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 74 <SV = 73> <Delay = 0.00>
+ST_74 : Operation 244 [2/2] (0.00ns)   --->   "%call_ln288 = call void @KeccakF1600_StatePermute_HLS, i64 %s_0, i64 %s_1, i64 %s_2, i64 %s_3, i64 %s_4" [../fips202.c:288]   --->   Operation 244 'call' 'call_ln288' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 75 <SV = 74> <Delay = 0.00>
+ST_75 : Operation 245 [1/1] (0.00ns)   --->   "%speclooptripcount_ln278 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1, i64 16, i64 8" [../fips202.c:278]   --->   Operation 245 'speclooptripcount' 'speclooptripcount_ln278' <Predicate = true> <Delay = 0.00>
+ST_75 : Operation 246 [1/1] (0.00ns)   --->   "%specloopname_ln277 = specloopname void @_ssdm_op_SpecLoopName, void @empty_6" [../fips202.c:277]   --->   Operation 246 'specloopname' 'specloopname_ln277' <Predicate = true> <Delay = 0.00>
+ST_75 : Operation 247 [1/2] (0.00ns)   --->   "%call_ln288 = call void @KeccakF1600_StatePermute_HLS, i64 %s_0, i64 %s_1, i64 %s_2, i64 %s_3, i64 %s_4" [../fips202.c:288]   --->   Operation 247 'call' 'call_ln288' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_75 : Operation 248 [1/1] (0.00ns)   --->   "%br_ln277 = br void %absorb_word_loop" [../fips202.c:277]   --->   Operation 248 'br' 'br_ln277' <Predicate = true> <Delay = 0.00>
+
+State 76 <SV = 71> <Delay = 6.91>
+ST_76 : Operation 249 [1/2] (0.00ns)   --->   "%call_ln262 = call void @keccak_absorb_once_hls_Pipeline_absorb_remaining, i64 %sub_ln262, i11 %pos_0_lcssa_sel, i8 %in_r, i64 %s_0, i64 %s_1, i64 %s_2, i64 %s_3, i64 %s_4" [../fips202.c:262]   --->   Operation 249 'call' 'call_ln262' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_76 : Operation 250 [4/5] (6.91ns)   --->   "%mul_ln298 = mul i123 %zext_ln298_3, i123 3689348814741910324" [../fips202.c:298]   --->   Operation 250 'mul' 'mul_ln298' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_76 : Operation 251 [64/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 251 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 77 <SV = 72> <Delay = 6.91>
+ST_77 : Operation 252 [3/5] (6.91ns)   --->   "%mul_ln298 = mul i123 %zext_ln298_3, i123 3689348814741910324" [../fips202.c:298]   --->   Operation 252 'mul' 'mul_ln298' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_77 : Operation 253 [63/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 253 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 78 <SV = 73> <Delay = 6.91>
+ST_78 : Operation 254 [2/5] (6.91ns)   --->   "%mul_ln298 = mul i123 %zext_ln298_3, i123 3689348814741910324" [../fips202.c:298]   --->   Operation 254 'mul' 'mul_ln298' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_78 : Operation 255 [62/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 255 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 79 <SV = 74> <Delay = 6.91>
+ST_79 : Operation 256 [1/5] (6.91ns)   --->   "%mul_ln298 = mul i123 %zext_ln298_3, i123 3689348814741910324" [../fips202.c:298]   --->   Operation 256 'mul' 'mul_ln298' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_79 : Operation 257 [1/1] (0.00ns)   --->   "%tmp = partselect i59 @_ssdm_op_PartSelect.i59.i123.i32.i32, i123 %mul_ln298, i32 64, i32 122" [../fips202.c:298]   --->   Operation 257 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_79 : Operation 258 [1/1] (0.00ns)   --->   "%zext_ln298_2 = zext i59 %tmp" [../fips202.c:298]   --->   Operation 258 'zext' 'zext_ln298_2' <Predicate = true> <Delay = 0.00>
+ST_79 : Operation 259 [61/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 259 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_79 : Operation 260 [1/1] (0.00ns)   --->   "%s_0_addr = getelementptr i64 %s_0, i64 0, i64 %zext_ln298_2" [../fips202.c:298]   --->   Operation 260 'getelementptr' 's_0_addr' <Predicate = true> <Delay = 0.00>
+ST_79 : Operation 261 [1/1] (0.00ns)   --->   "%s_1_addr = getelementptr i64 %s_1, i64 0, i64 %zext_ln298_2" [../fips202.c:298]   --->   Operation 261 'getelementptr' 's_1_addr' <Predicate = true> <Delay = 0.00>
+ST_79 : Operation 262 [1/1] (0.00ns)   --->   "%s_2_addr = getelementptr i64 %s_2, i64 0, i64 %zext_ln298_2" [../fips202.c:298]   --->   Operation 262 'getelementptr' 's_2_addr' <Predicate = true> <Delay = 0.00>
+ST_79 : Operation 263 [1/1] (0.00ns)   --->   "%s_3_addr = getelementptr i64 %s_3, i64 0, i64 %zext_ln298_2" [../fips202.c:298]   --->   Operation 263 'getelementptr' 's_3_addr' <Predicate = true> <Delay = 0.00>
+ST_79 : Operation 264 [1/1] (0.00ns)   --->   "%s_4_addr = getelementptr i64 %s_4, i64 0, i64 %zext_ln298_2" [../fips202.c:298]   --->   Operation 264 'getelementptr' 's_4_addr' <Predicate = true> <Delay = 0.00>
+
+State 80 <SV = 75> <Delay = 4.96>
+ST_80 : Operation 265 [60/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 265 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 81 <SV = 76> <Delay = 4.96>
+ST_81 : Operation 266 [59/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 266 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 82 <SV = 77> <Delay = 4.96>
+ST_82 : Operation 267 [58/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 267 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 83 <SV = 78> <Delay = 4.96>
+ST_83 : Operation 268 [57/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 268 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 84 <SV = 79> <Delay = 4.96>
+ST_84 : Operation 269 [56/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 269 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 85 <SV = 80> <Delay = 4.96>
+ST_85 : Operation 270 [55/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 270 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 86 <SV = 81> <Delay = 4.96>
+ST_86 : Operation 271 [54/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 271 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 87 <SV = 82> <Delay = 4.96>
+ST_87 : Operation 272 [53/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 272 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 88 <SV = 83> <Delay = 4.96>
+ST_88 : Operation 273 [52/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 273 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 89 <SV = 84> <Delay = 4.96>
+ST_89 : Operation 274 [51/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 274 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 90 <SV = 85> <Delay = 4.96>
+ST_90 : Operation 275 [50/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 275 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 91 <SV = 86> <Delay = 4.96>
+ST_91 : Operation 276 [49/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 276 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 92 <SV = 87> <Delay = 4.96>
+ST_92 : Operation 277 [48/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 277 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 93 <SV = 88> <Delay = 4.96>
+ST_93 : Operation 278 [47/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 278 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 94 <SV = 89> <Delay = 4.96>
+ST_94 : Operation 279 [46/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 279 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 95 <SV = 90> <Delay = 4.96>
+ST_95 : Operation 280 [45/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 280 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 96 <SV = 91> <Delay = 4.96>
+ST_96 : Operation 281 [44/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 281 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 97 <SV = 92> <Delay = 4.96>
+ST_97 : Operation 282 [43/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 282 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 98 <SV = 93> <Delay = 4.96>
+ST_98 : Operation 283 [42/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 283 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 99 <SV = 94> <Delay = 4.96>
+ST_99 : Operation 284 [41/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 284 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 100 <SV = 95> <Delay = 4.96>
+ST_100 : Operation 285 [40/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 285 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 101 <SV = 96> <Delay = 4.96>
+ST_101 : Operation 286 [39/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 286 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 102 <SV = 97> <Delay = 4.96>
+ST_102 : Operation 287 [38/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 287 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 103 <SV = 98> <Delay = 4.96>
+ST_103 : Operation 288 [37/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 288 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 104 <SV = 99> <Delay = 4.96>
+ST_104 : Operation 289 [36/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 289 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 105 <SV = 100> <Delay = 4.96>
+ST_105 : Operation 290 [35/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 290 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 106 <SV = 101> <Delay = 4.96>
+ST_106 : Operation 291 [34/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 291 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 107 <SV = 102> <Delay = 4.96>
+ST_107 : Operation 292 [33/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 292 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 108 <SV = 103> <Delay = 4.96>
+ST_108 : Operation 293 [32/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 293 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 109 <SV = 104> <Delay = 4.96>
+ST_109 : Operation 294 [31/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 294 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 110 <SV = 105> <Delay = 4.96>
+ST_110 : Operation 295 [30/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 295 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 111 <SV = 106> <Delay = 4.96>
+ST_111 : Operation 296 [29/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 296 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 112 <SV = 107> <Delay = 4.96>
+ST_112 : Operation 297 [28/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 297 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 113 <SV = 108> <Delay = 4.96>
+ST_113 : Operation 298 [27/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 298 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 114 <SV = 109> <Delay = 4.96>
+ST_114 : Operation 299 [26/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 299 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 115 <SV = 110> <Delay = 4.96>
+ST_115 : Operation 300 [25/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 300 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 116 <SV = 111> <Delay = 4.96>
+ST_116 : Operation 301 [24/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 301 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 117 <SV = 112> <Delay = 4.96>
+ST_117 : Operation 302 [23/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 302 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 118 <SV = 113> <Delay = 4.96>
+ST_118 : Operation 303 [22/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 303 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 119 <SV = 114> <Delay = 4.96>
+ST_119 : Operation 304 [21/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 304 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 120 <SV = 115> <Delay = 4.96>
+ST_120 : Operation 305 [20/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 305 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 121 <SV = 116> <Delay = 4.96>
+ST_121 : Operation 306 [19/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 306 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 122 <SV = 117> <Delay = 4.96>
+ST_122 : Operation 307 [18/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 307 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 123 <SV = 118> <Delay = 4.96>
+ST_123 : Operation 308 [17/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 308 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 124 <SV = 119> <Delay = 4.96>
+ST_124 : Operation 309 [16/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 309 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 125 <SV = 120> <Delay = 4.96>
+ST_125 : Operation 310 [15/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 310 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 126 <SV = 121> <Delay = 4.96>
+ST_126 : Operation 311 [14/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 311 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 127 <SV = 122> <Delay = 4.96>
+ST_127 : Operation 312 [13/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 312 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 128 <SV = 123> <Delay = 4.96>
+ST_128 : Operation 313 [12/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 313 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 129 <SV = 124> <Delay = 4.96>
+ST_129 : Operation 314 [11/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 314 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 130 <SV = 125> <Delay = 4.96>
+ST_130 : Operation 315 [10/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 315 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 131 <SV = 126> <Delay = 4.96>
+ST_131 : Operation 316 [9/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 316 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 132 <SV = 127> <Delay = 4.96>
+ST_132 : Operation 317 [8/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 317 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 133 <SV = 128> <Delay = 4.96>
+ST_133 : Operation 318 [7/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 318 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 134 <SV = 129> <Delay = 4.96>
+ST_134 : Operation 319 [6/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 319 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 135 <SV = 130> <Delay = 4.96>
+ST_135 : Operation 320 [5/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 320 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 136 <SV = 131> <Delay = 4.96>
+ST_136 : Operation 321 [4/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 321 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 137 <SV = 132> <Delay = 4.96>
+ST_137 : Operation 322 [3/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 322 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 138 <SV = 133> <Delay = 4.96>
+ST_138 : Operation 323 [2/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 323 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_138 : Operation 324 [2/2] (2.32ns)   --->   "%s_0_load = load i3 %s_0_addr" [../fips202.c:298]   --->   Operation 324 'load' 's_0_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 5> <RAM>
+ST_138 : Operation 325 [2/2] (2.32ns)   --->   "%s_1_load = load i3 %s_1_addr" [../fips202.c:298]   --->   Operation 325 'load' 's_1_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 5> <RAM>
+ST_138 : Operation 326 [2/2] (2.32ns)   --->   "%s_2_load = load i3 %s_2_addr" [../fips202.c:298]   --->   Operation 326 'load' 's_2_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 5> <RAM>
+ST_138 : Operation 327 [2/2] (2.32ns)   --->   "%s_3_load = load i3 %s_3_addr" [../fips202.c:298]   --->   Operation 327 'load' 's_3_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 5> <RAM>
+ST_138 : Operation 328 [2/2] (2.32ns)   --->   "%s_4_load = load i3 %s_4_addr" [../fips202.c:298]   --->   Operation 328 'load' 's_4_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 5> <RAM>
+
+State 139 <SV = 134> <Delay = 6.91>
+ST_139 : Operation 329 [1/65] (4.96ns)   --->   "%urem_ln298 = urem i61 %trunc_ln5, i61 5" [../fips202.c:298]   --->   Operation 329 'urem' 'urem_ln298' <Predicate = true> <Delay = 4.96> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 64> <II = 3> <Delay = 4.96> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_139 : Operation 330 [1/1] (0.00ns)   --->   "%trunc_ln298_1 = trunc i3 %urem_ln298" [../fips202.c:298]   --->   Operation 330 'trunc' 'trunc_ln298_1' <Predicate = true> <Delay = 0.00>
+ST_139 : Operation 331 [1/2] ( I:2.32ns O:2.32ns )   --->   "%s_0_load = load i3 %s_0_addr" [../fips202.c:298]   --->   Operation 331 'load' 's_0_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 5> <RAM>
+ST_139 : Operation 332 [1/2] ( I:2.32ns O:2.32ns )   --->   "%s_1_load = load i3 %s_1_addr" [../fips202.c:298]   --->   Operation 332 'load' 's_1_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 5> <RAM>
+ST_139 : Operation 333 [1/2] ( I:2.32ns O:2.32ns )   --->   "%s_2_load = load i3 %s_2_addr" [../fips202.c:298]   --->   Operation 333 'load' 's_2_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 5> <RAM>
+ST_139 : Operation 334 [1/2] ( I:2.32ns O:2.32ns )   --->   "%s_3_load = load i3 %s_3_addr" [../fips202.c:298]   --->   Operation 334 'load' 's_3_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 5> <RAM>
+ST_139 : Operation 335 [1/2] ( I:2.32ns O:2.32ns )   --->   "%s_4_load = load i3 %s_4_addr" [../fips202.c:298]   --->   Operation 335 'load' 's_4_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 5> <RAM>
+ST_139 : Operation 336 [1/1] (1.94ns)   --->   "%tmp_1 = sparsemux i64 @_ssdm_op_SparseMux.ap_auto.5i64.i64.i3, i3 0, i64 %s_0_load, i3 1, i64 %s_1_load, i3 2, i64 %s_2_load, i3 3, i64 %s_3_load, i3 4, i64 %s_4_load, i64 0, i3 %trunc_ln298_1" [../fips202.c:298]   --->   Operation 336 'sparsemux' 'tmp_1' <Predicate = true> <Delay = 1.94> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+
+State 140 <SV = 135> <Delay = 6.25>
+ST_140 : Operation 337 [1/1] (0.00ns)   --->   "%shl_ln1 = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i3.i3, i3 %trunc_ln298, i3 0" [../fips202.c:298]   --->   Operation 337 'bitconcatenate' 'shl_ln1' <Predicate = true> <Delay = 0.00>
+ST_140 : Operation 338 [1/1] (0.00ns)   --->   "%zext_ln298 = zext i6 %shl_ln1" [../fips202.c:298]   --->   Operation 338 'zext' 'zext_ln298' <Predicate = true> <Delay = 0.00>
+ST_140 : Operation 339 [1/1] (2.94ns)   --->   "%shl_ln298 = shl i59 6, i59 %zext_ln298" [../fips202.c:298]   --->   Operation 339 'shl' 'shl_ln298' <Predicate = true> <Delay = 2.94> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 2.94> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_140 : Operation 340 [1/1] (0.00ns)   --->   "%zext_ln298_1 = zext i59 %shl_ln298" [../fips202.c:298]   --->   Operation 340 'zext' 'zext_ln298_1' <Predicate = true> <Delay = 0.00>
+ST_140 : Operation 341 [1/1] (0.99ns)   --->   "%xor_ln298 = xor i64 %tmp_1, i64 %zext_ln298_1" [../fips202.c:298]   --->   Operation 341 'xor' 'xor_ln298' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_140 : Operation 342 [1/1] (0.00ns)   --->   "%s_1_addr_1 = getelementptr i64 %s_1, i64 0, i64 3" [../fips202.c:299]   --->   Operation 342 'getelementptr' 's_1_addr_1' <Predicate = true> <Delay = 0.00>
+ST_140 : Operation 343 [1/1] (1.65ns)   --->   "%switch_ln298 = switch i3 %trunc_ln298_1, void %arrayidx352.case.4, i3 0, void %arrayidx352.case.0, i3 1, void %arrayidx352.case.1, i3 2, void %arrayidx352.case.2, i3 3, void %arrayidx352.case.3" [../fips202.c:298]   --->   Operation 343 'switch' 'switch_ln298' <Predicate = true> <Delay = 1.65>
+ST_140 : Operation 344 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln298 = store i64 %xor_ln298, i3 %s_3_addr" [../fips202.c:298]   --->   Operation 344 'store' 'store_ln298' <Predicate = (trunc_ln298_1 == 3)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 5> <RAM>
+ST_140 : Operation 345 [1/1] (0.00ns)   --->   "%br_ln298 = br void %arrayidx352.exit" [../fips202.c:298]   --->   Operation 345 'br' 'br_ln298' <Predicate = (trunc_ln298_1 == 3)> <Delay = 0.00>
+ST_140 : Operation 346 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln298 = store i64 %xor_ln298, i3 %s_2_addr" [../fips202.c:298]   --->   Operation 346 'store' 'store_ln298' <Predicate = (trunc_ln298_1 == 2)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 5> <RAM>
+ST_140 : Operation 347 [1/1] (0.00ns)   --->   "%br_ln298 = br void %arrayidx352.exit" [../fips202.c:298]   --->   Operation 347 'br' 'br_ln298' <Predicate = (trunc_ln298_1 == 2)> <Delay = 0.00>
+ST_140 : Operation 348 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln298 = store i64 %xor_ln298, i3 %s_1_addr" [../fips202.c:298]   --->   Operation 348 'store' 'store_ln298' <Predicate = (trunc_ln298_1 == 1)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 5> <RAM>
+ST_140 : Operation 349 [1/1] (0.00ns)   --->   "%br_ln298 = br void %arrayidx352.exit" [../fips202.c:298]   --->   Operation 349 'br' 'br_ln298' <Predicate = (trunc_ln298_1 == 1)> <Delay = 0.00>
+ST_140 : Operation 350 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln298 = store i64 %xor_ln298, i3 %s_0_addr" [../fips202.c:298]   --->   Operation 350 'store' 'store_ln298' <Predicate = (trunc_ln298_1 == 0)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 5> <RAM>
+ST_140 : Operation 351 [1/1] (0.00ns)   --->   "%br_ln298 = br void %arrayidx352.exit" [../fips202.c:298]   --->   Operation 351 'br' 'br_ln298' <Predicate = (trunc_ln298_1 == 0)> <Delay = 0.00>
+ST_140 : Operation 352 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln298 = store i64 %xor_ln298, i3 %s_4_addr" [../fips202.c:298]   --->   Operation 352 'store' 'store_ln298' <Predicate = (trunc_ln298_1 != 0 & trunc_ln298_1 != 1 & trunc_ln298_1 != 2 & trunc_ln298_1 != 3)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 5> <RAM>
+ST_140 : Operation 353 [1/1] (0.00ns)   --->   "%br_ln298 = br void %arrayidx352.exit" [../fips202.c:298]   --->   Operation 353 'br' 'br_ln298' <Predicate = (trunc_ln298_1 != 0 & trunc_ln298_1 != 1 & trunc_ln298_1 != 2 & trunc_ln298_1 != 3)> <Delay = 0.00>
+
+State 141 <SV = 136> <Delay = 0.00>
+ST_141 : Operation 354 [2/2] (2.32ns)   --->   "%s_1_load_1 = load i3 %s_1_addr_1" [../fips202.c:299]   --->   Operation 354 'load' 's_1_load_1' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 5> <RAM>
+
+State 142 <SV = 137> <Delay = 5.62>
+ST_142 : Operation 355 [1/2] ( I:2.32ns O:2.32ns )   --->   "%s_1_load_1 = load i3 %s_1_addr_1" [../fips202.c:299]   --->   Operation 355 'load' 's_1_load_1' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 5> <RAM>
+ST_142 : Operation 356 [1/1] (0.00ns)   --->   "%bit_sel = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i64, i64 %s_1_load_1, i64 63" [../fips202.c:299]   --->   Operation 356 'bitselect' 'bit_sel' <Predicate = true> <Delay = 0.00>
+ST_142 : Operation 357 [1/1] (0.97ns)   --->   "%xor_ln299 = xor i1 %bit_sel, i1 1" [../fips202.c:299]   --->   Operation 357 'xor' 'xor_ln299' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_142 : Operation 358 [1/1] (0.00ns)   --->   "%trunc_ln299 = trunc i64 %s_1_load_1" [../fips202.c:299]   --->   Operation 358 'trunc' 'trunc_ln299' <Predicate = true> <Delay = 0.00>
+ST_142 : Operation 359 [1/1] (0.00ns)   --->   "%xor_ln = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i1.i63, i1 %xor_ln299, i63 %trunc_ln299" [../fips202.c:299]   --->   Operation 359 'bitconcatenate' 'xor_ln' <Predicate = true> <Delay = 0.00>
+ST_142 : Operation 360 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln299 = store i64 %xor_ln, i3 %s_1_addr_1" [../fips202.c:299]   --->   Operation 360 'store' 'store_ln299' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 5> <RAM>
+ST_142 : Operation 361 [1/1] (0.00ns)   --->   "%ret_ln300 = ret" [../fips202.c:300]   --->   Operation 361 'ret' 'ret_ln300' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 3.520ns
+The critical path consists of the following:
+	wire read operation ('inlen_read', ../fips202.c:262) on port 'inlen' (../fips202.c:262) [11]  (0.000 ns)
+	'icmp' operation 1 bit ('empty', ../fips202.c:262) [14]  (3.520 ns)
+
+ <State 2>: 6.552ns
+The critical path consists of the following:
+	'select' operation 64 bit ('select_ln277', ../fips202.c:277) [15]  (1.481 ns)
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 3>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 4>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 5>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 6>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 7>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 8>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 9>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 10>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 11>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 12>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 13>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 14>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 15>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 16>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 17>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 18>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 19>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 20>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 21>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 22>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 23>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 24>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 25>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 26>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 27>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 28>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 29>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 30>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 31>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 32>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 33>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 34>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 35>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 36>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 37>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 38>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 39>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 40>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 41>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 42>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 43>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 44>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 45>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 46>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 47>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 48>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 49>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 50>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 51>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 52>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 53>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 54>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 55>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 56>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 57>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 58>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 59>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 60>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 61>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 62>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 63>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 64>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 65>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 66>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 67>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 68>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 69>: 5.071ns
+The critical path consists of the following:
+	'urem' operation 64 bit ('urem_ln277', ../fips202.c:277) [16]  (5.071 ns)
+
+ <State 70>: 7.040ns
+The critical path consists of the following:
+	'sub' operation 64 bit ('sub_ln277', ../fips202.c:277) [17]  (3.520 ns)
+	'sub' operation 64 bit ('inlen', ../fips202.c:262) [18]  (3.520 ns)
+
+ <State 71>: 6.918ns
+The critical path consists of the following:
+	'mul' operation 123 bit ('mul_ln298', ../fips202.c:298) [49]  (6.918 ns)
+
+ <State 72>: 5.108ns
+The critical path consists of the following:
+	'load' operation 64 bit ('pos_load', ../fips202.c:277) on local variable 'pos', ../fips202.c:275 [27]  (0.000 ns)
+	'add' operation 64 bit ('add_ln286', ../fips202.c:286) [32]  (3.520 ns)
+	'store' operation 0 bit ('store_ln275', ../fips202.c:275) of variable 'add_ln286', ../fips202.c:286 on local variable 'pos', ../fips202.c:275 [35]  (1.588 ns)
+
+ <State 73>: 0.000ns
+The critical path consists of the following:
+
+ <State 74>: 0.000ns
+The critical path consists of the following:
+
+ <State 75>: 0.000ns
+The critical path consists of the following:
+
+ <State 76>: 6.918ns
+The critical path consists of the following:
+	'mul' operation 123 bit ('mul_ln298', ../fips202.c:298) [49]  (6.918 ns)
+
+ <State 77>: 6.918ns
+The critical path consists of the following:
+	'mul' operation 123 bit ('mul_ln298', ../fips202.c:298) [49]  (6.918 ns)
+
+ <State 78>: 6.918ns
+The critical path consists of the following:
+	'mul' operation 123 bit ('mul_ln298', ../fips202.c:298) [49]  (6.918 ns)
+
+ <State 79>: 6.918ns
+The critical path consists of the following:
+	'mul' operation 123 bit ('mul_ln298', ../fips202.c:298) [49]  (6.918 ns)
+
+ <State 80>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 81>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 82>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 83>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 84>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 85>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 86>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 87>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 88>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 89>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 90>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 91>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 92>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 93>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 94>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 95>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 96>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 97>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 98>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 99>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 100>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 101>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 102>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 103>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 104>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 105>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 106>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 107>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 108>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 109>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 110>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 111>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 112>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 113>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 114>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 115>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 116>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 117>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 118>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 119>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 120>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 121>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 122>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 123>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 124>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 125>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 126>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 127>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 128>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 129>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 130>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 131>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 132>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 133>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 134>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 135>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 136>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 137>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 138>: 4.969ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+
+ <State 139>: 6.915ns
+The critical path consists of the following:
+	'urem' operation 3 bit ('urem_ln298', ../fips202.c:298) [52]  (4.969 ns)
+	'sparsemux' operation 64 bit ('tmp_1', ../fips202.c:298) [64]  (1.946 ns)
+
+ <State 140>: 6.252ns
+The critical path consists of the following:
+	'shl' operation 59 bit ('shl_ln298', ../fips202.c:298) [45]  (2.940 ns)
+	'xor' operation 64 bit ('xor_ln298', ../fips202.c:298) [65]  (0.990 ns)
+	'store' operation 0 bit ('store_ln298', ../fips202.c:298) of variable 'xor_ln298', ../fips202.c:298 on array 's_3' [69]  (2.322 ns)
+
+ <State 141>: 0.000ns
+The critical path consists of the following:
+
+ <State 142>: 5.622ns
+The critical path consists of the following:
+	'load' operation 64 bit ('s_1_load_1', ../fips202.c:299) on array 's_1' [84]  (2.322 ns)
+	'xor' operation 1 bit ('xor_ln299', ../fips202.c:299) [86]  (0.978 ns)
+	'store' operation 0 bit ('store_ln299', ../fips202.c:299) of variable 'xor_ln', ../fips202.c:299 on array 's_1' [89]  (2.322 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+	State 54
+	State 55
+	State 56
+	State 57
+	State 58
+	State 59
+	State 60
+	State 61
+	State 62
+	State 63
+	State 64
+	State 65
+	State 66
+	State 67
+	State 68
+	State 69
+	State 70
+	State 71
+	State 72
+	State 73
+	State 74
+	State 75
+	State 76
+	State 77
+	State 78
+	State 79
+	State 80
+	State 81
+	State 82
+	State 83
+	State 84
+	State 85
+	State 86
+	State 87
+	State 88
+	State 89
+	State 90
+	State 91
+	State 92
+	State 93
+	State 94
+	State 95
+	State 96
+	State 97
+	State 98
+	State 99
+	State 100
+	State 101
+	State 102
+	State 103
+	State 104
+	State 105
+	State 106
+	State 107
+	State 108
+	State 109
+	State 110
+	State 111
+	State 112
+	State 113
+	State 114
+	State 115
+	State 116
+	State 117
+	State 118
+	State 119
+	State 120
+	State 121
+	State 122
+	State 123
+	State 124
+	State 125
+	State 126
+	State 127
+	State 128
+	State 129
+	State 130
+	State 131
+	State 132
+	State 133
+	State 134
+	State 135
+	State 136
+	State 137
+	State 138
+	State 139
+	State 140
+	State 141
+	State 142
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

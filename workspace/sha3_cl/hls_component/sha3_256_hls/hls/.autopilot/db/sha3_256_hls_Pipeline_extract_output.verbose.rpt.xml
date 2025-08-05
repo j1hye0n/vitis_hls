@@ -1,0 +1,184 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'sha3_256_hls_Pipeline_extract_output'" level="0">
+<item name = "Date">Tue Aug  5 17:14:39 2025
+</item>
+<item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
+<item name = "Project">sha3_256_hls</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">azynq</item>
+<item name = "Target device">xa7z010-clg400-1I</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 4.741 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">5, 5, 50.000 ns, 50.000 ns, 4, 4, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- extract_output">3, 3, 1, 1, 1, 4, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 20, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 0, 20, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 27, -</column>
+<column name="Register">-, -, 4, -, -</column>
+<specialColumn name="Available">120, 80, 35200, 17600, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="sparsemux_9_2_64_1_1_U101">sparsemux_9_2_64_1_1, 0, 0, 0, 20, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="i_fu_524_p2">+, 0, 0, 10, 2, 1</column>
+<column name="icmp_ln325_fu_530_p2">icmp, 0, 0, 10, 2, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_i1_load">9, 2, 2, 4</column>
+<column name="i1_fu_134">9, 2, 2, 4</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="i1_fu_134">2, 0, 2, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, sha3_256_hls_Pipeline_extract_output, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, sha3_256_hls_Pipeline_extract_output, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, sha3_256_hls_Pipeline_extract_output, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, sha3_256_hls_Pipeline_extract_output, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, sha3_256_hls_Pipeline_extract_output, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, sha3_256_hls_Pipeline_extract_output, return value</column>
+<column name="h_31">out, 8, ap_vld, h_31, pointer</column>
+<column name="h_31_ap_vld">out, 1, ap_vld, h_31, pointer</column>
+<column name="h_30">out, 8, ap_vld, h_30, pointer</column>
+<column name="h_30_ap_vld">out, 1, ap_vld, h_30, pointer</column>
+<column name="h_29">out, 8, ap_vld, h_29, pointer</column>
+<column name="h_29_ap_vld">out, 1, ap_vld, h_29, pointer</column>
+<column name="h_28">out, 8, ap_vld, h_28, pointer</column>
+<column name="h_28_ap_vld">out, 1, ap_vld, h_28, pointer</column>
+<column name="h_27">out, 8, ap_vld, h_27, pointer</column>
+<column name="h_27_ap_vld">out, 1, ap_vld, h_27, pointer</column>
+<column name="h_26">out, 8, ap_vld, h_26, pointer</column>
+<column name="h_26_ap_vld">out, 1, ap_vld, h_26, pointer</column>
+<column name="h_25">out, 8, ap_vld, h_25, pointer</column>
+<column name="h_25_ap_vld">out, 1, ap_vld, h_25, pointer</column>
+<column name="h_24">out, 8, ap_vld, h_24, pointer</column>
+<column name="h_24_ap_vld">out, 1, ap_vld, h_24, pointer</column>
+<column name="h_23">out, 8, ap_vld, h_23, pointer</column>
+<column name="h_23_ap_vld">out, 1, ap_vld, h_23, pointer</column>
+<column name="h_22">out, 8, ap_vld, h_22, pointer</column>
+<column name="h_22_ap_vld">out, 1, ap_vld, h_22, pointer</column>
+<column name="h_21">out, 8, ap_vld, h_21, pointer</column>
+<column name="h_21_ap_vld">out, 1, ap_vld, h_21, pointer</column>
+<column name="h_20">out, 8, ap_vld, h_20, pointer</column>
+<column name="h_20_ap_vld">out, 1, ap_vld, h_20, pointer</column>
+<column name="h_19">out, 8, ap_vld, h_19, pointer</column>
+<column name="h_19_ap_vld">out, 1, ap_vld, h_19, pointer</column>
+<column name="h_18">out, 8, ap_vld, h_18, pointer</column>
+<column name="h_18_ap_vld">out, 1, ap_vld, h_18, pointer</column>
+<column name="h_17">out, 8, ap_vld, h_17, pointer</column>
+<column name="h_17_ap_vld">out, 1, ap_vld, h_17, pointer</column>
+<column name="h_16">out, 8, ap_vld, h_16, pointer</column>
+<column name="h_16_ap_vld">out, 1, ap_vld, h_16, pointer</column>
+<column name="h_15">out, 8, ap_vld, h_15, pointer</column>
+<column name="h_15_ap_vld">out, 1, ap_vld, h_15, pointer</column>
+<column name="h_14">out, 8, ap_vld, h_14, pointer</column>
+<column name="h_14_ap_vld">out, 1, ap_vld, h_14, pointer</column>
+<column name="h_13">out, 8, ap_vld, h_13, pointer</column>
+<column name="h_13_ap_vld">out, 1, ap_vld, h_13, pointer</column>
+<column name="h_12">out, 8, ap_vld, h_12, pointer</column>
+<column name="h_12_ap_vld">out, 1, ap_vld, h_12, pointer</column>
+<column name="h_11">out, 8, ap_vld, h_11, pointer</column>
+<column name="h_11_ap_vld">out, 1, ap_vld, h_11, pointer</column>
+<column name="h_10">out, 8, ap_vld, h_10, pointer</column>
+<column name="h_10_ap_vld">out, 1, ap_vld, h_10, pointer</column>
+<column name="h_9">out, 8, ap_vld, h_9, pointer</column>
+<column name="h_9_ap_vld">out, 1, ap_vld, h_9, pointer</column>
+<column name="h_8">out, 8, ap_vld, h_8, pointer</column>
+<column name="h_8_ap_vld">out, 1, ap_vld, h_8, pointer</column>
+<column name="h_7">out, 8, ap_vld, h_7, pointer</column>
+<column name="h_7_ap_vld">out, 1, ap_vld, h_7, pointer</column>
+<column name="h_6">out, 8, ap_vld, h_6, pointer</column>
+<column name="h_6_ap_vld">out, 1, ap_vld, h_6, pointer</column>
+<column name="h_5">out, 8, ap_vld, h_5, pointer</column>
+<column name="h_5_ap_vld">out, 1, ap_vld, h_5, pointer</column>
+<column name="h_4">out, 8, ap_vld, h_4, pointer</column>
+<column name="h_4_ap_vld">out, 1, ap_vld, h_4, pointer</column>
+<column name="h_3">out, 8, ap_vld, h_3, pointer</column>
+<column name="h_3_ap_vld">out, 1, ap_vld, h_3, pointer</column>
+<column name="h_2">out, 8, ap_vld, h_2, pointer</column>
+<column name="h_2_ap_vld">out, 1, ap_vld, h_2, pointer</column>
+<column name="h_1">out, 8, ap_vld, h_1, pointer</column>
+<column name="h_1_ap_vld">out, 1, ap_vld, h_1, pointer</column>
+<column name="h_0">out, 8, ap_vld, h_0, pointer</column>
+<column name="h_0_ap_vld">out, 1, ap_vld, h_0, pointer</column>
+<column name="s_load">in, 64, ap_none, s_load, scalar</column>
+<column name="s_1_load">in, 64, ap_none, s_1_load, scalar</column>
+<column name="s_2_load">in, 64, ap_none, s_2_load, scalar</column>
+<column name="s_3_load">in, 64, ap_none, s_3_load, scalar</column>
+</table>
+</item>
+</section>
+</profile>

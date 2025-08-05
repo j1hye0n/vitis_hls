@@ -1,0 +1,773 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../fips202.c, Line: 283, Column: 10 }
+Function:        keccak_absorb_once_hls
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          load64_hls
+    DebugLoc:        { File: ../fips202.c, Line: 19, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          keccak_absorb_once_hls
+    DebugLoc:        { File: ../fips202.c, Line: 262, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 288, Column: 9 }
+Function:        keccak_absorb_once_hls
+Args:            
+  - Callee:          KeccakF1600_StatePermute_HLS
+    DebugLoc:        { File: ../fips202.c, Line: 70, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          keccak_absorb_once_hls
+    DebugLoc:        { File: ../fips202.c, Line: 262, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 321, Column: 2 }
+Function:        sha3_256_hls
+Args:            
+  - Callee:          keccak_absorb_once_hls
+    DebugLoc:        { File: ../fips202.c, Line: 262, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          sha3_256_hls
+    DebugLoc:        { File: ../fips202.c, Line: 311, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 322, Column: 5 }
+Function:        sha3_256_hls
+Args:            
+  - Callee:          KeccakF1600_StatePermute_HLS
+    DebugLoc:        { File: ../fips202.c, Line: 70, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          sha3_256_hls
+    DebugLoc:        { File: ../fips202.c, Line: 311, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../fips202.c, Line: 327, Column: 2 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          store64_hls
+    DebugLoc:        { File: ../fips202.c, Line: 40, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          sha3_256_hls
+    DebugLoc:        { File: ../fips202.c, Line: 311, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../fips202.c, Line: 45, Column: 15 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Loop '''
+  - LoopName:        store_bytes
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../fips202.c, Line: 25, Column: 17 }
+Function:        keccak_absorb_once_hls
+Args:            
+  - String:          'Loop '''
+  - LoopName:        load_bytes
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../fips202.c, Line: 311, Column: 0 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        store_bytes
+  - String:          ''' ('
+  - LoopLoc:         '../fips202.c:45:15'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          sha3_256_hls
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../fips202.c, Line: 262, Column: 0 }
+Function:        keccak_absorb_once_hls
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        load_bytes
+  - String:          ''' ('
+  - LoopLoc:         '../fips202.c:25:17'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          keccak_absorb_once_hls
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 288, Column: 9 }
+Function:        keccak_absorb_once_hls
+Args:            
+  - Callee:          KeccakF1600_StatePermute_HLS
+    DebugLoc:        { File: ../fips202.c, Line: 70, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          keccak_absorb_once_hls
+    DebugLoc:        { File: ../fips202.c, Line: 262, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 321, Column: 2 }
+Function:        sha3_256_hls
+Args:            
+  - Callee:          keccak_absorb_once_hls
+    DebugLoc:        { File: ../fips202.c, Line: 262, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          sha3_256_hls
+    DebugLoc:        { File: ../fips202.c, Line: 311, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 322, Column: 5 }
+Function:        sha3_256_hls
+Args:            
+  - Callee:          KeccakF1600_StatePermute_HLS
+    DebugLoc:        { File: ../fips202.c, Line: 70, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          sha3_256_hls
+    DebugLoc:        { File: ../fips202.c, Line: 311, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_sha3_256_hls_ir
+Args:            
+  - Callee:          sha3_256_hls
+    DebugLoc:        { File: ../fips202.c, Line: 311, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_sha3_256_hls_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            AdderessOnRegister
+DebugLoc:        { File: ../fips202.c, Line: 27, Column: 17 }
+Function:        keccak_absorb_once_hls
+Args:            
+  - String:          Ignore address on register port
+  - String:          ' '''
+  - String:          in
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            AdderessOnRegister
+DebugLoc:        { File: ../fips202.c, Line: 27, Column: 17 }
+Function:        keccak_absorb_once_hls
+Args:            
+  - String:          Ignore address on register port
+  - String:          ' '''
+  - String:          in
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            AdderessOnRegister
+DebugLoc:        { File: ../fips202.c, Line: 27, Column: 17 }
+Function:        keccak_absorb_once_hls
+Args:            
+  - String:          Ignore address on register port
+  - String:          ' '''
+  - String:          in
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            AdderessOnRegister
+DebugLoc:        { File: ../fips202.c, Line: 27, Column: 17 }
+Function:        keccak_absorb_once_hls
+Args:            
+  - String:          Ignore address on register port
+  - String:          ' '''
+  - String:          in
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            AdderessOnRegister
+DebugLoc:        { File: ../fips202.c, Line: 27, Column: 17 }
+Function:        keccak_absorb_once_hls
+Args:            
+  - String:          Ignore address on register port
+  - String:          ' '''
+  - String:          in
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            AdderessOnRegister
+DebugLoc:        { File: ../fips202.c, Line: 27, Column: 17 }
+Function:        keccak_absorb_once_hls
+Args:            
+  - String:          Ignore address on register port
+  - String:          ' '''
+  - String:          in
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            AdderessOnRegister
+DebugLoc:        { File: ../fips202.c, Line: 27, Column: 17 }
+Function:        keccak_absorb_once_hls
+Args:            
+  - String:          Ignore address on register port
+  - String:          ' '''
+  - String:          in
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            AdderessOnRegister
+DebugLoc:        { File: ../fips202.c, Line: 27, Column: 17 }
+Function:        keccak_absorb_once_hls
+Args:            
+  - String:          Ignore address on register port
+  - String:          ' '''
+  - String:          in
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            AdderessOnRegister
+DebugLoc:        { File: ../fips202.c, Line: 294, Column: 22 }
+Function:        keccak_absorb_once_hls
+Args:            
+  - String:          Ignore address on register port
+  - String:          ' '''
+  - String:          in
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnUnsupportedArrayTransform
+DebugLoc:        { File: ../fips202.c, Line: 321, Column: 2 }
+Function:        apatb_sha3_256_hls_ir
+Args:            
+  - String:          'Ignored unsupported '
+  - PragmaName:      array_partition
+  - String:          ' pragma on variable '''
+  - Name:            in
+  - String:          '''. '
+  - String:          This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnUnsupportedArrayTransform
+DebugLoc:        { File: ../fips202.c, Line: 42, Column: 9 }
+Function:        apatb_sha3_256_hls_ir
+Args:            
+  - String:          'Ignored unsupported '
+  - PragmaName:      array_partition
+  - String:          ' pragma on variable '''
+  - Name:            h
+  - String:          '''. '
+  - String:          This can happen when applying a pragma on a function argument with mismatched array size w.r.t. its call site, or when providing a dim too deep on an array of insufficient dimension.
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../fips202.c, Line: 52, Column: 0 }
+Function:        KeccakF1600_StatePermute_HLS
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          KeccakF_RoundConstants
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../fips202.c, Line: 318, Column: 11 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          s
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '5'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../fips202.c, Line: 311, Column: 0 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          h
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-check-pragma-conflict-variable
+Name:            VariablePragmaScalarWarn
+DebugLoc:        { File: ../fips202.c, Line: 313, Column: 9 }
+Function:        sha3_256_hls
+Args:            
+  - String:          'Unsuported scalar variable on pragma '''
+  - Name:            ap_memory Interface
+  - String:          ''', '
+  - String:          ignore it.
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            FlattenOffInference
+DebugLoc:        { File: ../fips202.c, Line: 277, Column: 20 }
+Function:        keccak_absorb_once_hls
+Args:            
+  - String:          'Automatically disabling loop flattening for loop '''
+  - LoopName:        absorb_blocks
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../fips202.c, Line: 277, Column: 20 }
+Function:        keccak_absorb_once_hls
+Args:            
+  - PragmaType:      loop_flatten
+  - String:          ' '
+  - PragmaOptions:   off
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  keccak_absorb_once_hls
+  - String:          ' '
+  - PragmaSrcLoc:    '../fips202.c:277:20'
+    DebugLoc:        { File: ../fips202.c, Line: 277, Column: 20 }
+  - LoopName:        absorb_blocks
+  - String:          ' '
+  - LoopLoc:         '../fips202.c:277:20'
+    DebugLoc:        { File: ../fips202.c, Line: 277, Column: 20 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 288, Column: 9 }
+Function:        keccak_absorb_once_hls
+Args:            
+  - Callee:          KeccakF1600_StatePermute_HLS
+    DebugLoc:        { File: ../fips202.c, Line: 70, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          keccak_absorb_once_hls
+    DebugLoc:        { File: ../fips202.c, Line: 262, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 321, Column: 2 }
+Function:        sha3_256_hls
+Args:            
+  - Callee:          keccak_absorb_once_hls
+    DebugLoc:        { File: ../fips202.c, Line: 262, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          sha3_256_hls
+    DebugLoc:        { File: ../fips202.c, Line: 311, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 322, Column: 5 }
+Function:        sha3_256_hls
+Args:            
+  - Callee:          KeccakF1600_StatePermute_HLS
+    DebugLoc:        { File: ../fips202.c, Line: 70, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          sha3_256_hls
+    DebugLoc:        { File: ../fips202.c, Line: 311, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

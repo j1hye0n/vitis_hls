@@ -1,0 +1,106 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/sha3_256_hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/hyeon/vitis_hls/workspace/sha3_opt/fips202_tb.c' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file '/home/hyeon/vitis_hls/workspace/sha3_opt/fips202_tb.c' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=sha3_256_hls' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xa7z010clg400-1I' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xa7z010-clg400-1I'
+INFO: [HLS 200-1465] Applying ini 'cosim.trace_level=all' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'cosim.wave_debug=1' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from /home/hyeon/vitis_hls/workspace/sha3_opt/hls_component/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [HLS 211-200] Compiling source code ../fips202.c as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code /home/hyeon/vitis_hls/workspace/sha3_opt/fips202_tb.c as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code ../fips202.c as test bench code with instrumentation
+../fips202.c:89:1: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=1
+^~~~~~~~~~~~~~~~~~~~~~~~~
+../fips202.c:245:1: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=1
+^~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+INFO: [HLS 211-200] Linking hardware code
+INFO: [HLS 211-200] Transforming hardware bitcode
+INFO: [HLS 211-200] Linking executable
+INFO: [HLS 211-200] Computing HLS IR Information
+INFO: [HLS 211-200] Determining source code dependencies
+INFO: [SIM 211-200] Running executable
+=== SHA3-256 HLS Testbench ===
+
+Test 1: Empty string
+  Input: 
+  Expected: a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a
+  Got     : a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a
+  ✓ PASS
+
+Test 2: Single byte 'a'
+  Input: 61
+  Expected: 80084bf2fba02475726feb2cab2d8215eab14bc6bdd8bfb2c8151257032ecd8b
+  Got     : 80084bf2fba02475726feb2cab2d8215eab14bc6bdd8bfb2c8151257032ecd8b
+  ✓ PASS
+
+Test 3: Three bytes 'abc'
+  Input: 616263
+  Expected: 3a985da74fe225b2045c172d6bd390bd855f086e3e9d525b46bfe24511431532
+  Got     : 3a985da74fe225b2045c172d6bd390bd855f086e3e9d525b46bfe24511431532
+  ✓ PASS
+
+Test 4: 56 bytes (448 bits)
+  ERROR: Input length mismatch
+Test 5: 64 bytes (512 bits)
+  ERROR: Input length mismatch
+Test 6: 136 bytes (one block exactly)
+  Input: 136 bytes (too long to display)
+  Expected: b751850b1a57168a5693cd924b6b096e08f621827444f70d884f5d0240d2712e
+  Got     : 455f7ab453209651883a26895b118db55b005032fc12632def3ed7b52e11dc3b
+  ✗ FAIL
+
+=== Performance Tests ===
+Performance test: 64 bytes
+  Input: 64 bytes of pattern data
+  Result: c8ad478f4e1dd9d47dfc3b985708d92db1f8db48fe9cddd459e63c321f490402
+
+Performance test: 128 bytes
+  Input: 128 bytes of pattern data
+  Result: bec3ebfba06834f224543cca2a427cb9329147be93e19aeb0e33a7119c7f63ef
+
+Performance test: 256 bytes
+  Input: 256 bytes of pattern data
+  Result: 9b04c091da96b997afb8f2585d608aebe9c4a904f7d52c8f28c7e4d2dd9fba5f
+
+Performance test: 512 bytes
+  Input: 512 bytes of pattern data
+  Result: d4728ea5e9f3819f2b4760151a8f802dbe9f941fd6fb59b3715892436555772a
+
+Performance test: 1024 bytes
+  Input: 1024 bytes of pattern data
+  Result: b6c70631c6ff932b9f380d9cde8750eb9bea393817a9aea410c2119eb7b9b870
+
+=== Edge Case Tests ===
+Edge case 1: 135 bytes (one block - 1)
+  Result: ebd08676b9832c35f61b7b04b483e7b977912830e4262eca483487dc4f6796b1
+
+Edge case 2: 137 bytes (one block + 1)
+  Result: 8611644f227795f56dfad95f527229cc70a104c10f1319bf9b8e26c98bcf545f
+
+Edge case 3: 272 bytes (exactly 2 blocks)
+  Result: 0b21ec4a8eff6d179e09ba9fe0ab08515b24e0923fbf419f5c30a38e64577db5
+
+=== Test Summary ===
+NIST Test Vectors: 3 passed, 3 failed
+Performance Tests: 5 completed
+Edge Case Tests: 3 completed
+
+❌ 3 TESTS FAILED ❌
+ERROR: [SIM 211-200] Simulation failed: Function 'main' returns nonzero value '1'.
+ERROR: [SIM 211-200] Code Analyzer execution failed. Consider running the classic C simulation instead by disabling the hls.csim.code_analyzer option in the config file.
+ERROR: Problem running csim: child process exited abnormally
+INFO: [HLS 200-112] Total CPU user time: 9.3 seconds. Total CPU system time: 2.69 seconds. Total elapsed time: 28.43 seconds; peak allocated memory: 322.980 MB.

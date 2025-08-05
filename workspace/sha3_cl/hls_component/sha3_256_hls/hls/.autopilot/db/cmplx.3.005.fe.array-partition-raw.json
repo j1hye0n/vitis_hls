@@ -1,0 +1,48 @@
+{
+  "0": {
+    "basicblocks": 43,
+    "calls": "1 2",
+    "file": "fips202.c",
+    "fileloc": 311,
+    "instructions": 247,
+    "loads": {
+      "L": 4
+    },
+    "name": "sha3_256_hls",
+    "stores": {
+      "T": 32
+    },
+    "total_instructions": 1789
+  },
+  "1": {
+    "basicblocks": 36,
+    "calls": "2",
+    "file": "fips202.c",
+    "fileloc": 262,
+    "instructions": 222,
+    "loads": {
+      "L": 25
+    },
+    "name": "keccak_absorb_once_hls",
+    "stores": {
+      "L": 21
+    },
+    "total_instructions": 882
+  },
+  "2": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "fips202.c",
+    "fileloc": 70,
+    "instructions": 660,
+    "loads": {
+      "G": 24,
+      "L": 25
+    },
+    "name": "KeccakF1600_StatePermute_HLS",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 660
+  }
+}
