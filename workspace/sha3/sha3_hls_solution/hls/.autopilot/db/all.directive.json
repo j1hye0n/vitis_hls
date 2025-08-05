@@ -16,7 +16,7 @@
       ]
     },
     "slx": false,
-    "sourceFile": "/home/hyeon/workspace/sha3/run_hls.tcl",
+    "sourceFile": "/home/hyeon/vitis_hls/workspace/sha3/run_hls.tcl",
     "sourceLine": 60,
     "success": true
   }

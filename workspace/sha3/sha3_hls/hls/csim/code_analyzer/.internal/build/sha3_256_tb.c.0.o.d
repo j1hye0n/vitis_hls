@@ -1,5 +1,6 @@
-/home/hyeon/workspace/sha3/sha3_hls/hls/csim/code_analyzer/.internal/build/sha3_256_tb.c.0.o: \
-  /home/hyeon/workspace/sha3/sha3_256_tb.c /usr/include/stdio.h \
+/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls/csim/code_analyzer/.internal/build/sha3_256_tb.c.0.o: \
+  /home/hyeon/vitis_hls/workspace/sha3/sha3_256_tb.c \
+  /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/features.h /usr/include/features-time64.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -25,7 +26,7 @@
   /usr/include/string.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/strings.h /home/hyeon/workspace/sha3/fips202.h \
+  /usr/include/strings.h /home/hyeon/vitis_hls/workspace/sha3/fips202.h \
   /tools/xilinx/Vitis/2024.2/vcxx/lib/clang/14.0.6/include/stdint.h \
   /usr/include/stdint.h /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \

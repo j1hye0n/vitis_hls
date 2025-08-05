@@ -1,6 +1,6 @@
 <ENTRY>
 {
- "thisFile": "/home/hyeon/workspace/sha3/sha3_hls_solution/sha3_hls_solution.hlsrun_cosim_summary",
+ "thisFile": "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/sha3_hls_solution.hlsrun_cosim_summary",
  "connectId": "",
  "serverToken": "",
  "timestamp": "0"
@@ -9,26 +9,26 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Wed Jul 30 13:32:59 2025",
- "timestampMillis": "1753849979932",
+ "dateTimestamp": "Mon Aug  4 14:27:08 2025",
+ "timestampMillis": "1754285228053",
  "buildStep": {
-  "cmdId": "54ee0981-b1d4-4f0a-9c01-1fe82cb529a1",
+  "cmdId": "191bb794-bfad-4f55-9f55-ccf6f04d23e4",
   "name": "vitis-run",
-  "logFile": "/home/hyeon/workspace/sha3/logs/hls_run_csim.log",
-  "commandLine": "vitis-run --mode hls --tcl /home/hyeon/workspace/sha3/run_hls.tcl",
+  "logFile": "/home/hyeon/vitis_hls/workspace/sha3/logs/hls_run_csim.log",
+  "commandLine": "vitis-run --mode hls --tcl /home/hyeon/vitis_hls/workspace/sha3/run_hls.tcl",
   "args": [],
   "iniFiles": [],
-  "cwd": "/home/hyeon/workspace/sha3"
+  "cwd": "/home/hyeon/vitis_hls/workspace/sha3"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Jul 30 13:32:59 2025",
- "timestampMillis": "1753849979933",
+ "dateTimestamp": "Mon Aug  4 14:27:08 2025",
+ "timestampMillis": "1754285228053",
  "status": {
-  "cmdId": "54ee0981-b1d4-4f0a-9c01-1fe82cb529a1",
+  "cmdId": "191bb794-bfad-4f55-9f55-ccf6f04d23e4",
   "state": "CS_RUNNING"
  }
 }
@@ -36,8 +36,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Wed Jul 30 13:32:59 2025",
- "timestampMillis": "1753849979934",
+ "dateTimestamp": "Mon Aug  4 14:27:08 2025",
+ "timestampMillis": "1754285228053",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -56,9 +56,9 @@
      "uuid": ""
     },
     "sources": [
-     "/home/hyeon/workspace/sha3/fips202.c",
-     "/home/hyeon/workspace/sha3/fips202.h",
-     "/home/hyeon/workspace/sha3/sha3_256.c"
+     "/home/hyeon/vitis_hls/workspace/sha3/fips202.c",
+     "/home/hyeon/vitis_hls/workspace/sha3/fips202.h",
+     "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c"
     ],
     "psSources": [],
     "cuNames": [],
@@ -74,26 +74,26 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Wed Jul 30 13:32:59 2025",
- "timestampMillis": "1753849979934",
+ "dateTimestamp": "Mon Aug  4 14:27:08 2025",
+ "timestampMillis": "1754285228054",
  "buildStep": {
-  "cmdId": "934b356a-e2c8-4667-9b75-7ed44f8538a0",
+  "cmdId": "f7f9e7f3-ceaf-443e-9502-38dc6bbee690",
   "name": "cosim_design",
-  "logFile": "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/hls.log",
+  "logFile": "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/hls.log",
   "commandLine": "cosim_design",
   "args": [],
   "iniFiles": [],
-  "cwd": "/home/hyeon/workspace/sha3"
+  "cwd": "/home/hyeon/vitis_hls/workspace/sha3"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Jul 30 13:32:59 2025",
- "timestampMillis": "1753849979935",
+ "dateTimestamp": "Mon Aug  4 14:27:08 2025",
+ "timestampMillis": "1754285228054",
  "status": {
-  "cmdId": "934b356a-e2c8-4667-9b75-7ed44f8538a0",
+  "cmdId": "f7f9e7f3-ceaf-443e-9502-38dc6bbee690",
   "state": "CS_RUNNING"
  }
 }
@@ -101,10 +101,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Wed Jul 30 13:32:59 2025",
- "timestampMillis": "1753849979935",
+ "dateTimestamp": "Mon Aug  4 14:27:08 2025",
+ "timestampMillis": "1754285228055",
  "report": {
-  "path": "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/report/sha3_256_hw_cosim.rpt",
+  "path": "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/report/sha3_256_hw_cosim.rpt",
   "name": "",
   "fileType": "TEXT",
   "reportType": "HLS_COSIMULATION",
@@ -115,10 +115,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Wed Jul 30 13:32:59 2025",
- "timestampMillis": "1753849979936",
+ "dateTimestamp": "Mon Aug  4 14:27:08 2025",
+ "timestampMillis": "1754285228055",
  "report": {
-  "path": "/home/hyeon/workspace/sha3/sha3_hls_solution/hls",
+  "path": "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls",
   "name": "",
   "fileType": "DIR",
   "reportType": "HLS_DATAFLOW",
@@ -129,10 +129,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Wed Jul 30 13:32:59 2025",
- "timestampMillis": "1753849979937",
+ "dateTimestamp": "Mon Aug  4 14:27:08 2025",
+ "timestampMillis": "1754285228055",
  "report": {
-  "path": "/home/hyeon/workspace/sha3/sha3_hls_solution/hls",
+  "path": "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls",
   "name": "",
   "fileType": "DIR",
   "reportType": "HLS_FUNCTION_CALL_GRAPH_COSIM",
@@ -143,10 +143,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Wed Jul 30 13:32:59 2025",
- "timestampMillis": "1753849979937",
+ "dateTimestamp": "Mon Aug  4 14:27:08 2025",
+ "timestampMillis": "1754285228056",
  "report": {
-  "path": "/home/hyeon/workspace/sha3/sha3_hls_solution/hls",
+  "path": "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls",
   "name": "",
   "fileType": "DIR",
   "reportType": "HLS_TIMELINE_TRACE",
@@ -157,10 +157,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Wed Jul 30 13:32:59 2025",
- "timestampMillis": "1753849979938",
+ "dateTimestamp": "Mon Aug  4 14:27:08 2025",
+ "timestampMillis": "1754285228056",
  "report": {
-  "path": "/home/hyeon/workspace/sha3/sha3_hls_solution/hls",
+  "path": "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls",
   "name": "",
   "fileType": "DIR",
   "reportType": "HLS_WAVE",
@@ -171,10 +171,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Jul 30 13:33:47 2025",
- "timestampMillis": "1753850027965",
+ "dateTimestamp": "Mon Aug  4 14:28:03 2025",
+ "timestampMillis": "1754285283253",
  "status": {
-  "cmdId": "934b356a-e2c8-4667-9b75-7ed44f8538a0",
+  "cmdId": "f7f9e7f3-ceaf-443e-9502-38dc6bbee690",
   "state": "CS_PASSED"
  }
 }
@@ -182,10 +182,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Jul 30 13:33:47 2025",
- "timestampMillis": "1753850027987",
+ "dateTimestamp": "Mon Aug  4 14:28:03 2025",
+ "timestampMillis": "1754285283274",
  "status": {
-  "cmdId": "54ee0981-b1d4-4f0a-9c01-1fe82cb529a1",
+  "cmdId": "191bb794-bfad-4f55-9f55-ccf6f04d23e4",
   "state": "CS_PASSED"
  }
 }

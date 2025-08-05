@@ -1,2 +1,2 @@
-parallelismSelector::WARNG: WARNING: [SIM 211-200] /home/hyeon/workspace/sha3/sha3_hls/../fips202.c:479:3: the dynamic loop had a trip count of min=0 max=0 during C simulation. (#pragma HLS loop_tripcount min=0 max=0)
-parallelismSelector::WARNG: WARNING: [SIM 211-200] /home/hyeon/workspace/sha3/sha3_hls/../fips202.c:488:16: the dynamic loop had a trip count of min=4 max=4 during C simulation. (#pragma HLS loop_tripcount min=4 max=4)
+parallelismSelector::WARNG: WARNING: [SIM 211-200] /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:477:3: the dynamic loop had a trip count of min=0 max=0 during C simulation. (#pragma HLS loop_tripcount min=0 max=0)
+parallelismSelector::WARNG: WARNING: [SIM 211-200] /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:486:16: the dynamic loop had a trip count of min=4 max=4 during C simulation. (#pragma HLS loop_tripcount min=4 max=4)

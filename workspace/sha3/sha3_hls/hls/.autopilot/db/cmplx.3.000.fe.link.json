@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "1",
+    "calls": "4",
     "file": "sha3_256.c",
     "fileloc": 4,
     "instructions": 7,
@@ -9,32 +9,31 @@
     "total_instructions": 1288
   },
   "1": {
-    "basicblocks": 6,
-    "calls": "4 2 3",
+    "basicblocks": 22,
+    "calls": "2 5",
     "file": "fips202.c",
-    "fileloc": 754,
-    "instructions": 25,
+    "fileloc": 464,
+    "instructions": 88,
     "loads": {
-      "L": 1
+      "L": 5
     },
-    "name": "pqcrystals_kyber_fips202_ref_sha3_256",
-    "total_instructions": 1281
+    "name": "keccak_absorb_once",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 673
   },
   "2": {
     "basicblocks": 6,
     "calls": "",
     "file": "fips202.c",
-    "fileloc": 83,
-    "instructions": 567,
+    "fileloc": 22,
+    "instructions": 18,
     "loads": {
-      "G": 2,
-      "L": 25
+      "L": 1
     },
-    "name": "KeccakF1600_StatePermute",
-    "stores": {
-      "L": 25
-    },
-    "total_instructions": 567
+    "name": "load64",
+    "total_instructions": 18
   },
   "3": {
     "basicblocks": 6,
@@ -49,30 +48,31 @@
     "total_instructions": 16
   },
   "4": {
-    "basicblocks": 22,
-    "calls": "5 2",
+    "basicblocks": 6,
+    "calls": "1 5 3",
     "file": "fips202.c",
-    "fileloc": 464,
-    "instructions": 88,
+    "fileloc": 752,
+    "instructions": 25,
     "loads": {
-      "L": 5
+      "L": 1
     },
-    "name": "keccak_absorb_once",
-    "stores": {
-      "L": 5
-    },
-    "total_instructions": 673
+    "name": "pqcrystals_kyber_fips202_ref_sha3_256",
+    "total_instructions": 1281
   },
   "5": {
     "basicblocks": 6,
     "calls": "",
     "file": "fips202.c",
-    "fileloc": 22,
-    "instructions": 18,
+    "fileloc": 83,
+    "instructions": 567,
     "loads": {
-      "L": 1
+      "G": 2,
+      "L": 25
     },
-    "name": "load64",
-    "total_instructions": 18
+    "name": "KeccakF1600_StatePermute",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 567
   }
 }

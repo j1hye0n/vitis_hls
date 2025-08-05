@@ -3,12 +3,12 @@
 # SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Wed Jul 30 13:33:25 2025
-# Process ID         : 180176
-# Current directory  : /home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog
+# Start of session at: Mon Aug  4 14:27:39 2025
+# Process ID         : 1059
+# Current directory  : /home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog
 # Command line       : xsim -mode tcl -source {xsim.dir/sha3_256_hw/xsim_script.tcl}
-# Log file           : /home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/xsim.log
-# Journal file       : /home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/xsim.jou
+# Log file           : /home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/xsim.log
+# Journal file       : /home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/xsim.jou
 # Running On         : DESKTOP-S15BKKL
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 22.04.5 LTS
@@ -19,7 +19,7 @@
 # Host memory        : 4050 MB
 # Swap memory        : 1073 MB
 # Total Virtual      : 5124 MB
-# Available Virtual  : 4117 MB
+# Available Virtual  : 4179 MB
 #-----------------------------------------------------------
 source xsim.dir/sha3_256_hw/xsim_script.tcl
 # xsim {sha3_256_hw} -view {{sha3_256_hw_dataflow_ana.wcfg}} -tclbatch {sha3_256_hw.tcl} -protoinst {sha3_256_hw.protoinst}
@@ -27,7 +27,7 @@ INFO: [Wavedata 42-565] Reading protoinst file sha3_256_hw.protoinst
 INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sha3_256_hw_top/AESL_inst_sha3_256_hw//AESL_inst_sha3_256_hw_activity
 INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sha3_256_hw_top/AESL_inst_sha3_256_hw/grp_KeccakF1600_StatePermute_fu_302/grp_KeccakF1600_StatePermute_fu_302_activity
 INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sha3_256_hw_top/AESL_inst_sha3_256_hw/grp_sha3_256_hw_Pipeline_VITIS_LOOP_472_1_fu_296/grp_sha3_256_hw_Pipeline_VITIS_LOOP_472_1_fu_296_activity
-INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sha3_256_hw_top/AESL_inst_sha3_256_hw/grp_sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1_fu_309/grp_sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1_fu_309_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sha3_256_hw_top/AESL_inst_sha3_256_hw/grp_sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1_fu_309/grp_sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1_fu_309_activity
 Time resolution is 1 ps
 open_wave_config sha3_256_hw_dataflow_ana.wcfg
 source sha3_256_hw.tcl
@@ -241,6 +241,6 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 // RTL Simulation : 0 / 1 [n/a] @ "125000"
 // RTL Simulation : 1 / 1 [n/a] @ "2995000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 3055 ns : File "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw.autotb.v" Line 497
+$finish called at time : 3055 ns : File "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw.autotb.v" Line 497
 ## quit
-INFO: [Common 17-206] Exiting xsim at Wed Jul 30 13:33:46 2025...
+INFO: [Common 17-206] Exiting xsim at Mon Aug  4 14:28:02 2025...

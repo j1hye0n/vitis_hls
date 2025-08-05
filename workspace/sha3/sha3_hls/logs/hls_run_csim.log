@@ -1,33 +1,30 @@
   **** HLS Build v2024.2 5238294
-INFO: [HLS 200-2005] Using work_dir /home/hyeon/workspace/sha3/sha3_hls 
+INFO: [HLS 200-2005] Using work_dir /home/hyeon/vitis_hls/workspace/sha3/sha3_hls 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
 Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
-INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/sha3/fips202.c' from /home/hyeon/workspace/sha3/sha3_hls/hls_config.cfg(5)
-INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/sha3/fips202.c' to the project
-INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/sha3/fips202.h' from /home/hyeon/workspace/sha3/sha3_hls/hls_config.cfg(6)
-INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/sha3/fips202.h' to the project
-INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/workspace/sha3/sha3_256.c' from /home/hyeon/workspace/sha3/sha3_hls/hls_config.cfg(7)
-INFO: [HLS 200-10] Adding design file '/home/hyeon/workspace/sha3/sha3_256.c' to the project
-INFO: [HLS 200-1465] Applying ini 'tb.file=/home/hyeon/workspace/sha3/sha3_256_tb.c' from /home/hyeon/workspace/sha3/sha3_hls/hls_config.cfg(9)
-INFO: [HLS 200-10] Adding test bench file '/home/hyeon/workspace/sha3/sha3_256_tb.c' to the project
-INFO: [HLS 200-1465] Applying ini 'syn.top=sha3_256_hw' from /home/hyeon/workspace/sha3/sha3_hls/hls_config.cfg(8)
-INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/hyeon/workspace/sha3/sha3_hls/hls_config.cfg(4)
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/vitis_hls/workspace/sha3/fips202.c' from /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls_config.cfg(5)
+INFO: [HLS 200-10] Adding design file '/home/hyeon/vitis_hls/workspace/sha3/fips202.c' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/vitis_hls/workspace/sha3/fips202.h' from /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls_config.cfg(6)
+INFO: [HLS 200-10] Adding design file '/home/hyeon/vitis_hls/workspace/sha3/fips202.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c' from /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file '/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/hyeon/vitis_hls/workspace/sha3/sha3_256_tb.c' from /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file '/home/hyeon/vitis_hls/workspace/sha3/sha3_256_tb.c' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=sha3_256_hw' from /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls_config.cfg(4)
 INFO: [HLS 200-1505] Using flow_target 'vivado'
 Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
-INFO: [HLS 200-1465] Applying ini 'part=xc7z020-clg400-1' from /home/hyeon/workspace/sha3/sha3_hls/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020-clg400-1' from /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls_config.cfg(1)
 INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
-INFO: [HLS 200-1465] Applying ini 'cosim.trace_level=all' from /home/hyeon/workspace/sha3/sha3_hls/hls_config.cfg(11)
-INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from /home/hyeon/workspace/sha3/sha3_hls/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'cosim.trace_level=all' from /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'cosim.wave_debug=1' from /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls_config.cfg(11)
 INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
 INFO: [HLS 211-200] Compiling source code ../fips202.c as hardware code with instrumentation
 INFO: [HLS 211-200] Compiling source code ../sha3_256.c as hardware code with instrumentation
-INFO: [HLS 211-200] Compiling source code /home/hyeon/workspace/sha3/sha3_256_tb.c as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code /home/hyeon/vitis_hls/workspace/sha3/sha3_256_tb.c as test bench code with instrumentation
 INFO: [HLS 211-200] Compiling source code ../fips202.c as test bench code with instrumentation
 INFO: [HLS 211-200] Compiling source code ../sha3_256.c as test bench code with instrumentation
-../fips202.c:478:1: warning: '#pragma HLS loop_flatten' can only be applied inside loop body [-Winvalid-hls-pragmas]
-#pragma HLS loop_flatten
-^
-1 warning generated.
 INFO: [HLS 211-200] Linking hardware code
 INFO: [HLS 211-200] Transforming hardware bitcode
 INFO: [HLS 211-200] Linking executable
@@ -37,8 +34,8 @@ INFO: [SIM 211-200] Running executable
 Test Passed: HW == SW
 INFO: [SIM 211-200] Analyzing trace data
 INFO: [SIM 211-208] Running Code Analyzer
-WARNING: [SIM 211-200] /home/hyeon/workspace/sha3/sha3_hls/../fips202.c:479:3: the dynamic loop had a trip count of min=0 max=0 during C simulation. (#pragma HLS loop_tripcount min=0 max=0)
-WARNING: [SIM 211-200] /home/hyeon/workspace/sha3/sha3_hls/../fips202.c:488:16: the dynamic loop had a trip count of min=4 max=4 during C simulation. (#pragma HLS loop_tripcount min=4 max=4)
+WARNING: [SIM 211-200] /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:477:3: the dynamic loop had a trip count of min=0 max=0 during C simulation. (#pragma HLS loop_tripcount min=0 max=0)
+WARNING: [SIM 211-200] /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:486:16: the dynamic loop had a trip count of min=4 max=4 during C simulation. (#pragma HLS loop_tripcount min=4 max=4)
 INFO: [SIM 211-210] Code Analyzer finished
-INFO: [HLS 200-112] Total CPU user time: 11 seconds. Total CPU system time: 10.68 seconds. Total elapsed time: 22.91 seconds; peak allocated memory: 322.941 MB.
-INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 26s
+INFO: [HLS 200-112] Total CPU user time: 8.75 seconds. Total CPU system time: 1.9 seconds. Total elapsed time: 13.45 seconds; peak allocated memory: 322.934 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 18s

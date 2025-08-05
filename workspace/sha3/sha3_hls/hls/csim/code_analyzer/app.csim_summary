@@ -1,6 +1,6 @@
 <ENTRY>
 {
- "thisFile": "/home/hyeon/workspace/sha3/sha3_hls/hls/csim/code_analyzer/app.csim_summary",
+ "thisFile": "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls/csim/code_analyzer/app.csim_summary",
  "connectId": "",
  "serverToken": "",
  "timestamp": "0"
@@ -9,8 +9,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Wed Jul 30 14:24:36 2025",
- "timestampMillis": "1753853076558",
+ "dateTimestamp": "Tue Aug  5 15:25:16 2025",
+ "timestampMillis": "1754375116899",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -27,10 +27,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Wed Jul 30 14:24:36 2025",
- "timestampMillis": "1753853076571",
+ "dateTimestamp": "Tue Aug  5 15:25:16 2025",
+ "timestampMillis": "1754375116901",
  "buildStep": {
-  "cmdId": "7bad4348-6d05-11f0-aaf5-75190b801a8a",
+  "cmdId": "f3f62cb6-71c4-11f0-a62a-d93ee7b70595",
   "name": "vitis_c++",
   "logFile": "",
   "commandLine": "vitis_c++ code_analyzer",
@@ -45,10 +45,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Jul 30 14:24:36 2025",
- "timestampMillis": "1753853076572",
+ "dateTimestamp": "Tue Aug  5 15:25:16 2025",
+ "timestampMillis": "1754375116902",
  "status": {
-  "cmdId": "7bad4348-6d05-11f0-aaf5-75190b801a8a",
+  "cmdId": "f3f62cb6-71c4-11f0-a62a-d93ee7b70595",
   "state": "CS_RUNNING"
  }
 }
@@ -56,10 +56,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Jul 30 14:24:45 2025",
- "timestampMillis": "1753853085024",
+ "dateTimestamp": "Tue Aug  5 15:25:20 2025",
+ "timestampMillis": "1754375120904",
  "status": {
-  "cmdId": "7bad4348-6d05-11f0-aaf5-75190b801a8a",
+  "cmdId": "f3f62cb6-71c4-11f0-a62a-d93ee7b70595",
   "state": "CS_PASSED"
  }
 }
@@ -67,14 +67,14 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Wed Jul 30 14:24:45 2025",
- "timestampMillis": "1753853085027",
+ "dateTimestamp": "Tue Aug  5 15:25:20 2025",
+ "timestampMillis": "1754375120905",
  "report": {
-  "path": "/home/hyeon/workspace/sha3/sha3_hls",
+  "path": "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls",
   "name": "",
   "fileType": "DIR",
   "reportType": "VCXX_CODE_ANALYZER",
-  "cmdId": "7bad4348-6d05-11f0-aaf5-75190b801a8a"
+  "cmdId": "f3f62cb6-71c4-11f0-a62a-d93ee7b70595"
  }
 }
 </ENTRY>

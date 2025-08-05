@@ -33,15 +33,15 @@
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
                 <row id="0" col0="sha3_256_hw" col1="sha3_256.c:4" col2="1288" col3="1188" col4="1258" col5="1202" col6="1224">
-                    <row id="3" col0="pqcrystals_kyber_fips202_ref_sha3_256" col1="fips202.c:754" col2="1281" col3="" col4="" col5="" col6="">
-                        <row id="2" col0="keccak_absorb_once" col1="fips202.c:464" col2="673" col3="" col4="" col5="" col6="">
-                            <row id="5" col0="load64" col1="fips202.c:22" col2="18" col3="" col4="" col5="" col6=""/>
-                            <row id="4" col0="KeccakF1600_StatePermute" col1="fips202.c:83" col2="567" col3="" col4="" col5="" col6=""/>
+                    <row id="5" col0="pqcrystals_kyber_fips202_ref_sha3_256" col1="fips202.c:752" col2="1281" col3="" col4="" col5="" col6="">
+                        <row id="3" col0="keccak_absorb_once" col1="fips202.c:464" col2="673" col3="" col4="" col5="" col6="">
+                            <row id="2" col0="load64" col1="fips202.c:22" col2="18" col3="" col4="" col5="" col6=""/>
+                            <row id="1" col0="KeccakF1600_StatePermute" col1="fips202.c:83" col2="567" col3="" col4="" col5="" col6=""/>
                         </row>
-                        <row id="4" col0="KeccakF1600_StatePermute" col1="fips202.c:83" col2="567" col3="" col4="" col5="" col6=""/>
-                        <row id="1" col0="store64" col1="fips202.c:40" col2="16" col3="" col4="" col5="" col6=""/>
+                        <row id="1" col0="KeccakF1600_StatePermute" col1="fips202.c:83" col2="567" col3="" col4="" col5="" col6=""/>
+                        <row id="4" col0="store64" col1="fips202.c:40" col2="16" col3="" col4="" col5="" col6=""/>
                     </row>
-                    <row id="4" col0="KeccakF1600_StatePermute" col1="fips202.c:83" col2="" col3="1072" col3_disp="1,072 (2 calls)" col4="1124" col4_disp="1,124 (2 calls)" col5="1074" col5_disp="1,074 (2 calls)" col6="1082" col6_disp="1,082 (2 calls)"/>
+                    <row id="1" col0="KeccakF1600_StatePermute" col1="fips202.c:83" col2="" col3="1072" col3_disp="1,072 (2 calls)" col4="1124" col4_disp="1,124 (2 calls)" col5="1074" col5_disp="1,074 (2 calls)" col6="1082" col6_disp="1,082 (2 calls)"/>
                 </row>
             </rows>
             <notes/>

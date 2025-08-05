@@ -131,7 +131,7 @@ instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug informa
 instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
 instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
 instrumenter::INFOR: [Instrumenter - Initialization] Finished adding static information
-instrumenter::VERBO: [Instrumenter - Finalize] Dumping static data to .... "/home/hyeon/workspace/sha3/sha3_hls/hls/csim/code_analyzer/.internal/instrument/app_0/static.xml"
+instrumenter::VERBO: [Instrumenter - Finalize] Dumping static data to .... "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls/csim/code_analyzer/.internal/instrument/app_0/static.xml"
 instrumenter::VERBO: [Instrumenter - GV] Global Variables Instrumentation
 instrumenter::VERBO: [Instrumenter - WARNING] Global value __const.main.in is not instrumentable
 instrumenter::VERBO: [Instrumenter - WARNING] Global value .str is not instrumentable

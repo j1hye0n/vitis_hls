@@ -33,7 +33,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1_fu_309/grp_sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1_fu_309_activity": {
+				"grp_sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1_fu_309/grp_sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1_fu_309_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

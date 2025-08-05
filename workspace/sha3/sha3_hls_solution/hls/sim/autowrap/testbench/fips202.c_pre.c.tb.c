@@ -5,13 +5,13 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // 
 // ==============================================================
-# 1 "/home/hyeon/workspace/sha3/fips202.c"
+# 1 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 358 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/hyeon/workspace/sha3/fips202.c" 2
+# 1 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c" 2
 
 
 
@@ -24,7 +24,7 @@ typedef long int ptrdiff_t;
 typedef long unsigned int size_t;
 # 74 "/tools/xilinx/Vitis/2024.2/vcxx/lib/clang/14.0.6/include/stddef.h" 3
 typedef int wchar_t;
-# 7 "/home/hyeon/workspace/sha3/fips202.c" 2
+# 7 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c" 2
 # 1 "/tools/xilinx/Vitis/2024.2/vcxx/lib/clang/14.0.6/include/stdint.h" 1 3
 # 52 "/tools/xilinx/Vitis/2024.2/vcxx/lib/clang/14.0.6/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
@@ -259,14 +259,14 @@ typedef unsigned long int uintptr_t;
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
 # 53 "/tools/xilinx/Vitis/2024.2/vcxx/lib/clang/14.0.6/include/stdint.h" 2 3
-# 8 "/home/hyeon/workspace/sha3/fips202.c" 2
-# 1 "/home/hyeon/workspace/sha3/fips202.h" 1
+# 8 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c" 2
+# 1 "/home/hyeon/vitis_hls/workspace/sha3/fips202.h" 1
 
 
 
 # 1 "/tools/xilinx/Vitis/2024.2/vcxx/lib/clang/14.0.6/include/stddef.h" 1 3
-# 5 "/home/hyeon/workspace/sha3/fips202.h" 2
-# 14 "/home/hyeon/workspace/sha3/fips202.h"
+# 5 "/home/hyeon/vitis_hls/workspace/sha3/fips202.h" 2
+# 14 "/home/hyeon/vitis_hls/workspace/sha3/fips202.h"
 typedef struct {
   uint64_t s[25];
   unsigned int pos;
@@ -306,8 +306,8 @@ void pqcrystals_kyber_fips202_ref_shake256(uint8_t *out, size_t outlen, const ui
 void pqcrystals_kyber_fips202_ref_sha3_256(uint8_t h[32], const uint8_t *in, size_t inlen);
 
 void pqcrystals_kyber_fips202_ref_sha3_512(uint8_t h[64], const uint8_t *in, size_t inlen);
-# 9 "/home/hyeon/workspace/sha3/fips202.c" 2
-# 22 "/home/hyeon/workspace/sha3/fips202.c"
+# 9 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c" 2
+# 22 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 static uint64_t load64(const uint8_t x[8]) {
   unsigned int i;
   uint64_t r = 0;
@@ -317,7 +317,7 @@ static uint64_t load64(const uint8_t x[8]) {
 
   return r;
 }
-# 40 "/home/hyeon/workspace/sha3/fips202.c"
+# 40 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 static void store64(uint8_t x[8], uint64_t u) {
   unsigned int i;
 
@@ -353,7 +353,7 @@ static const uint64_t KeccakF_RoundConstants[24] = {
   (uint64_t)0x0000000080000001ULL,
   (uint64_t)0x8000000080008008ULL
 };
-# 83 "/home/hyeon/workspace/sha3/fips202.c"
+# 83 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 static void KeccakF1600_StatePermute(uint64_t state[25])
 {
         int round;
@@ -619,14 +619,14 @@ state_permute : for(round = 0; round < 24; round += 2) {
         state[23] = Aso;
         state[24] = Asu;
 }
-# 356 "/home/hyeon/workspace/sha3/fips202.c"
+# 356 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 static void keccak_init(uint64_t s[25])
 {
   unsigned int i;
   for(i=0;i<25;i++)
     s[i] = 0;
 }
-# 376 "/home/hyeon/workspace/sha3/fips202.c"
+# 376 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 static unsigned int keccak_absorb(uint64_t s[25],
                                   unsigned int pos,
                                   unsigned int r,
@@ -648,13 +648,13 @@ static unsigned int keccak_absorb(uint64_t s[25],
 
   return i;
 }
-# 408 "/home/hyeon/workspace/sha3/fips202.c"
+# 408 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 static void keccak_finalize(uint64_t s[25], unsigned int pos, unsigned int r, uint8_t p)
 {
   s[pos/8] ^= (uint64_t)p << 8*(pos%8);
   s[r/8-1] ^= 1ULL << 63;
 }
-# 429 "/home/hyeon/workspace/sha3/fips202.c"
+# 429 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 static unsigned int keccak_squeeze(uint8_t *out,
                                    size_t outlen,
                                    uint64_t s[25],
@@ -676,7 +676,7 @@ static unsigned int keccak_squeeze(uint8_t *out,
 
   return pos;
 }
-# 464 "/home/hyeon/workspace/sha3/fips202.c"
+# 464 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 static void keccak_absorb_once(uint64_t s[25],
                                unsigned int r,
                                const uint8_t *in,
@@ -686,12 +686,10 @@ static void keccak_absorb_once(uint64_t s[25],
   unsigned int i;
 
   for(i=0;i<25;i++)
-#pragma HLS pipeline
     s[i] = 0;
 
 
 
-#pragma HLS loop_flatten
   for (int j=inlen ; j>=r ; j-=r){
 absorb_loop2:for(i=0;i<r/8;i++)
 #pragma HLS pipeline off
@@ -708,7 +706,7 @@ absorb_loop3 : for(i=0;i<inlen;i++)
   s[i/8] ^= (uint64_t)p << 8*(i%8);
   s[(r-1)/8] ^= 1ULL << 63;
 }
-# 509 "/home/hyeon/workspace/sha3/fips202.c"
+# 507 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 static void keccak_squeezeblocks(uint8_t *out,
                                  size_t nblocks,
                                  uint64_t s[25],
@@ -724,73 +722,73 @@ static void keccak_squeezeblocks(uint8_t *out,
     nblocks -= 1;
   }
 }
-# 532 "/home/hyeon/workspace/sha3/fips202.c"
+# 530 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 void pqcrystals_kyber_fips202_ref_shake128_init(keccak_state *state)
 {
   keccak_init(state->s);
   state->pos = 0;
 }
-# 547 "/home/hyeon/workspace/sha3/fips202.c"
+# 545 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 void pqcrystals_kyber_fips202_ref_shake128_absorb(keccak_state *state, const uint8_t *in, size_t inlen)
 {
   state->pos = keccak_absorb(state->s, state->pos, 168, in, inlen);
 }
-# 559 "/home/hyeon/workspace/sha3/fips202.c"
+# 557 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 void pqcrystals_kyber_fips202_ref_shake128_finalize(keccak_state *state)
 {
   keccak_finalize(state->s, state->pos, 168, 0x1F);
   state->pos = 168;
 }
-# 575 "/home/hyeon/workspace/sha3/fips202.c"
+# 573 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 void pqcrystals_kyber_fips202_ref_shake128_squeeze(uint8_t *out, size_t outlen, keccak_state *state)
 {
   state->pos = keccak_squeeze(out, outlen, state->s, state->pos, 168);
 }
-# 589 "/home/hyeon/workspace/sha3/fips202.c"
+# 587 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 void pqcrystals_kyber_fips202_ref_shake128_absorb_once(keccak_state *state, const uint8_t *in, size_t inlen)
 {
   keccak_absorb_once(state->s, 168, in, inlen, 0x1F);
   state->pos = 168;
 }
-# 607 "/home/hyeon/workspace/sha3/fips202.c"
+# 605 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 void pqcrystals_kyber_fips202_ref_shake128_squeezeblocks(uint8_t *out, size_t nblocks, keccak_state *state)
 {
   keccak_squeezeblocks(out, nblocks, state->s, 168);
 }
-# 619 "/home/hyeon/workspace/sha3/fips202.c"
+# 617 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 void pqcrystals_kyber_fips202_ref_shake256_init(keccak_state *state)
 {
   keccak_init(state->s);
   state->pos = 0;
 }
-# 634 "/home/hyeon/workspace/sha3/fips202.c"
+# 632 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 void pqcrystals_kyber_fips202_ref_shake256_absorb(keccak_state *state, const uint8_t *in, size_t inlen)
 {
   state->pos = keccak_absorb(state->s, state->pos, 136, in, inlen);
 }
-# 646 "/home/hyeon/workspace/sha3/fips202.c"
+# 644 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 void pqcrystals_kyber_fips202_ref_shake256_finalize(keccak_state *state)
 {
   keccak_finalize(state->s, state->pos, 136, 0x1F);
   state->pos = 136;
 }
-# 662 "/home/hyeon/workspace/sha3/fips202.c"
+# 660 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 void pqcrystals_kyber_fips202_ref_shake256_squeeze(uint8_t *out, size_t outlen, keccak_state *state)
 {
   state->pos = keccak_squeeze(out, outlen, state->s, state->pos, 136);
 }
-# 676 "/home/hyeon/workspace/sha3/fips202.c"
+# 674 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 void pqcrystals_kyber_fips202_ref_shake256_absorb_once(keccak_state *state, const uint8_t *in, size_t inlen)
 {
   keccak_absorb_once(state->s, 136, in, inlen, 0x1F);
   state->pos = 136;
 }
-# 694 "/home/hyeon/workspace/sha3/fips202.c"
+# 692 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 void pqcrystals_kyber_fips202_ref_shake256_squeezeblocks(uint8_t *out, size_t nblocks, keccak_state *state)
 {
   keccak_squeezeblocks(out, nblocks, state->s, 136);
 }
-# 709 "/home/hyeon/workspace/sha3/fips202.c"
+# 707 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 void pqcrystals_kyber_fips202_ref_shake128(uint8_t *out, size_t outlen, const uint8_t *in, size_t inlen)
 {
   size_t nblocks;
@@ -803,7 +801,7 @@ void pqcrystals_kyber_fips202_ref_shake128(uint8_t *out, size_t outlen, const ui
   out += nblocks*168;
   pqcrystals_kyber_fips202_ref_shake128_squeeze(out, outlen, &state);
 }
-# 732 "/home/hyeon/workspace/sha3/fips202.c"
+# 730 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 void pqcrystals_kyber_fips202_ref_shake256(uint8_t *out, size_t outlen, const uint8_t *in, size_t inlen)
 {
   size_t nblocks;
@@ -816,7 +814,7 @@ void pqcrystals_kyber_fips202_ref_shake256(uint8_t *out, size_t outlen, const ui
   out += nblocks*136;
   pqcrystals_kyber_fips202_ref_shake256_squeeze(out, outlen, &state);
 }
-# 754 "/home/hyeon/workspace/sha3/fips202.c"
+# 752 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 void pqcrystals_kyber_fips202_ref_sha3_256(uint8_t h[32], const uint8_t *in, size_t inlen)
 {
   unsigned int i;
@@ -827,7 +825,7 @@ void pqcrystals_kyber_fips202_ref_sha3_256(uint8_t h[32], const uint8_t *in, siz
   for(i=0;i<4;i++)
     store64(h+8*i,s[i]);
 }
-# 774 "/home/hyeon/workspace/sha3/fips202.c"
+# 772 "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
 void pqcrystals_kyber_fips202_ref_sha3_512(uint8_t h[64], const uint8_t *in, size_t inlen)
 {
   unsigned int i;

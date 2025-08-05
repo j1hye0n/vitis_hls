@@ -14,39 +14,6 @@ INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
 INFO: [COSIM-323] Starting verilog simulation. 
 INFO: [COSIM-15] Starting XSIM ...
 INFO: [COSIM-316] Starting C post checking ...
-Test Failed: HW != SW
-5f (SW) vs 2a (HW)
-b6 (SW) vs 00 (HW)
-4c (SW) vs 00 (HW)
-b6 (SW) vs 00 (HW)
-0c (SW) vs 00 (HW)
-7e (SW) vs 00 (HW)
-dc (SW) vs 00 (HW)
-39 (SW) vs 00 (HW)
-14 (SW) vs d0 (HW)
-7b (SW) vs 1b (HW)
-cb (SW) vs 0c (HW)
-73 (SW) vs a3 (HW)
-11 (SW) vs ff (HW)
-fe (SW) vs 7f (HW)
-57 (SW) vs 00 (HW)
-31 (SW) vs 00 (HW)
-0f (SW) vs 58 (HW)
-59 (SW) vs 1c (HW)
-9b (SW) vs 0c (HW)
-59 (SW) vs a3 (HW)
-f1 (SW) vs ff (HW)
-6e (SW) vs 7f (HW)
-ac (SW) vs 00 (HW)
-d5 (SW) vs 00 (HW)
-6d (SW) vs c2 (HW)
-ff (SW) vs c0 (HW)
-63 (SW) vs 20 (HW)
-47 (SW) vs 00 (HW)
-39 (SW) vs 00 (HW)
-70 (SW) vs 00 (HW)
-1c (SW) vs 00 (HW)
-f9 (SW) vs 00 (HW)
 Test Passed: HW == SW
 Vivado Simulator v2024.2.0
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
@@ -55,16 +22,18 @@ Running: /tools/xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.
 Multi-threading is on. Using 4 slave threads.
 WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
     LIBRARY_PATH
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/glbl.v" into library work
 INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha3_256_hw_sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_control_s_axi.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sha3_256_hw_control_s_axi
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_urem_32ns_9ns_8_36_seq_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_urem_32ns_9ns_8_36_seq_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sha3_256_hw_urem_32ns_9ns_8_36_seq_1_divseq
 INFO: [VRFC 10-311] analyzing module sha3_256_hw_urem_32ns_9ns_8_36_seq_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_gmem_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_gmem_m_axi.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sha3_256_hw_gmem_m_axi
 INFO: [VRFC 10-311] analyzing module sha3_256_hw_gmem_m_axi_load
 INFO: [VRFC 10-311] analyzing module sha3_256_hw_gmem_m_axi_store
@@ -76,34 +45,32 @@ INFO: [VRFC 10-311] analyzing module sha3_256_hw_gmem_m_axi_reg_slice
 INFO: [VRFC 10-311] analyzing module sha3_256_hw_gmem_m_axi_fifo
 INFO: [VRFC 10-311] analyzing module sha3_256_hw_gmem_m_axi_srl
 INFO: [VRFC 10-311] analyzing module sha3_256_hw_gmem_m_axi_mem
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_sha3_256_hw_Pipeline_VITIS_LOOP_472_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_sha3_256_hw_Pipeline_VITIS_LOOP_472_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sha3_256_hw_sha3_256_hw_Pipeline_VITIS_LOOP_472_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_mul_32ns_34ns_65_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_mul_32ns_34ns_65_2_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sha3_256_hw_mul_32ns_34ns_65_2_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/AESL_axi_master_gmem.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/AESL_axi_master_gmem.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module sha3_256_hw_sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/AESL_axi_slave_control_r.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/AESL_axi_slave_control_r.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control_r
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw.autotb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module apatb_sha3_256_hw_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_urem_32ns_9ns_32_36_seq_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_urem_32ns_9ns_32_36_seq_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sha3_256_hw_urem_32ns_9ns_32_36_seq_1_divseq
 INFO: [VRFC 10-311] analyzing module sha3_256_hw_urem_32ns_9ns_32_36_seq_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_KeccakF1600_StatePermute.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_KeccakF1600_StatePermute.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sha3_256_hw_KeccakF1600_StatePermute
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_s_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_s_RAM_AUTO_1R1W.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sha3_256_hw_s_RAM_AUTO_1R1W
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sha3_256_hw
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sha3_256_hw_flow_control_loop_pipe_sequential_init
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_control_r_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_control_r_s_axi.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sha3_256_hw_control_r_s_axi
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_KeccakF1600_StatePermute_KeccakF_RoundConstants_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw_KeccakF1600_StatePermute_KeccakF_RoundConstants_ROM_AUTO_1R.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sha3_256_hw_KeccakF1600_StatePermute_KeccakF_RoundConstants_ROM_AUTO_1R
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module dataflow_monitor
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -174,7 +141,7 @@ Built simulation snapshot sha3_256_hw
   **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Wed Jul 30 13:33:25 2025
+  **** Start of session at: Mon Aug  4 14:27:40 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -184,7 +151,7 @@ INFO: [Wavedata 42-565] Reading protoinst file sha3_256_hw.protoinst
 INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sha3_256_hw_top/AESL_inst_sha3_256_hw//AESL_inst_sha3_256_hw_activity
 INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sha3_256_hw_top/AESL_inst_sha3_256_hw/grp_KeccakF1600_StatePermute_fu_302/grp_KeccakF1600_StatePermute_fu_302_activity
 INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sha3_256_hw_top/AESL_inst_sha3_256_hw/grp_sha3_256_hw_Pipeline_VITIS_LOOP_472_1_fu_296/grp_sha3_256_hw_Pipeline_VITIS_LOOP_472_1_fu_296_activity
-INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sha3_256_hw_top/AESL_inst_sha3_256_hw/grp_sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1_fu_309/grp_sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1_fu_309_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sha3_256_hw_top/AESL_inst_sha3_256_hw/grp_sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1_fu_309/grp_sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1_fu_309_activity
 Time resolution is 1 ps
 open_wave_config sha3_256_hw_dataflow_ana.wcfg
 source sha3_256_hw.tcl
@@ -398,9 +365,9 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 // RTL Simulation : 0 / 1 [n/a] @ "125000"
 // RTL Simulation : 1 / 1 [n/a] @ "2995000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 3055 ns : File "/home/hyeon/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw.autotb.v" Line 497
+$finish called at time : 3055 ns : File "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw.autotb.v" Line 497
 ## quit
-INFO: [Common 17-206] Exiting xsim at Wed Jul 30 13:33:46 2025...
+INFO: [Common 17-206] Exiting xsim at Mon Aug  4 14:28:02 2025...
 Test Passed: HW == SW
 INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
 INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

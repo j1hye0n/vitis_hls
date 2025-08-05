@@ -814,13 +814,11 @@ static void keccak_absorb_once(uint64_t s[25],
   unsigned int i;
 
   VITIS_LOOP_472_1: for(i=0;i<25;i++)
-#pragma HLS pipeline
- s[i] = 0;
+    s[i] = 0;
 
 
 
-#pragma HLS loop_flatten
- VITIS_LOOP_479_2: for (int j=inlen ; j>=r ; j-=r){
+  VITIS_LOOP_477_2: for (int j=inlen ; j>=r ; j-=r){
 absorb_loop2:for(i=0;i<r/8;i++)
 #pragma HLS pipeline off
  s[i] ^= load64(in+8*i);
@@ -836,7 +834,7 @@ absorb_loop3 : for(i=0;i<inlen;i++)
   s[i/8] ^= (uint64_t)p << 8*(i%8);
   s[(r-1)/8] ^= 1ULL << 63;
 }
-# 509 "../fips202.c"
+# 507 "../fips202.c"
 static void keccak_squeezeblocks(uint8_t *out,
                                  size_t nblocks,
                                  uint64_t s[25],
@@ -844,81 +842,81 @@ static void keccak_squeezeblocks(uint8_t *out,
 {
   unsigned int i;
 
-  VITIS_LOOP_516_1: while(nblocks) {
+  VITIS_LOOP_514_1: while(nblocks) {
     KeccakF1600_StatePermute(s);
-    VITIS_LOOP_518_2: for(i=0;i<r/8;i++)
+    VITIS_LOOP_516_2: for(i=0;i<r/8;i++)
       store64(out+8*i, s[i]);
     out += r;
     nblocks -= 1;
   }
 }
-# 532 "../fips202.c"
+# 530 "../fips202.c"
 void pqcrystals_kyber_fips202_ref_shake128_init(keccak_state *state)
 {
   keccak_init(state->s);
   state->pos = 0;
 }
-# 547 "../fips202.c"
+# 545 "../fips202.c"
 void pqcrystals_kyber_fips202_ref_shake128_absorb(keccak_state *state, const uint8_t *in, size_t inlen)
 {
   state->pos = keccak_absorb(state->s, state->pos, 168, in, inlen);
 }
-# 559 "../fips202.c"
+# 557 "../fips202.c"
 void pqcrystals_kyber_fips202_ref_shake128_finalize(keccak_state *state)
 {
   keccak_finalize(state->s, state->pos, 168, 0x1F);
   state->pos = 168;
 }
-# 575 "../fips202.c"
+# 573 "../fips202.c"
 void pqcrystals_kyber_fips202_ref_shake128_squeeze(uint8_t *out, size_t outlen, keccak_state *state)
 {
   state->pos = keccak_squeeze(out, outlen, state->s, state->pos, 168);
 }
-# 589 "../fips202.c"
+# 587 "../fips202.c"
 void pqcrystals_kyber_fips202_ref_shake128_absorb_once(keccak_state *state, const uint8_t *in, size_t inlen)
 {
   keccak_absorb_once(state->s, 168, in, inlen, 0x1F);
   state->pos = 168;
 }
-# 607 "../fips202.c"
+# 605 "../fips202.c"
 void pqcrystals_kyber_fips202_ref_shake128_squeezeblocks(uint8_t *out, size_t nblocks, keccak_state *state)
 {
   keccak_squeezeblocks(out, nblocks, state->s, 168);
 }
-# 619 "../fips202.c"
+# 617 "../fips202.c"
 void pqcrystals_kyber_fips202_ref_shake256_init(keccak_state *state)
 {
   keccak_init(state->s);
   state->pos = 0;
 }
-# 634 "../fips202.c"
+# 632 "../fips202.c"
 void pqcrystals_kyber_fips202_ref_shake256_absorb(keccak_state *state, const uint8_t *in, size_t inlen)
 {
   state->pos = keccak_absorb(state->s, state->pos, 136, in, inlen);
 }
-# 646 "../fips202.c"
+# 644 "../fips202.c"
 void pqcrystals_kyber_fips202_ref_shake256_finalize(keccak_state *state)
 {
   keccak_finalize(state->s, state->pos, 136, 0x1F);
   state->pos = 136;
 }
-# 662 "../fips202.c"
+# 660 "../fips202.c"
 void pqcrystals_kyber_fips202_ref_shake256_squeeze(uint8_t *out, size_t outlen, keccak_state *state)
 {
   state->pos = keccak_squeeze(out, outlen, state->s, state->pos, 136);
 }
-# 676 "../fips202.c"
+# 674 "../fips202.c"
 void pqcrystals_kyber_fips202_ref_shake256_absorb_once(keccak_state *state, const uint8_t *in, size_t inlen)
 {
   keccak_absorb_once(state->s, 136, in, inlen, 0x1F);
   state->pos = 136;
 }
-# 694 "../fips202.c"
+# 692 "../fips202.c"
 void pqcrystals_kyber_fips202_ref_shake256_squeezeblocks(uint8_t *out, size_t nblocks, keccak_state *state)
 {
   keccak_squeezeblocks(out, nblocks, state->s, 136);
 }
-# 709 "../fips202.c"
+# 707 "../fips202.c"
 void pqcrystals_kyber_fips202_ref_shake128(uint8_t *out, size_t outlen, const uint8_t *in, size_t inlen)
 {
   size_t nblocks;
@@ -931,7 +929,7 @@ void pqcrystals_kyber_fips202_ref_shake128(uint8_t *out, size_t outlen, const ui
   out += nblocks*168;
   pqcrystals_kyber_fips202_ref_shake128_squeeze(out, outlen, &state);
 }
-# 732 "../fips202.c"
+# 730 "../fips202.c"
 void pqcrystals_kyber_fips202_ref_shake256(uint8_t *out, size_t outlen, const uint8_t *in, size_t inlen)
 {
   size_t nblocks;
@@ -944,7 +942,7 @@ void pqcrystals_kyber_fips202_ref_shake256(uint8_t *out, size_t outlen, const ui
   out += nblocks*136;
   pqcrystals_kyber_fips202_ref_shake256_squeeze(out, outlen, &state);
 }
-# 754 "../fips202.c"
+# 752 "../fips202.c"
 void pqcrystals_kyber_fips202_ref_sha3_256(uint8_t h[32], const uint8_t *in, size_t inlen)
 {
   unsigned int i;
@@ -952,10 +950,10 @@ void pqcrystals_kyber_fips202_ref_sha3_256(uint8_t h[32], const uint8_t *in, siz
 
   keccak_absorb_once(s, 136, in, inlen, 0x06);
   KeccakF1600_StatePermute(s);
-  VITIS_LOOP_761_1: for(i=0;i<4;i++)
+  VITIS_LOOP_759_1: for(i=0;i<4;i++)
     store64(h+8*i,s[i]);
 }
-# 774 "../fips202.c"
+# 772 "../fips202.c"
 void pqcrystals_kyber_fips202_ref_sha3_512(uint8_t h[64], const uint8_t *in, size_t inlen)
 {
   unsigned int i;
@@ -963,6 +961,6 @@ void pqcrystals_kyber_fips202_ref_sha3_512(uint8_t h[64], const uint8_t *in, siz
 
   keccak_absorb_once(s, 72, in, inlen, 0x06);
   KeccakF1600_StatePermute(s);
-  VITIS_LOOP_781_1: for(i=0;i<8;i++)
+  VITIS_LOOP_779_1: for(i=0;i<8;i++)
     store64(h+8*i,s[i]);
 }

@@ -3407,9 +3407,9 @@ window.onload = function () { addSorting(); }
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.</td></tr>
 <tr><td><b>Tool Version</b></td><td>xcd v.2024.2 (lin64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Wed Jul 30 14:26:03 2025</td></tr>
+<tr><td><b>Date</b></td><td>Tue Aug  5 15:26:50 2025</td></tr>
 <tr><td><b>Host</b></td><td>DESKTOP-S15BKKL running 64-bit Ubuntu 22.04.5 LTS</td></tr>
-<tr><td><b>Command</b></td><td>/tools/xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/hyeon/workspace/sha3/sha3_hls/hls_config.cfg --work_dir . </td></tr>
+<tr><td><b>Command</b></td><td>/tools/xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls_config.cfg --work_dir . </td></tr>
 </table></center><br>
 <table class="toc" border="1"><tr><td><b>Table of Contents</b></td></tr>
 <tr><td><a href="#REPORT SUMMARY">1 REPORT SUMMARY</a></tr></td>
@@ -3440,18 +3440,7 @@ window.onload = function () { addSorting(); }
 <td align="left"><undefined></td>
 <td align="left">HLS Interface Related</td>
 <td align="left">Accelerator.sha3_256_hw.Interface</td>
-<td align="left">Multiple burst reads of variable length and bit width 8 in loop 'VITIS_LOOP_479_2'(<a href="file:///home/hyeon/workspace/sha3/sha3_hls/../fips202.c#line=479">fips202.c</a>) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///home/hyeon/workspace/sha3/sha3_hls/../fips202.c#line=479">fips202.c</a>)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.sha3_256_hw.Interface</td>
-<td align="left">Multiple burst writes of length 32 and bit width 8 in loop 'VITIS_LOOP_761_1'(<a href="file:///home/hyeon/workspace/sha3/sha3_hls/../fips202.c#line=761">fips202.c</a>) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///home/hyeon/workspace/sha3/sha3_hls/../fips202.c#line=761">fips202.c</a>)
+<td align="left">Multiple burst reads of variable length and bit width 8 in loop 'VITIS_LOOP_477_2'(<a href="file:///home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c#line=477">fips202.c</a>) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c#line=477">fips202.c</a>)
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -3467,39 +3456,6 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">8</td>
-<td align="left">Kernel</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.sha3_256_hw.Kernel</td>
-<td align="left">**** Loop Constraint Status: All loop constraints were satisfied.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">6</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.sha3_256_hw.Throughput</td>
-<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'absorb_loop2_VITIS_LOOP_26_1'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">5</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.sha3_256_hw.Throughput</td>
-<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'VITIS_LOOP_761_1_VITIS_LOOP_43_1'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
 <td align="left">9</td>
 <td align="left">Kernel</td>
 <td align="left">ADVISORY</td>
@@ -3507,6 +3463,17 @@ window.onload = function () { addSorting(); }
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.sha3_256_hw.Kernel</td>
 <td align="left">**** Estimated Fmax: 136.99 MHz
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">Interface</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.sha3_256_hw.Interface</td>
+<td align="left">Multiple burst reads of variable length and bit width 8 in loop 'absorb_loop3'(<a href="file:///home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c#line=486">fips202.c</a>) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c#line=486">fips202.c</a>)
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -3522,13 +3489,46 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">2</td>
+<td align="left">5</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.sha3_256_hw.Throughput</td>
+<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'VITIS_LOOP_759_1_VITIS_LOOP_43_1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">Kernel</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.sha3_256_hw.Kernel</td>
+<td align="left">**** Loop Constraint Status: All loop constraints were satisfied.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">3</td>
 <td align="left">Interface</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Interface Related</td>
 <td align="left">Accelerator.sha3_256_hw.Interface</td>
-<td align="left">Multiple burst reads of variable length and bit width 8 in loop 'absorb_loop3'(<a href="file:///home/hyeon/workspace/sha3/sha3_hls/../fips202.c#line=488">fips202.c</a>) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///home/hyeon/workspace/sha3/sha3_hls/../fips202.c#line=488">fips202.c</a>)
+<td align="left">Multiple burst writes of length 32 and bit width 8 in loop 'VITIS_LOOP_759_1'(<a href="file:///home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c#line=759">fips202.c</a>) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c#line=759">fips202.c</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.sha3_256_hw.Throughput</td>
+<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'absorb_loop2_VITIS_LOOP_26_1'
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>

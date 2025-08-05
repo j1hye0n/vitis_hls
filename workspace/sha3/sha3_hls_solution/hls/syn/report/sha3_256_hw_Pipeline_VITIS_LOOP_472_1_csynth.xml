@@ -46,13 +46,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fips202.c:470~fips202.c:759~sha3_256.c:10</SourceLocation>
+<SourceLocation>fips202.c:470~fips202.c:757~sha3_256.c:10</SourceLocation>
 <SummaryOfLoopViolations>
 <VITIS_LOOP_472_1>
 <Name>VITIS_LOOP_472_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fips202.c:472~fips202.c:759~sha3_256.c:10</SourceLocation>
+<SourceLocation>fips202.c:472~fips202.c:757~sha3_256.c:10</SourceLocation>
 </VITIS_LOOP_472_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>

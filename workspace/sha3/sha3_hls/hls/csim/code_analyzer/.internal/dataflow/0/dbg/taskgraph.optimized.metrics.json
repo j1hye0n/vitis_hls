@@ -10,12 +10,12 @@
                 "name": "Artificial<Start>",
                 "src_range": {
                     "start_loc": {
-                        "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                        "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                         "line": 4,
                         "column": 1
                     },
                     "end_loc": {
-                        "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                        "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                         "line": 12,
                         "column": 1
                     }
@@ -28,12 +28,12 @@
                 "name": "Artificial<End>",
                 "src_range": {
                     "start_loc": {
-                        "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                        "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                         "line": 4,
                         "column": 1
                     },
                     "end_loc": {
-                        "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                        "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                         "line": 12,
                         "column": 1
                     }
@@ -46,12 +46,12 @@
                 "name": "Region<OutlineCall(R2 sha3_256_hw) BB 'codeRepl' [Atomic,Call] 'Outline_T3_F228_R2_Call'>",
                 "src_range": {
                     "start_loc": {
-                        "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                        "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                         "line": 10,
                         "column": 5
                     },
                     "end_loc": {
-                        "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                        "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                         "line": 10,
                         "column": 54
                     }
@@ -63,7 +63,7 @@
                         {
                             "variable": {
                                 "location": {
-                                    "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                                    "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                                     "line": 4,
                                     "column": 0
                                 },
@@ -81,7 +81,7 @@
                                     },
                                     "instr": "store",
                                     "src_loc": {
-                                        "file": "/home/hyeon/workspace/sha3/fips202.c",
+                                        "file": "/home/hyeon/vitis_hls/workspace/sha3/fips202.c",
                                         "line": 45,
                                         "column": 10
                                     },
@@ -97,7 +97,7 @@
                         {
                             "variable": {
                                 "location": {
-                                    "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                                    "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                                     "line": 4,
                                     "column": 0
                                 },
@@ -114,7 +114,7 @@
                                     },
                                     "instr": "load",
                                     "src_loc": {
-                                        "file": "/home/hyeon/workspace/sha3/fips202.c",
+                                        "file": "/home/hyeon/vitis_hls/workspace/sha3/fips202.c",
                                         "line": 27,
                                         "column": 20
                                     },
@@ -130,8 +130,8 @@
                                     },
                                     "instr": "load",
                                     "src_loc": {
-                                        "file": "/home/hyeon/workspace/sha3/fips202.c",
-                                        "line": 490,
+                                        "file": "/home/hyeon/vitis_hls/workspace/sha3/fips202.c",
+                                        "line": 488,
                                         "column": 25
                                     },
                                     "access_type": "i8",
@@ -147,7 +147,7 @@
                         {
                             "variable": {
                                 "location": {
-                                    "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                                    "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                                     "line": 4,
                                     "column": 0
                                 },
@@ -164,7 +164,7 @@
                                     },
                                     "instr": "call",
                                     "src_loc": {
-                                        "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                                        "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                                         "line": 4294967295,
                                         "column": 0
                                     },
@@ -179,7 +179,7 @@
                     ]
                 },
                 "metrics": {
-                    "initiation_interval": 123
+                    "initiation_interval": 122
                 },
                 "subregions": [
                     {
@@ -187,12 +187,12 @@
                         "description": "<function entry>",
                         "src_range": {
                             "start_loc": {
-                                "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                                "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                                 "line": 10,
                                 "column": 49
                             },
                             "end_loc": {
-                                "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                                "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                                 "line": 10,
                                 "column": 49
                             }
@@ -203,12 +203,12 @@
                         "description": "<call 'pqcrystals_kyber_fips202_ref_sha3_256'>",
                         "src_range": {
                             "start_loc": {
-                                "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                                "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                                 "line": 10,
                                 "column": 5
                             },
                             "end_loc": {
-                                "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                                "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                                 "line": 10,
                                 "column": 54
                             }
@@ -221,12 +221,12 @@
                         "region_type": "Function",
                         "src_range": {
                             "start_loc": {
-                                "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                                "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                                 "line": 10,
                                 "column": 5
                             },
                             "end_loc": {
-                                "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                                "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                                 "line": 10,
                                 "column": 54
                             }
@@ -237,18 +237,18 @@
                     {
                         "type": "CallGuidance",
                         "ti": {
-                            "min": 122,
-                            "max": 122
+                            "min": 121,
+                            "max": 121
                         },
                         "ureg_id": "%F229",
                         "src_range": {
                             "start_loc": {
-                                "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                                "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                                 "line": 10,
                                 "column": 5
                             },
                             "end_loc": {
-                                "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                                "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                                 "line": 10,
                                 "column": 54
                             }
@@ -267,13 +267,13 @@
                 "dependence": "RAW",
                 "channel_width": 8,
                 "src_loc": {
-                    "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                    "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                     "line": 4,
                     "column": 0
                 },
                 "metrics": {
                     "volume": 32,
-                    "channel_rate": 2.601626016260163E-1
+                    "channel_rate": 2.6229508196721313E-1
                 },
                 "source": "1",
                 "sink": "3"
@@ -287,13 +287,13 @@
                 "dependence": "RAW",
                 "channel_width": 32,
                 "src_loc": {
-                    "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                    "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                     "line": 4,
                     "column": 0
                 },
                 "metrics": {
                     "volume": 32,
-                    "channel_rate": 2.601626016260163E-1
+                    "channel_rate": 2.6229508196721313E-1
                 },
                 "source": "1",
                 "sink": "3"
@@ -307,13 +307,13 @@
                 "dependence": "RAW",
                 "channel_width": 8,
                 "src_loc": {
-                    "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                    "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                     "line": 4,
                     "column": 0
                 },
                 "metrics": {
                     "volume": 256,
-                    "channel_rate": 2.0813008130081303E0
+                    "channel_rate": 2.098360655737705E0
                 },
                 "source": "3",
                 "sink": "2"

@@ -1,4 +1,4 @@
-/home/hyeon/workspace/sha3/sha3_hls/hls/csim/code_analyzer/.internal/build/sha3_256.c.0.bc: \
+/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls/csim/code_analyzer/.internal/build/sha3_256.c.0.bc: \
   ../sha3_256.c \
   /tools/xilinx/Vitis/2024.2/vcxx/data/autopilot/etc/autopilot_ssdm_op.h \
   ../fips202.h \

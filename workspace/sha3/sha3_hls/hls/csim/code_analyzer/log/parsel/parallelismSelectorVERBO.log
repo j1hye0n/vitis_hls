@@ -1,10 +1,10 @@
 parallelismSelector::VERBO: Summary of inputs: 
-parallelismSelector::VERBO: Output directory: "/home/hyeon/workspace/sha3/sha3_hls/hls/csim/code_analyzer/output"
-parallelismSelector::VERBO: spec:0:0: info: Will use basepath at location /home/hyeon/workspace/sha3/sha3_hls
+parallelismSelector::VERBO: Output directory: "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls/csim/code_analyzer/output"
+parallelismSelector::VERBO: spec:0:0: info: Will use basepath at location /home/hyeon/vitis_hls/workspace/sha3/sha3_hls
 parallelismSelector::VERBO: FPGA clock frequency is set to 100 MHz
 parallelismSelector::VERBO: Will use user-driven complete partitioning settings
 parallelismSelector::VERBO: Arrays with less than or equal to 4 elements that appear in the codegen directives will be completely partitioned
-parallelismSelector::VERBO: spec:0:0: info: Will use IR Module file at location /home/hyeon/workspace/sha3/sha3_hls/hls/csim/code_analyzer/.internal/instrument/app_0/annotated.bc
+parallelismSelector::VERBO: spec:0:0: info: Will use IR Module file at location /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls/csim/code_analyzer/.internal/instrument/app_0/annotated.bc
 parallelismSelector::VERBO: FPGA frequency: 100000000 Hz
 parallelismSelector::VERBO: Using FPGA frequency for HLS estimations: 100000000 Hz
 parallelismSelector::VERBO: [Model Builder] Extracting logic model object from: /tools/xilinx/Vitis/2024.2/vcxx/data/platform/logic/zynq.logic
@@ -13,7 +13,7 @@ parallelismSelector::VERBO: Maximum area for the hardware functions: AreaConstra
 parallelismSelector::VERBO: Code Analyzer Id: 0
 parallelismSelector::VERBO: Dataflow Hardware Function: sha3_256_hw
 parallelismSelector::VERBO: Adding outline as primary transformation
-parallelismSelector::VERBO: RecipeFile: "/home/hyeon/workspace/sha3/sha3_hls/hls/csim/code_analyzer/.internal/dataflow/0/recipe.json"
+parallelismSelector::VERBO: RecipeFile: "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls/csim/code_analyzer/.internal/dataflow/0/recipe.json"
 parallelismSelector::VERBO: Applying transformation: (region_outline)
 parallelismSelector::VERBO: Applying transformation: (outline)
 parallelismSelector::VERBO: Alias Equivalence: (Var <- { Pointees })
@@ -32,7 +32,7 @@ parallelismSelector::VERBO: Alias Equivalence: (Var <- { Pointees })
                             
 parallelismSelector::VERBO: No optimization objective set
 parallelismSelector::VERBO: Variable Infos:
-parallelismSelector::VERBO:     'KeccakF_RoundConstants' /home/hyeon/workspace/sha3/sha3_hls/../fips202.c:49:0 VariableId 2
+parallelismSelector::VERBO:     'KeccakF_RoundConstants' /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:49:0 VariableId 2
                                   ElementBitsize=64
                                   IsHlsStream=no
                                   FunctionId=--
@@ -42,7 +42,7 @@ parallelismSelector::VERBO:     'KeccakF_RoundConstants' /home/hyeon/workspace/s
                                   Elements=[ 24 ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'out' /home/hyeon/workspace/sha3/sha3_hls/../sha3_256.c:4:0 VariableId 158
+parallelismSelector::VERBO:     'out' /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../sha3_256.c:4:0 VariableId 158
                                   ElementBitsize=8
                                   IsHlsStream=no
                                   FunctionId= 228
@@ -52,7 +52,7 @@ parallelismSelector::VERBO:     'out' /home/hyeon/workspace/sha3/sha3_hls/../sha
                                   Elements=[-- ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'in' /home/hyeon/workspace/sha3/sha3_hls/../sha3_256.c:4:0 VariableId 159
+parallelismSelector::VERBO:     'in' /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../sha3_256.c:4:0 VariableId 159
                                   ElementBitsize=8
                                   IsHlsStream=no
                                   FunctionId= 228
@@ -62,7 +62,7 @@ parallelismSelector::VERBO:     'in' /home/hyeon/workspace/sha3/sha3_hls/../sha3
                                   Elements=[-- ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'inlen' /home/hyeon/workspace/sha3/sha3_hls/../sha3_256.c:4:0 VariableId 160
+parallelismSelector::VERBO:     'inlen' /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../sha3_256.c:4:0 VariableId 160
                                   ElementBitsize=32
                                   IsHlsStream=no
                                   FunctionId= 228
@@ -72,7 +72,7 @@ parallelismSelector::VERBO:     'inlen' /home/hyeon/workspace/sha3/sha3_hls/../s
                                   Elements=[ ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'h' /home/hyeon/workspace/sha3/sha3_hls/../fips202.c:754:0 VariableId 161
+parallelismSelector::VERBO:     'h' /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:752:0 VariableId 161
                                   ElementBitsize=8
                                   IsHlsStream=no
                                   FunctionId= 229
@@ -82,7 +82,7 @@ parallelismSelector::VERBO:     'h' /home/hyeon/workspace/sha3/sha3_hls/../fips2
                                   Elements=[ 32 ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'in' /home/hyeon/workspace/sha3/sha3_hls/../fips202.c:754:0 VariableId 162
+parallelismSelector::VERBO:     'in' /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:752:0 VariableId 162
                                   ElementBitsize=8
                                   IsHlsStream=no
                                   FunctionId= 229
@@ -92,7 +92,7 @@ parallelismSelector::VERBO:     'in' /home/hyeon/workspace/sha3/sha3_hls/../fips
                                   Elements=[-- ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'inlen' /home/hyeon/workspace/sha3/sha3_hls/../fips202.c:754:0 VariableId 163
+parallelismSelector::VERBO:     'inlen' /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:752:0 VariableId 163
                                   ElementBitsize=64
                                   IsHlsStream=no
                                   FunctionId= 229
@@ -102,7 +102,7 @@ parallelismSelector::VERBO:     'inlen' /home/hyeon/workspace/sha3/sha3_hls/../f
                                   Elements=[ ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     's' /home/hyeon/workspace/sha3/sha3_hls/../fips202.c:757:0 VariableId 165
+parallelismSelector::VERBO:     's' /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:755:0 VariableId 165
                                   ElementBitsize=64
                                   IsHlsStream=no
                                   FunctionId= 229
@@ -112,7 +112,7 @@ parallelismSelector::VERBO:     's' /home/hyeon/workspace/sha3/sha3_hls/../fips2
                                   Elements=[ 25 ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     's' /home/hyeon/workspace/sha3/sha3_hls/../fips202.c:464:0 VariableId 166
+parallelismSelector::VERBO:     's' /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:464:0 VariableId 166
                                   ElementBitsize=64
                                   IsHlsStream=no
                                   FunctionId= 230
@@ -122,7 +122,7 @@ parallelismSelector::VERBO:     's' /home/hyeon/workspace/sha3/sha3_hls/../fips2
                                   Elements=[ 25 ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'in' /home/hyeon/workspace/sha3/sha3_hls/../fips202.c:466:0 VariableId 168
+parallelismSelector::VERBO:     'in' /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:466:0 VariableId 168
                                   ElementBitsize=8
                                   IsHlsStream=no
                                   FunctionId= 230
@@ -132,7 +132,7 @@ parallelismSelector::VERBO:     'in' /home/hyeon/workspace/sha3/sha3_hls/../fips
                                   Elements=[-- ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'inlen' /home/hyeon/workspace/sha3/sha3_hls/../fips202.c:467:0 VariableId 169
+parallelismSelector::VERBO:     'inlen' /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:467:0 VariableId 169
                                   ElementBitsize=64
                                   IsHlsStream=no
                                   FunctionId= 230
@@ -142,7 +142,7 @@ parallelismSelector::VERBO:     'inlen' /home/hyeon/workspace/sha3/sha3_hls/../f
                                   Elements=[ ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'state' /home/hyeon/workspace/sha3/sha3_hls/../fips202.c:83:0 VariableId 173
+parallelismSelector::VERBO:     'state' /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:83:0 VariableId 173
                                   ElementBitsize=64
                                   IsHlsStream=no
                                   FunctionId= 231
@@ -152,7 +152,7 @@ parallelismSelector::VERBO:     'state' /home/hyeon/workspace/sha3/sha3_hls/../f
                                   Elements=[ 25 ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'x' /home/hyeon/workspace/sha3/sha3_hls/../fips202.c:40:0 VariableId 235
+parallelismSelector::VERBO:     'x' /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:40:0 VariableId 235
                                   ElementBitsize=8
                                   IsHlsStream=no
                                   FunctionId= 232
@@ -162,7 +162,7 @@ parallelismSelector::VERBO:     'x' /home/hyeon/workspace/sha3/sha3_hls/../fips2
                                   Elements=[ 8 ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'u' /home/hyeon/workspace/sha3/sha3_hls/../fips202.c:40:0 VariableId 236
+parallelismSelector::VERBO:     'u' /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:40:0 VariableId 236
                                   ElementBitsize=64
                                   IsHlsStream=no
                                   FunctionId= 232
@@ -172,7 +172,7 @@ parallelismSelector::VERBO:     'u' /home/hyeon/workspace/sha3/sha3_hls/../fips2
                                   Elements=[ ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'x' /home/hyeon/workspace/sha3/sha3_hls/../fips202.c:22:0 VariableId 238
+parallelismSelector::VERBO:     'x' /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:22:0 VariableId 238
                                   ElementBitsize=8
                                   IsHlsStream=no
                                   FunctionId= 233
@@ -182,7 +182,7 @@ parallelismSelector::VERBO:     'x' /home/hyeon/workspace/sha3/sha3_hls/../fips2
                                   Elements=[ 8 ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'inlen' /home/hyeon/workspace/sha3/sha3_hls/../sha3_256.c:4:0 VariableId 239
+parallelismSelector::VERBO:     'inlen' /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../sha3_256.c:4:0 VariableId 239
                                   ElementBitsize=32
                                   IsHlsStream=no
                                   FunctionId= 234
@@ -192,7 +192,7 @@ parallelismSelector::VERBO:     'inlen' /home/hyeon/workspace/sha3/sha3_hls/../s
                                   Elements=[ ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'out' /home/hyeon/workspace/sha3/sha3_hls/../sha3_256.c:4:0 VariableId 240
+parallelismSelector::VERBO:     'out' /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../sha3_256.c:4:0 VariableId 240
                                   ElementBitsize=8
                                   IsHlsStream=no
                                   FunctionId= 234
@@ -202,7 +202,7 @@ parallelismSelector::VERBO:     'out' /home/hyeon/workspace/sha3/sha3_hls/../sha
                                   Elements=[-- ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'in' /home/hyeon/workspace/sha3/sha3_hls/../sha3_256.c:4:0 VariableId 241
+parallelismSelector::VERBO:     'in' /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../sha3_256.c:4:0 VariableId 241
                                   ElementBitsize=8
                                   IsHlsStream=no
                                   FunctionId= 234
@@ -228,26 +228,26 @@ parallelismSelector::VERBO: Equivalence table
                              Object with value: 241 is mapped to the object with value: 238
                             
 parallelismSelector::VERBO: Nesting structure:
-                            +- Loop with id 19, Trip Count: (Static=4, Dynamic [x1]), Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:761:3, Vars=165,
-                               +- Loop with id 25, Trip Count: (Static=8, Dynamic [x4]), Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:43:3, Vars=235,
-                            +- Loop with id 23, Trip Count: (Static=25, Dynamic [x1]), Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:472:3, Vars=165,
-                            +- Loop with id 21, Trip Count: (0<=Static, Dynamic Min/Avg/Max=0/0/0 [x1]), [RAW], Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:479:3
-                               +- Loop with id 22, Label=absorb_loop2, Trip Count: (Static=17 !Inconsistent!, Dynamic Min/Avg/Max=0/0/0 [x0]), Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:480:14, Vars=165,
-                                  +- Loop with id 26, Trip Count: (Static=8), Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:26:3, Vars=238,
-                               +- Loop with id 24, Label=state_permute, Trip Count: (Static=12, Dynamic [x1]), [RAW], Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:127:17, Vars=2,
-                            +- Loop with id 20, Label=absorb_loop3, Trip Count: (0<=Static, Dynamic Min/Avg/Max=4/4/4 [x1]), [No Total TC], [RAW], Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:488:16, Vars=165,238,
-                            +- Loop with id 24, Label=state_permute, Trip Count: (Static=12, Dynamic [x1]), [RAW], Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:127:17, Vars=2,
+                            +- Loop with id 19, Trip Count: (Static=4, Dynamic [x1]), Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:759:3, Vars=165,
+                               +- Loop with id 25, Trip Count: (Static=8, Dynamic [x4]), Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:43:3, Vars=235,
+                            +- Loop with id 23, Trip Count: (Static=25, Dynamic [x1]), Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:472:3, Vars=165,
+                            +- Loop with id 21, Trip Count: (0<=Static, Dynamic Min/Avg/Max=0/0/0 [x1]), [RAW], Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:477:3
+                               +- Loop with id 22, Label=absorb_loop2, Trip Count: (Static=17 !Inconsistent!, Dynamic Min/Avg/Max=0/0/0 [x0]), Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:478:14, Vars=165,
+                                  +- Loop with id 26, Trip Count: (Static=8), Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:26:3, Vars=238,
+                               +- Loop with id 24, Label=state_permute, Trip Count: (Static=12, Dynamic [x1]), [RAW], Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:127:17, Vars=2,
+                            +- Loop with id 20, Label=absorb_loop3, Trip Count: (0<=Static, Dynamic Min/Avg/Max=4/4/4 [x1]), [No Total TC], [RAW], Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:486:16, Vars=165,238,
+                            +- Loop with id 24, Label=state_permute, Trip Count: (Static=12, Dynamic [x1]), [RAW], Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:127:17, Vars=2,
                             
 parallelismSelector::VERBO: Nesting structure after dynamic trip count update:
-                            +- Loop with id 19, Trip Count: (Static=4, Dynamic [x1]), Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:761:3, Vars=165,
-                               +- Loop with id 25, Trip Count: (Static=8, Dynamic [x4]), Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:43:3, Vars=235,
-                            +- Loop with id 23, Trip Count: (Static=25, Dynamic [x1]), Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:472:3, Vars=165,
-                            +- Loop with id 21, Trip Count: (0<=Static, Dynamic Min/Avg/Max=0/0/0 [x1]), [RAW], Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:479:3
-                               +- Loop with id 22, Label=absorb_loop2, Trip Count: (Static=17 !Inconsistent!, Dynamic Min/Avg/Max=0/0/0 [x0]), Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:480:14, Vars=165,
-                                  +- Loop with id 26, Trip Count: (Static=8), Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:26:3, Vars=238,
-                               +- Loop with id 24, Label=state_permute, Trip Count: (Static=12, Dynamic [x1]), [RAW], Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:127:17, Vars=2,
-                            +- Loop with id 20, Label=absorb_loop3, Trip Count: (0<=Static, Dynamic Min/Avg/Max=4/4/4 [x1]), [No Total TC], [RAW], Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:488:16, Vars=165,238,
-                            +- Loop with id 24, Label=state_permute, Trip Count: (Static=12, Dynamic [x1]), [RAW], Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:127:17, Vars=2,
+                            +- Loop with id 19, Trip Count: (Static=4, Dynamic [x1]), Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:759:3, Vars=165,
+                               +- Loop with id 25, Trip Count: (Static=8, Dynamic [x4]), Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:43:3, Vars=235,
+                            +- Loop with id 23, Trip Count: (Static=25, Dynamic [x1]), Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:472:3, Vars=165,
+                            +- Loop with id 21, Trip Count: (0<=Static, Dynamic Min/Avg/Max=0/0/0 [x1]), [RAW], Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:477:3
+                               +- Loop with id 22, Label=absorb_loop2, Trip Count: (Static=17 !Inconsistent!, Dynamic Min/Avg/Max=0/0/0 [x0]), Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:478:14, Vars=165,
+                                  +- Loop with id 26, Trip Count: (Static=8), Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:26:3, Vars=238,
+                               +- Loop with id 24, Label=state_permute, Trip Count: (Static=12, Dynamic [x1]), [RAW], Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:127:17, Vars=2,
+                            +- Loop with id 20, Label=absorb_loop3, Trip Count: (0<=Static, Dynamic Min/Avg/Max=4/4/4 [x1]), [No Total TC], [RAW], Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:486:16, Vars=165,238,
+                            +- Loop with id 24, Label=state_permute, Trip Count: (Static=12, Dynamic [x1]), [RAW], Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:127:17, Vars=2,
                             
 parallelismSelector::VERBO: Function 'sha3_256_hw' not inlined as per top-levels
 parallelismSelector::VERBO: Function 'Outline_T3_F228_R2_Call' not inlined as per dataflow task
@@ -257,42 +257,41 @@ parallelismSelector::VERBO: Function 'KeccakF1600_StatePermute' inlined as per V
 parallelismSelector::VERBO: Function 'store64' inlined as per Vitis C++ heuristic
 parallelismSelector::VERBO: Function 'load64' inlined as per Vitis C++ heuristic
 parallelismSelector::VERBO: Nesting structure after static trip count upper bound calculation for symbolically bounded loops:
-                            +- Loop with id 19, Trip Count: (Static=4, Dynamic [x1]), Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:761:3, Vars=165,
-                               +- Loop with id 25, Trip Count: (Static=8, Dynamic [x4]), Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:43:3, Vars=235,
-                            +- Loop with id 23, Trip Count: (Static=25, Dynamic [x1]), Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:472:3, Vars=165,
-                            +- Loop with id 21, Trip Count: (0<=Static, Dynamic Min/Avg/Max=0/0/0 [x1]), [RAW], Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:479:3
-                               +- Loop with id 22, Label=absorb_loop2, Trip Count: (Static=17 !Inconsistent!, Dynamic Min/Avg/Max=0/0/0 [x0]), Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:480:14, Vars=165,
-                                  +- Loop with id 26, Trip Count: (Static=8), Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:26:3, Vars=238,
-                               +- Loop with id 24, Label=state_permute, Trip Count: (Static=12, Dynamic [x1]), [RAW], Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:127:17, Vars=2,
-                            +- Loop with id 20, Label=absorb_loop3, Trip Count: (0<=Static, Dynamic Min/Avg/Max=4/4/4 [x1]), [No Total TC], [RAW], Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:488:16, Vars=165,238,
-                            +- Loop with id 24, Label=state_permute, Trip Count: (Static=12, Dynamic [x1]), [RAW], Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:127:17, Vars=2,
+                            +- Loop with id 19, Trip Count: (Static=4, Dynamic [x1]), Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:759:3, Vars=165,
+                               +- Loop with id 25, Trip Count: (Static=8, Dynamic [x4]), Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:43:3, Vars=235,
+                            +- Loop with id 23, Trip Count: (Static=25, Dynamic [x1]), Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:472:3, Vars=165,
+                            +- Loop with id 21, Trip Count: (0<=Static, Dynamic Min/Avg/Max=0/0/0 [x1]), [RAW], Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:477:3
+                               +- Loop with id 22, Label=absorb_loop2, Trip Count: (Static=17 !Inconsistent!, Dynamic Min/Avg/Max=0/0/0 [x0]), Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:478:14, Vars=165,
+                                  +- Loop with id 26, Trip Count: (Static=8), Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:26:3, Vars=238,
+                               +- Loop with id 24, Label=state_permute, Trip Count: (Static=12, Dynamic [x1]), [RAW], Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:127:17, Vars=2,
+                            +- Loop with id 20, Label=absorb_loop3, Trip Count: (0<=Static, Dynamic Min/Avg/Max=4/4/4 [x1]), [No Total TC], [RAW], Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:486:16, Vars=165,238,
+                            +- Loop with id 24, Label=state_permute, Trip Count: (Static=12, Dynamic [x1]), [RAW], Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:127:17, Vars=2,
                             
 parallelismSelector::VERBO: 
                             The following user pragmas were detected in the application:
-parallelismSelector::VERBO: /home/hyeon/workspace/sha3/fips202.c:489:1: warning: User pragma 'pipeline' found in function keccak_absorb_once
-parallelismSelector::VERBO: /home/hyeon/workspace/sha3/fips202.c:481:1: warning: User pragma 'pipeline' found in function keccak_absorb_once
-parallelismSelector::VERBO: /home/hyeon/workspace/sha3/fips202.c:473:1: warning: User pragma 'pipeline' found in function keccak_absorb_once
-parallelismSelector::VERBO: /home/hyeon/workspace/sha3/fips202.c:129:1: warning: User pragma 'unroll' found in function KeccakF1600_StatePermute
-parallelismSelector::VERBO: /home/hyeon/workspace/sha3/fips202.c:128:1: warning: User pragma 'pipeline' found in function KeccakF1600_StatePermute
-parallelismSelector::VERBO: /home/hyeon/workspace/sha3/fips202.c:44:1: warning: User pragma 'pipeline' found in function store64
-parallelismSelector::WARNG: WARNING: [SIM 211-200] /home/hyeon/workspace/sha3/sha3_hls/../fips202.c:479:3: the dynamic loop had a trip count of min=0 max=0 during C simulation. (#pragma HLS loop_tripcount min=0 max=0)
-parallelismSelector::WARNG: WARNING: [SIM 211-200] /home/hyeon/workspace/sha3/sha3_hls/../fips202.c:488:16: the dynamic loop had a trip count of min=4 max=4 during C simulation. (#pragma HLS loop_tripcount min=4 max=4)
+parallelismSelector::VERBO: /home/hyeon/vitis_hls/workspace/sha3/fips202.c:487:1: warning: User pragma 'pipeline' found in function keccak_absorb_once
+parallelismSelector::VERBO: /home/hyeon/vitis_hls/workspace/sha3/fips202.c:479:1: warning: User pragma 'pipeline' found in function keccak_absorb_once
+parallelismSelector::VERBO: /home/hyeon/vitis_hls/workspace/sha3/fips202.c:129:1: warning: User pragma 'unroll' found in function KeccakF1600_StatePermute
+parallelismSelector::VERBO: /home/hyeon/vitis_hls/workspace/sha3/fips202.c:128:1: warning: User pragma 'pipeline' found in function KeccakF1600_StatePermute
+parallelismSelector::VERBO: /home/hyeon/vitis_hls/workspace/sha3/fips202.c:44:1: warning: User pragma 'pipeline' found in function store64
+parallelismSelector::WARNG: WARNING: [SIM 211-200] /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:477:3: the dynamic loop had a trip count of min=0 max=0 during C simulation. (#pragma HLS loop_tripcount min=0 max=0)
+parallelismSelector::WARNG: WARNING: [SIM 211-200] /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:486:16: the dynamic loop had a trip count of min=4 max=4 during C simulation. (#pragma HLS loop_tripcount min=4 max=4)
 parallelismSelector::VERBO: Max iterations for loop 19 are 4
-parallelismSelector::VERBO:  - loop 19 is "/home/hyeon/workspace/sha3/sha3_hls/../fips202.c":761:3
+parallelismSelector::VERBO:  - loop 19 is "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c":759:3
 parallelismSelector::VERBO: Max iterations for loop 25 are 8
-parallelismSelector::VERBO:  - loop 25 is "/home/hyeon/workspace/sha3/sha3_hls/../fips202.c":43:3
+parallelismSelector::VERBO:  - loop 25 is "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c":43:3
 parallelismSelector::VERBO: Max iterations for loop 23 are 25
-parallelismSelector::VERBO:  - loop 23 is "/home/hyeon/workspace/sha3/sha3_hls/../fips202.c":472:3
+parallelismSelector::VERBO:  - loop 23 is "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c":472:3
 parallelismSelector::VERBO: Max iterations for loop 22 are 17
-parallelismSelector::VERBO:  - loop 22 is "/home/hyeon/workspace/sha3/sha3_hls/../fips202.c":480:14
+parallelismSelector::VERBO:  - loop 22 is "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c":478:14
 parallelismSelector::VERBO: Max iterations for loop 26 are 8
-parallelismSelector::VERBO:  - loop 26 is "/home/hyeon/workspace/sha3/sha3_hls/../fips202.c":26:3
+parallelismSelector::VERBO:  - loop 26 is "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c":26:3
 parallelismSelector::VERBO: Max iterations for loop 24 are 12
-parallelismSelector::VERBO:  - loop 24 is "/home/hyeon/workspace/sha3/sha3_hls/../fips202.c":127:17
+parallelismSelector::VERBO:  - loop 24 is "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c":127:17
 parallelismSelector::VERBO: Max iterations for loop 20 are 4
-parallelismSelector::VERBO:  - loop 20 is "/home/hyeon/workspace/sha3/sha3_hls/../fips202.c":488:16
-parallelismSelector::VERBO: Partitioning variable 'KeccakF_RoundConstants' /home/hyeon/workspace/sha3/sha3_hls/../fips202.c:49:0 VariableId 2
-parallelismSelector::VERBO: Partitioning variable 's' /home/hyeon/workspace/sha3/sha3_hls/../fips202.c:757:0 VariableId 165
+parallelismSelector::VERBO:  - loop 20 is "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c":486:16
+parallelismSelector::VERBO: Partitioning variable 'KeccakF_RoundConstants' /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:49:0 VariableId 2
+parallelismSelector::VERBO: Partitioning variable 's' /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:755:0 VariableId 165
 parallelismSelector::VERBO: Initial branch:
                             FunctionPipelineTopLevel: Maybe
                             Partition {dim 0: cyclic 1, 2, 3, 4, 6, 8, 12 complete} (VariableName KeccakF_RoundConstants) (VariableId 2)
@@ -324,15 +323,15 @@ parallelismSelector::VERBO: Initial branch after first round of constraints:
                             +- pipeline, unroll with factors 1, 12 (Label state_permute) (LoopId 24)
                             
 parallelismSelector::VERBO: Nesting structure after user pragma constraints:
-                            +- Loop with id 19, Trip Count: (Static=4, Dynamic [x1]), Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:761:3, Vars=165,
-                               +- Loop with id 25, Trip Count: (Static=8, Dynamic [x4]), [User Pragma], Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:43:3, Vars=235,
-                            +- Loop with id 23, Trip Count: (Static=25, Dynamic [x1]), [User Pragma], Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:472:3, Vars=165,
-                            +- Loop with id 21, Trip Count: (0<=Static, Dynamic Min/Avg/Max=0/0/0 [x1]), [RAW], Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:479:3
-                               +- Loop with id 22, Label=absorb_loop2, Trip Count: (Static=17 !Inconsistent!, Dynamic Min/Avg/Max=0/0/0 [x0]), [User Pragma], Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:480:14, Vars=165,
-                                  +- Loop with id 26, Trip Count: (Static=8), Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:26:3, Vars=238,
-                               +- Loop with id 24, Label=state_permute, Trip Count: (Static=12, Dynamic [x1]), [User Pragma], [RAW], Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:127:17, Vars=2,
-                            +- Loop with id 20, Label=absorb_loop3, Trip Count: (0<=Static, Dynamic Min/Avg/Max=4/4/4 [x1]), [No Total TC], [User Pragma], [RAW], Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:488:16, Vars=165,238,
-                            +- Loop with id 24, Label=state_permute, Trip Count: (Static=12, Dynamic [x1]), [User Pragma], [RAW], Loc=/home/hyeon/workspace/sha3/sha3_hls/../fips202.c:127:17, Vars=2,
+                            +- Loop with id 19, Trip Count: (Static=4, Dynamic [x1]), Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:759:3, Vars=165,
+                               +- Loop with id 25, Trip Count: (Static=8, Dynamic [x4]), [User Pragma], Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:43:3, Vars=235,
+                            +- Loop with id 23, Trip Count: (Static=25, Dynamic [x1]), Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:472:3, Vars=165,
+                            +- Loop with id 21, Trip Count: (0<=Static, Dynamic Min/Avg/Max=0/0/0 [x1]), [RAW], Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:477:3
+                               +- Loop with id 22, Label=absorb_loop2, Trip Count: (Static=17 !Inconsistent!, Dynamic Min/Avg/Max=0/0/0 [x0]), [User Pragma], Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:478:14, Vars=165,
+                                  +- Loop with id 26, Trip Count: (Static=8), Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:26:3, Vars=238,
+                               +- Loop with id 24, Label=state_permute, Trip Count: (Static=12, Dynamic [x1]), [User Pragma], [RAW], Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:127:17, Vars=2,
+                            +- Loop with id 20, Label=absorb_loop3, Trip Count: (0<=Static, Dynamic Min/Avg/Max=4/4/4 [x1]), [No Total TC], [User Pragma], [RAW], Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:486:16, Vars=165,238,
+                            +- Loop with id 24, Label=state_permute, Trip Count: (Static=12, Dynamic [x1]), [User Pragma], [RAW], Loc=/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/../fips202.c:127:17, Vars=2,
                             
 parallelismSelector::VERBO: Initial branch after applying user pragma constraints:
                             FunctionPipelineTopLevel: No
@@ -340,7 +339,7 @@ parallelismSelector::VERBO: Initial branch after applying user pragma constraint
                             Partition {dim 0: cyclic 1, 5 complete} (VariableName s) (VariableId 165)
                             +- pipeline, unroll with factors 1, 2, 4, unroll/pipeline with factors 2 (LoopId 19)
                                +- pipeline (LoopId 25)
-                            +- pipeline (LoopId 23)
+                            +- pipeline, unroll with factors 1, 5, 25, unroll/pipeline with factors 5 (LoopId 23)
                             +- pipeline, unroll with factors 1 (LoopId 21)
                                +- unroll with factors 1 (Label absorb_loop2) (LoopId 22)
                                   +- pipeline, unroll with factors 1, 2, 4, 8, unroll/pipeline with factors 2, 4 (LoopId 26)
@@ -354,7 +353,7 @@ parallelismSelector::VERBO: Initial branch after applying Xilinx constraints:
                             Partition {dim 0: cyclic 1, 5 complete} (VariableName s) (VariableId 165)
                             +- unroll with factors 1 (LoopId 19)
                                +- pipeline (LoopId 25)
-                            +- pipeline (LoopId 23)
+                            +- pipeline, unroll with factors 1, 5, 25, unroll/pipeline with factors 5 (LoopId 23)
                             +- unroll with factors 1 (LoopId 21)
                                +- unroll with factors 1 (Label absorb_loop2) (LoopId 22)
                                   +- pipeline, unroll with factors 1, 2, 4, 8, unroll/pipeline with factors 2, 4 (LoopId 26)
@@ -373,7 +372,7 @@ parallelismSelector::VERBO: Initial branch after applying dataflow constraints:
                             Partition {dim 0: cyclic 1, 5 complete} (VariableName s) (VariableId 165)
                             +- unroll with factors 1 (LoopId 19)
                                +- pipeline (LoopId 25)
-                            +- pipeline (LoopId 23)
+                            +- pipeline, unroll with factors 1, 5, 25, unroll/pipeline with factors 5 (LoopId 23)
                             +- unroll with factors 1 (LoopId 21)
                                +- unroll with factors 1 (Label absorb_loop2) (LoopId 22)
                                   +- pipeline, unroll with factors 1, 2, 4, 8, unroll/pipeline with factors 2, 4 (LoopId 26)
@@ -381,6 +380,7 @@ parallelismSelector::VERBO: Initial branch after applying dataflow constraints:
                             +- unroll with factors 1 (Label absorb_loop3) (LoopId 20)
                             +- unroll with factors 1 (Label state_permute) (LoopId 24)
                             
+parallelismSelector::VERBO: Removing unroll factor 5 from loop 23 because we only want to keep the pipeline/unroll setting as unroll possibility
 parallelismSelector::VERBO: Removing unroll factor 2 from loop 26 because we only want to keep the pipeline/unroll setting as unroll possibility
 parallelismSelector::VERBO: Removing unroll factor 4 from loop 26 because we only want to keep the pipeline/unroll setting as unroll possibility
 parallelismSelector::VERBO: Removing reshape options from the design space because optimizing reshape is disabled
@@ -391,7 +391,7 @@ parallelismSelector::VERBO: Initial branch after applying heuristic constraints:
                             Partition {dim 0: cyclic 1, 5 complete} (VariableName s) (VariableId 165)
                             +- unroll with factors 1 (LoopId 19)
                                +- pipeline (LoopId 25)
-                            +- pipeline (LoopId 23)
+                            +- pipeline, unroll with factors 1, 25, unroll/pipeline with factors 5 (LoopId 23)
                             +- unroll with factors 1 (LoopId 21)
                                +- unroll with factors 1 (Label absorb_loop2) (LoopId 22)
                                   +- pipeline, unroll with factors 1, 8, unroll/pipeline with factors 2, 4 (LoopId 26)
@@ -405,7 +405,7 @@ parallelismSelector::VERBO: Initial branch after applying second round of Xilinx
                             Partition {dim 0: cyclic 1, 5 complete} (VariableName s) (VariableId 165)
                             +- unroll with factors 1 (LoopId 19)
                                +- pipeline (LoopId 25)
-                            +- pipeline (LoopId 23)
+                            +- pipeline, unroll with factors 1, 25, unroll/pipeline with factors 5 (LoopId 23)
                             +- unroll with factors 1 (LoopId 21)
                                +- unroll with factors 1 (Label absorb_loop2) (LoopId 22)
                                   +- pipeline, unroll with factors 1, 8, unroll/pipeline with factors 2, 4 (LoopId 26)
@@ -419,7 +419,7 @@ parallelismSelector::VERBO: Initial branch after performance pragma constraints:
                             Partition {dim 0: cyclic 1} (VariableName s) (VariableId 165)
                             +- unroll with factors 1 (LoopId 19)
                                +- pipeline (LoopId 25)
-                            +- pipeline (LoopId 23)
+                            +- unroll with factors 1 (LoopId 23)
                             +- unroll with factors 1 (LoopId 21)
                                +- unroll with factors 1 (Label absorb_loop2) (LoopId 22)
                                   +- unroll with factors 1 (LoopId 26)
@@ -433,7 +433,7 @@ parallelismSelector::VERBO: Initial branch after PerfEst evaluation constraints:
                             Partition {dim 0: cyclic 1} (VariableName s) (VariableId 165)
                             +- unroll with factors 1 (LoopId 19)
                                +- pipeline (LoopId 25)
-                            +- pipeline (LoopId 23)
+                            +- unroll with factors 1 (LoopId 23)
                             +- unroll with factors 1 (LoopId 21)
                                +- unroll with factors 1 (Label absorb_loop2) (LoopId 22)
                                   +- unroll with factors 1 (LoopId 26)
@@ -447,7 +447,7 @@ parallelismSelector::VERBO: Initial constrained branch:
                             Partition {dim 0: cyclic 1} (VariableName s) (VariableId 165)
                             +- unroll with factors 1 (LoopId 19)
                                +- pipeline (LoopId 25)
-                            +- pipeline (LoopId 23)
+                            +- unroll with factors 1 (LoopId 23)
                             +- unroll with factors 1 (LoopId 21)
                                +- unroll with factors 1 (Label absorb_loop2) (LoopId 22)
                                   +- unroll with factors 1 (LoopId 26)
@@ -577,7 +577,7 @@ parallelismSelector::VERBO: HPE - Calculating latency and area for design space.
                             Partition {dim 0: cyclic 1} (VariableId 165)
                             +- unroll with factors 1 (LoopId 19)
                                +- pipeline (LoopId 25)
-                            +- pipeline (LoopId 23)
+                            +- unroll with factors 1 (LoopId 23)
                             +- unroll with factors 1 (LoopId 21)
                                +- unroll with factors 1 (Label absorb_loop2) (LoopId 22)
                                   +- unroll with factors 1 (LoopId 26)
@@ -621,20 +621,20 @@ parallelismSelector::VERBO:         	pipeline Cycles: 9
 parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 25): 9
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: store64
-parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 10}
-parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
 parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 10}
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 10}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 10}
-parallelismSelector::VERBO:        - Critical path: for.end, entry, for.body
+parallelismSelector::VERBO:        - Critical path: for.body, entry, for.end
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Analyzing Loop "for.body" (LoopId 19):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - LoopId: 19
 parallelismSelector::VERBO:          - EndCycles: for.body_iso4 -> {1: 12}
-parallelismSelector::VERBO:          - EndCycles: for.body_iso3 -> {1: 12}
 parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: for.body_iso3 -> {1: 12}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 12}
-parallelismSelector::VERBO:        - Critical path: for.body_iso4, for.body_iso3, for.body
+parallelismSelector::VERBO:        - Critical path: for.body_iso4, for.body, for.body_iso3
 parallelismSelector::VERBO:     hasRAW: 0
 parallelismSelector::VERBO:        - IIMem: {1: 0.5}, OwnedIIMem: {1: 0.5}, NestedIIMem: {1: 0}
 parallelismSelector::VERBO: 
@@ -687,20 +687,20 @@ parallelismSelector::VERBO:         	unroll 1 Cycles: 16
 parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 26): 16
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: load64
-parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 17}
 parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 17}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 17}
 parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 17}
-parallelismSelector::VERBO:        - Critical path: for.end, for.body, entry
+parallelismSelector::VERBO:        - Critical path: for.body, for.end, entry
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Analyzing Loop "absorb_loop2" (LoopId 22):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - LoopId: 22 Label: absorb_loop2
 parallelismSelector::VERBO:          - EndCycles: for.body8 -> {1: 1}
-parallelismSelector::VERBO:          - EndCycles: for.body8_iso0 -> {1: 18}
 parallelismSelector::VERBO:          - EndCycles: for.body8_iso1 -> {1: 19}
+parallelismSelector::VERBO:          - EndCycles: for.body8_iso0 -> {1: 18}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 19}
-parallelismSelector::VERBO:        - Critical path: for.body8, for.body8_iso0, for.body8_iso1
+parallelismSelector::VERBO:        - Critical path: for.body8, for.body8_iso1, for.body8_iso0
 parallelismSelector::VERBO:     hasRAW: 0
 parallelismSelector::VERBO:        - IIMem: {1: 1}, OwnedIIMem: {1: 1}, NestedIIMem: {1: 0}
 parallelismSelector::VERBO: 
@@ -732,10 +732,10 @@ parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 24):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: KeccakF1600_StatePermute
 parallelismSelector::VERBO:          - EndCycles: entry -> {1: 2}
-parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 26}
 parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 26}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 26}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 26}
-parallelismSelector::VERBO:        - Critical path: entry, for.end, for.body
+parallelismSelector::VERBO:        - Critical path: entry, for.body, for.end
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Analyzing Loop "for.body4" (LoopId 21):
 parallelismSelector::VERBO:         LoopId: 22, Label: absorb_loop2, TC: 17, IL: {1: 19}, IIMem: {1: 1}, IIDep 0
@@ -743,13 +743,13 @@ parallelismSelector::VERBO:         	unroll 1 Cycles: 323
 parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 22): 323
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - LoopId: 21
-parallelismSelector::VERBO:          - EndCycles: for.end13_iso3 -> {1: 351}
-parallelismSelector::VERBO:          - EndCycles: for.body4 -> {1: 1}
-parallelismSelector::VERBO:          - EndCycles: for.end13 -> {1: 323}
 parallelismSelector::VERBO:          - EndCycles: for.body8_iso1 -> {1: 323}
 parallelismSelector::VERBO:          - EndCycles: for.end13_iso2 -> {1: 350}
+parallelismSelector::VERBO:          - EndCycles: for.end13_iso3 -> {1: 351}
+parallelismSelector::VERBO:          - EndCycles: for.end13 -> {1: 323}
+parallelismSelector::VERBO:          - EndCycles: for.body4 -> {1: 1}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 351}
-parallelismSelector::VERBO:        - Critical path: for.end13_iso3, for.body4, for.body8, for.end13, for.body8_iso1, for.end13_iso2
+parallelismSelector::VERBO:        - Critical path: for.body8, for.body8_iso1, for.end13_iso2, for.end13_iso3, for.end13, for.body4
 parallelismSelector::VERBO:     hasRAW: 1
 parallelismSelector::VERBO:     Recurrence: Circuit=7:2 -> 7:3 -> 7:4 -> 7:2
 parallelismSelector::VERBO:       distance=2
@@ -770,8 +770,8 @@ parallelismSelector::VERBO:        - IIMem: {1: 0.5}, OwnedIIMem: {1: 0.5}, Nest
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Analyzing Function "keccak_absorb_once" (FunctionId 230):
 parallelismSelector::VERBO:         LoopId: 23, TC: 25, IL: {1: 1}, IIMem: {1: 0.5}, IIDep 0
-parallelismSelector::VERBO:         	pipeline Cycles: 26
-parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 23): 26
+parallelismSelector::VERBO:         	unroll 1 Cycles: 25
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 23): 25
 parallelismSelector::VERBO:         LoopId: 21, TC: 0, IL: {1: 351}, IIMem: {1: 0}, IIDep 2
 parallelismSelector::VERBO:         	unroll 1 Cycles: 0
 parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 21): 0
@@ -780,19 +780,19 @@ parallelismSelector::VERBO:         	unroll 1 Cycles: 8
 parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 20): 8
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: keccak_absorb_once
+parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 26}
+parallelismSelector::VERBO:          - EndCycles: for.body24.lr.ph -> {1: 31}
+parallelismSelector::VERBO:          - EndCycles: for.end19 -> {1: 30}
+parallelismSelector::VERBO:          - EndCycles: for.end13_iso3 -> {1: 28}
+parallelismSelector::VERBO:          - EndCycles: for.body24 -> {1: 39}
+parallelismSelector::VERBO:          - EndCycles: for.end35 -> {1: 42}
+parallelismSelector::VERBO:          - EndCycles: for.cond20.for.end35_crit_edge -> {1: 40}
+parallelismSelector::VERBO:          - EndCycles: for.cond1.for.end19_crit_edge -> {1: 29}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 27}
+parallelismSelector::VERBO:          - EndCycles: for.body4.lr.ph -> {1: 28}
 parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
-parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 27}
-parallelismSelector::VERBO:          - EndCycles: for.cond1.for.end19_crit_edge -> {1: 30}
-parallelismSelector::VERBO:          - EndCycles: for.end13_iso3 -> {1: 29}
-parallelismSelector::VERBO:          - EndCycles: for.body4.lr.ph -> {1: 29}
-parallelismSelector::VERBO:          - EndCycles: for.cond20.for.end35_crit_edge -> {1: 41}
-parallelismSelector::VERBO:          - EndCycles: for.body24 -> {1: 40}
-parallelismSelector::VERBO:          - EndCycles: for.end35 -> {1: 43}
-parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 28}
-parallelismSelector::VERBO:          - EndCycles: for.end19 -> {1: 31}
-parallelismSelector::VERBO:          - EndCycles: for.body24.lr.ph -> {1: 32}
-parallelismSelector::VERBO:        - MaxEndCycle: {1: 43}
-parallelismSelector::VERBO:        - Critical path: entry, for.body, for.cond1.for.end19_crit_edge, for.end13_iso3, for.body4, for.body4.lr.ph, for.cond20.for.end35_crit_edge, for.body24, for.end35, for.end, for.end19, for.body24.lr.ph
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 42}
+parallelismSelector::VERBO:        - Critical path: for.body, for.body24.lr.ph, for.end19, for.end13_iso3, for.body24, for.end35, for.cond20.for.end35_crit_edge, for.cond1.for.end19_crit_edge, for.body4, for.end, for.body4.lr.ph, entry
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(2 F=231) (173->165)
 parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
@@ -820,10 +820,10 @@ parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 24):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: KeccakF1600_StatePermute
 parallelismSelector::VERBO:          - EndCycles: entry -> {1: 2}
-parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 26}
 parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 26}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 26}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 26}
-parallelismSelector::VERBO:        - Critical path: entry, for.end, for.body
+parallelismSelector::VERBO:        - Critical path: entry, for.body, for.end
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Analyzing Function "pqcrystals_kyber_fips202_ref_sha3_256" (FunctionId 229):
 parallelismSelector::VERBO:         LoopId: 19, TC: 4, IL: {1: 12}, IIMem: {1: 0.5}, IIDep 0
@@ -831,31 +831,31 @@ parallelismSelector::VERBO:         	unroll 1 Cycles: 48
 parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 19): 48
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: pqcrystals_kyber_fips202_ref_sha3_256
-parallelismSelector::VERBO:          - EndCycles: for.body_iso4 -> {1: 121}
-parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 121}
-parallelismSelector::VERBO:          - EndCycles: entry_iso2 -> {1: 73}
-parallelismSelector::VERBO:          - EndCycles: entry_iso1 -> {1: 72}
+parallelismSelector::VERBO:          - EndCycles: entry_iso2 -> {1: 72}
+parallelismSelector::VERBO:          - EndCycles: entry_iso0 -> {1: 44}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 120}
 parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
-parallelismSelector::VERBO:          - EndCycles: entry_iso0 -> {1: 45}
-parallelismSelector::VERBO:        - MaxEndCycle: {1: 121}
-parallelismSelector::VERBO:        - Critical path: for.body_iso4, for.end, entry_iso2, entry_iso1, for.body, entry, entry_iso0
+parallelismSelector::VERBO:          - EndCycles: for.body_iso4 -> {1: 120}
+parallelismSelector::VERBO:          - EndCycles: entry_iso1 -> {1: 71}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 120}
+parallelismSelector::VERBO:        - Critical path: entry_iso2, entry_iso0, for.end, entry, for.body_iso4, entry_iso1, for.body
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Analyzing Function "Outline_T3_F228_R2_Call" (FunctionId 234):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: Outline_T3_F228_R2_Call
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 121}
 parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
-parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 122}
-parallelismSelector::VERBO:        - MaxEndCycle: {1: 122}
-parallelismSelector::VERBO:        - Critical path: newFuncRoot, newFuncRoot_iso0
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 121}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot_iso0, newFuncRoot
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Analyzing Function "sha3_256_hw" (FunctionId 228):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: sha3_256_hw
+parallelismSelector::VERBO:          - EndCycles: entry_iso1 -> {1: 123}
+parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 123}
 parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
-parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 124}
-parallelismSelector::VERBO:          - EndCycles: entry_iso1 -> {1: 124}
-parallelismSelector::VERBO:        - MaxEndCycle: {1: 124}
-parallelismSelector::VERBO:        - Critical path: entry, codeRepl, entry_iso1
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 123}
+parallelismSelector::VERBO:        - Critical path: entry_iso1, codeRepl, entry
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Filling in latencies and intervals per loop...
 parallelismSelector::VERBO:     Initiation Interval:
@@ -916,10 +916,10 @@ parallelismSelector::VERBO:     Mem Interval:
 parallelismSelector::VERBO:     Interval:
 parallelismSelector::VERBO:     Initiation Interval:
 parallelismSelector::VERBO:     LoopId: 23, TC: 25, IL: {1: 1}, IIMem: {1: 0.5}, IIDep 0
-parallelismSelector::VERBO:     	pipeline Cycles: 1
+parallelismSelector::VERBO:     	unroll 1 Cycles: 1
 parallelismSelector::VERBO:     Latency:
 parallelismSelector::VERBO:     LoopId: 23, TC: 25, IL: {1: 1}, IIMem: {1: 0.5}, IIDep 0
-parallelismSelector::VERBO:     	pipeline Cycles: 26
+parallelismSelector::VERBO:     	unroll 1 Cycles: 25
 parallelismSelector::VERBO:     Mem Interval:
 parallelismSelector::VERBO:     Interval:
 parallelismSelector::VERBO: [AreaEstimationVisitor] Func: sha3_256_hw : 228
@@ -1072,7 +1072,7 @@ parallelismSelector::VERBO: Initial constrained branch with estimates:
                                +- Access to VariableId 165: {1: lat/intv 0} (unroll: latency/interval)
                                +- pipeline (LoopId 25), min-max latency/interval: {pipeline: lat/intv 9}
                                   +- Access to VariableId 158: {1: lat/intv 0} (unroll: latency/interval)
-                            +- pipeline (LoopId 23), min-max latency/interval: {pipeline: lat/intv 26}
+                            +- unroll with factors 1 (LoopId 23), min-max latency/interval: {unroll 1: lat/intv 25}
                                +- Access to VariableId 165: {1: lat/intv 0} (unroll: latency/interval)
                             +- unroll with factors 1 (LoopId 21), min-max latency/interval: {unroll 1: lat/intv 0}
                                +- Access to VariableId 165: {1: lat/intv 0} (unroll: latency/interval)
@@ -1087,7 +1087,7 @@ parallelismSelector::VERBO: Initial constrained branch with estimates:
                                +- Access to VariableId 165: {1: lat/intv 0} (unroll: latency/interval)
                             +- unroll with factors 1 (LoopId 24 [state_permute]), min-max latency/interval: {unroll 1: lat/intv 24}
                                +- Access to VariableId 2: {1: lat/intv 0} (unroll: latency/interval)
-                            Id: 0 contains valid solution: --, min-max latency/interval:  lat 124 intv 125, min-max area:  LUTs: 33682 FFs: 0 DSPs: 0 BRAMs: 4
+                            Id: 0 contains valid solution: --, min-max latency/interval:  lat 123 intv 124, min-max area:  LUTs: 33682 FFs: 0 DSPs: 0 BRAMs: 4
 parallelismSelector::VERBO: Initial FPGA area occupied (min): Area -- (LUTs: 33682, FFs: 0, DSPs: 0, BRAMs: 4, URAMs: 0)
 parallelismSelector::VERBO: Initial FPGA area occupied (max): Area -- (LUTs: 33682, FFs: 0, DSPs: 0, BRAMs: 4, URAMs: 0)
 parallelismSelector::VERBO: HPE - Calculating latency and area for design space...
@@ -1096,7 +1096,7 @@ parallelismSelector::VERBO: HPE - Calculating latency and area for design space.
                             Partition {dim 0: cyclic 1} (VariableId 165)
                             +- unroll with factors 1 (LoopId 19)
                                +- pipeline (LoopId 25)
-                            +- pipeline (LoopId 23)
+                            +- unroll with factors 1 (LoopId 23)
                             +- unroll with factors 1 (LoopId 21)
                                +- unroll with factors 1 (Label absorb_loop2) (LoopId 22)
                                   +- unroll with factors 1 (LoopId 26)
@@ -1140,20 +1140,20 @@ parallelismSelector::VERBO:         	pipeline Cycles: 9
 parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 25): 9
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: store64
-parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 10}
-parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
 parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 10}
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 10}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 10}
-parallelismSelector::VERBO:        - Critical path: for.end, entry, for.body
+parallelismSelector::VERBO:        - Critical path: for.body, entry, for.end
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Analyzing Loop "for.body" (LoopId 19):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - LoopId: 19
 parallelismSelector::VERBO:          - EndCycles: for.body_iso4 -> {1: 12}
-parallelismSelector::VERBO:          - EndCycles: for.body_iso3 -> {1: 12}
 parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: for.body_iso3 -> {1: 12}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 12}
-parallelismSelector::VERBO:        - Critical path: for.body_iso4, for.body_iso3, for.body
+parallelismSelector::VERBO:        - Critical path: for.body_iso4, for.body, for.body_iso3
 parallelismSelector::VERBO:     hasRAW: 0
 parallelismSelector::VERBO:        - IIMem: {1: 0.5}, OwnedIIMem: {1: 0.5}, NestedIIMem: {1: 0}
 parallelismSelector::VERBO: 
@@ -1206,20 +1206,20 @@ parallelismSelector::VERBO:         	unroll 1 Cycles: 16
 parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 26): 16
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: load64
-parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 17}
 parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 17}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 17}
 parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 17}
-parallelismSelector::VERBO:        - Critical path: for.end, for.body, entry
+parallelismSelector::VERBO:        - Critical path: for.body, for.end, entry
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Analyzing Loop "absorb_loop2" (LoopId 22):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - LoopId: 22 Label: absorb_loop2
 parallelismSelector::VERBO:          - EndCycles: for.body8 -> {1: 1}
-parallelismSelector::VERBO:          - EndCycles: for.body8_iso0 -> {1: 18}
 parallelismSelector::VERBO:          - EndCycles: for.body8_iso1 -> {1: 19}
+parallelismSelector::VERBO:          - EndCycles: for.body8_iso0 -> {1: 18}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 19}
-parallelismSelector::VERBO:        - Critical path: for.body8, for.body8_iso0, for.body8_iso1
+parallelismSelector::VERBO:        - Critical path: for.body8, for.body8_iso1, for.body8_iso0
 parallelismSelector::VERBO:     hasRAW: 0
 parallelismSelector::VERBO:        - IIMem: {1: 1}, OwnedIIMem: {1: 1}, NestedIIMem: {1: 0}
 parallelismSelector::VERBO: 
@@ -1251,10 +1251,10 @@ parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 24):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: KeccakF1600_StatePermute
 parallelismSelector::VERBO:          - EndCycles: entry -> {1: 2}
-parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 26}
 parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 26}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 26}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 26}
-parallelismSelector::VERBO:        - Critical path: entry, for.end, for.body
+parallelismSelector::VERBO:        - Critical path: entry, for.body, for.end
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Analyzing Loop "for.body4" (LoopId 21):
 parallelismSelector::VERBO:         LoopId: 22, Label: absorb_loop2, TC: 17, IL: {1: 19}, IIMem: {1: 1}, IIDep 0
@@ -1262,13 +1262,13 @@ parallelismSelector::VERBO:         	unroll 1 Cycles: 323
 parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 22): 323
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - LoopId: 21
-parallelismSelector::VERBO:          - EndCycles: for.end13_iso3 -> {1: 351}
-parallelismSelector::VERBO:          - EndCycles: for.body4 -> {1: 1}
-parallelismSelector::VERBO:          - EndCycles: for.end13 -> {1: 323}
 parallelismSelector::VERBO:          - EndCycles: for.body8_iso1 -> {1: 323}
 parallelismSelector::VERBO:          - EndCycles: for.end13_iso2 -> {1: 350}
+parallelismSelector::VERBO:          - EndCycles: for.end13_iso3 -> {1: 351}
+parallelismSelector::VERBO:          - EndCycles: for.end13 -> {1: 323}
+parallelismSelector::VERBO:          - EndCycles: for.body4 -> {1: 1}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 351}
-parallelismSelector::VERBO:        - Critical path: for.end13_iso3, for.body4, for.body8, for.end13, for.body8_iso1, for.end13_iso2
+parallelismSelector::VERBO:        - Critical path: for.body8, for.body8_iso1, for.end13_iso2, for.end13_iso3, for.end13, for.body4
 parallelismSelector::VERBO:     hasRAW: 1
 parallelismSelector::VERBO:     Recurrence: Circuit=7:2 -> 7:3 -> 7:4 -> 7:2
 parallelismSelector::VERBO:       distance=2
@@ -1289,8 +1289,8 @@ parallelismSelector::VERBO:        - IIMem: {1: 0.5}, OwnedIIMem: {1: 0.5}, Nest
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Analyzing Function "keccak_absorb_once" (FunctionId 230):
 parallelismSelector::VERBO:         LoopId: 23, TC: 25, IL: {1: 1}, IIMem: {1: 0.5}, IIDep 0
-parallelismSelector::VERBO:         	pipeline Cycles: 26
-parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 23): 26
+parallelismSelector::VERBO:         	unroll 1 Cycles: 25
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 23): 25
 parallelismSelector::VERBO:         LoopId: 21, TC: 0, IL: {1: 351}, IIMem: {1: 0}, IIDep 2
 parallelismSelector::VERBO:         	unroll 1 Cycles: 0
 parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 21): 0
@@ -1299,19 +1299,19 @@ parallelismSelector::VERBO:         	unroll 1 Cycles: 8
 parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 20): 8
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: keccak_absorb_once
+parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 26}
+parallelismSelector::VERBO:          - EndCycles: for.body24.lr.ph -> {1: 31}
+parallelismSelector::VERBO:          - EndCycles: for.end19 -> {1: 30}
+parallelismSelector::VERBO:          - EndCycles: for.end13_iso3 -> {1: 28}
+parallelismSelector::VERBO:          - EndCycles: for.body24 -> {1: 39}
+parallelismSelector::VERBO:          - EndCycles: for.end35 -> {1: 42}
+parallelismSelector::VERBO:          - EndCycles: for.cond20.for.end35_crit_edge -> {1: 40}
+parallelismSelector::VERBO:          - EndCycles: for.cond1.for.end19_crit_edge -> {1: 29}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 27}
+parallelismSelector::VERBO:          - EndCycles: for.body4.lr.ph -> {1: 28}
 parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
-parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 27}
-parallelismSelector::VERBO:          - EndCycles: for.cond1.for.end19_crit_edge -> {1: 30}
-parallelismSelector::VERBO:          - EndCycles: for.end13_iso3 -> {1: 29}
-parallelismSelector::VERBO:          - EndCycles: for.body4.lr.ph -> {1: 29}
-parallelismSelector::VERBO:          - EndCycles: for.cond20.for.end35_crit_edge -> {1: 41}
-parallelismSelector::VERBO:          - EndCycles: for.body24 -> {1: 40}
-parallelismSelector::VERBO:          - EndCycles: for.end35 -> {1: 43}
-parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 28}
-parallelismSelector::VERBO:          - EndCycles: for.end19 -> {1: 31}
-parallelismSelector::VERBO:          - EndCycles: for.body24.lr.ph -> {1: 32}
-parallelismSelector::VERBO:        - MaxEndCycle: {1: 43}
-parallelismSelector::VERBO:        - Critical path: entry, for.body, for.cond1.for.end19_crit_edge, for.end13_iso3, for.body4, for.body4.lr.ph, for.cond20.for.end35_crit_edge, for.body24, for.end35, for.end, for.end19, for.body24.lr.ph
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 42}
+parallelismSelector::VERBO:        - Critical path: for.body, for.body24.lr.ph, for.end19, for.end13_iso3, for.body24, for.end35, for.cond20.for.end35_crit_edge, for.cond1.for.end19_crit_edge, for.body4, for.end, for.body4.lr.ph, entry
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(2 F=231) (173->165)
 parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
@@ -1339,10 +1339,10 @@ parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 24):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: KeccakF1600_StatePermute
 parallelismSelector::VERBO:          - EndCycles: entry -> {1: 2}
-parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 26}
 parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 26}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 26}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 26}
-parallelismSelector::VERBO:        - Critical path: entry, for.end, for.body
+parallelismSelector::VERBO:        - Critical path: entry, for.body, for.end
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Analyzing Function "pqcrystals_kyber_fips202_ref_sha3_256" (FunctionId 229):
 parallelismSelector::VERBO:         LoopId: 19, TC: 4, IL: {1: 12}, IIMem: {1: 0.5}, IIDep 0
@@ -1350,31 +1350,31 @@ parallelismSelector::VERBO:         	unroll 1 Cycles: 48
 parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 19): 48
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: pqcrystals_kyber_fips202_ref_sha3_256
-parallelismSelector::VERBO:          - EndCycles: for.body_iso4 -> {1: 121}
-parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 121}
-parallelismSelector::VERBO:          - EndCycles: entry_iso2 -> {1: 73}
-parallelismSelector::VERBO:          - EndCycles: entry_iso1 -> {1: 72}
+parallelismSelector::VERBO:          - EndCycles: entry_iso2 -> {1: 72}
+parallelismSelector::VERBO:          - EndCycles: entry_iso0 -> {1: 44}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 120}
 parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
-parallelismSelector::VERBO:          - EndCycles: entry_iso0 -> {1: 45}
-parallelismSelector::VERBO:        - MaxEndCycle: {1: 121}
-parallelismSelector::VERBO:        - Critical path: for.body_iso4, for.end, entry_iso2, entry_iso1, for.body, entry, entry_iso0
+parallelismSelector::VERBO:          - EndCycles: for.body_iso4 -> {1: 120}
+parallelismSelector::VERBO:          - EndCycles: entry_iso1 -> {1: 71}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 120}
+parallelismSelector::VERBO:        - Critical path: entry_iso2, entry_iso0, for.end, entry, for.body_iso4, entry_iso1, for.body
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Analyzing Function "Outline_T3_F228_R2_Call" (FunctionId 234):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: Outline_T3_F228_R2_Call
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 121}
 parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
-parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 122}
-parallelismSelector::VERBO:        - MaxEndCycle: {1: 122}
-parallelismSelector::VERBO:        - Critical path: newFuncRoot, newFuncRoot_iso0
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 121}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot_iso0, newFuncRoot
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Analyzing Function "sha3_256_hw" (FunctionId 228):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: sha3_256_hw
+parallelismSelector::VERBO:          - EndCycles: entry_iso1 -> {1: 123}
+parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 123}
 parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
-parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 124}
-parallelismSelector::VERBO:          - EndCycles: entry_iso1 -> {1: 124}
-parallelismSelector::VERBO:        - MaxEndCycle: {1: 124}
-parallelismSelector::VERBO:        - Critical path: entry, codeRepl, entry_iso1
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 123}
+parallelismSelector::VERBO:        - Critical path: entry_iso1, codeRepl, entry
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Filling in latencies and intervals per loop...
 parallelismSelector::VERBO:     Initiation Interval:
@@ -1435,10 +1435,10 @@ parallelismSelector::VERBO:     Mem Interval:
 parallelismSelector::VERBO:     Interval:
 parallelismSelector::VERBO:     Initiation Interval:
 parallelismSelector::VERBO:     LoopId: 23, TC: 25, IL: {1: 1}, IIMem: {1: 0.5}, IIDep 0
-parallelismSelector::VERBO:     	pipeline Cycles: 1
+parallelismSelector::VERBO:     	unroll 1 Cycles: 1
 parallelismSelector::VERBO:     Latency:
 parallelismSelector::VERBO:     LoopId: 23, TC: 25, IL: {1: 1}, IIMem: {1: 0.5}, IIDep 0
-parallelismSelector::VERBO:     	pipeline Cycles: 26
+parallelismSelector::VERBO:     	unroll 1 Cycles: 25
 parallelismSelector::VERBO:     Mem Interval:
 parallelismSelector::VERBO:     Interval:
 parallelismSelector::VERBO: [AreaEstimationVisitor] Func: sha3_256_hw : 228
@@ -1625,7 +1625,7 @@ parallelismSelector::VERBO:         II mem: 1 - 1
                                     NumRequiredMemPorts: 1 - 1
 parallelismSelector::VERBO:     Trip count: 25 - 25
 parallelismSelector::VERBO:     II: 1 - 1
-parallelismSelector::VERBO:     IsPipelinedRegion: true
+parallelismSelector::VERBO:     IsPipelinedRegion: false
 parallelismSelector::VERBO:     
 parallelismSelector::VERBO: Loop with Id 24:
 parallelismSelector::VERBO:     Circuit: { Asu.026 Aba.024 Abe.023 Abi.022 Abo.021 Abu.020 Aga.019 Age.018 Agi.017 Ago.016 Agu.015 Aka.014 Ake.013 Aki.012 Ako.011 Aku.010 Ama.09 Ame.08 Ami.07 Amo.06 Amu.05 Asa.04 Ase.03 Asi.02 Aso.01 xor xor25 xor26 xor27 xor28 xor29 xor30 xor31 xor32 xor33 xor34 xor35 xor36 xor37 xor38 xor39 xor40 xor41 xor42 xor43 xor441 xor45 xor482 xor49 xor523 xor53 xor564 xor57 xor605 xor61 xor62 xor63 xor666 xor67 xor707 xor71 xor748 xor75 xor789 neg and xor79 xor81 neg82 and83 xor84 neg85 and86 xor87 neg88 and89 xor90 neg91 and92 xor93 xor94 xor9710 xor98 xor10111 xor102 xor10512 xor106 xor10913 xor110 xor11314 neg114 and115 xor116 neg117 and118 xor119 neg120 and121 xor122 neg123 and124 xor125 neg126 and127 xor128 xor129 xor13215 xor133 xor13616 xor137 xor14017 xor141 xor14418 xor145 xor14819 neg149 and150 xor151 neg152 and153 xor154 neg155 and156 xor157 neg158 and159 xor160 neg161 and162 xor163 xor164 xor16720 xor168 xor17121 xor172 xor17522 xor176 xor17923 xor180 xor18324 neg184 and185 xor186 neg187 and188 xor189 neg190 and191 xor192 neg193 and194 xor195 neg196 and197 xor198 xor199 xor20225 xor203 xor20626 xor207 xor21027 xor211 xor21428 xor215 xor21829 neg219 and220 xor221 neg222 and223 xor224 neg225 and226 xor227 neg228 and229 xor230 neg231 and232 xor233 xor234 xor235 xor236 xor237 xor238 xor239 xor240 xor241 xor242 xor243 xor244 xor245 xor246 xor247 xor248 xor249 xor250 xor251 xor252 xor253 xor25630 xor257 xor26031 xor261 xor26432 xor265 xor26833 xor269 xor27234 xor273 xor274 xor275 xor27835 xor279 xor28236 xor283 xor28637 xor287 xor29038 xor309 xor31239 xor313 xor31640 xor317 xor32041 xor321 xor32442 xor325 xor32843 xor344 xor34744 xor348 xor35145 xor352 xor35546 xor356 xor35947 xor360 xor36348 xor379 xor38249 xor383 xor38650 xor387 xor39051 xor391 xor39452 xor395 xor39853 xor414 xor41754 xor418 xor42155 xor422 xor42556 xor426 xor42957 xor430 xor43358 neg446 and447 xor448 neg443 and444 xor445 neg440 and441 xor442 neg437 and438 xor439 neg434 and435 xor436 neg411 and412 xor413 neg408 and409 xor410 neg405 and406 xor407 neg402 and403 xor404 neg399 and400 xor401 neg376 and377 xor378 neg373 and374 xor375 neg370 and371 xor372 neg367 and368 xor369 neg364 and365 xor366 neg341 and342 xor343 neg338 and339 xor340 neg335 and336 xor337 neg332 and333 xor334 neg329 and330 xor331 neg306 and307 xor308 neg303 and304 xor305 neg300 and301 xor302 neg297 and298 xor299 neg291 and292 xor293 xor296 }, Cycles: 58
@@ -1657,14 +1657,14 @@ parallelismSelector::VERBO:     II: 2 - 2
 parallelismSelector::VERBO:     IsPipelinedRegion: false
 parallelismSelector::VERBO:     
 parallelismSelector::VERBO: Function with Id 228:
-parallelismSelector::VERBO:     Interval: 125 - 125
-                                Latency: 124 - 124
+parallelismSelector::VERBO:     Interval: 124 - 124
+                                Latency: 123 - 123
 parallelismSelector::VERBO: Function with Id 229:
-parallelismSelector::VERBO:     Interval: 122 - 122
-                                Latency: 121 - 121
+parallelismSelector::VERBO:     Interval: 121 - 121
+                                Latency: 120 - 120
 parallelismSelector::VERBO: Function with Id 230:
-parallelismSelector::VERBO:     Interval: 44 - 44
-                                Latency: 43 - 43
+parallelismSelector::VERBO:     Interval: 43 - 43
+                                Latency: 42 - 42
 parallelismSelector::VERBO: Function with Id 231:
 parallelismSelector::VERBO:     Interval: 27 - 27
                                 Latency: 26 - 26
@@ -1675,6 +1675,6 @@ parallelismSelector::VERBO: Function with Id 233:
 parallelismSelector::VERBO:     Interval: 18 - 18
                                 Latency: 17 - 17
 parallelismSelector::VERBO: Function with Id 234:
-parallelismSelector::VERBO:     Interval: 123 - 123
-                                Latency: 122 - 122
-parallelismSelector::VERBO: Adding CallGuidance(SourceRange: /home/hyeon/workspace/sha3/sha3_256.c:10-10:5-54, TI: 122) for RegionTask 'Task(T3,F228,R2)'
+parallelismSelector::VERBO:     Interval: 122 - 122
+                                Latency: 121 - 121
+parallelismSelector::VERBO: Adding CallGuidance(SourceRange: /home/hyeon/vitis_hls/workspace/sha3/sha3_256.c:10-10:5-54, TI: 121) for RegionTask 'Task(T3,F228,R2)'

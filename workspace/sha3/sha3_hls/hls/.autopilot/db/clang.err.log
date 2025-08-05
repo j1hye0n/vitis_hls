@@ -1,4 +1,0 @@
-../fips202.c:478:9: warning: '#pragma HLS loop_flatten' can only be applied inside loop body [-Winvalid-hls-pragmas]
-#pragma HLS loop_flatten
-        ^
-1 warning generated.

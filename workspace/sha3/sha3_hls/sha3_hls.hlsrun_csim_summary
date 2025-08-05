@@ -1,6 +1,6 @@
 <ENTRY>
 {
- "thisFile": "/home/hyeon/workspace/sha3/sha3_hls/sha3_hls.hlsrun_csim_summary",
+ "thisFile": "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/sha3_hls.hlsrun_csim_summary",
  "connectId": "",
  "serverToken": "",
  "timestamp": "0"
@@ -9,34 +9,34 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Wed Jul 30 14:24:21 2025",
- "timestampMillis": "1753853061493",
+ "dateTimestamp": "Tue Aug  5 15:25:05 2025",
+ "timestampMillis": "1754375105713",
  "buildStep": {
-  "cmdId": "d710e16f-d940-4cbf-baac-87b4c7ecde66",
+  "cmdId": "ae57516c-7a2e-43cc-b428-3f49ba697d29",
   "name": "vitis-run",
-  "logFile": "/home/hyeon/workspace/sha3/sha3_hls/logs/sha3_hls.steps.log",
-  "commandLine": "/tools/xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/hyeon/workspace/sha3/sha3_hls/hls_config.cfg --work_dir . ",
+  "logFile": "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/logs/sha3_hls.steps.log",
+  "commandLine": "/tools/xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls_config.cfg --work_dir . ",
   "args": [
    "--mode",
    "hls",
    "--csim",
    "--config",
-   "/home/hyeon/workspace/sha3/sha3_hls/hls_config.cfg",
+   "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls_config.cfg",
    "--work_dir",
    "."
   ],
   "iniFiles": [],
-  "cwd": "/home/hyeon/workspace/sha3/sha3_hls"
+  "cwd": "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Jul 30 14:24:21 2025",
- "timestampMillis": "1753853061494",
+ "dateTimestamp": "Tue Aug  5 15:25:05 2025",
+ "timestampMillis": "1754375105713",
  "status": {
-  "cmdId": "d710e16f-d940-4cbf-baac-87b4c7ecde66",
+  "cmdId": "ae57516c-7a2e-43cc-b428-3f49ba697d29",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Wed Jul 30 14:24:28 2025",
- "timestampMillis": "1753853068264",
+ "dateTimestamp": "Tue Aug  5 15:25:12 2025",
+ "timestampMillis": "1754375112349",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -64,9 +64,9 @@
      "uuid": ""
     },
     "sources": [
-     "/home/hyeon/workspace/sha3/fips202.c",
-     "/home/hyeon/workspace/sha3/fips202.h",
-     "/home/hyeon/workspace/sha3/sha3_256.c"
+     "/home/hyeon/vitis_hls/workspace/sha3/fips202.c",
+     "/home/hyeon/vitis_hls/workspace/sha3/fips202.h",
+     "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c"
     ],
     "psSources": [],
     "cuNames": [],
@@ -82,26 +82,26 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Wed Jul 30 14:24:28 2025",
- "timestampMillis": "1753853068265",
+ "dateTimestamp": "Tue Aug  5 15:25:12 2025",
+ "timestampMillis": "1754375112351",
  "buildStep": {
-  "cmdId": "90b02944-8786-4cca-ba79-bc4b74411a25",
+  "cmdId": "5961e021-57ea-42d8-9db7-98fb2b71ee42",
   "name": "",
-  "logFile": "/home/hyeon/workspace/sha3/sha3_hls/hls/hls.log",
+  "logFile": "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls/hls.log",
   "commandLine": "",
   "args": [],
   "iniFiles": [],
-  "cwd": "/home/hyeon/workspace/sha3/sha3_hls"
+  "cwd": "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Jul 30 14:24:28 2025",
- "timestampMillis": "1753853068266",
+ "dateTimestamp": "Tue Aug  5 15:25:12 2025",
+ "timestampMillis": "1754375112352",
  "status": {
-  "cmdId": "90b02944-8786-4cca-ba79-bc4b74411a25",
+  "cmdId": "5961e021-57ea-42d8-9db7-98fb2b71ee42",
   "state": "CS_RUNNING"
  }
 }
@@ -109,10 +109,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Jul 30 14:24:45 2025",
- "timestampMillis": "1753853085161",
+ "dateTimestamp": "Tue Aug  5 15:25:20 2025",
+ "timestampMillis": "1754375120997",
  "status": {
-  "cmdId": "90b02944-8786-4cca-ba79-bc4b74411a25",
+  "cmdId": "5961e021-57ea-42d8-9db7-98fb2b71ee42",
   "state": "CS_PASSED"
  }
 }
@@ -120,10 +120,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Jul 30 14:24:45 2025",
- "timestampMillis": "1753853085520",
+ "dateTimestamp": "Tue Aug  5 15:25:21 2025",
+ "timestampMillis": "1754375121367",
  "status": {
-  "cmdId": "d710e16f-d940-4cbf-baac-87b4c7ecde66",
+  "cmdId": "ae57516c-7a2e-43cc-b428-3f49ba697d29",
   "state": "CS_PASSED"
  }
 }
@@ -131,8 +131,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Wed Jul 30 14:24:45 2025",
- "timestampMillis": "1753853085521",
+ "dateTimestamp": "Tue Aug  5 15:25:21 2025",
+ "timestampMillis": "1754375121368",
  "report": {
   "path": "",
   "name": "",
@@ -145,8 +145,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Wed Jul 30 14:24:45 2025",
- "timestampMillis": "1753853085521",
+ "dateTimestamp": "Tue Aug  5 15:25:21 2025",
+ "timestampMillis": "1754375121369",
  "report": {
   "path": "",
   "name": "",

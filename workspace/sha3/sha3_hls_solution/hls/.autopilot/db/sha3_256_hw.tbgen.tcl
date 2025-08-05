@@ -224,7 +224,7 @@ set RtlHierarchyInfo {[
 					{"Name" : "gmem_blk_n_AW", "Type" : "RtlSignal"},
 					{"Name" : "gmem_blk_n_B", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "6", "SubInstance" : "grp_sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1_fu_309", "Port" : "gmem", "Inst_start_state" : "101", "Inst_end_state" : "102"}]},
+					{"ID" : "6", "SubInstance" : "grp_sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1_fu_309", "Port" : "gmem", "Inst_start_state" : "101", "Inst_end_state" : "102"}]},
 			{"Name" : "out_r", "Type" : "None", "Direction" : "I"},
 			{"Name" : "in_r", "Type" : "None", "Direction" : "I"},
 			{"Name" : "inlen", "Type" : "None", "Direction" : "I"},
@@ -234,7 +234,7 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "absorb_loop2_VITIS_LOOP_26_1", "PipelineType" : "pipeline",
 				"LoopDec" : {"FSMBitwidth" : "104", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter3", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "PreState" : ["ap_ST_fsm_state47"], "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter3", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "PostState" : ["ap_ST_fsm_state52"]}},
-			{"Name" : "VITIS_LOOP_479_2", "PipelineType" : "no",
+			{"Name" : "VITIS_LOOP_477_2", "PipelineType" : "no",
 				"LoopDec" : {"FSMBitwidth" : "104", "FirstState" : "ap_ST_fsm_state47", "LastState" : ["ap_ST_fsm_state53"], "QuitState" : ["ap_ST_fsm_state47"], "PreState" : ["ap_ST_fsm_state46"], "PostState" : ["ap_ST_fsm_state54"], "OneDepthLoop" : "0", "OneStateBlock": ""}},
 			{"Name" : "absorb_loop3", "PipelineType" : "no",
 				"LoopDec" : {"FSMBitwidth" : "104", "FirstState" : "ap_ST_fsm_state90", "LastState" : ["ap_ST_fsm_state93"], "QuitState" : ["ap_ST_fsm_state90"], "PreState" : ["ap_ST_fsm_state89"], "PostState" : ["ap_ST_fsm_state94"], "OneDepthLoop" : "0", "OneStateBlock": ""}}]},
@@ -280,8 +280,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "state_permute", "PipelineType" : "no",
 				"LoopDec" : {"FSMBitwidth" : "29", "FirstState" : "ap_ST_fsm_state15", "LastState" : ["ap_ST_fsm_state17"], "QuitState" : ["ap_ST_fsm_state15"], "PreState" : ["ap_ST_fsm_state14"], "PostState" : ["ap_ST_fsm_state18"], "OneDepthLoop" : "0", "OneStateBlock": ""}}]},
 	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_KeccakF1600_StatePermute_fu_302.KeccakF_RoundConstants_U", "Parent" : "4"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1_fu_309", "Parent" : "0", "Child" : ["7"],
-		"CDFG" : "sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1",
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1_fu_309", "Parent" : "0", "Child" : ["7"],
+		"CDFG" : "sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -301,9 +301,9 @@ set RtlHierarchyInfo {[
 			{"Name" : "out_r", "Type" : "None", "Direction" : "I"},
 			{"Name" : "s", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_761_1_VITIS_LOOP_43_1", "PipelineType" : "UPC",
+			{"Name" : "VITIS_LOOP_759_1_VITIS_LOOP_43_1", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter4", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter4", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1_fu_309.flow_control_loop_pipe_sequential_init_U", "Parent" : "6"},
+	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1_fu_309.flow_control_loop_pipe_sequential_init_U", "Parent" : "6"},
 	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.control_s_axi_U", "Parent" : "0"},
 	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.control_r_s_axi_U", "Parent" : "0"},
 	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.gmem_m_axi_U", "Parent" : "0"},
@@ -324,7 +324,7 @@ set ArgLastReadFirstWriteLatency {
 	KeccakF1600_StatePermute {
 		state {Type IO LastRead 13 FirstWrite 14}
 		KeccakF_RoundConstants {Type I LastRead -1 FirstWrite -1}}
-	sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1 {
+	sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1 {
 		gmem {Type O LastRead -1 FirstWrite 4}
 		out_r {Type I LastRead 0 FirstWrite -1}
 		s {Type I LastRead 1 FirstWrite -1}}}

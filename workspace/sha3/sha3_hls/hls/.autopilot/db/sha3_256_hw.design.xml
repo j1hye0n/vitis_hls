@@ -17,8 +17,8 @@
 <ID>302</ID>
 </Instance>
 <Instance>
-<InstName>grp_sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1_fu_309</InstName>
-<ModuleName>sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1</ModuleName>
+<InstName>grp_sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1_fu_309</InstName>
+<ModuleName>sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>309</ID>
 </Instance>
@@ -65,13 +65,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../fips202.c:470~../fips202.c:759~../sha3_256.c:10</SourceLocation>
+<SourceLocation>../fips202.c:470~../fips202.c:757~../sha3_256.c:10</SourceLocation>
 <SummaryOfLoopViolations>
 <VITIS_LOOP_472_1>
 <Name>VITIS_LOOP_472_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../fips202.c:472~../fips202.c:759~../sha3_256.c:10</SourceLocation>
+<SourceLocation>../fips202.c:472~../fips202.c:757~../sha3_256.c:10</SourceLocation>
 </VITIS_LOOP_472_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -456,9 +456,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1</Name>
+<Name>sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1</Name>
 <Loops>
-<VITIS_LOOP_761_1_VITIS_LOOP_43_1></VITIS_LOOP_761_1_VITIS_LOOP_43_1>
+<VITIS_LOOP_759_1_VITIS_LOOP_43_1></VITIS_LOOP_759_1_VITIS_LOOP_43_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -477,8 +477,8 @@
 <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_761_1_VITIS_LOOP_43_1>
-<Name>VITIS_LOOP_761_1_VITIS_LOOP_43_1</Name>
+<VITIS_LOOP_759_1_VITIS_LOOP_43_1>
+<Name>VITIS_LOOP_759_1_VITIS_LOOP_43_1</Name>
 <Slack>7.30</Slack>
 <TripCount>32</TripCount>
 <Latency>35</Latency>
@@ -488,19 +488,19 @@
 <PipelineType>yes</PipelineType>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_761_1_VITIS_LOOP_43_1>
+</VITIS_LOOP_759_1_VITIS_LOOP_43_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../fips202.c:41~../fips202.c:762~../sha3_256.c:10</SourceLocation>
+<SourceLocation>../fips202.c:41~../fips202.c:760~../sha3_256.c:10</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_761_1_VITIS_LOOP_43_1>
-<Name>VITIS_LOOP_761_1_VITIS_LOOP_43_1</Name>
+<VITIS_LOOP_759_1_VITIS_LOOP_43_1>
+<Name>VITIS_LOOP_759_1_VITIS_LOOP_43_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../fips202.c:761~../sha3_256.c:10</SourceLocation>
-</VITIS_LOOP_761_1_VITIS_LOOP_43_1>
+<SourceLocation>../fips202.c:759~../sha3_256.c:10</SourceLocation>
+</VITIS_LOOP_759_1_VITIS_LOOP_43_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -526,7 +526,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1</Object>
+<Object>sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -537,7 +537,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1</Object>
+<Object>sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -548,7 +548,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1</Object>
+<Object>sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -559,7 +559,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1</Object>
+<Object>sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -570,7 +570,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1</Object>
+<Object>sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -581,7 +581,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1</Object>
+<Object>sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1145,9 +1145,9 @@
 <Module>
 <Name>sha3_256_hw</Name>
 <Loops>
-<VITIS_LOOP_479_2>
+<VITIS_LOOP_477_2>
 <absorb_loop2_VITIS_LOOP_26_1></absorb_loop2_VITIS_LOOP_26_1>
-</VITIS_LOOP_479_2>
+</VITIS_LOOP_477_2>
 <absorb_loop3></absorb_loop3>
 </Loops>
 <PerformanceEstimates>
@@ -1167,8 +1167,8 @@
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_479_2>
-<Name>VITIS_LOOP_479_2</Name>
+<VITIS_LOOP_477_2>
+<Name>VITIS_LOOP_477_2</Name>
 <Slack>7.30</Slack>
 <TripCount>
 <range>
@@ -1196,7 +1196,7 @@
 <InstanceList>
 </InstanceList>
 </absorb_loop2_VITIS_LOOP_26_1>
-</VITIS_LOOP_479_2>
+</VITIS_LOOP_477_2>
 <absorb_loop3>
 <Name>absorb_loop3</Name>
 <Slack>7.30</Slack>
@@ -1213,25 +1213,25 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../fips202.c:479~../fips202.c:759~../sha3_256.c:10</SourceLocation>
+<SourceLocation>../fips202.c:477~../fips202.c:757~../sha3_256.c:10</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_479_2>
-<Name>VITIS_LOOP_479_2</Name>
+<VITIS_LOOP_477_2>
+<Name>VITIS_LOOP_477_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../fips202.c:479~../fips202.c:759~../sha3_256.c:10</SourceLocation>
+<SourceLocation>../fips202.c:477~../fips202.c:757~../sha3_256.c:10</SourceLocation>
 <absorb_loop2_VITIS_LOOP_26_1>
 <Name>absorb_loop2_VITIS_LOOP_26_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../fips202.c:480~../fips202.c:759~../sha3_256.c:10</SourceLocation>
+<SourceLocation>../fips202.c:478~../fips202.c:757~../sha3_256.c:10</SourceLocation>
 </absorb_loop2_VITIS_LOOP_26_1>
-</VITIS_LOOP_479_2>
+</VITIS_LOOP_477_2>
 <absorb_loop3>
 <Name>absorb_loop3</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../fips202.c:490~../fips202.c:759~../sha3_256.c:10</SourceLocation>
+<SourceLocation>../fips202.c:488~../fips202.c:757~../sha3_256.c:10</SourceLocation>
 </absorb_loop3>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>

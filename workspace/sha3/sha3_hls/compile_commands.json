@@ -1,6 +1,6 @@
 [
   {
-    "directory": "/home/hyeon/workspace/sha3/sha3_hls",
+    "directory": "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls",
     "arguments": [
       "/tools/xilinx/Vitis/2024.2/vcxx/libexec/clang++",
       "--gcc-toolchain=/tools/xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
@@ -8,12 +8,12 @@
       "-hls-syn-headers-dir=/tools/xilinx/Vitis/2024.2/common/technology/autopilot",
       "-fhlstoplevel=sha3_256_hw",
       "-c",
-      "/home/hyeon/workspace/sha3/sha3_256.c"
+      "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
     ],
-    "file": "/home/hyeon/workspace/sha3/sha3_256.c"
+    "file": "/home/hyeon/vitis_hls/workspace/sha3/fips202.c"
   },
   {
-    "directory": "/home/hyeon/workspace/sha3/sha3_hls",
+    "directory": "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls",
     "arguments": [
       "/tools/xilinx/Vitis/2024.2/vcxx/libexec/clang++",
       "--gcc-toolchain=/tools/xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
@@ -21,20 +21,20 @@
       "-hls-syn-headers-dir=/tools/xilinx/Vitis/2024.2/common/technology/autopilot",
       "-fhlstoplevel=sha3_256_hw",
       "-c",
-      "/home/hyeon/workspace/sha3/fips202.c"
+      "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c"
     ],
-    "file": "/home/hyeon/workspace/sha3/fips202.c"
+    "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c"
   },
   {
-    "directory": "/home/hyeon/workspace/sha3/sha3_hls",
+    "directory": "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls",
     "arguments": [
       "/tools/xilinx/Vitis/2024.2/vcxx/libexec/clang++",
       "--gcc-toolchain=/tools/xilinx/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
       "-fhls-tb",
       "-hls-sim-headers-dir=/tools/xilinx/Vitis/2024.2/include",
       "-c",
-      "/home/hyeon/workspace/sha3/sha3_256_tb.c"
+      "/home/hyeon/vitis_hls/workspace/sha3/sha3_256_tb.c"
     ],
-    "file": "/home/hyeon/workspace/sha3/sha3_256_tb.c"
+    "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256_tb.c"
   }
 ]

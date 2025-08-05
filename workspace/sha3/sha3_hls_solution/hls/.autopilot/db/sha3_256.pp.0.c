@@ -438,7 +438,7 @@ void pqcrystals_kyber_fips202_ref_sha3_512(uint8_t h[64], const uint8_t *in, siz
 
 
 __attribute__((sdx_kernel("sha3_256_hw", 0))) void sha3_256_hw(uint8_t *out, const uint8_t *in, int inlen) {
-#line 60 "/home/hyeon/workspace/sha3/run_hls.tcl"
+#line 60 "/home/hyeon/vitis_hls/workspace/sha3/run_hls.tcl"
 #pragma HLSDIRECTIVE TOP name=sha3_256_hw
 # 4 "sha3_256.c"
 

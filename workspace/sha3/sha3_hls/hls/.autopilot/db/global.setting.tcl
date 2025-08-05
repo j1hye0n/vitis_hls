@@ -46,7 +46,7 @@ set TargetInfo xc7z020:-clg400:-1
 set SourceFiles {sc {} c {../../sha3_256.c ../../fips202.c}}
 set SourceFlags {sc {} c {{} {}}}
 set DirectiveFile {}
-set TBFiles {verilog /home/hyeon/workspace/sha3/sha3_256_tb.c bc /home/hyeon/workspace/sha3/sha3_256_tb.c vhdl /home/hyeon/workspace/sha3/sha3_256_tb.c sc /home/hyeon/workspace/sha3/sha3_256_tb.c cas /home/hyeon/workspace/sha3/sha3_256_tb.c c {}}
+set TBFiles {verilog /home/hyeon/vitis_hls/workspace/sha3/sha3_256_tb.c bc /home/hyeon/vitis_hls/workspace/sha3/sha3_256_tb.c vhdl /home/hyeon/vitis_hls/workspace/sha3/sha3_256_tb.c sc /home/hyeon/vitis_hls/workspace/sha3/sha3_256_tb.c cas /home/hyeon/vitis_hls/workspace/sha3/sha3_256_tb.c c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

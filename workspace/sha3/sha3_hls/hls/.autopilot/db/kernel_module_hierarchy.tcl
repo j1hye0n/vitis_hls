@@ -4,11 +4,11 @@ set ModuleHierarchy {[{
 	{"Name" : "grp_sha3_256_hw_Pipeline_VITIS_LOOP_472_1_fu_296","ID" : "1","Type" : "sequential",
 		"SubLoops" : [
 		{"Name" : "VITIS_LOOP_472_1","ID" : "2","Type" : "pipeline"},]},
-	{"Name" : "grp_sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1_fu_309","ID" : "3","Type" : "sequential",
+	{"Name" : "grp_sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1_fu_309","ID" : "3","Type" : "sequential",
 		"SubLoops" : [
-		{"Name" : "VITIS_LOOP_761_1_VITIS_LOOP_43_1","ID" : "4","Type" : "pipeline"},]},],
+		{"Name" : "VITIS_LOOP_759_1_VITIS_LOOP_43_1","ID" : "4","Type" : "pipeline"},]},],
 "SubLoops" : [
-	{"Name" : "VITIS_LOOP_479_2","ID" : "5","Type" : "no",
+	{"Name" : "VITIS_LOOP_477_2","ID" : "5","Type" : "no",
 	"SubInsts" : [
 	{"Name" : "grp_KeccakF1600_StatePermute_fu_302","ID" : "6","Type" : "sequential",
 			"SubLoops" : [

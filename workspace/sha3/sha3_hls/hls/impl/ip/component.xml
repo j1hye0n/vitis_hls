@@ -1273,7 +1273,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>061b4b0f</spirit:value>
+            <spirit:value>2b73bcad</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1289,7 +1289,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>2425367c</spirit:value>
+            <spirit:value>094dc1de</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1305,7 +1305,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>2ab6c077</spirit:value>
+            <spirit:value>e509121f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1321,7 +1321,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e2a006b5</spirit:value>
+            <spirit:value>2d1fd4dd</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2894,7 +2894,7 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/sha3_256_hw_sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1.v</spirit:name>
+        <spirit:name>hdl/verilog/sha3_256_hw_sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2962,7 +2962,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/sha3_256_hw_sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1.v</spirit:name>
+        <spirit:name>hdl/verilog/sha3_256_hw_sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3026,7 +3026,7 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/sha3_256_hw_sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/sha3_256_hw_sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3040,7 +3040,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/sha3_256_hw.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_8c23c3a1</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_88d18afa</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -3091,7 +3091,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/sha3_256_hw_sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/sha3_256_hw_sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3332,8 +3332,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Sha3_256_hw</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114193865</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-07-30T05:25:59Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114202566</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2025-08-05T06:26:44Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -3344,7 +3344,7 @@
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a2190c39"/>
       <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="2cb3236e"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="6adcdcc8"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="0f3148bd"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="0da04f5f"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="338d9afc"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="a5a56ba5"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="a2b52df2"/>

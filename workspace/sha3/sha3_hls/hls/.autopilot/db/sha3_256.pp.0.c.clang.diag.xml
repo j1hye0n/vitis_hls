@@ -1,6 +1,6 @@
 <dict>
   <key>main-file</key>
-  <string>/home/hyeon/workspace/sha3/sha3_hls/hls/.autopilot/db/sha3_256.pp.0.c</string>
+  <string>/home/hyeon/vitis_hls/workspace/sha3/sha3_hls/hls/.autopilot/db/sha3_256.pp.0.c</string>
   <key>diagnostics</key>
   <array>
     <dict>

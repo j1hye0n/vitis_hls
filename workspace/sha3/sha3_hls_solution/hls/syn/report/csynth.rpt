@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'sha3_256_hw'
 ================================================================
 + General Information: 
-    * Date:           Wed Jul 30 13:32:56 2025
+    * Date:           Mon Aug  4 14:27:04 2025
     * Version:        2024.2 (Build 5238294 on Nov  8 2024)
     * Project:        sha3_hls_solution
     * Solution:       hls (Vivado IP Flow Target)
@@ -22,9 +22,9 @@
     |+ sha3_256_hw                                             |     -|  0.00|           -|          -|         -|        -|         -|        no|   9 (3%)|  4 (1%)|  6655 (6%)|  21566 (40%)|    -|
     | + sha3_256_hw_Pipeline_VITIS_LOOP_472_1                  |     -|  0.68|          27|    270.000|         -|       27|         -|        no|        -|       -|    7 (~0%)|     53 (~0%)|    -|
     |  o VITIS_LOOP_472_1                                      |     -|  7.30|          25|    250.000|         1|        1|        25|       yes|        -|       -|          -|            -|    -|
-    | + sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1  |     -|  0.00|          37|    370.000|         -|       37|         -|        no|        -|       -|  101 (~0%)|    334 (~0%)|    -|
-    |  o VITIS_LOOP_761_1_VITIS_LOOP_43_1                      |     -|  7.30|          35|    350.000|         5|        1|        32|       yes|        -|       -|          -|            -|    -|
-    | o VITIS_LOOP_479_2                                       |     -|  7.30|  6442450968|  6.442e+10|       204|        -|  31580642|        no|        -|       -|          -|            -|    -|
+    | + sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1  |     -|  0.00|          37|    370.000|         -|       37|         -|        no|        -|       -|  101 (~0%)|    334 (~0%)|    -|
+    |  o VITIS_LOOP_759_1_VITIS_LOOP_43_1                      |     -|  7.30|          35|    350.000|         5|        1|        32|       yes|        -|       -|          -|            -|    -|
+    | o VITIS_LOOP_477_2                                       |     -|  7.30|  6442450968|  6.442e+10|       204|        -|  31580642|        no|        -|       -|          -|            -|    -|
     |  + KeccakF1600_StatePermute                              |     -|  0.76|          62|    620.000|         -|       62|         -|        no|  2 (~0%)|       -|  3238 (3%)|  16900 (31%)|    -|
     |   o state_permute                                        |     -|  7.30|          36|    360.000|         3|        -|        12|        no|        -|       -|          -|            -|    -|
     |  o absorb_loop2_VITIS_LOOP_26_1                          |     -|  7.30|         138|  1.380e+03|         4|        1|       136|       yes|        -|       -|          -|            -|    -|
@@ -112,9 +112,9 @@
 +--------------+-----------+----------+-------+------------------+------------------+
 | HW Interface | Direction | Length   | Width | Loop             | Loop Location    |
 +--------------+-----------+----------+-------+------------------+------------------+
-| m_axi_gmem   | read      | variable | 8     | VITIS_LOOP_479_2 | fips202.c:479:20 |
-| m_axi_gmem   | read      | variable | 8     | absorb_loop3     | fips202.c:488:16 |
-| m_axi_gmem   | write     | 32       | 8     | VITIS_LOOP_761_1 | fips202.c:761:21 |
+| m_axi_gmem   | read      | variable | 8     | VITIS_LOOP_477_2 | fips202.c:477:21 |
+| m_axi_gmem   | read      | variable | 8     | absorb_loop3     | fips202.c:486:16 |
+| m_axi_gmem   | write     | 32       | 8     | VITIS_LOOP_759_1 | fips202.c:759:21 |
 +--------------+-----------+----------+-------+------------------+------------------+
 
 * All M_AXI Variable Accesses
@@ -122,11 +122,11 @@
 | HW Interface | Variable | Access Location  | Direction | Burst Status | Length   | Loop             | Loop Location    | Resolution | Problem                                                                                              |
 +--------------+----------+------------------+-----------+--------------+----------+------------------+------------------+------------+------------------------------------------------------------------------------------------------------+
 | m_axi_gmem   | in       | fips202.c:27:20  | read      | Widen Fail   |          | VITIS_LOOP_26_1  | fips202.c:26:20  | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
-| m_axi_gmem   | in       | fips202.c:27:20  | read      | Inferred     | variable | VITIS_LOOP_479_2 | fips202.c:479:20 |            |                                                                                                      |
+| m_axi_gmem   | in       | fips202.c:27:20  | read      | Inferred     | variable | VITIS_LOOP_477_2 | fips202.c:477:21 |            |                                                                                                      |
 | m_axi_gmem   | out      | fips202.c:45:7   | write     | Widen Fail   |          | VITIS_LOOP_43_1  | fips202.c:43:20  | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
-| m_axi_gmem   | out      | fips202.c:45:7   | write     | Inferred     | 32       | VITIS_LOOP_761_1 | fips202.c:761:21 |            |                                                                                                      |
-| m_axi_gmem   | in       | fips202.c:490:22 | read      | Widen Fail   |          | absorb_loop3     | fips202.c:488:16 | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
-| m_axi_gmem   | in       | fips202.c:490:22 | read      | Inferred     | variable | absorb_loop3     | fips202.c:488:16 |            |                                                                                                      |
+| m_axi_gmem   | out      | fips202.c:45:7   | write     | Inferred     | 32       | VITIS_LOOP_759_1 | fips202.c:759:21 |            |                                                                                                      |
+| m_axi_gmem   | in       | fips202.c:488:22 | read      | Widen Fail   |          | absorb_loop3     | fips202.c:486:16 | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem   | in       | fips202.c:488:22 | read      | Inferred     | variable | absorb_loop3     | fips202.c:486:16 |            |                                                                                                      |
 +--------------+----------+------------------+-----------+--------------+----------+------------------+------------------+------------+------------------------------------------------------------------------------------------------------+
 
     * Resolution URL: docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
@@ -138,38 +138,38 @@
 | Name                                                     | DSP | Pragma | Variable       | Op     | Impl      | Latency |
 +----------------------------------------------------------+-----+--------+----------------+--------+-----------+---------+
 | + sha3_256_hw                                            | 4   |        |                |        |           |         |
-|   icmp_ln479_fu_342_p2                                   |     |        | icmp_ln479     | setgt  | auto      | 0       |
-|   grp_fu_336_p0                                          |     |        | add_ln479      | add    | fabric    | 0       |
-|   urem_32ns_9ns_32_36_seq_1_U8                           |     |        | urem_ln479     | urem   | auto_seq  | 35      |
+|   icmp_ln477_fu_342_p2                                   |     |        | icmp_ln477     | setgt  | auto      | 0       |
+|   grp_fu_336_p0                                          |     |        | add_ln477      | add    | fabric    | 0       |
+|   urem_32ns_9ns_32_36_seq_1_U8                           |     |        | urem_ln477     | urem   | auto_seq  | 35      |
 |   empty_fu_357_p3                                        |     |        | empty          | select | auto_sel  | 0       |
 |   empty_30_fu_375_p2                                     |     |        | empty_30       | setlt  | auto      | 0       |
-|   select_ln479_fu_380_p3                                 |     |        | select_ln479   | select | auto_sel  | 0       |
-|   mul_32ns_34ns_65_2_1_U7                                | 4   |        | mul_ln479_1    | mul    | auto      | 1       |
-|   add_ln479_2_fu_427_p2                                  |     |        | add_ln479_2    | add    | fabric    | 0       |
+|   select_ln477_fu_380_p3                                 |     |        | select_ln477   | select | auto_sel  | 0       |
+|   mul_32ns_34ns_65_2_1_U7                                | 4   |        | mul_ln477_1    | mul    | auto      | 1       |
+|   add_ln477_2_fu_427_p2                                  |     |        | add_ln477_2    | add    | fabric    | 0       |
 |   sub_ln467_fu_444_p2                                    |     |        | sub_ln467      | sub    | fabric    | 0       |
-|   icmp_ln479_1_fu_457_p2                                 |     |        | icmp_ln479_1   | setgt  | auto      | 0       |
-|   icmp_ln480_fu_483_p2                                   |     |        | icmp_ln480     | seteq  | auto      | 0       |
-|   add_ln480_fu_489_p2                                    |     |        | add_ln480      | add    | fabric    | 0       |
+|   icmp_ln477_1_fu_457_p2                                 |     |        | icmp_ln477_1   | setgt  | auto      | 0       |
+|   icmp_ln478_fu_483_p2                                   |     |        | icmp_ln478     | seteq  | auto      | 0       |
+|   add_ln478_fu_489_p2                                    |     |        | add_ln478      | add    | fabric    | 0       |
 |   icmp_ln26_fu_495_p2                                    |     |        | icmp_ln26      | seteq  | auto      | 0       |
-|   select_ln481_fu_501_p3                                 |     |        | select_ln481   | select | auto_sel  | 0       |
-|   select_ln481_1_fu_544_p3                               |     |        | select_ln481_1 | select | auto_sel  | 0       |
-|   add_ln480_1_fu_509_p2                                  |     |        | add_ln480_1    | add    | fabric    | 0       |
-|   select_ln480_fu_515_p3                                 |     |        | select_ln480   | select | auto_sel  | 0       |
+|   select_ln479_fu_501_p3                                 |     |        | select_ln479   | select | auto_sel  | 0       |
+|   select_ln479_1_fu_544_p3                               |     |        | select_ln479_1 | select | auto_sel  | 0       |
+|   add_ln478_1_fu_509_p2                                  |     |        | add_ln478_1    | add    | fabric    | 0       |
+|   select_ln478_fu_515_p3                                 |     |        | select_ln478   | select | auto_sel  | 0       |
 |   shl_ln27_fu_565_p2                                     |     |        | shl_ln27       | shl    | auto_pipe | 0       |
 |   r_1_fu_571_p2                                          |     |        | r_1            | or     | auto      | 0       |
 |   add_ln26_fu_532_p2                                     |     |        | add_ln26       | add    | fabric    | 0       |
 |   icmp_ln26_1_fu_538_p2                                  |     |        | icmp_ln26_1    | seteq  | auto      | 0       |
-|   xor_ln482_fu_577_p2                                    |     |        | xor_ln482      | xor    | auto      | 0       |
+|   xor_ln480_fu_577_p2                                    |     |        | xor_ln480      | xor    | auto      | 0       |
 |   j_3_fu_582_p2                                          |     |        | j_3            | add    | fabric    | 0       |
-|   add_ln488_fu_463_p2                                    |     |        | add_ln488      | add    | fabric    | 0       |
-|   urem_32ns_9ns_8_36_seq_1_U9                            |     |        | urem_ln488     | urem   | auto_seq  | 35      |
-|   icmp_ln488_fu_612_p2                                   |     |        | icmp_ln488     | setgt  | auto      | 0       |
+|   add_ln486_fu_463_p2                                    |     |        | add_ln486      | add    | fabric    | 0       |
+|   urem_32ns_9ns_8_36_seq_1_U9                            |     |        | urem_ln486     | urem   | auto_seq  | 35      |
+|   icmp_ln486_fu_612_p2                                   |     |        | icmp_ln486     | setgt  | auto      | 0       |
 |   i_6_fu_617_p2                                          |     |        | i_6            | add    | fabric    | 0       |
-|   shl_ln490_fu_677_p2                                    |     |        | shl_ln490      | shl    | auto_pipe | 0       |
-|   xor_ln490_fu_683_p2                                    |     |        | xor_ln490      | xor    | auto      | 0       |
-|   shl_ln492_fu_700_p2                                    |     |        | shl_ln492      | shl    | auto_pipe | 0       |
-|   xor_ln492_fu_710_p2                                    |     |        | xor_ln492      | xor    | auto      | 0       |
-|   xor_ln493_fu_728_p2                                    |     |        | xor_ln493      | xor    | auto      | 0       |
+|   shl_ln488_fu_677_p2                                    |     |        | shl_ln488      | shl    | auto_pipe | 0       |
+|   xor_ln488_fu_683_p2                                    |     |        | xor_ln488      | xor    | auto      | 0       |
+|   shl_ln490_fu_700_p2                                    |     |        | shl_ln490      | shl    | auto_pipe | 0       |
+|   xor_ln490_fu_710_p2                                    |     |        | xor_ln490      | xor    | auto      | 0       |
+|   xor_ln491_fu_728_p2                                    |     |        | xor_ln491      | xor    | auto      | 0       |
 |  + sha3_256_hw_Pipeline_VITIS_LOOP_472_1                 | 0   |        |                |        |           |         |
 |    icmp_ln472_fu_54_p2                                   |     |        | icmp_ln472     | seteq  | auto      | 0       |
 |    add_ln472_fu_60_p2                                    |     |        | add_ln472      | add    | fabric    | 0       |
@@ -428,13 +428,13 @@
 |    and_ln318_fu_3566_p2                                  |     |        | and_ln318      | and    | auto      | 0       |
 |    Asu_3_fu_3572_p2                                      |     |        | Asu_3          | xor    | auto      | 0       |
 |    add_ln127_fu_841_p2                                   |     |        | add_ln127      | add    | fabric    | 0       |
-|  + sha3_256_hw_Pipeline_VITIS_LOOP_761_1_VITIS_LOOP_43_1 | 0   |        |                |        |           |         |
-|    icmp_ln761_fu_125_p2                                  |     |        | icmp_ln761     | seteq  | auto      | 0       |
-|    add_ln761_fu_131_p2                                   |     |        | add_ln761      | add    | fabric    | 0       |
+|  + sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1 | 0   |        |                |        |           |         |
+|    icmp_ln759_fu_125_p2                                  |     |        | icmp_ln759     | seteq  | auto      | 0       |
+|    add_ln759_fu_131_p2                                   |     |        | add_ln759      | add    | fabric    | 0       |
 |    icmp_ln43_fu_154_p2                                   |     |        | icmp_ln43      | seteq  | auto      | 0       |
-|    select_ln756_fu_160_p3                                |     |        | select_ln756   | select | auto_sel  | 0       |
-|    add_ln761_1_fu_168_p2                                 |     |        | add_ln761_1    | add    | fabric    | 0       |
-|    select_ln761_fu_174_p3                                |     |        | select_ln761   | select | auto_sel  | 0       |
+|    select_ln754_fu_160_p3                                |     |        | select_ln754   | select | auto_sel  | 0       |
+|    add_ln759_1_fu_168_p2                                 |     |        | add_ln759_1    | add    | fabric    | 0       |
+|    select_ln759_fu_174_p3                                |     |        | select_ln759   | select | auto_sel  | 0       |
 |    first_iter_1_fu_182_p2                                |     |        | first_iter_1   | seteq  | auto      | 0       |
 |    lshr_ln45_fu_232_p2                                   |     |        | lshr_ln45      | lshr   | auto_pipe | 0       |
 |    add_ln43_fu_197_p2                                    |     |        | add_ln43       | add    | fabric    | 0       |
@@ -461,13 +461,6 @@
 ================================================================
 == Pragma Report
 ================================================================
-* Pragmas with Warnings
-+--------------+---------+-------------------------------------+-----------------------------------------------------------------+
-| Type         | Options | Location                            | Messages                                                        |
-+--------------+---------+-------------------------------------+-----------------------------------------------------------------+
-| loop_flatten |         | fips202.c:478 in keccak_absorb_once | '#pragma HLS loop_flatten' can only be applied inside loop body |
-+--------------+---------+-------------------------------------+-----------------------------------------------------------------+
-
 * Valid Pragma Syntax
 +-----------+--------------------------------------------------+-------------------------------------------+
 | Type      | Options                                          | Location                                  |
@@ -475,9 +468,8 @@
 | pipeline  |                                                  | fips202.c:44 in store64                   |
 | pipeline  | off                                              | fips202.c:128 in keccakf1600_statepermute |
 | unroll    | off=true                                         | fips202.c:129 in keccakf1600_statepermute |
-| pipeline  |                                                  | fips202.c:473 in keccak_absorb_once       |
-| pipeline  | off                                              | fips202.c:481 in keccak_absorb_once       |
-| pipeline  | off                                              | fips202.c:489 in keccak_absorb_once       |
+| pipeline  | off                                              | fips202.c:479 in keccak_absorb_once       |
+| pipeline  | off                                              | fips202.c:487 in keccak_absorb_once       |
 | interface | m_axi port=in offset=slave bundle=gmem depth=64  | sha3_256.c:5 in sha3_256_hw, in           |
 | interface | m_axi port=out offset=slave bundle=gmem depth=32 | sha3_256.c:6 in sha3_256_hw, out          |
 | interface | s_axilite port=inlen bundle=control              | sha3_256.c:7 in sha3_256_hw, inlen        |

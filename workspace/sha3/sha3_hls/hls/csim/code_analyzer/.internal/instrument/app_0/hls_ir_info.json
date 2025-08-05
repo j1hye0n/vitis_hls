@@ -9,7 +9,7 @@
             "is_declaration": false,
             "supports_dataflow": true,
             "src_loc": {
-                "file": "/home/hyeon/workspace/sha3/sha3_256.c",
+                "file": "/home/hyeon/vitis_hls/workspace/sha3/sha3_256.c",
                 "line": 4,
                 "column": 1
             }
@@ -22,8 +22,8 @@
             "is_declaration": false,
             "supports_dataflow": true,
             "src_loc": {
-                "file": "/home/hyeon/workspace/sha3/fips202.c",
-                "line": 754,
+                "file": "/home/hyeon/vitis_hls/workspace/sha3/fips202.c",
+                "line": 752,
                 "column": 1
             }
         },
@@ -35,7 +35,7 @@
             "is_declaration": false,
             "supports_dataflow": true,
             "src_loc": {
-                "file": "/home/hyeon/workspace/sha3/fips202.c",
+                "file": "/home/hyeon/vitis_hls/workspace/sha3/fips202.c",
                 "line": 464,
                 "column": 1
             }
@@ -48,7 +48,7 @@
             "is_declaration": false,
             "supports_dataflow": true,
             "src_loc": {
-                "file": "/home/hyeon/workspace/sha3/fips202.c",
+                "file": "/home/hyeon/vitis_hls/workspace/sha3/fips202.c",
                 "line": 83,
                 "column": 1
             }
@@ -61,7 +61,7 @@
             "is_declaration": false,
             "supports_dataflow": true,
             "src_loc": {
-                "file": "/home/hyeon/workspace/sha3/fips202.c",
+                "file": "/home/hyeon/vitis_hls/workspace/sha3/fips202.c",
                 "line": 40,
                 "column": 1
             }
@@ -74,7 +74,7 @@
             "is_declaration": false,
             "supports_dataflow": true,
             "src_loc": {
-                "file": "/home/hyeon/workspace/sha3/fips202.c",
+                "file": "/home/hyeon/vitis_hls/workspace/sha3/fips202.c",
                 "line": 22,
                 "column": 1
             }

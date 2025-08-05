@@ -109,7 +109,7 @@ for.inc.i.i:2 %add_ln472 = add i5 %i_2, i5 1
 
 <Node id="9" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-for.inc.i.i:3 %br_ln472 = br i1 %icmp_ln472, void %for.inc.i.i.split, void %VITIS_LOOP_479_2.i.i.exitStub
+for.inc.i.i:3 %br_ln472 = br i1 %icmp_ln472, void %for.inc.i.i.split, void %VITIS_LOOP_477_2.i.i.exitStub
 
 ]]></Node>
 <StgValue><ssdm name="br_ln472"/></StgValue>
@@ -141,10 +141,10 @@ for.inc.i.i.split:0 %zext_ln472 = zext i5 %i_2
 
 <Node id="12" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.i.i.split:1 %specpipeline_ln473 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_12
+for.inc.i.i.split:1 %specpipeline_ln470 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_12
 
 ]]></Node>
-<StgValue><ssdm name="specpipeline_ln473"/></StgValue>
+<StgValue><ssdm name="specpipeline_ln470"/></StgValue>
 </operation>
 
 <operation id="13" st_id="1" stage="1" lat="1">
@@ -205,10 +205,10 @@ for.inc.i.i.split:4 %s_addr = getelementptr i64 %s, i64 0, i64 %zext_ln472
 
 <Node id="16" bw="0" op_0_bw="64" op_1_bw="5">
 <![CDATA[
-for.inc.i.i.split:5 %store_ln474 = store i64 0, i5 %s_addr
+for.inc.i.i.split:5 %store_ln473 = store i64 0, i5 %s_addr
 
 ]]></Node>
-<StgValue><ssdm name="store_ln474"/></StgValue>
+<StgValue><ssdm name="store_ln473"/></StgValue>
 </operation>
 
 <operation id="17" st_id="1" stage="1" lat="1">
@@ -253,7 +253,7 @@ for.inc.i.i.split:7 %br_ln472 = br void %for.inc.i.i
 
 <Node id="20" bw="0">
 <![CDATA[
-VITIS_LOOP_479_2.i.i.exitStub:0 %ret_ln0 = ret
+VITIS_LOOP_477_2.i.i.exitStub:0 %ret_ln0 = ret
 
 ]]></Node>
 <StgValue><ssdm name="ret_ln0"/></StgValue>

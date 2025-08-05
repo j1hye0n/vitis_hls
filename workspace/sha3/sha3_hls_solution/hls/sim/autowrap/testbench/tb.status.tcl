@@ -1,1 +1,1 @@
-set ::AESL_AUTOSIM::gTopFileName /home/hyeon/workspace/sha3/sha3_hls_solution/hls/./sim/autowrap/testbench/sha3_256.c_pre.c.tb.c
+set ::AESL_AUTOSIM::gTopFileName /home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/./sim/autowrap/testbench/sha3_256.c_pre.c.tb.c

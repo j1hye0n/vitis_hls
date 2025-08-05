@@ -37,7 +37,7 @@
 | Function                           | Location      | Compile/Link | Unroll/Inline   | Array/Struct    | Performance     | HW Transforms   |
 +------------------------------------+---------------+--------------+-----------------+-----------------+-----------------+-----------------+
 | + sha3_256_hw                      | sha3_256.c:4  | 1,288        | 1,188           | 1,258           | 1,202           | 1,224           |
-|  + pqcrystals_kyber_fips202_ref... | fips202.c:754 | 1,281        |                 |                 |                 |                 |
+|  + pqcrystals_kyber_fips202_ref... | fips202.c:752 | 1,281        |                 |                 |                 |                 |
 |   + keccak_absorb_once             | fips202.c:464 |  673         |                 |                 |                 |                 |
 |      load64                        | fips202.c:22  |   18         |                 |                 |                 |                 |
 |      KeccakF1600_StatePermute      | fips202.c:83  |  567         |                 |                 |                 |                 |
