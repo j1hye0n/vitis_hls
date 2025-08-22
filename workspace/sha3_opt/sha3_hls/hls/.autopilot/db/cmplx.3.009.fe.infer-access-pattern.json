@@ -1,0 +1,45 @@
+{
+  "0": {
+    "basicblocks": 5,
+    "calls": "1 2",
+    "file": "sha3_256.c",
+    "fileloc": 4,
+    "instructions": 37,
+    "loads": {
+      "L": 1
+    },
+    "name": "sha3_256_hw",
+    "total_instructions": 1302
+  },
+  "1": {
+    "basicblocks": 15,
+    "calls": "2",
+    "file": "fips202.c",
+    "fileloc": 468,
+    "instructions": 141,
+    "loads": {
+      "L": 5
+    },
+    "name": "keccak_absorb_once",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 703
+  },
+  "2": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "fips202.c",
+    "fileloc": 84,
+    "instructions": 562,
+    "loads": {
+      "G": 2,
+      "L": 25
+    },
+    "name": "KeccakF1600_StatePermute",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 562
+  }
+}

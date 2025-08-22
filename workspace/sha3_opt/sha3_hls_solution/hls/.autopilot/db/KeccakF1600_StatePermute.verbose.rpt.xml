@@ -1,0 +1,150 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'KeccakF1600_StatePermute'" level="0">
+<item name = "Date">Wed Aug  6 15:28:51 2025
+</item>
+<item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
+<item name = "Project">sha3_hls_solution</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.214 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">42, 42, 0.420 us, 0.420 us, 42, 42, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_KeccakF1600_StatePermute_Pipeline_state_permute_fu_390">KeccakF1600_StatePermute_Pipeline_state_permute, 15, 15, 0.150 us, 0.150 us, 13, 13, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, -, -, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">2, -, 3275, 16642, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 494, -</column>
+<column name="Register">-, -, 1629, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, 0, 4, 32, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_KeccakF1600_StatePermute_Pipeline_state_permute_fu_390">KeccakF1600_StatePermute_Pipeline_state_permute, 2, 0, 3275, 16642, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">130, 29, 1, 29</column>
+<column name="state_address0_local">117, 26, 5, 130</column>
+<column name="state_address1_local">117, 26, 5, 130</column>
+<column name="state_d0_local">65, 13, 64, 832</column>
+<column name="state_d1_local">65, 14, 64, 896</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="Aba_reg_703">64, 0, 64, 0</column>
+<column name="Abe_reg_718">64, 0, 64, 0</column>
+<column name="Abi_reg_723">64, 0, 64, 0</column>
+<column name="Abo_reg_740">64, 0, 64, 0</column>
+<column name="Abu_reg_745">64, 0, 64, 0</column>
+<column name="Aga_reg_762">64, 0, 64, 0</column>
+<column name="Age_reg_767">64, 0, 64, 0</column>
+<column name="Agi_reg_784">64, 0, 64, 0</column>
+<column name="Ago_reg_789">64, 0, 64, 0</column>
+<column name="Agu_reg_806">64, 0, 64, 0</column>
+<column name="Aka_reg_811">64, 0, 64, 0</column>
+<column name="Ake_reg_828">64, 0, 64, 0</column>
+<column name="Aki_reg_833">64, 0, 64, 0</column>
+<column name="Ako_reg_850">64, 0, 64, 0</column>
+<column name="Aku_reg_855">64, 0, 64, 0</column>
+<column name="Ama_reg_872">64, 0, 64, 0</column>
+<column name="Ame_reg_877">64, 0, 64, 0</column>
+<column name="Ami_reg_894">64, 0, 64, 0</column>
+<column name="Amo_reg_899">64, 0, 64, 0</column>
+<column name="Amu_reg_916">64, 0, 64, 0</column>
+<column name="Asa_reg_921">64, 0, 64, 0</column>
+<column name="Ase_reg_938">64, 0, 64, 0</column>
+<column name="Asi_reg_943">64, 0, 64, 0</column>
+<column name="Aso_reg_959">64, 0, 64, 0</column>
+<column name="Asu_reg_964">64, 0, 64, 0</column>
+<column name="ap_CS_fsm">28, 0, 28, 0</column>
+<column name="grp_KeccakF1600_StatePermute_Pipeline_state_permute_fu_390_ap_start_reg">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, KeccakF1600_StatePermute, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, KeccakF1600_StatePermute, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, KeccakF1600_StatePermute, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, KeccakF1600_StatePermute, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, KeccakF1600_StatePermute, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, KeccakF1600_StatePermute, return value</column>
+<column name="state_address0">out, 5, ap_memory, state, array</column>
+<column name="state_ce0">out, 1, ap_memory, state, array</column>
+<column name="state_we0">out, 1, ap_memory, state, array</column>
+<column name="state_d0">out, 64, ap_memory, state, array</column>
+<column name="state_q0">in, 64, ap_memory, state, array</column>
+<column name="state_address1">out, 5, ap_memory, state, array</column>
+<column name="state_ce1">out, 1, ap_memory, state, array</column>
+<column name="state_we1">out, 1, ap_memory, state, array</column>
+<column name="state_d1">out, 64, ap_memory, state, array</column>
+<column name="state_q1">in, 64, ap_memory, state, array</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,66 +1,66 @@
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: fips202.c, Line: 480, Column: 10 }
+DebugLoc:        { File: fips202.c, Line: 484, Column: 10 }
 Function:        keccak_absorb_once
 Args:            
   - Callee:          load64
     DebugLoc:        { File: fips202.c, Line: 22, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_absorb_once
-    DebugLoc:        { File: fips202.c, Line: 469, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 473, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: fips202.c, Line: 483, Column: 5 }
+DebugLoc:        { File: fips202.c, Line: 487, Column: 5 }
 Function:        keccak_absorb_once
 Args:            
   - Callee:          KeccakF1600_StatePermute
-    DebugLoc:        { File: fips202.c, Line: 84, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 86, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_absorb_once
-    DebugLoc:        { File: fips202.c, Line: 469, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 473, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: fips202.c, Line: 757, Column: 3 }
+DebugLoc:        { File: fips202.c, Line: 762, Column: 3 }
 Function:        pqcrystals_kyber_fips202_ref_sha3_256
 Args:            
   - Callee:          keccak_absorb_once
-    DebugLoc:        { File: fips202.c, Line: 469, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 473, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          pqcrystals_kyber_fips202_ref_sha3_256
-    DebugLoc:        { File: fips202.c, Line: 753, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: fips202.c, Line: 758, Column: 3 }
+DebugLoc:        { File: fips202.c, Line: 763, Column: 3 }
 Function:        pqcrystals_kyber_fips202_ref_sha3_256
 Args:            
   - Callee:          KeccakF1600_StatePermute
-    DebugLoc:        { File: fips202.c, Line: 84, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 86, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          pqcrystals_kyber_fips202_ref_sha3_256
-    DebugLoc:        { File: fips202.c, Line: 753, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: fips202.c, Line: 760, Column: 5 }
+DebugLoc:        { File: fips202.c, Line: 766, Column: 2 }
 Function:        pqcrystals_kyber_fips202_ref_sha3_256
 Args:            
   - Callee:          store64
-    DebugLoc:        { File: fips202.c, Line: 40, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 41, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          pqcrystals_kyber_fips202_ref_sha3_256
-    DebugLoc:        { File: fips202.c, Line: 753, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -70,75 +70,117 @@ DebugLoc:        { File: sha3_256.c, Line: 10, Column: 2 }
 Function:        sha3_256_hw
 Args:            
   - Callee:          pqcrystals_kyber_fips202_ref_sha3_256
-    DebugLoc:        { File: fips202.c, Line: 753, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          sha3_256_hw
     DebugLoc:        { File: sha3_256.c, Line: 4, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fips202.c, Line: 22, Column: 0 }
+Function:        load64
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_26_1
+  - String:          ''' ('
+  - LoopLoc:         'fips202.c:26:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          load64
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-function-instantiate
+Name:            FunctionInstantiate
+DebugLoc:        { File: fips202.c, Line: 487, Column: 5 }
+Function:        keccak_absorb_once
+Args:            
+  - String:          'Instantiating function '''
+  - Name:            KeccakF1600_StatePermute
+  - String:          ''' to '''
+  - Name:            KeccakF1600_StatePermute
+  - String:          ''' by setting '
+  - String:          '''state'' to ''s'''
+...
+--- !Passed
+Pass:            reflow-function-instantiate
+Name:            FunctionInstantiate
+DebugLoc:        { File: fips202.c, Line: 763, Column: 3 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256
+Args:            
+  - String:          'Instantiating function '''
+  - Name:            KeccakF1600_StatePermute
+  - String:          ''' to '''
+  - Name:            KeccakF1600_StatePermute.1
+  - String:          ''' by setting '
+  - String:          '''state'' to ''arraydecay'''
+...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: fips202.c, Line: 480, Column: 10 }
+DebugLoc:        { File: fips202.c, Line: 484, Column: 10 }
 Function:        keccak_absorb_once
 Args:            
   - Callee:          load64
     DebugLoc:        { File: fips202.c, Line: 22, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_absorb_once
-    DebugLoc:        { File: fips202.c, Line: 469, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 473, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: fips202.c, Line: 483, Column: 5 }
+DebugLoc:        { File: fips202.c, Line: 487, Column: 5 }
 Function:        keccak_absorb_once
 Args:            
   - Callee:          KeccakF1600_StatePermute
-    DebugLoc:        { File: fips202.c, Line: 84, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 86, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          keccak_absorb_once
-    DebugLoc:        { File: fips202.c, Line: 469, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 473, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: fips202.c, Line: 757, Column: 3 }
+DebugLoc:        { File: fips202.c, Line: 762, Column: 3 }
 Function:        pqcrystals_kyber_fips202_ref_sha3_256
 Args:            
   - Callee:          keccak_absorb_once
-    DebugLoc:        { File: fips202.c, Line: 469, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 473, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          pqcrystals_kyber_fips202_ref_sha3_256
-    DebugLoc:        { File: fips202.c, Line: 753, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: fips202.c, Line: 758, Column: 3 }
+DebugLoc:        { File: fips202.c, Line: 763, Column: 3 }
 Function:        pqcrystals_kyber_fips202_ref_sha3_256
 Args:            
-  - Callee:          KeccakF1600_StatePermute
-    DebugLoc:        { File: fips202.c, Line: 84, Column: 0 }
+  - Callee:          KeccakF1600_StatePermute.1
+    DebugLoc:        { File: fips202.c, Line: 86, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          pqcrystals_kyber_fips202_ref_sha3_256
-    DebugLoc:        { File: fips202.c, Line: 753, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: fips202.c, Line: 760, Column: 5 }
+DebugLoc:        { File: fips202.c, Line: 766, Column: 2 }
 Function:        pqcrystals_kyber_fips202_ref_sha3_256
 Args:            
   - Callee:          store64
-    DebugLoc:        { File: fips202.c, Line: 40, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 41, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          pqcrystals_kyber_fips202_ref_sha3_256
-    DebugLoc:        { File: fips202.c, Line: 753, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -148,7 +190,7 @@ DebugLoc:        { File: sha3_256.c, Line: 10, Column: 2 }
 Function:        sha3_256_hw
 Args:            
   - Callee:          pqcrystals_kyber_fips202_ref_sha3_256
-    DebugLoc:        { File: fips202.c, Line: 753, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          sha3_256_hw
     DebugLoc:        { File: sha3_256.c, Line: 4, Column: 0 }
@@ -168,7 +210,7 @@ Args:
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: fips202.c, Line: 469, Column: 0 }
+DebugLoc:        { File: fips202.c, Line: 473, Column: 0 }
 Function:        keccak_absorb_once
 Args:            
   - String:          'Inlining function '''
@@ -176,104 +218,47 @@ Args:
     DebugLoc:        { File: fips202.c, Line: 22, Column: 0 }
   - String:          ''' into '''
   - Caller:          keccak_absorb_once
-    DebugLoc:        { File: fips202.c, Line: 469, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 473, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: fips202.c, Line: 753, Column: 0 }
+DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
 Function:        pqcrystals_kyber_fips202_ref_sha3_256
 Args:            
   - String:          'Inlining function '''
   - Callee:          keccak_absorb_once
-    DebugLoc:        { File: fips202.c, Line: 469, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 473, Column: 0 }
   - String:          ''' into '''
   - Caller:          pqcrystals_kyber_fips202_ref_sha3_256
-    DebugLoc:        { File: fips202.c, Line: 753, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: fips202.c, Line: 753, Column: 0 }
+DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
 Function:        pqcrystals_kyber_fips202_ref_sha3_256
 Args:            
   - String:          'Inlining function '''
   - Callee:          store64
-    DebugLoc:        { File: fips202.c, Line: 40, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 41, Column: 0 }
   - String:          ''' into '''
   - Caller:          pqcrystals_kyber_fips202_ref_sha3_256
-    DebugLoc:        { File: fips202.c, Line: 753, Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            reflow-inliner
-Name:            Inline
-DebugLoc:        { File: sha3_256.c, Line: 4, Column: 0 }
-Function:        sha3_256_hw
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          pqcrystals_kyber_fips202_ref_sha3_256
-    DebugLoc:        { File: fips202.c, Line: 753, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          sha3_256_hw
-    DebugLoc:        { File: sha3_256.c, Line: 4, Column: 0 }
-  - String:          ''''
-...
---- !Failure
-Pass:            reflow-syncheck
-Name:            WarningOutOfBoundArrayAccess
-DebugLoc:        { File: fips202.c, Line: 27, Column: 20 }
-Function:        sha3_256_hw
-Args:            
-  - String:          The program may have out of bound array access
-  - String:          ' on variable '''
-  - String:          in
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: fips202.c, Line: 477, Column: 21 }
-Function:        sha3_256_hw
+DebugLoc:        { File: fips202.c, Line: 28, Column: 17 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256
 Args:            
   - String:          'Sequential '
   - Direction:       read
-  - String:          ' of '
-  - Length:          variable
-  - String:          ' length'
-  - String:          ' has been inferred'
-  - String:          ' _XLX_SEP_ '
-  - AccessID:        in6seq
-  - ArrayName:       in
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        VITIS_LOOP_477_2
-  - String:          ' '
-  - LoopLoc:         'fips202.c:477:21'
-  - String:          ' '
-  - Function:        sha3_256_hw
-    DebugLoc:        { File: sha3_256.c, Line: 4, Column: 0 }
-  - String:          ' '
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      load
-    DebugLoc:        { File: fips202.c, Line: 27, Column: 20 }
-  - OrigDirection:   read
-  - OrigID:          for.inc.i.i.i.load.9
-...
---- !Passed
-Pass:            reflow-burst-inference
-Name:            BurstInferred
-DebugLoc:        { File: fips202.c, Line: 486, Column: 16 }
-Function:        sha3_256_hw
-Args:            
-  - String:          'Sequential '
-  - Direction:       read
-  - String:          ' of '
-  - Length:          variable
-  - String:          ' length'
+  - String:          ' of length '
+  - Length:          '8'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
   - AccessID:        scevgepseq
@@ -281,24 +266,83 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        absorb_loop3
+  - LoopName:        VITIS_LOOP_480_2
   - String:          ' '
-  - LoopLoc:         'fips202.c:486:16'
+  - LoopLoc:         'fips202.c:480:22'
   - String:          ' '
-  - Function:        sha3_256_hw
-    DebugLoc:        { File: sha3_256.c, Line: 4, Column: 0 }
+  - Function:        pqcrystals_kyber_fips202_ref_sha3_256
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
-    DebugLoc:        { File: fips202.c, Line: 488, Column: 22 }
+    DebugLoc:        { File: fips202.c, Line: 28, Column: 17 }
   - OrigDirection:   read
-  - OrigID:          for.inc30.i.i.load.7
+  - OrigID:          while.body.i.load.18
+  - OrigAccess:      load
+    DebugLoc:        { File: fips202.c, Line: 28, Column: 17 }
+  - OrigDirection:   read
+  - OrigID:          while.body.i.load.24
+  - OrigAccess:      load
+    DebugLoc:        { File: fips202.c, Line: 28, Column: 17 }
+  - OrigDirection:   read
+  - OrigID:          while.body.i.load.32
+  - OrigAccess:      load
+    DebugLoc:        { File: fips202.c, Line: 28, Column: 17 }
+  - OrigDirection:   read
+  - OrigID:          while.body.i.load.40
+  - OrigAccess:      load
+    DebugLoc:        { File: fips202.c, Line: 28, Column: 17 }
+  - OrigDirection:   read
+  - OrigID:          while.body.i.load.48
+  - OrigAccess:      load
+    DebugLoc:        { File: fips202.c, Line: 28, Column: 17 }
+  - OrigDirection:   read
+  - OrigID:          while.body.i.load.56
+  - OrigAccess:      load
+    DebugLoc:        { File: fips202.c, Line: 28, Column: 17 }
+  - OrigDirection:   read
+  - OrigID:          while.body.i.load.64
+  - OrigAccess:      load
+    DebugLoc:        { File: fips202.c, Line: 28, Column: 17 }
+  - OrigDirection:   read
+  - OrigID:          while.body.i.load.72
 ...
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: fips202.c, Line: 759, Column: 21 }
-Function:        sha3_256_hw
+DebugLoc:        { File: fips202.c, Line: 490, Column: 16 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep20seq
+  - ArrayName:       in
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        absorb_loop3
+  - String:          ' '
+  - LoopLoc:         'fips202.c:490:16'
+  - String:          ' '
+  - Function:        pqcrystals_kyber_fips202_ref_sha3_256
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: fips202.c, Line: 493, Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          for.inc18.i.load.7
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: fips202.c, Line: 764, Column: 21 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256
 Args:            
   - String:          'Sequential '
   - Direction:       write
@@ -306,83 +350,53 @@ Args:
   - Length:          '32'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        out7seq
-  - ArrayName:       out
+  - AccessID:        h21seq
+  - ArrayName:       h
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_759_1
+  - LoopName:        VITIS_LOOP_764_1
   - String:          ' '
-  - LoopLoc:         'fips202.c:759:21'
+  - LoopLoc:         'fips202.c:764:21'
   - String:          ' '
-  - Function:        sha3_256_hw
-    DebugLoc:        { File: sha3_256.c, Line: 4, Column: 0 }
+  - Function:        pqcrystals_kyber_fips202_ref_sha3_256
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      store
-    DebugLoc:        { File: fips202.c, Line: 45, Column: 7 }
+    DebugLoc:        { File: fips202.c, Line: 47, Column: 7 }
   - OrigDirection:   write
-  - OrigID:          for.inc.i8.i.store.9
+  - OrigID:          for.inc.i7.store.9
 ...
 --- !Missed
-Pass:            reflow-burst-widen
-Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: fips202.c, Line: 759, Column: 21 }
-Function:        sha3_256_hw
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: fips202.c, Line: 28, Column: 17 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256
 Args:            
-  - String:          'Could not widen since type '
-  - Type:            i8
-  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
-  - Threshold:       '0'
+  - String:          Stride is incompatible
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: fips202.c, Line: 759, Column: 21 }
-  - OrigDirection:   write
-  - OrigID:          out7seq
-  - ArrayName:       out
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        VITIS_LOOP_43_1
-  - String:          ' '
-  - LoopLoc:         'fips202.c:43:20'
-  - String:          ' '
-  - Function:        sha3_256_hw
-    DebugLoc:        { File: sha3_256.c, Line: 4, Column: 0 }
-  - String:          ' '
-...
---- !Missed
-Pass:            reflow-burst-widen
-Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: fips202.c, Line: 486, Column: 16 }
-Function:        sha3_256_hw
-Args:            
-  - String:          'Could not widen since type '
-  - Type:            i8
-  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
-  - Threshold:       '0'
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: fips202.c, Line: 486, Column: 16 }
+    DebugLoc:        { File: fips202.c, Line: 28, Column: 17 }
   - OrigDirection:   read
   - OrigID:          scevgepseq
   - ArrayName:       in
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        absorb_loop3
+  - LoopName:        VITIS_LOOP_480_2
   - String:          ' '
-  - LoopLoc:         'fips202.c:486:16'
+  - LoopLoc:         'fips202.c:480:22'
   - String:          ' '
-  - Function:        sha3_256_hw
-    DebugLoc:        { File: sha3_256.c, Line: 4, Column: 0 }
+  - Function:        pqcrystals_kyber_fips202_ref_sha3_256
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: fips202.c, Line: 477, Column: 21 }
-Function:        sha3_256_hw
+DebugLoc:        { File: fips202.c, Line: 764, Column: 21 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256
 Args:            
   - String:          'Could not widen since type '
   - Type:            i8
@@ -390,19 +404,69 @@ Args:
   - Threshold:       '0'
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: fips202.c, Line: 477, Column: 21 }
+    DebugLoc:        { File: fips202.c, Line: 764, Column: 21 }
+  - OrigDirection:   write
+  - OrigID:          h21seq
+  - ArrayName:       h
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_44_1
+  - String:          ' '
+  - LoopLoc:         'fips202.c:44:20'
+  - String:          ' '
+  - Function:        pqcrystals_kyber_fips202_ref_sha3_256
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: fips202.c, Line: 490, Column: 16 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: fips202.c, Line: 490, Column: 16 }
   - OrigDirection:   read
-  - OrigID:          in6seq
+  - OrigID:          scevgep20seq
   - ArrayName:       in
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_26_1
+  - LoopName:        absorb_loop3
   - String:          ' '
-  - LoopLoc:         'fips202.c:26:20'
+  - LoopLoc:         'fips202.c:490:16'
   - String:          ' '
-  - Function:        sha3_256_hw
-    DebugLoc:        { File: sha3_256.c, Line: 4, Column: 0 }
+  - Function:        pqcrystals_kyber_fips202_ref_sha3_256
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: fips202.c, Line: 28, Column: 17 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: fips202.c, Line: 28, Column: 17 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       in
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        pqcrystals_kyber_fips202_ref_sha3_256
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -410,32 +474,22 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_472_1
+  - LoopName:        VITIS_LOOP_476_1
   - String:          '> at '
-  - LoopLoc:         'fips202.c:472:21'
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_26_1
-  - String:          '> at '
-  - LoopLoc:         'fips202.c:26:20'
+  - LoopLoc:         'fips202.c:476:21'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: fips202.c, Line: 477, Column: 21 }
-Function:        sha3_256_hw
+DebugLoc:        { File: fips202.c, Line: 28, Column: 17 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
-  - String:          ' of '
-  - Length:          variable
-  - String:          ' length and bit width '
+  - String:          ' of length '
+  - Length:          '8'
+  - String:          ' and bit width '
   - Width:           '8'
   - String:          ' has been inferred.'
   - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
@@ -445,31 +499,22 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_477_2
-  - String:          ' '
-  - LoopLoc:         'fips202.c:477:21'
-  - String:          ' '
-  - Function:        sha3_256_hw
-    DebugLoc:        { File: sha3_256.c, Line: 4, Column: 0 }
+  - Function:        pqcrystals_kyber_fips202_ref_sha3_256.1
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: fips202.c, Line: 477, Column: 21 }
-Function:        sha3_256_hw
+DebugLoc:        { File: fips202.c, Line: 28, Column: 17 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
-  - String:          ' of '
-  - Length:          variable
-  - String:          ' length and bit width '
+  - String:          ' of length '
+  - Length:          '8'
+  - String:          ' and bit width '
   - Width:           '8'
-  - String:          ' in loop '''
-  - LoopName:        VITIS_LOOP_477_2
-  - String:          '''('
-  - LoopLoc:         'fips202.c:477:21'
-  - String:          ')'
   - String:          ' has been inferred on bundle '''
   - BundleName:      gmem
   - String:          '''.'
@@ -478,8 +523,8 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: fips202.c, Line: 486, Column: 16 }
-Function:        sha3_256_hw
+DebugLoc:        { File: fips202.c, Line: 490, Column: 16 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
@@ -497,17 +542,17 @@ Args:
   - String:          ' '
   - LoopName:        absorb_loop3
   - String:          ' '
-  - LoopLoc:         'fips202.c:486:16'
+  - LoopLoc:         'fips202.c:490:16'
   - String:          ' '
-  - Function:        sha3_256_hw
-    DebugLoc:        { File: sha3_256.c, Line: 4, Column: 0 }
+  - Function:        pqcrystals_kyber_fips202_ref_sha3_256.1
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: fips202.c, Line: 486, Column: 16 }
-Function:        sha3_256_hw
+DebugLoc:        { File: fips202.c, Line: 490, Column: 16 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
@@ -518,7 +563,7 @@ Args:
   - String:          ' in loop '''
   - LoopName:        absorb_loop3
   - String:          '''('
-  - LoopLoc:         'fips202.c:486:16'
+  - LoopLoc:         'fips202.c:490:16'
   - String:          ')'
   - String:          ' has been inferred on bundle '''
   - BundleName:      gmem
@@ -528,8 +573,8 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: fips202.c, Line: 759, Column: 21 }
-Function:        sha3_256_hw
+DebugLoc:        { File: fips202.c, Line: 764, Column: 21 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       writes
@@ -545,19 +590,19 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_759_1
+  - LoopName:        VITIS_LOOP_764_1
   - String:          ' '
-  - LoopLoc:         'fips202.c:759:21'
+  - LoopLoc:         'fips202.c:764:21'
   - String:          ' '
-  - Function:        sha3_256_hw
-    DebugLoc:        { File: sha3_256.c, Line: 4, Column: 0 }
+  - Function:        pqcrystals_kyber_fips202_ref_sha3_256.1
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: fips202.c, Line: 759, Column: 21 }
-Function:        sha3_256_hw
+DebugLoc:        { File: fips202.c, Line: 764, Column: 21 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       writes
@@ -566,9 +611,9 @@ Args:
   - String:          ' and bit width '
   - Width:           '8'
   - String:          ' in loop '''
-  - LoopName:        VITIS_LOOP_759_1
+  - LoopName:        VITIS_LOOP_764_1
   - String:          '''('
-  - LoopLoc:         'fips202.c:759:21'
+  - LoopLoc:         'fips202.c:764:21'
   - String:          ')'
   - String:          ' has been inferred on bundle '''
   - BundleName:      gmem
@@ -578,11 +623,37 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: fips202.c, Line: 483, Column: 5 }
-Function:        sha3_256_hw
+DebugLoc:        { File: fips202.c, Line: 487, Column: 5 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256.1
 Args:            
   - Callee:          KeccakF1600_StatePermute
-    DebugLoc:        { File: fips202.c, Line: 84, Column: 0 }
+    DebugLoc:        { File: fips202.c, Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          pqcrystals_kyber_fips202_ref_sha3_256.1
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: fips202.c, Line: 763, Column: 3 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256.1
+Args:            
+  - Callee:          KeccakF1600_StatePermute.1
+    DebugLoc:        { File: fips202.c, Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          pqcrystals_kyber_fips202_ref_sha3_256.1
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: sha3_256.c, Line: 10, Column: 2 }
+Function:        sha3_256_hw
+Args:            
+  - Callee:          pqcrystals_kyber_fips202_ref_sha3_256.1
+    DebugLoc:        { File: fips202.c, Line: 758, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          sha3_256_hw
     DebugLoc:        { File: sha3_256.c, Line: 4, Column: 0 }

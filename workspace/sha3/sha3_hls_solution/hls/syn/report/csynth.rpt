@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'sha3_256_hw'
 ================================================================
 + General Information: 
-    * Date:           Mon Aug  4 14:27:04 2025
+    * Date:           Wed Aug  6 16:42:27 2025
     * Version:        2024.2 (Build 5238294 on Nov  8 2024)
     * Project:        sha3_hls_solution
     * Solution:       hls (Vivado IP Flow Target)
@@ -15,21 +15,24 @@
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +----------------------------------------------------------+------+------+------------+-----------+----------+---------+----------+----------+---------+--------+-----------+-------------+-----+
-    |                          Modules                         | Issue|      |  Latency   |  Latency  | Iteration|         |   Trip   |          |         |        |           |             |     |
-    |                          & Loops                         | Type | Slack|  (cycles)  |    (ns)   |  Latency | Interval|   Count  | Pipelined|  BRAM   |   DSP  |     FF    |     LUT     | URAM|
-    +----------------------------------------------------------+------+------+------------+-----------+----------+---------+----------+----------+---------+--------+-----------+-------------+-----+
-    |+ sha3_256_hw                                             |     -|  0.00|           -|          -|         -|        -|         -|        no|   9 (3%)|  4 (1%)|  6655 (6%)|  21566 (40%)|    -|
-    | + sha3_256_hw_Pipeline_VITIS_LOOP_472_1                  |     -|  0.68|          27|    270.000|         -|       27|         -|        no|        -|       -|    7 (~0%)|     53 (~0%)|    -|
-    |  o VITIS_LOOP_472_1                                      |     -|  7.30|          25|    250.000|         1|        1|        25|       yes|        -|       -|          -|            -|    -|
-    | + sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1  |     -|  0.00|          37|    370.000|         -|       37|         -|        no|        -|       -|  101 (~0%)|    334 (~0%)|    -|
-    |  o VITIS_LOOP_759_1_VITIS_LOOP_43_1                      |     -|  7.30|          35|    350.000|         5|        1|        32|       yes|        -|       -|          -|            -|    -|
-    | o VITIS_LOOP_477_2                                       |     -|  7.30|  6442450968|  6.442e+10|       204|        -|  31580642|        no|        -|       -|          -|            -|    -|
-    |  + KeccakF1600_StatePermute                              |     -|  0.76|          62|    620.000|         -|       62|         -|        no|  2 (~0%)|       -|  3238 (3%)|  16900 (31%)|    -|
-    |   o state_permute                                        |     -|  7.30|          36|    360.000|         3|        -|        12|        no|        -|       -|          -|            -|    -|
-    |  o absorb_loop2_VITIS_LOOP_26_1                          |     -|  7.30|         138|  1.380e+03|         4|        1|       136|       yes|        -|       -|          -|            -|    -|
-    | o absorb_loop3                                           |     -|  7.30|           -|          -|         4|        -|         -|        no|        -|       -|          -|            -|    -|
-    +----------------------------------------------------------+------+------+------------+-----------+----------+---------+----------+----------+---------+--------+-----------+-------------+-----+
+    +-----------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+----+-------------+-------------+-----+
+    |                                Modules                                | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |         |    |             |             |     |
+    |                                & Loops                                | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   | DSP|      FF     |     LUT     | URAM|
+    +-----------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+----+-------------+-------------+-----+
+    |+ sha3_256_hw                                                          |     -|  0.00|     9146|  9.146e+04|         -|     9147|     -|        no|  11 (3%)|   -|  13032 (12%)|  38527 (72%)|    -|
+    | + pqcrystals_kyber_fips202_ref_sha3_256_1                             |     -|  0.00|     9145|  9.145e+04|         -|     9145|     -|        no|   8 (2%)|   -|  11761 (11%)|  37217 (69%)|    -|
+    |  + pqcrystals_kyber_fips202_ref_sha3_256_1_Pipeline_VITIS_LOOP_476_1  |     -|  0.68|       27|    270.000|         -|       27|     -|        no|        -|   -|      7 (~0%)|     53 (~0%)|    -|
+    |   o VITIS_LOOP_476_1                                                  |     -|  7.30|       25|    250.000|         1|        1|    25|       yes|        -|   -|            -|            -|    -|
+    |  + KeccakF1600_StatePermute_1                                         |     -|  0.09|       42|    420.000|         -|       42|     -|        no|  2 (~0%)|   -|    4904 (4%)|  17136 (32%)|    -|
+    |   + KeccakF1600_StatePermute_1_Pipeline_state_permute                 |     -|  0.09|       15|    150.000|         -|       15|     -|        no|  2 (~0%)|   -|    3275 (3%)|  16642 (31%)|    -|
+    |    o state_permute                                                    |     -|  7.30|       13|    130.000|         3|        1|    12|       yes|        -|   -|            -|            -|    -|
+    |  o VITIS_LOOP_480_2                                                   |     -|  7.30|     8370|  8.370e+04|        62|        -|   135|        no|        -|   -|            -|            -|    -|
+    |   + KeccakF1600_StatePermute                                          |     -|  0.09|       42|    420.000|         -|       42|     -|        no|  2 (~0%)|   -|    4904 (4%)|  17136 (32%)|    -|
+    |    + KeccakF1600_StatePermute_Pipeline_state_permute                  |     -|  0.09|       15|    150.000|         -|       15|     -|        no|  2 (~0%)|   -|    3275 (3%)|  16642 (31%)|    -|
+    |     o state_permute                                                   |     -|  7.30|       13|    130.000|         3|        1|    12|       yes|        -|   -|            -|            -|    -|
+    |  o absorb_loop3                                                       |     -|  7.30|      580|  5.800e+03|         4|        -|   145|        no|        -|   -|            -|            -|    -|
+    |  o VITIS_LOOP_764_1_VITIS_LOOP_44_1                                   |     -|  7.30|       34|    340.000|         4|        1|    32|       yes|        -|   -|            -|            -|    -|
+    +-----------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+----+-------------+-------------+-----+
 
 
 ================================================================
@@ -112,21 +115,22 @@
 +--------------+-----------+----------+-------+------------------+------------------+
 | HW Interface | Direction | Length   | Width | Loop             | Loop Location    |
 +--------------+-----------+----------+-------+------------------+------------------+
-| m_axi_gmem   | read      | variable | 8     | VITIS_LOOP_477_2 | fips202.c:477:21 |
-| m_axi_gmem   | read      | variable | 8     | absorb_loop3     | fips202.c:486:16 |
-| m_axi_gmem   | write     | 32       | 8     | VITIS_LOOP_759_1 | fips202.c:759:21 |
+| m_axi_gmem   | read      | 8        | 8     |                  |                  |
+| m_axi_gmem   | read      | variable | 8     | absorb_loop3     | fips202.c:490:16 |
+| m_axi_gmem   | write     | 32       | 8     | VITIS_LOOP_764_1 | fips202.c:764:21 |
 +--------------+-----------+----------+-------+------------------+------------------+
 
 * All M_AXI Variable Accesses
 +--------------+----------+------------------+-----------+--------------+----------+------------------+------------------+------------+------------------------------------------------------------------------------------------------------+
 | HW Interface | Variable | Access Location  | Direction | Burst Status | Length   | Loop             | Loop Location    | Resolution | Problem                                                                                              |
 +--------------+----------+------------------+-----------+--------------+----------+------------------+------------------+------------+------------------------------------------------------------------------------------------------------+
-| m_axi_gmem   | in       | fips202.c:27:20  | read      | Widen Fail   |          | VITIS_LOOP_26_1  | fips202.c:26:20  | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
-| m_axi_gmem   | in       | fips202.c:27:20  | read      | Inferred     | variable | VITIS_LOOP_477_2 | fips202.c:477:21 |            |                                                                                                      |
-| m_axi_gmem   | out      | fips202.c:45:7   | write     | Widen Fail   |          | VITIS_LOOP_43_1  | fips202.c:43:20  | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
-| m_axi_gmem   | out      | fips202.c:45:7   | write     | Inferred     | 32       | VITIS_LOOP_759_1 | fips202.c:759:21 |            |                                                                                                      |
-| m_axi_gmem   | in       | fips202.c:488:22 | read      | Widen Fail   |          | absorb_loop3     | fips202.c:486:16 | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
-| m_axi_gmem   | in       | fips202.c:488:22 | read      | Inferred     | variable | absorb_loop3     | fips202.c:486:16 |            |                                                                                                      |
+| m_axi_gmem   | in       | fips202.c:28:17  | read      | Widen Fail   |          |                  |                  | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem   | in       | fips202.c:28:17  | read      | Fail         |          | VITIS_LOOP_480_2 | fips202.c:480:22 | 214-230    | Stride is incompatible                                                                               |
+| m_axi_gmem   | in       | fips202.c:28:17  | read      | Inferred     | 8        | VITIS_LOOP_480_2 | fips202.c:480:22 |            |                                                                                                      |
+| m_axi_gmem   | h        | fips202.c:47:7   | write     | Widen Fail   |          | VITIS_LOOP_44_1  | fips202.c:44:20  | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem   | h        | fips202.c:47:7   | write     | Inferred     | 32       | VITIS_LOOP_764_1 | fips202.c:764:21 |            |                                                                                                      |
+| m_axi_gmem   | in       | fips202.c:493:22 | read      | Widen Fail   |          | absorb_loop3     | fips202.c:490:16 | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem   | in       | fips202.c:493:22 | read      | Inferred     | variable | absorb_loop3     | fips202.c:490:16 |            |                                                                                                      |
 +--------------+----------+------------------+-----------+--------------+----------+------------------+------------------+------------+------------------------------------------------------------------------------------------------------+
 
     * Resolution URL: docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
@@ -134,346 +138,599 @@
 ================================================================
 == Bind Op Report
 ================================================================
-+----------------------------------------------------------+-----+--------+----------------+--------+-----------+---------+
-| Name                                                     | DSP | Pragma | Variable       | Op     | Impl      | Latency |
-+----------------------------------------------------------+-----+--------+----------------+--------+-----------+---------+
-| + sha3_256_hw                                            | 4   |        |                |        |           |         |
-|   icmp_ln477_fu_342_p2                                   |     |        | icmp_ln477     | setgt  | auto      | 0       |
-|   grp_fu_336_p0                                          |     |        | add_ln477      | add    | fabric    | 0       |
-|   urem_32ns_9ns_32_36_seq_1_U8                           |     |        | urem_ln477     | urem   | auto_seq  | 35      |
-|   empty_fu_357_p3                                        |     |        | empty          | select | auto_sel  | 0       |
-|   empty_30_fu_375_p2                                     |     |        | empty_30       | setlt  | auto      | 0       |
-|   select_ln477_fu_380_p3                                 |     |        | select_ln477   | select | auto_sel  | 0       |
-|   mul_32ns_34ns_65_2_1_U7                                | 4   |        | mul_ln477_1    | mul    | auto      | 1       |
-|   add_ln477_2_fu_427_p2                                  |     |        | add_ln477_2    | add    | fabric    | 0       |
-|   sub_ln467_fu_444_p2                                    |     |        | sub_ln467      | sub    | fabric    | 0       |
-|   icmp_ln477_1_fu_457_p2                                 |     |        | icmp_ln477_1   | setgt  | auto      | 0       |
-|   icmp_ln478_fu_483_p2                                   |     |        | icmp_ln478     | seteq  | auto      | 0       |
-|   add_ln478_fu_489_p2                                    |     |        | add_ln478      | add    | fabric    | 0       |
-|   icmp_ln26_fu_495_p2                                    |     |        | icmp_ln26      | seteq  | auto      | 0       |
-|   select_ln479_fu_501_p3                                 |     |        | select_ln479   | select | auto_sel  | 0       |
-|   select_ln479_1_fu_544_p3                               |     |        | select_ln479_1 | select | auto_sel  | 0       |
-|   add_ln478_1_fu_509_p2                                  |     |        | add_ln478_1    | add    | fabric    | 0       |
-|   select_ln478_fu_515_p3                                 |     |        | select_ln478   | select | auto_sel  | 0       |
-|   shl_ln27_fu_565_p2                                     |     |        | shl_ln27       | shl    | auto_pipe | 0       |
-|   r_1_fu_571_p2                                          |     |        | r_1            | or     | auto      | 0       |
-|   add_ln26_fu_532_p2                                     |     |        | add_ln26       | add    | fabric    | 0       |
-|   icmp_ln26_1_fu_538_p2                                  |     |        | icmp_ln26_1    | seteq  | auto      | 0       |
-|   xor_ln480_fu_577_p2                                    |     |        | xor_ln480      | xor    | auto      | 0       |
-|   j_3_fu_582_p2                                          |     |        | j_3            | add    | fabric    | 0       |
-|   add_ln486_fu_463_p2                                    |     |        | add_ln486      | add    | fabric    | 0       |
-|   urem_32ns_9ns_8_36_seq_1_U9                            |     |        | urem_ln486     | urem   | auto_seq  | 35      |
-|   icmp_ln486_fu_612_p2                                   |     |        | icmp_ln486     | setgt  | auto      | 0       |
-|   i_6_fu_617_p2                                          |     |        | i_6            | add    | fabric    | 0       |
-|   shl_ln488_fu_677_p2                                    |     |        | shl_ln488      | shl    | auto_pipe | 0       |
-|   xor_ln488_fu_683_p2                                    |     |        | xor_ln488      | xor    | auto      | 0       |
-|   shl_ln490_fu_700_p2                                    |     |        | shl_ln490      | shl    | auto_pipe | 0       |
-|   xor_ln490_fu_710_p2                                    |     |        | xor_ln490      | xor    | auto      | 0       |
-|   xor_ln491_fu_728_p2                                    |     |        | xor_ln491      | xor    | auto      | 0       |
-|  + sha3_256_hw_Pipeline_VITIS_LOOP_472_1                 | 0   |        |                |        |           |         |
-|    icmp_ln472_fu_54_p2                                   |     |        | icmp_ln472     | seteq  | auto      | 0       |
-|    add_ln472_fu_60_p2                                    |     |        | add_ln472      | add    | fabric    | 0       |
-|  + KeccakF1600_StatePermute                              | 0   |        |                |        |           |         |
-|    icmp_ln127_fu_820_p2                                  |     |        | icmp_ln127     | setlt  | auto      | 0       |
-|    xor_ln131_fu_852_p2                                   |     |        | xor_ln131      | xor    | auto      | 0       |
-|    xor_ln131_1_fu_858_p2                                 |     |        | xor_ln131_1    | xor    | auto      | 0       |
-|    xor_ln131_2_fu_864_p2                                 |     |        | xor_ln131_2    | xor    | auto      | 0       |
-|    BCa_fu_870_p2                                         |     |        | BCa            | xor    | auto      | 0       |
-|    xor_ln132_fu_876_p2                                   |     |        | xor_ln132      | xor    | auto      | 0       |
-|    xor_ln132_1_fu_882_p2                                 |     |        | xor_ln132_1    | xor    | auto      | 0       |
-|    xor_ln132_2_fu_888_p2                                 |     |        | xor_ln132_2    | xor    | auto      | 0       |
-|    BCe_fu_894_p2                                         |     |        | BCe            | xor    | auto      | 0       |
-|    xor_ln133_fu_900_p2                                   |     |        | xor_ln133      | xor    | auto      | 0       |
-|    xor_ln133_1_fu_906_p2                                 |     |        | xor_ln133_1    | xor    | auto      | 0       |
-|    xor_ln133_2_fu_912_p2                                 |     |        | xor_ln133_2    | xor    | auto      | 0       |
-|    BCi_fu_918_p2                                         |     |        | BCi            | xor    | auto      | 0       |
-|    xor_ln134_fu_924_p2                                   |     |        | xor_ln134      | xor    | auto      | 0       |
-|    xor_ln134_1_fu_930_p2                                 |     |        | xor_ln134_1    | xor    | auto      | 0       |
-|    xor_ln134_2_fu_936_p2                                 |     |        | xor_ln134_2    | xor    | auto      | 0       |
-|    BCo_fu_942_p2                                         |     |        | BCo            | xor    | auto      | 0       |
-|    xor_ln135_fu_948_p2                                   |     |        | xor_ln135      | xor    | auto      | 0       |
-|    xor_ln135_1_fu_954_p2                                 |     |        | xor_ln135_1    | xor    | auto      | 0       |
-|    xor_ln135_2_fu_960_p2                                 |     |        | xor_ln135_2    | xor    | auto      | 0       |
-|    BCu_fu_966_p2                                         |     |        | BCu            | xor    | auto      | 0       |
-|    Da_fu_992_p2                                          |     |        | Da             | xor    | auto      | 0       |
-|    De_fu_1018_p2                                         |     |        | De             | xor    | auto      | 0       |
-|    Di_fu_1044_p2                                         |     |        | Di             | xor    | auto      | 0       |
-|    Do_fu_1070_p2                                         |     |        | Do             | xor    | auto      | 0       |
-|    Du_fu_1096_p2                                         |     |        | Du             | xor    | auto      | 0       |
-|    Aba_4_fu_1102_p2                                      |     |        | Aba_4          | xor    | auto      | 0       |
-|    Age_2_fu_1108_p2                                      |     |        | Age_2          | xor    | auto      | 0       |
-|    Aki_2_fu_1136_p2                                      |     |        | Aki_2          | xor    | auto      | 0       |
-|    Amo_2_fu_1164_p2                                      |     |        | Amo_2          | xor    | auto      | 0       |
-|    Asu_2_fu_1192_p2                                      |     |        | Asu_2          | xor    | auto      | 0       |
-|    xor_ln155_fu_1220_p2                                  |     |        | xor_ln155      | xor    | auto      | 0       |
-|    and_ln155_fu_1226_p2                                  |     |        | and_ln155      | and    | auto      | 0       |
-|    xor_ln155_1_fu_1232_p2                                |     |        | xor_ln155_1    | xor    | auto      | 0       |
-|    Eba_fu_1238_p2                                        |     |        | Eba            | xor    | auto      | 0       |
-|    xor_ln156_fu_1244_p2                                  |     |        | xor_ln156      | xor    | auto      | 0       |
-|    and_ln156_fu_1250_p2                                  |     |        | and_ln156      | and    | auto      | 0       |
-|    Ebe_fu_1256_p2                                        |     |        | Ebe            | xor    | auto      | 0       |
-|    xor_ln157_fu_1262_p2                                  |     |        | xor_ln157      | xor    | auto      | 0       |
-|    and_ln157_fu_1268_p2                                  |     |        | and_ln157      | and    | auto      | 0       |
-|    Ebi_fu_1274_p2                                        |     |        | Ebi            | xor    | auto      | 0       |
-|    xor_ln158_fu_1280_p2                                  |     |        | xor_ln158      | xor    | auto      | 0       |
-|    and_ln158_fu_1286_p2                                  |     |        | and_ln158      | and    | auto      | 0       |
-|    Ebo_fu_1292_p2                                        |     |        | Ebo            | xor    | auto      | 0       |
-|    xor_ln159_fu_1298_p2                                  |     |        | xor_ln159      | xor    | auto      | 0       |
-|    and_ln159_fu_1304_p2                                  |     |        | and_ln159      | and    | auto      | 0       |
-|    Ebu_fu_1310_p2                                        |     |        | Ebu            | xor    | auto      | 0       |
-|    Abo_2_fu_1316_p2                                      |     |        | Abo_2          | xor    | auto      | 0       |
-|    Agu_2_fu_1336_p2                                      |     |        | Agu_2          | xor    | auto      | 0       |
-|    Aka_2_fu_1356_p2                                      |     |        | Aka_2          | xor    | auto      | 0       |
-|    Ame_2_fu_1376_p2                                      |     |        | Ame_2          | xor    | auto      | 0       |
-|    Asi_2_fu_1396_p2                                      |     |        | Asi_2          | xor    | auto      | 0       |
-|    xor_ln171_fu_1756_p2                                  |     |        | xor_ln171      | xor    | auto      | 0       |
-|    and_ln171_fu_1762_p2                                  |     |        | and_ln171      | and    | auto      | 0       |
-|    Ega_fu_1768_p2                                        |     |        | Ega            | xor    | auto      | 0       |
-|    xor_ln172_fu_1774_p2                                  |     |        | xor_ln172      | xor    | auto      | 0       |
-|    and_ln172_fu_1780_p2                                  |     |        | and_ln172      | and    | auto      | 0       |
-|    Ege_fu_1786_p2                                        |     |        | Ege            | xor    | auto      | 0       |
-|    xor_ln173_fu_1792_p2                                  |     |        | xor_ln173      | xor    | auto      | 0       |
-|    and_ln173_fu_1798_p2                                  |     |        | and_ln173      | and    | auto      | 0       |
-|    Egi_fu_1804_p2                                        |     |        | Egi            | xor    | auto      | 0       |
-|    xor_ln174_fu_1810_p2                                  |     |        | xor_ln174      | xor    | auto      | 0       |
-|    and_ln174_fu_1816_p2                                  |     |        | and_ln174      | and    | auto      | 0       |
-|    Ego_fu_1822_p2                                        |     |        | Ego            | xor    | auto      | 0       |
-|    xor_ln175_fu_1828_p2                                  |     |        | xor_ln175      | xor    | auto      | 0       |
-|    and_ln175_fu_1834_p2                                  |     |        | and_ln175      | and    | auto      | 0       |
-|    Egu_fu_1840_p2                                        |     |        | Egu            | xor    | auto      | 0       |
-|    Abe_2_fu_1416_p2                                      |     |        | Abe_2          | xor    | auto      | 0       |
-|    Agi_2_fu_1434_p2                                      |     |        | Agi_2          | xor    | auto      | 0       |
-|    Ako_2_fu_1454_p2                                      |     |        | Ako_2          | xor    | auto      | 0       |
-|    Amu_2_fu_1474_p2                                      |     |        | Amu_2          | xor    | auto      | 0       |
-|    Asa_2_fu_1494_p2                                      |     |        | Asa_2          | xor    | auto      | 0       |
-|    xor_ln187_fu_1876_p2                                  |     |        | xor_ln187      | xor    | auto      | 0       |
-|    and_ln187_fu_1882_p2                                  |     |        | and_ln187      | and    | auto      | 0       |
-|    Eka_fu_1888_p2                                        |     |        | Eka            | xor    | auto      | 0       |
-|    xor_ln188_fu_1894_p2                                  |     |        | xor_ln188      | xor    | auto      | 0       |
-|    and_ln188_fu_1900_p2                                  |     |        | and_ln188      | and    | auto      | 0       |
-|    Eke_fu_1906_p2                                        |     |        | Eke            | xor    | auto      | 0       |
-|    xor_ln189_fu_1912_p2                                  |     |        | xor_ln189      | xor    | auto      | 0       |
-|    and_ln189_fu_1918_p2                                  |     |        | and_ln189      | and    | auto      | 0       |
-|    Eki_fu_1924_p2                                        |     |        | Eki            | xor    | auto      | 0       |
-|    xor_ln190_fu_1930_p2                                  |     |        | xor_ln190      | xor    | auto      | 0       |
-|    and_ln190_fu_1936_p2                                  |     |        | and_ln190      | and    | auto      | 0       |
-|    Eko_fu_1942_p2                                        |     |        | Eko            | xor    | auto      | 0       |
-|    xor_ln191_fu_1948_p2                                  |     |        | xor_ln191      | xor    | auto      | 0       |
-|    and_ln191_fu_1954_p2                                  |     |        | and_ln191      | and    | auto      | 0       |
-|    Eku_fu_1960_p2                                        |     |        | Eku            | xor    | auto      | 0       |
-|    Abu_2_fu_1514_p2                                      |     |        | Abu_2          | xor    | auto      | 0       |
-|    Aga_2_fu_1534_p2                                      |     |        | Aga_2          | xor    | auto      | 0       |
-|    Ake_2_fu_1554_p2                                      |     |        | Ake_2          | xor    | auto      | 0       |
-|    Ami_2_fu_1574_p2                                      |     |        | Ami_2          | xor    | auto      | 0       |
-|    Aso_2_fu_1594_p2                                      |     |        | Aso_2          | xor    | auto      | 0       |
-|    xor_ln203_fu_1996_p2                                  |     |        | xor_ln203      | xor    | auto      | 0       |
-|    and_ln203_fu_2002_p2                                  |     |        | and_ln203      | and    | auto      | 0       |
-|    Ema_fu_2008_p2                                        |     |        | Ema            | xor    | auto      | 0       |
-|    xor_ln204_fu_2014_p2                                  |     |        | xor_ln204      | xor    | auto      | 0       |
-|    and_ln204_fu_2020_p2                                  |     |        | and_ln204      | and    | auto      | 0       |
-|    Eme_fu_2026_p2                                        |     |        | Eme            | xor    | auto      | 0       |
-|    xor_ln205_fu_2032_p2                                  |     |        | xor_ln205      | xor    | auto      | 0       |
-|    and_ln205_fu_2038_p2                                  |     |        | and_ln205      | and    | auto      | 0       |
-|    Emi_fu_2044_p2                                        |     |        | Emi            | xor    | auto      | 0       |
-|    xor_ln206_fu_2050_p2                                  |     |        | xor_ln206      | xor    | auto      | 0       |
-|    and_ln206_fu_2056_p2                                  |     |        | and_ln206      | and    | auto      | 0       |
-|    Emo_fu_2062_p2                                        |     |        | Emo            | xor    | auto      | 0       |
-|    xor_ln207_fu_2068_p2                                  |     |        | xor_ln207      | xor    | auto      | 0       |
-|    and_ln207_fu_2074_p2                                  |     |        | and_ln207      | and    | auto      | 0       |
-|    Emu_fu_2080_p2                                        |     |        | Emu            | xor    | auto      | 0       |
-|    Abi_2_fu_1614_p2                                      |     |        | Abi_2          | xor    | auto      | 0       |
-|    Ago_2_fu_1634_p2                                      |     |        | Ago_2          | xor    | auto      | 0       |
-|    Aku_2_fu_1654_p2                                      |     |        | Aku_2          | xor    | auto      | 0       |
-|    Ama_2_fu_1674_p2                                      |     |        | Ama_2          | xor    | auto      | 0       |
-|    Ase_2_fu_1694_p2                                      |     |        | Ase_2          | xor    | auto      | 0       |
-|    xor_ln219_fu_2116_p2                                  |     |        | xor_ln219      | xor    | auto      | 0       |
-|    and_ln219_fu_2122_p2                                  |     |        | and_ln219      | and    | auto      | 0       |
-|    Esa_fu_2128_p2                                        |     |        | Esa            | xor    | auto      | 0       |
-|    xor_ln220_fu_2134_p2                                  |     |        | xor_ln220      | xor    | auto      | 0       |
-|    and_ln220_fu_2140_p2                                  |     |        | and_ln220      | and    | auto      | 0       |
-|    Ese_fu_2146_p2                                        |     |        | Ese            | xor    | auto      | 0       |
-|    xor_ln221_fu_2152_p2                                  |     |        | xor_ln221      | xor    | auto      | 0       |
-|    and_ln221_fu_2158_p2                                  |     |        | and_ln221      | and    | auto      | 0       |
-|    Esi_fu_2164_p2                                        |     |        | Esi            | xor    | auto      | 0       |
-|    xor_ln222_fu_2170_p2                                  |     |        | xor_ln222      | xor    | auto      | 0       |
-|    and_ln222_fu_2176_p2                                  |     |        | and_ln222      | and    | auto      | 0       |
-|    Eso_fu_2182_p2                                        |     |        | Eso            | xor    | auto      | 0       |
-|    xor_ln223_fu_2188_p2                                  |     |        | xor_ln223      | xor    | auto      | 0       |
-|    and_ln223_fu_2194_p2                                  |     |        | and_ln223      | and    | auto      | 0       |
-|    Esu_fu_2200_p2                                        |     |        | Esu            | xor    | auto      | 0       |
-|    xor_ln226_fu_2206_p2                                  |     |        | xor_ln226      | xor    | auto      | 0       |
-|    xor_ln226_1_fu_2212_p2                                |     |        | xor_ln226_1    | xor    | auto      | 0       |
-|    xor_ln226_2_fu_2217_p2                                |     |        | xor_ln226_2    | xor    | auto      | 0       |
-|    BCa_6_fu_2223_p2                                      |     |        | BCa_6          | xor    | auto      | 0       |
-|    xor_ln227_fu_2229_p2                                  |     |        | xor_ln227      | xor    | auto      | 0       |
-|    xor_ln227_1_fu_2235_p2                                |     |        | xor_ln227_1    | xor    | auto      | 0       |
-|    xor_ln227_2_fu_2240_p2                                |     |        | xor_ln227_2    | xor    | auto      | 0       |
-|    BCe_6_fu_2246_p2                                      |     |        | BCe_6          | xor    | auto      | 0       |
-|    xor_ln228_fu_2252_p2                                  |     |        | xor_ln228      | xor    | auto      | 0       |
-|    xor_ln228_1_fu_2257_p2                                |     |        | xor_ln228_1    | xor    | auto      | 0       |
-|    xor_ln228_2_fu_2263_p2                                |     |        | xor_ln228_2    | xor    | auto      | 0       |
-|    BCi_6_fu_2269_p2                                      |     |        | BCi_6          | xor    | auto      | 0       |
-|    xor_ln229_fu_2275_p2                                  |     |        | xor_ln229      | xor    | auto      | 0       |
-|    xor_ln229_1_fu_2281_p2                                |     |        | xor_ln229_1    | xor    | auto      | 0       |
-|    xor_ln229_2_fu_2287_p2                                |     |        | xor_ln229_2    | xor    | auto      | 0       |
-|    BCo_6_fu_2292_p2                                      |     |        | BCo_6          | xor    | auto      | 0       |
-|    xor_ln230_fu_2298_p2                                  |     |        | xor_ln230      | xor    | auto      | 0       |
-|    xor_ln230_1_fu_2303_p2                                |     |        | xor_ln230_1    | xor    | auto      | 0       |
-|    xor_ln230_2_fu_2309_p2                                |     |        | xor_ln230_2    | xor    | auto      | 0       |
-|    BCu_6_fu_2315_p2                                      |     |        | BCu_6          | xor    | auto      | 0       |
-|    Da_1_fu_2341_p2                                       |     |        | Da_1           | xor    | auto      | 0       |
-|    De_1_fu_2367_p2                                       |     |        | De_1           | xor    | auto      | 0       |
-|    Di_1_fu_2393_p2                                       |     |        | Di_1           | xor    | auto      | 0       |
-|    Do_1_fu_2419_p2                                       |     |        | Do_1           | xor    | auto      | 0       |
-|    Du_1_fu_2445_p2                                       |     |        | Du_1           | xor    | auto      | 0       |
-|    Eba_2_fu_2451_p2                                      |     |        | Eba_2          | xor    | auto      | 0       |
-|    Ege_1_fu_2456_p2                                      |     |        | Ege_1          | xor    | auto      | 0       |
-|    Eki_1_fu_2484_p2                                      |     |        | Eki_1          | xor    | auto      | 0       |
-|    Emo_1_fu_2512_p2                                      |     |        | Emo_1          | xor    | auto      | 0       |
-|    Esu_1_fu_2540_p2                                      |     |        | Esu_1          | xor    | auto      | 0       |
-|    xor_ln250_fu_2568_p2                                  |     |        | xor_ln250      | xor    | auto      | 0       |
-|    and_ln250_fu_2574_p2                                  |     |        | and_ln250      | and    | auto      | 0       |
-|    xor_ln250_1_fu_2580_p2                                |     |        | xor_ln250_1    | xor    | auto      | 0       |
-|    Aba_3_fu_2586_p2                                      |     |        | Aba_3          | xor    | auto      | 0       |
-|    xor_ln251_fu_2592_p2                                  |     |        | xor_ln251      | xor    | auto      | 0       |
-|    and_ln251_fu_2598_p2                                  |     |        | and_ln251      | and    | auto      | 0       |
-|    Abe_3_fu_2604_p2                                      |     |        | Abe_3          | xor    | auto      | 0       |
-|    xor_ln252_fu_2610_p2                                  |     |        | xor_ln252      | xor    | auto      | 0       |
-|    and_ln252_fu_2616_p2                                  |     |        | and_ln252      | and    | auto      | 0       |
-|    Abi_3_fu_2622_p2                                      |     |        | Abi_3          | xor    | auto      | 0       |
-|    xor_ln253_fu_2628_p2                                  |     |        | xor_ln253      | xor    | auto      | 0       |
-|    and_ln253_fu_2634_p2                                  |     |        | and_ln253      | and    | auto      | 0       |
-|    Abo_3_fu_2640_p2                                      |     |        | Abo_3          | xor    | auto      | 0       |
-|    xor_ln254_fu_2646_p2                                  |     |        | xor_ln254      | xor    | auto      | 0       |
-|    and_ln254_fu_2652_p2                                  |     |        | and_ln254      | and    | auto      | 0       |
-|    Abu_3_fu_2658_p2                                      |     |        | Abu_3          | xor    | auto      | 0       |
-|    Ebo_1_fu_2664_p2                                      |     |        | Ebo_1          | xor    | auto      | 0       |
-|    Egu_1_fu_2691_p2                                      |     |        | Egu_1          | xor    | auto      | 0       |
-|    Eka_1_fu_2719_p2                                      |     |        | Eka_1          | xor    | auto      | 0       |
-|    Eme_1_fu_2747_p2                                      |     |        | Eme_1          | xor    | auto      | 0       |
-|    Esi_1_fu_2775_p2                                      |     |        | Esi_1          | xor    | auto      | 0       |
-|    xor_ln266_fu_2803_p2                                  |     |        | xor_ln266      | xor    | auto      | 0       |
-|    and_ln266_fu_2809_p2                                  |     |        | and_ln266      | and    | auto      | 0       |
-|    Aga_3_fu_2815_p2                                      |     |        | Aga_3          | xor    | auto      | 0       |
-|    xor_ln267_fu_2821_p2                                  |     |        | xor_ln267      | xor    | auto      | 0       |
-|    and_ln267_fu_2827_p2                                  |     |        | and_ln267      | and    | auto      | 0       |
-|    Age_3_fu_2833_p2                                      |     |        | Age_3          | xor    | auto      | 0       |
-|    xor_ln268_fu_2839_p2                                  |     |        | xor_ln268      | xor    | auto      | 0       |
-|    and_ln268_fu_2845_p2                                  |     |        | and_ln268      | and    | auto      | 0       |
-|    Agi_3_fu_2851_p2                                      |     |        | Agi_3          | xor    | auto      | 0       |
-|    xor_ln269_fu_2857_p2                                  |     |        | xor_ln269      | xor    | auto      | 0       |
-|    and_ln269_fu_2863_p2                                  |     |        | and_ln269      | and    | auto      | 0       |
-|    Ago_3_fu_2869_p2                                      |     |        | Ago_3          | xor    | auto      | 0       |
-|    xor_ln270_fu_2875_p2                                  |     |        | xor_ln270      | xor    | auto      | 0       |
-|    and_ln270_fu_2881_p2                                  |     |        | and_ln270      | and    | auto      | 0       |
-|    Agu_3_fu_2887_p2                                      |     |        | Agu_3          | xor    | auto      | 0       |
-|    Ebe_1_fu_2893_p2                                      |     |        | Ebe_1          | xor    | auto      | 0       |
-|    Egi_1_fu_2918_p2                                      |     |        | Egi_1          | xor    | auto      | 0       |
-|    Eko_1_fu_2946_p2                                      |     |        | Eko_1          | xor    | auto      | 0       |
-|    Emu_1_fu_2974_p2                                      |     |        | Emu_1          | xor    | auto      | 0       |
-|    Esa_1_fu_3002_p2                                      |     |        | Esa_1          | xor    | auto      | 0       |
-|    xor_ln282_fu_3030_p2                                  |     |        | xor_ln282      | xor    | auto      | 0       |
-|    and_ln282_fu_3036_p2                                  |     |        | and_ln282      | and    | auto      | 0       |
-|    Aka_3_fu_3042_p2                                      |     |        | Aka_3          | xor    | auto      | 0       |
-|    xor_ln283_fu_3048_p2                                  |     |        | xor_ln283      | xor    | auto      | 0       |
-|    and_ln283_fu_3054_p2                                  |     |        | and_ln283      | and    | auto      | 0       |
-|    Ake_3_fu_3060_p2                                      |     |        | Ake_3          | xor    | auto      | 0       |
-|    xor_ln284_fu_3066_p2                                  |     |        | xor_ln284      | xor    | auto      | 0       |
-|    and_ln284_fu_3072_p2                                  |     |        | and_ln284      | and    | auto      | 0       |
-|    Aki_3_fu_3078_p2                                      |     |        | Aki_3          | xor    | auto      | 0       |
-|    xor_ln285_fu_3084_p2                                  |     |        | xor_ln285      | xor    | auto      | 0       |
-|    and_ln285_fu_3090_p2                                  |     |        | and_ln285      | and    | auto      | 0       |
-|    Ako_3_fu_3096_p2                                      |     |        | Ako_3          | xor    | auto      | 0       |
-|    xor_ln286_fu_3102_p2                                  |     |        | xor_ln286      | xor    | auto      | 0       |
-|    and_ln286_fu_3108_p2                                  |     |        | and_ln286      | and    | auto      | 0       |
-|    Aku_3_fu_3114_p2                                      |     |        | Aku_3          | xor    | auto      | 0       |
-|    Ebu_1_fu_3120_p2                                      |     |        | Ebu_1          | xor    | auto      | 0       |
-|    Ega_1_fu_3147_p2                                      |     |        | Ega_1          | xor    | auto      | 0       |
-|    Eke_1_fu_3175_p2                                      |     |        | Eke_1          | xor    | auto      | 0       |
-|    Emi_1_fu_3203_p2                                      |     |        | Emi_1          | xor    | auto      | 0       |
-|    Eso_1_fu_3231_p2                                      |     |        | Eso_1          | xor    | auto      | 0       |
-|    xor_ln298_fu_3259_p2                                  |     |        | xor_ln298      | xor    | auto      | 0       |
-|    and_ln298_fu_3265_p2                                  |     |        | and_ln298      | and    | auto      | 0       |
-|    Ama_3_fu_3271_p2                                      |     |        | Ama_3          | xor    | auto      | 0       |
-|    xor_ln299_fu_3277_p2                                  |     |        | xor_ln299      | xor    | auto      | 0       |
-|    and_ln299_fu_3283_p2                                  |     |        | and_ln299      | and    | auto      | 0       |
-|    Ame_3_fu_3289_p2                                      |     |        | Ame_3          | xor    | auto      | 0       |
-|    xor_ln300_fu_3295_p2                                  |     |        | xor_ln300      | xor    | auto      | 0       |
-|    and_ln300_fu_3301_p2                                  |     |        | and_ln300      | and    | auto      | 0       |
-|    Ami_3_fu_3307_p2                                      |     |        | Ami_3          | xor    | auto      | 0       |
-|    xor_ln301_fu_3313_p2                                  |     |        | xor_ln301      | xor    | auto      | 0       |
-|    and_ln301_fu_3319_p2                                  |     |        | and_ln301      | and    | auto      | 0       |
-|    Amo_3_fu_3325_p2                                      |     |        | Amo_3          | xor    | auto      | 0       |
-|    xor_ln302_fu_3331_p2                                  |     |        | xor_ln302      | xor    | auto      | 0       |
-|    and_ln302_fu_3337_p2                                  |     |        | and_ln302      | and    | auto      | 0       |
-|    Amu_3_fu_3343_p2                                      |     |        | Amu_3          | xor    | auto      | 0       |
-|    Ebi_1_fu_3349_p2                                      |     |        | Ebi_1          | xor    | auto      | 0       |
-|    Ego_1_fu_3376_p2                                      |     |        | Ego_1          | xor    | auto      | 0       |
-|    Eku_1_fu_3404_p2                                      |     |        | Eku_1          | xor    | auto      | 0       |
-|    Ema_1_fu_3432_p2                                      |     |        | Ema_1          | xor    | auto      | 0       |
-|    Ese_1_fu_3460_p2                                      |     |        | Ese_1          | xor    | auto      | 0       |
-|    xor_ln314_fu_3488_p2                                  |     |        | xor_ln314      | xor    | auto      | 0       |
-|    and_ln314_fu_3494_p2                                  |     |        | and_ln314      | and    | auto      | 0       |
-|    Asa_3_fu_3500_p2                                      |     |        | Asa_3          | xor    | auto      | 0       |
-|    xor_ln315_fu_3506_p2                                  |     |        | xor_ln315      | xor    | auto      | 0       |
-|    and_ln315_fu_3512_p2                                  |     |        | and_ln315      | and    | auto      | 0       |
-|    Ase_3_fu_3518_p2                                      |     |        | Ase_3          | xor    | auto      | 0       |
-|    xor_ln316_fu_3524_p2                                  |     |        | xor_ln316      | xor    | auto      | 0       |
-|    and_ln316_fu_3530_p2                                  |     |        | and_ln316      | and    | auto      | 0       |
-|    Asi_3_fu_3536_p2                                      |     |        | Asi_3          | xor    | auto      | 0       |
-|    xor_ln317_fu_3542_p2                                  |     |        | xor_ln317      | xor    | auto      | 0       |
-|    and_ln317_fu_3548_p2                                  |     |        | and_ln317      | and    | auto      | 0       |
-|    Aso_3_fu_3554_p2                                      |     |        | Aso_3          | xor    | auto      | 0       |
-|    xor_ln318_fu_3560_p2                                  |     |        | xor_ln318      | xor    | auto      | 0       |
-|    and_ln318_fu_3566_p2                                  |     |        | and_ln318      | and    | auto      | 0       |
-|    Asu_3_fu_3572_p2                                      |     |        | Asu_3          | xor    | auto      | 0       |
-|    add_ln127_fu_841_p2                                   |     |        | add_ln127      | add    | fabric    | 0       |
-|  + sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1 | 0   |        |                |        |           |         |
-|    icmp_ln759_fu_125_p2                                  |     |        | icmp_ln759     | seteq  | auto      | 0       |
-|    add_ln759_fu_131_p2                                   |     |        | add_ln759      | add    | fabric    | 0       |
-|    icmp_ln43_fu_154_p2                                   |     |        | icmp_ln43      | seteq  | auto      | 0       |
-|    select_ln754_fu_160_p3                                |     |        | select_ln754   | select | auto_sel  | 0       |
-|    add_ln759_1_fu_168_p2                                 |     |        | add_ln759_1    | add    | fabric    | 0       |
-|    select_ln759_fu_174_p3                                |     |        | select_ln759   | select | auto_sel  | 0       |
-|    first_iter_1_fu_182_p2                                |     |        | first_iter_1   | seteq  | auto      | 0       |
-|    lshr_ln45_fu_232_p2                                   |     |        | lshr_ln45      | lshr   | auto_pipe | 0       |
-|    add_ln43_fu_197_p2                                    |     |        | add_ln43       | add    | fabric    | 0       |
-+----------------------------------------------------------+-----+--------+----------------+--------+-----------+---------+
++-----------------------------------------------------------------------+-----+--------+--------------+--------+-----------+---------+
+| Name                                                                  | DSP | Pragma | Variable     | Op     | Impl      | Latency |
++-----------------------------------------------------------------------+-----+--------+--------------+--------+-----------+---------+
+| + sha3_256_hw                                                         | 0   |        |              |        |           |         |
+|  + pqcrystals_kyber_fips202_ref_sha3_256_1                            | 0   |        |              |        |           |         |
+|    empty_27_fu_286_p2                                                 |     |        | empty_27     | setlt  | auto      | 0       |
+|    select_ln480_fu_302_p3                                             |     |        | select_ln480 | select | auto_sel  | 0       |
+|    urem_64s_9ns_33_68_seq_1_U105                                      |     |        | urem_ln480   | urem   | auto_seq  | 67      |
+|    sub_ln480_fu_331_p2                                                |     |        | sub_ln480    | sub    | fabric    | 0       |
+|    sub_ln471_fu_345_p2                                                |     |        | sub_ln471    | sub    | fabric    | 0       |
+|    icmp_ln480_fu_358_p2                                               |     |        | icmp_ln480   | setgt  | auto      | 0       |
+|    xor_ln484_fu_446_p2                                                |     |        | xor_ln484    | xor    | auto      | 0       |
+|    add_ln486_fu_384_p2                                                |     |        | add_ln486    | add    | fabric    | 0       |
+|    add_ln480_fu_390_p2                                                |     |        | add_ln480    | add    | fabric    | 0       |
+|    add_ln490_fu_406_p2                                                |     |        | add_ln490    | add    | fabric    | 0       |
+|    icmp_ln490_fu_459_p2                                               |     |        | icmp_ln490   | setgt  | auto      | 0       |
+|    i_6_fu_464_p2                                                      |     |        | i_6          | add    | fabric    | 0       |
+|    shl_ln493_fu_544_p2                                                |     |        | shl_ln493    | shl    | auto_pipe | 0       |
+|    xor_ln493_fu_550_p2                                                |     |        | xor_ln493    | xor    | auto      | 0       |
+|    shl_ln495_fu_567_p2                                                |     |        | shl_ln495    | shl    | auto_pipe | 0       |
+|    xor_ln495_fu_577_p2                                                |     |        | xor_ln495    | xor    | auto      | 0       |
+|    xor_ln496_fu_595_p2                                                |     |        | xor_ln496    | xor    | auto      | 0       |
+|    icmp_ln764_fu_611_p2                                               |     |        | icmp_ln764   | seteq  | auto      | 0       |
+|    add_ln764_fu_617_p2                                                |     |        | add_ln764    | add    | fabric    | 0       |
+|    icmp_ln44_fu_629_p2                                                |     |        | icmp_ln44    | seteq  | auto      | 0       |
+|    select_ln765_fu_635_p3                                             |     |        | select_ln765 | select | auto_sel  | 0       |
+|    add_ln764_1_fu_643_p2                                              |     |        | add_ln764_1  | add    | fabric    | 0       |
+|    select_ln764_fu_649_p3                                             |     |        | select_ln764 | select | auto_sel  | 0       |
+|    first_iter_0_fu_657_p2                                             |     |        | first_iter_0 | seteq  | auto      | 0       |
+|    lshr_ln47_fu_712_p2                                                |     |        | lshr_ln47    | lshr   | auto_pipe | 0       |
+|    add_ln44_fu_672_p2                                                 |     |        | add_ln44     | add    | fabric    | 0       |
+|   + pqcrystals_kyber_fips202_ref_sha3_256_1_Pipeline_VITIS_LOOP_476_1 | 0   |        |              |        |           |         |
+|     icmp_ln476_fu_54_p2                                               |     |        | icmp_ln476   | seteq  | auto      | 0       |
+|     add_ln476_fu_60_p2                                                |     |        | add_ln476    | add    | fabric    | 0       |
+|   + KeccakF1600_StatePermute                                          | 0   |        |              |        |           |         |
+|    + KeccakF1600_StatePermute_Pipeline_state_permute                  | 0   |        |              |        |           |         |
+|      icmp_ln131_fu_873_p2                                             |     |        | icmp_ln131   | setlt  | auto      | 0       |
+|      xor_ln135_fu_993_p2                                              |     |        | xor_ln135    | xor    | auto      | 0       |
+|      xor_ln135_1_fu_999_p2                                            |     |        | xor_ln135_1  | xor    | auto      | 0       |
+|      xor_ln135_2_fu_1005_p2                                           |     |        | xor_ln135_2  | xor    | auto      | 0       |
+|      BCa_fu_1011_p2                                                   |     |        | BCa          | xor    | auto      | 0       |
+|      xor_ln136_fu_1017_p2                                             |     |        | xor_ln136    | xor    | auto      | 0       |
+|      xor_ln136_1_fu_1023_p2                                           |     |        | xor_ln136_1  | xor    | auto      | 0       |
+|      xor_ln136_2_fu_1029_p2                                           |     |        | xor_ln136_2  | xor    | auto      | 0       |
+|      BCe_fu_1035_p2                                                   |     |        | BCe          | xor    | auto      | 0       |
+|      xor_ln137_fu_1041_p2                                             |     |        | xor_ln137    | xor    | auto      | 0       |
+|      xor_ln137_1_fu_1047_p2                                           |     |        | xor_ln137_1  | xor    | auto      | 0       |
+|      xor_ln137_2_fu_1053_p2                                           |     |        | xor_ln137_2  | xor    | auto      | 0       |
+|      BCi_fu_1059_p2                                                   |     |        | BCi          | xor    | auto      | 0       |
+|      xor_ln138_fu_1065_p2                                             |     |        | xor_ln138    | xor    | auto      | 0       |
+|      xor_ln138_1_fu_1071_p2                                           |     |        | xor_ln138_1  | xor    | auto      | 0       |
+|      xor_ln138_2_fu_1077_p2                                           |     |        | xor_ln138_2  | xor    | auto      | 0       |
+|      BCo_fu_1083_p2                                                   |     |        | BCo          | xor    | auto      | 0       |
+|      xor_ln139_fu_1089_p2                                             |     |        | xor_ln139    | xor    | auto      | 0       |
+|      xor_ln139_1_fu_1095_p2                                           |     |        | xor_ln139_1  | xor    | auto      | 0       |
+|      xor_ln139_2_fu_1101_p2                                           |     |        | xor_ln139_2  | xor    | auto      | 0       |
+|      BCu_fu_1107_p2                                                   |     |        | BCu          | xor    | auto      | 0       |
+|      Da_fu_1133_p2                                                    |     |        | Da           | xor    | auto      | 0       |
+|      De_fu_1159_p2                                                    |     |        | De           | xor    | auto      | 0       |
+|      Di_fu_1185_p2                                                    |     |        | Di           | xor    | auto      | 0       |
+|      Do_fu_1211_p2                                                    |     |        | Do           | xor    | auto      | 0       |
+|      Du_fu_1237_p2                                                    |     |        | Du           | xor    | auto      | 0       |
+|      Aba_4_fu_1243_p2                                                 |     |        | Aba_4        | xor    | auto      | 0       |
+|      Age_2_fu_1249_p2                                                 |     |        | Age_2        | xor    | auto      | 0       |
+|      Aki_2_fu_1277_p2                                                 |     |        | Aki_2        | xor    | auto      | 0       |
+|      Amo_2_fu_1305_p2                                                 |     |        | Amo_2        | xor    | auto      | 0       |
+|      Asu_2_fu_1333_p2                                                 |     |        | Asu_2        | xor    | auto      | 0       |
+|      xor_ln159_fu_1361_p2                                             |     |        | xor_ln159    | xor    | auto      | 0       |
+|      and_ln159_fu_1367_p2                                             |     |        | and_ln159    | and    | auto      | 0       |
+|      xor_ln159_1_fu_1373_p2                                           |     |        | xor_ln159_1  | xor    | auto      | 0       |
+|      Eba_fu_1379_p2                                                   |     |        | Eba          | xor    | auto      | 0       |
+|      xor_ln160_fu_1385_p2                                             |     |        | xor_ln160    | xor    | auto      | 0       |
+|      and_ln160_fu_1391_p2                                             |     |        | and_ln160    | and    | auto      | 0       |
+|      Ebe_fu_1397_p2                                                   |     |        | Ebe          | xor    | auto      | 0       |
+|      xor_ln161_fu_1403_p2                                             |     |        | xor_ln161    | xor    | auto      | 0       |
+|      and_ln161_fu_1409_p2                                             |     |        | and_ln161    | and    | auto      | 0       |
+|      Ebi_fu_1415_p2                                                   |     |        | Ebi          | xor    | auto      | 0       |
+|      xor_ln162_fu_1421_p2                                             |     |        | xor_ln162    | xor    | auto      | 0       |
+|      and_ln162_fu_1427_p2                                             |     |        | and_ln162    | and    | auto      | 0       |
+|      Ebo_fu_1433_p2                                                   |     |        | Ebo          | xor    | auto      | 0       |
+|      xor_ln163_fu_1439_p2                                             |     |        | xor_ln163    | xor    | auto      | 0       |
+|      and_ln163_fu_1445_p2                                             |     |        | and_ln163    | and    | auto      | 0       |
+|      Ebu_fu_1451_p2                                                   |     |        | Ebu          | xor    | auto      | 0       |
+|      Abo_2_fu_1457_p2                                                 |     |        | Abo_2        | xor    | auto      | 0       |
+|      Agu_2_fu_1485_p2                                                 |     |        | Agu_2        | xor    | auto      | 0       |
+|      Aka_2_fu_1513_p2                                                 |     |        | Aka_2        | xor    | auto      | 0       |
+|      Ame_2_fu_1541_p2                                                 |     |        | Ame_2        | xor    | auto      | 0       |
+|      Asi_2_fu_1569_p2                                                 |     |        | Asi_2        | xor    | auto      | 0       |
+|      xor_ln175_fu_1597_p2                                             |     |        | xor_ln175    | xor    | auto      | 0       |
+|      and_ln175_fu_1603_p2                                             |     |        | and_ln175    | and    | auto      | 0       |
+|      Ega_fu_1609_p2                                                   |     |        | Ega          | xor    | auto      | 0       |
+|      xor_ln176_fu_1615_p2                                             |     |        | xor_ln176    | xor    | auto      | 0       |
+|      and_ln176_fu_1621_p2                                             |     |        | and_ln176    | and    | auto      | 0       |
+|      Ege_fu_1627_p2                                                   |     |        | Ege          | xor    | auto      | 0       |
+|      xor_ln177_fu_1633_p2                                             |     |        | xor_ln177    | xor    | auto      | 0       |
+|      and_ln177_fu_1639_p2                                             |     |        | and_ln177    | and    | auto      | 0       |
+|      Egi_fu_1645_p2                                                   |     |        | Egi          | xor    | auto      | 0       |
+|      xor_ln178_fu_1651_p2                                             |     |        | xor_ln178    | xor    | auto      | 0       |
+|      and_ln178_fu_1657_p2                                             |     |        | and_ln178    | and    | auto      | 0       |
+|      Ego_fu_1663_p2                                                   |     |        | Ego          | xor    | auto      | 0       |
+|      xor_ln179_fu_1669_p2                                             |     |        | xor_ln179    | xor    | auto      | 0       |
+|      and_ln179_fu_1675_p2                                             |     |        | and_ln179    | and    | auto      | 0       |
+|      Egu_fu_1681_p2                                                   |     |        | Egu          | xor    | auto      | 0       |
+|      Abe_2_fu_1687_p2                                                 |     |        | Abe_2        | xor    | auto      | 0       |
+|      Agi_2_fu_1713_p2                                                 |     |        | Agi_2        | xor    | auto      | 0       |
+|      Ako_2_fu_1741_p2                                                 |     |        | Ako_2        | xor    | auto      | 0       |
+|      Amu_2_fu_1769_p2                                                 |     |        | Amu_2        | xor    | auto      | 0       |
+|      Asa_2_fu_1797_p2                                                 |     |        | Asa_2        | xor    | auto      | 0       |
+|      xor_ln191_fu_1825_p2                                             |     |        | xor_ln191    | xor    | auto      | 0       |
+|      and_ln191_fu_1831_p2                                             |     |        | and_ln191    | and    | auto      | 0       |
+|      Eka_fu_1837_p2                                                   |     |        | Eka          | xor    | auto      | 0       |
+|      xor_ln192_fu_1843_p2                                             |     |        | xor_ln192    | xor    | auto      | 0       |
+|      and_ln192_fu_1849_p2                                             |     |        | and_ln192    | and    | auto      | 0       |
+|      Eke_fu_1855_p2                                                   |     |        | Eke          | xor    | auto      | 0       |
+|      xor_ln193_fu_1861_p2                                             |     |        | xor_ln193    | xor    | auto      | 0       |
+|      and_ln193_fu_1867_p2                                             |     |        | and_ln193    | and    | auto      | 0       |
+|      Eki_fu_1873_p2                                                   |     |        | Eki          | xor    | auto      | 0       |
+|      xor_ln194_fu_1879_p2                                             |     |        | xor_ln194    | xor    | auto      | 0       |
+|      and_ln194_fu_1885_p2                                             |     |        | and_ln194    | and    | auto      | 0       |
+|      Eko_fu_1891_p2                                                   |     |        | Eko          | xor    | auto      | 0       |
+|      xor_ln195_fu_1897_p2                                             |     |        | xor_ln195    | xor    | auto      | 0       |
+|      and_ln195_fu_1903_p2                                             |     |        | and_ln195    | and    | auto      | 0       |
+|      Eku_fu_1909_p2                                                   |     |        | Eku          | xor    | auto      | 0       |
+|      Abu_2_fu_1915_p2                                                 |     |        | Abu_2        | xor    | auto      | 0       |
+|      Aga_2_fu_1943_p2                                                 |     |        | Aga_2        | xor    | auto      | 0       |
+|      Ake_2_fu_1971_p2                                                 |     |        | Ake_2        | xor    | auto      | 0       |
+|      Ami_2_fu_1999_p2                                                 |     |        | Ami_2        | xor    | auto      | 0       |
+|      Aso_2_fu_2027_p2                                                 |     |        | Aso_2        | xor    | auto      | 0       |
+|      xor_ln207_fu_2055_p2                                             |     |        | xor_ln207    | xor    | auto      | 0       |
+|      and_ln207_fu_2061_p2                                             |     |        | and_ln207    | and    | auto      | 0       |
+|      Ema_fu_2067_p2                                                   |     |        | Ema          | xor    | auto      | 0       |
+|      xor_ln208_fu_2073_p2                                             |     |        | xor_ln208    | xor    | auto      | 0       |
+|      and_ln208_fu_2079_p2                                             |     |        | and_ln208    | and    | auto      | 0       |
+|      Eme_fu_2085_p2                                                   |     |        | Eme          | xor    | auto      | 0       |
+|      xor_ln209_fu_2091_p2                                             |     |        | xor_ln209    | xor    | auto      | 0       |
+|      and_ln209_fu_2097_p2                                             |     |        | and_ln209    | and    | auto      | 0       |
+|      Emi_fu_2103_p2                                                   |     |        | Emi          | xor    | auto      | 0       |
+|      xor_ln210_fu_2109_p2                                             |     |        | xor_ln210    | xor    | auto      | 0       |
+|      and_ln210_fu_2115_p2                                             |     |        | and_ln210    | and    | auto      | 0       |
+|      Emo_fu_2121_p2                                                   |     |        | Emo          | xor    | auto      | 0       |
+|      xor_ln211_fu_2127_p2                                             |     |        | xor_ln211    | xor    | auto      | 0       |
+|      and_ln211_fu_2133_p2                                             |     |        | and_ln211    | and    | auto      | 0       |
+|      Emu_fu_2139_p2                                                   |     |        | Emu          | xor    | auto      | 0       |
+|      Abi_2_fu_2145_p2                                                 |     |        | Abi_2        | xor    | auto      | 0       |
+|      Ago_2_fu_2173_p2                                                 |     |        | Ago_2        | xor    | auto      | 0       |
+|      Aku_2_fu_2201_p2                                                 |     |        | Aku_2        | xor    | auto      | 0       |
+|      Ama_2_fu_2229_p2                                                 |     |        | Ama_2        | xor    | auto      | 0       |
+|      Ase_2_fu_2257_p2                                                 |     |        | Ase_2        | xor    | auto      | 0       |
+|      xor_ln223_fu_2285_p2                                             |     |        | xor_ln223    | xor    | auto      | 0       |
+|      and_ln223_fu_2291_p2                                             |     |        | and_ln223    | and    | auto      | 0       |
+|      Esa_fu_2297_p2                                                   |     |        | Esa          | xor    | auto      | 0       |
+|      xor_ln224_fu_2303_p2                                             |     |        | xor_ln224    | xor    | auto      | 0       |
+|      and_ln224_fu_2309_p2                                             |     |        | and_ln224    | and    | auto      | 0       |
+|      Ese_fu_2315_p2                                                   |     |        | Ese          | xor    | auto      | 0       |
+|      xor_ln225_fu_2321_p2                                             |     |        | xor_ln225    | xor    | auto      | 0       |
+|      and_ln225_fu_2327_p2                                             |     |        | and_ln225    | and    | auto      | 0       |
+|      Esi_fu_2333_p2                                                   |     |        | Esi          | xor    | auto      | 0       |
+|      xor_ln226_fu_2339_p2                                             |     |        | xor_ln226    | xor    | auto      | 0       |
+|      and_ln226_fu_2345_p2                                             |     |        | and_ln226    | and    | auto      | 0       |
+|      Eso_fu_2351_p2                                                   |     |        | Eso          | xor    | auto      | 0       |
+|      xor_ln227_fu_2357_p2                                             |     |        | xor_ln227    | xor    | auto      | 0       |
+|      and_ln227_fu_2363_p2                                             |     |        | and_ln227    | and    | auto      | 0       |
+|      Esu_fu_2369_p2                                                   |     |        | Esu          | xor    | auto      | 0       |
+|      xor_ln230_fu_2375_p2                                             |     |        | xor_ln230    | xor    | auto      | 0       |
+|      xor_ln230_1_fu_2381_p2                                           |     |        | xor_ln230_1  | xor    | auto      | 0       |
+|      xor_ln230_2_fu_2387_p2                                           |     |        | xor_ln230_2  | xor    | auto      | 0       |
+|      BCa_6_fu_2393_p2                                                 |     |        | BCa_6        | xor    | auto      | 0       |
+|      xor_ln231_1_fu_2399_p2                                           |     |        | xor_ln231_1  | xor    | auto      | 0       |
+|      xor_ln231_fu_2405_p2                                             |     |        | xor_ln231    | xor    | auto      | 0       |
+|      xor_ln231_2_fu_2411_p2                                           |     |        | xor_ln231_2  | xor    | auto      | 0       |
+|      BCe_6_fu_2417_p2                                                 |     |        | BCe_6        | xor    | auto      | 0       |
+|      xor_ln232_1_fu_2423_p2                                           |     |        | xor_ln232_1  | xor    | auto      | 0       |
+|      xor_ln232_fu_2429_p2                                             |     |        | xor_ln232    | xor    | auto      | 0       |
+|      xor_ln232_2_fu_2435_p2                                           |     |        | xor_ln232_2  | xor    | auto      | 0       |
+|      BCi_6_fu_2441_p2                                                 |     |        | BCi_6        | xor    | auto      | 0       |
+|      xor_ln233_fu_2447_p2                                             |     |        | xor_ln233    | xor    | auto      | 0       |
+|      xor_ln233_1_fu_2453_p2                                           |     |        | xor_ln233_1  | xor    | auto      | 0       |
+|      xor_ln233_2_fu_2459_p2                                           |     |        | xor_ln233_2  | xor    | auto      | 0       |
+|      BCo_6_fu_2465_p2                                                 |     |        | BCo_6        | xor    | auto      | 0       |
+|      xor_ln234_fu_2471_p2                                             |     |        | xor_ln234    | xor    | auto      | 0       |
+|      xor_ln234_1_fu_2477_p2                                           |     |        | xor_ln234_1  | xor    | auto      | 0       |
+|      xor_ln234_2_fu_2483_p2                                           |     |        | xor_ln234_2  | xor    | auto      | 0       |
+|      BCu_6_fu_2489_p2                                                 |     |        | BCu_6        | xor    | auto      | 0       |
+|      Da_1_fu_2515_p2                                                  |     |        | Da_1         | xor    | auto      | 0       |
+|      De_1_fu_2541_p2                                                  |     |        | De_1         | xor    | auto      | 0       |
+|      Di_1_fu_2567_p2                                                  |     |        | Di_1         | xor    | auto      | 0       |
+|      Do_1_fu_2593_p2                                                  |     |        | Do_1         | xor    | auto      | 0       |
+|      Du_1_fu_2619_p2                                                  |     |        | Du_1         | xor    | auto      | 0       |
+|      Eba_2_fu_2625_p2                                                 |     |        | Eba_2        | xor    | auto      | 0       |
+|      Ege_1_fu_2631_p2                                                 |     |        | Ege_1        | xor    | auto      | 0       |
+|      Eki_1_fu_2651_p2                                                 |     |        | Eki_1        | xor    | auto      | 0       |
+|      Emo_1_fu_2671_p2                                                 |     |        | Emo_1        | xor    | auto      | 0       |
+|      Esu_1_fu_2691_p2                                                 |     |        | Esu_1        | xor    | auto      | 0       |
+|      xor_ln254_fu_3133_p2                                             |     |        | xor_ln254    | xor    | auto      | 0       |
+|      and_ln254_fu_3139_p2                                             |     |        | and_ln254    | and    | auto      | 0       |
+|      xor_ln254_1_fu_3145_p2                                           |     |        | xor_ln254_1  | xor    | auto      | 0       |
+|      Aba_3_fu_3149_p2                                                 |     |        | Aba_3        | xor    | auto      | 0       |
+|      xor_ln255_fu_3155_p2                                             |     |        | xor_ln255    | xor    | auto      | 0       |
+|      and_ln255_fu_3161_p2                                             |     |        | and_ln255    | and    | auto      | 0       |
+|      Abe_3_fu_3167_p2                                                 |     |        | Abe_3        | xor    | auto      | 0       |
+|      xor_ln256_fu_3173_p2                                             |     |        | xor_ln256    | xor    | auto      | 0       |
+|      and_ln256_fu_3179_p2                                             |     |        | and_ln256    | and    | auto      | 0       |
+|      Abi_3_fu_3185_p2                                                 |     |        | Abi_3        | xor    | auto      | 0       |
+|      xor_ln257_fu_3191_p2                                             |     |        | xor_ln257    | xor    | auto      | 0       |
+|      and_ln257_fu_3197_p2                                             |     |        | and_ln257    | and    | auto      | 0       |
+|      Abo_3_fu_3202_p2                                                 |     |        | Abo_3        | xor    | auto      | 0       |
+|      xor_ln258_fu_3208_p2                                             |     |        | xor_ln258    | xor    | auto      | 0       |
+|      and_ln258_fu_3213_p2                                             |     |        | and_ln258    | and    | auto      | 0       |
+|      Abu_3_fu_3219_p2                                                 |     |        | Abu_3        | xor    | auto      | 0       |
+|      Ebo_1_fu_2711_p2                                                 |     |        | Ebo_1        | xor    | auto      | 0       |
+|      Egu_1_fu_2731_p2                                                 |     |        | Egu_1        | xor    | auto      | 0       |
+|      Eka_1_fu_2751_p2                                                 |     |        | Eka_1        | xor    | auto      | 0       |
+|      Eme_1_fu_2771_p2                                                 |     |        | Eme_1        | xor    | auto      | 0       |
+|      Esi_1_fu_2791_p2                                                 |     |        | Esi_1        | xor    | auto      | 0       |
+|      xor_ln270_fu_3255_p2                                             |     |        | xor_ln270    | xor    | auto      | 0       |
+|      and_ln270_fu_3261_p2                                             |     |        | and_ln270    | and    | auto      | 0       |
+|      Aga_3_fu_3267_p2                                                 |     |        | Aga_3        | xor    | auto      | 0       |
+|      xor_ln271_fu_3273_p2                                             |     |        | xor_ln271    | xor    | auto      | 0       |
+|      and_ln271_fu_3279_p2                                             |     |        | and_ln271    | and    | auto      | 0       |
+|      Age_3_fu_3285_p2                                                 |     |        | Age_3        | xor    | auto      | 0       |
+|      xor_ln272_fu_3291_p2                                             |     |        | xor_ln272    | xor    | auto      | 0       |
+|      and_ln272_fu_3297_p2                                             |     |        | and_ln272    | and    | auto      | 0       |
+|      Agi_3_fu_3303_p2                                                 |     |        | Agi_3        | xor    | auto      | 0       |
+|      xor_ln273_fu_3309_p2                                             |     |        | xor_ln273    | xor    | auto      | 0       |
+|      and_ln273_fu_3315_p2                                             |     |        | and_ln273    | and    | auto      | 0       |
+|      Ago_3_fu_3321_p2                                                 |     |        | Ago_3        | xor    | auto      | 0       |
+|      xor_ln274_fu_3327_p2                                             |     |        | xor_ln274    | xor    | auto      | 0       |
+|      and_ln274_fu_3333_p2                                             |     |        | and_ln274    | and    | auto      | 0       |
+|      Agu_3_fu_3339_p2                                                 |     |        | Agu_3        | xor    | auto      | 0       |
+|      Ebe_1_fu_2811_p2                                                 |     |        | Ebe_1        | xor    | auto      | 0       |
+|      Egi_1_fu_2829_p2                                                 |     |        | Egi_1        | xor    | auto      | 0       |
+|      Eko_1_fu_2849_p2                                                 |     |        | Eko_1        | xor    | auto      | 0       |
+|      Emu_1_fu_2869_p2                                                 |     |        | Emu_1        | xor    | auto      | 0       |
+|      Esa_1_fu_2889_p2                                                 |     |        | Esa_1        | xor    | auto      | 0       |
+|      xor_ln286_fu_3375_p2                                             |     |        | xor_ln286    | xor    | auto      | 0       |
+|      and_ln286_fu_3381_p2                                             |     |        | and_ln286    | and    | auto      | 0       |
+|      Aka_3_fu_3387_p2                                                 |     |        | Aka_3        | xor    | auto      | 0       |
+|      xor_ln287_fu_3393_p2                                             |     |        | xor_ln287    | xor    | auto      | 0       |
+|      and_ln287_fu_3399_p2                                             |     |        | and_ln287    | and    | auto      | 0       |
+|      Ake_3_fu_3405_p2                                                 |     |        | Ake_3        | xor    | auto      | 0       |
+|      xor_ln288_fu_3411_p2                                             |     |        | xor_ln288    | xor    | auto      | 0       |
+|      and_ln288_fu_3417_p2                                             |     |        | and_ln288    | and    | auto      | 0       |
+|      Aki_3_fu_3423_p2                                                 |     |        | Aki_3        | xor    | auto      | 0       |
+|      xor_ln289_fu_3429_p2                                             |     |        | xor_ln289    | xor    | auto      | 0       |
+|      and_ln289_fu_3435_p2                                             |     |        | and_ln289    | and    | auto      | 0       |
+|      Ako_3_fu_3441_p2                                                 |     |        | Ako_3        | xor    | auto      | 0       |
+|      xor_ln290_fu_3447_p2                                             |     |        | xor_ln290    | xor    | auto      | 0       |
+|      and_ln290_fu_3453_p2                                             |     |        | and_ln290    | and    | auto      | 0       |
+|      Aku_3_fu_3459_p2                                                 |     |        | Aku_3        | xor    | auto      | 0       |
+|      Ebu_1_fu_2909_p2                                                 |     |        | Ebu_1        | xor    | auto      | 0       |
+|      Ega_1_fu_2929_p2                                                 |     |        | Ega_1        | xor    | auto      | 0       |
+|      Eke_1_fu_2949_p2                                                 |     |        | Eke_1        | xor    | auto      | 0       |
+|      Emi_1_fu_2969_p2                                                 |     |        | Emi_1        | xor    | auto      | 0       |
+|      Eso_1_fu_2989_p2                                                 |     |        | Eso_1        | xor    | auto      | 0       |
+|      xor_ln302_fu_3495_p2                                             |     |        | xor_ln302    | xor    | auto      | 0       |
+|      and_ln302_fu_3501_p2                                             |     |        | and_ln302    | and    | auto      | 0       |
+|      Ama_3_fu_3507_p2                                                 |     |        | Ama_3        | xor    | auto      | 0       |
+|      xor_ln303_fu_3513_p2                                             |     |        | xor_ln303    | xor    | auto      | 0       |
+|      and_ln303_fu_3519_p2                                             |     |        | and_ln303    | and    | auto      | 0       |
+|      Ame_3_fu_3525_p2                                                 |     |        | Ame_3        | xor    | auto      | 0       |
+|      xor_ln304_fu_3531_p2                                             |     |        | xor_ln304    | xor    | auto      | 0       |
+|      and_ln304_fu_3537_p2                                             |     |        | and_ln304    | and    | auto      | 0       |
+|      Ami_3_fu_3543_p2                                                 |     |        | Ami_3        | xor    | auto      | 0       |
+|      xor_ln305_fu_3549_p2                                             |     |        | xor_ln305    | xor    | auto      | 0       |
+|      and_ln305_fu_3555_p2                                             |     |        | and_ln305    | and    | auto      | 0       |
+|      Amo_3_fu_3561_p2                                                 |     |        | Amo_3        | xor    | auto      | 0       |
+|      xor_ln306_fu_3567_p2                                             |     |        | xor_ln306    | xor    | auto      | 0       |
+|      and_ln306_fu_3573_p2                                             |     |        | and_ln306    | and    | auto      | 0       |
+|      Amu_3_fu_3579_p2                                                 |     |        | Amu_3        | xor    | auto      | 0       |
+|      Ebi_1_fu_3009_p2                                                 |     |        | Ebi_1        | xor    | auto      | 0       |
+|      Ego_1_fu_3029_p2                                                 |     |        | Ego_1        | xor    | auto      | 0       |
+|      Eku_1_fu_3049_p2                                                 |     |        | Eku_1        | xor    | auto      | 0       |
+|      Ema_1_fu_3069_p2                                                 |     |        | Ema_1        | xor    | auto      | 0       |
+|      Ese_1_fu_3089_p2                                                 |     |        | Ese_1        | xor    | auto      | 0       |
+|      xor_ln318_fu_3615_p2                                             |     |        | xor_ln318    | xor    | auto      | 0       |
+|      and_ln318_fu_3621_p2                                             |     |        | and_ln318    | and    | auto      | 0       |
+|      Asa_3_fu_3627_p2                                                 |     |        | Asa_3        | xor    | auto      | 0       |
+|      xor_ln319_fu_3633_p2                                             |     |        | xor_ln319    | xor    | auto      | 0       |
+|      and_ln319_fu_3639_p2                                             |     |        | and_ln319    | and    | auto      | 0       |
+|      Ase_3_fu_3645_p2                                                 |     |        | Ase_3        | xor    | auto      | 0       |
+|      xor_ln320_fu_3651_p2                                             |     |        | xor_ln320    | xor    | auto      | 0       |
+|      and_ln320_fu_3657_p2                                             |     |        | and_ln320    | and    | auto      | 0       |
+|      Asi_3_fu_3663_p2                                                 |     |        | Asi_3        | xor    | auto      | 0       |
+|      xor_ln321_fu_3669_p2                                             |     |        | xor_ln321    | xor    | auto      | 0       |
+|      and_ln321_fu_3675_p2                                             |     |        | and_ln321    | and    | auto      | 0       |
+|      Aso_3_fu_3681_p2                                                 |     |        | Aso_3        | xor    | auto      | 0       |
+|      xor_ln322_fu_3687_p2                                             |     |        | xor_ln322    | xor    | auto      | 0       |
+|      and_ln322_fu_3693_p2                                             |     |        | and_ln322    | and    | auto      | 0       |
+|      Asu_3_fu_3699_p2                                                 |     |        | Asu_3        | xor    | auto      | 0       |
+|      add_ln131_fu_907_p2                                              |     |        | add_ln131    | add    | fabric    | 0       |
+|   + KeccakF1600_StatePermute_1                                        | 0   |        |              |        |           |         |
+|    + KeccakF1600_StatePermute_1_Pipeline_state_permute                | 0   |        |              |        |           |         |
+|      icmp_ln131_fu_873_p2                                             |     |        | icmp_ln131   | setlt  | auto      | 0       |
+|      xor_ln135_fu_993_p2                                              |     |        | xor_ln135    | xor    | auto      | 0       |
+|      xor_ln135_2_fu_999_p2                                            |     |        | xor_ln135_2  | xor    | auto      | 0       |
+|      xor_ln135_1_fu_1005_p2                                           |     |        | xor_ln135_1  | xor    | auto      | 0       |
+|      BCa_fu_1011_p2                                                   |     |        | BCa          | xor    | auto      | 0       |
+|      xor_ln136_fu_1017_p2                                             |     |        | xor_ln136    | xor    | auto      | 0       |
+|      xor_ln136_2_fu_1023_p2                                           |     |        | xor_ln136_2  | xor    | auto      | 0       |
+|      xor_ln136_1_fu_1029_p2                                           |     |        | xor_ln136_1  | xor    | auto      | 0       |
+|      BCe_fu_1035_p2                                                   |     |        | BCe          | xor    | auto      | 0       |
+|      xor_ln137_fu_1041_p2                                             |     |        | xor_ln137    | xor    | auto      | 0       |
+|      xor_ln137_1_fu_1047_p2                                           |     |        | xor_ln137_1  | xor    | auto      | 0       |
+|      xor_ln137_2_fu_1053_p2                                           |     |        | xor_ln137_2  | xor    | auto      | 0       |
+|      BCi_fu_1059_p2                                                   |     |        | BCi          | xor    | auto      | 0       |
+|      xor_ln138_fu_1065_p2                                             |     |        | xor_ln138    | xor    | auto      | 0       |
+|      xor_ln138_1_fu_1071_p2                                           |     |        | xor_ln138_1  | xor    | auto      | 0       |
+|      xor_ln138_2_fu_1077_p2                                           |     |        | xor_ln138_2  | xor    | auto      | 0       |
+|      BCo_fu_1083_p2                                                   |     |        | BCo          | xor    | auto      | 0       |
+|      xor_ln139_fu_1089_p2                                             |     |        | xor_ln139    | xor    | auto      | 0       |
+|      xor_ln139_2_fu_1095_p2                                           |     |        | xor_ln139_2  | xor    | auto      | 0       |
+|      xor_ln139_1_fu_1101_p2                                           |     |        | xor_ln139_1  | xor    | auto      | 0       |
+|      BCu_fu_1107_p2                                                   |     |        | BCu          | xor    | auto      | 0       |
+|      Da_fu_1133_p2                                                    |     |        | Da           | xor    | auto      | 0       |
+|      De_fu_1159_p2                                                    |     |        | De           | xor    | auto      | 0       |
+|      Di_fu_1185_p2                                                    |     |        | Di           | xor    | auto      | 0       |
+|      Do_fu_1211_p2                                                    |     |        | Do           | xor    | auto      | 0       |
+|      Du_fu_1237_p2                                                    |     |        | Du           | xor    | auto      | 0       |
+|      Aba_7_fu_1243_p2                                                 |     |        | Aba_7        | xor    | auto      | 0       |
+|      Age_4_fu_1249_p2                                                 |     |        | Age_4        | xor    | auto      | 0       |
+|      Aki_4_fu_1277_p2                                                 |     |        | Aki_4        | xor    | auto      | 0       |
+|      Amo_4_fu_1305_p2                                                 |     |        | Amo_4        | xor    | auto      | 0       |
+|      Asu_4_fu_1333_p2                                                 |     |        | Asu_4        | xor    | auto      | 0       |
+|      xor_ln159_fu_1361_p2                                             |     |        | xor_ln159    | xor    | auto      | 0       |
+|      and_ln159_fu_1367_p2                                             |     |        | and_ln159    | and    | auto      | 0       |
+|      xor_ln159_1_fu_1373_p2                                           |     |        | xor_ln159_1  | xor    | auto      | 0       |
+|      Eba_fu_1379_p2                                                   |     |        | Eba          | xor    | auto      | 0       |
+|      xor_ln160_fu_1385_p2                                             |     |        | xor_ln160    | xor    | auto      | 0       |
+|      and_ln160_fu_1391_p2                                             |     |        | and_ln160    | and    | auto      | 0       |
+|      Ebe_fu_1397_p2                                                   |     |        | Ebe          | xor    | auto      | 0       |
+|      xor_ln161_fu_1403_p2                                             |     |        | xor_ln161    | xor    | auto      | 0       |
+|      and_ln161_fu_1409_p2                                             |     |        | and_ln161    | and    | auto      | 0       |
+|      Ebi_fu_1415_p2                                                   |     |        | Ebi          | xor    | auto      | 0       |
+|      xor_ln162_fu_1421_p2                                             |     |        | xor_ln162    | xor    | auto      | 0       |
+|      and_ln162_fu_1427_p2                                             |     |        | and_ln162    | and    | auto      | 0       |
+|      Ebo_fu_1433_p2                                                   |     |        | Ebo          | xor    | auto      | 0       |
+|      xor_ln163_fu_1439_p2                                             |     |        | xor_ln163    | xor    | auto      | 0       |
+|      and_ln163_fu_1445_p2                                             |     |        | and_ln163    | and    | auto      | 0       |
+|      Ebu_fu_1451_p2                                                   |     |        | Ebu          | xor    | auto      | 0       |
+|      Abo_4_fu_1457_p2                                                 |     |        | Abo_4        | xor    | auto      | 0       |
+|      Agu_4_fu_1485_p2                                                 |     |        | Agu_4        | xor    | auto      | 0       |
+|      Aka_4_fu_1513_p2                                                 |     |        | Aka_4        | xor    | auto      | 0       |
+|      Ame_4_fu_1541_p2                                                 |     |        | Ame_4        | xor    | auto      | 0       |
+|      Asi_4_fu_1569_p2                                                 |     |        | Asi_4        | xor    | auto      | 0       |
+|      xor_ln175_fu_1597_p2                                             |     |        | xor_ln175    | xor    | auto      | 0       |
+|      and_ln175_fu_1603_p2                                             |     |        | and_ln175    | and    | auto      | 0       |
+|      Ega_fu_1609_p2                                                   |     |        | Ega          | xor    | auto      | 0       |
+|      xor_ln176_fu_1615_p2                                             |     |        | xor_ln176    | xor    | auto      | 0       |
+|      and_ln176_fu_1621_p2                                             |     |        | and_ln176    | and    | auto      | 0       |
+|      Ege_fu_1627_p2                                                   |     |        | Ege          | xor    | auto      | 0       |
+|      xor_ln177_fu_1633_p2                                             |     |        | xor_ln177    | xor    | auto      | 0       |
+|      and_ln177_fu_1639_p2                                             |     |        | and_ln177    | and    | auto      | 0       |
+|      Egi_fu_1645_p2                                                   |     |        | Egi          | xor    | auto      | 0       |
+|      xor_ln178_fu_1651_p2                                             |     |        | xor_ln178    | xor    | auto      | 0       |
+|      and_ln178_fu_1657_p2                                             |     |        | and_ln178    | and    | auto      | 0       |
+|      Ego_fu_1663_p2                                                   |     |        | Ego          | xor    | auto      | 0       |
+|      xor_ln179_fu_1669_p2                                             |     |        | xor_ln179    | xor    | auto      | 0       |
+|      and_ln179_fu_1675_p2                                             |     |        | and_ln179    | and    | auto      | 0       |
+|      Egu_fu_1681_p2                                                   |     |        | Egu          | xor    | auto      | 0       |
+|      Abe_4_fu_1687_p2                                                 |     |        | Abe_4        | xor    | auto      | 0       |
+|      Agi_4_fu_1713_p2                                                 |     |        | Agi_4        | xor    | auto      | 0       |
+|      Ako_4_fu_1741_p2                                                 |     |        | Ako_4        | xor    | auto      | 0       |
+|      Amu_4_fu_1769_p2                                                 |     |        | Amu_4        | xor    | auto      | 0       |
+|      Asa_4_fu_1797_p2                                                 |     |        | Asa_4        | xor    | auto      | 0       |
+|      xor_ln191_fu_1825_p2                                             |     |        | xor_ln191    | xor    | auto      | 0       |
+|      and_ln191_fu_1831_p2                                             |     |        | and_ln191    | and    | auto      | 0       |
+|      Eka_fu_1837_p2                                                   |     |        | Eka          | xor    | auto      | 0       |
+|      xor_ln192_fu_1843_p2                                             |     |        | xor_ln192    | xor    | auto      | 0       |
+|      and_ln192_fu_1849_p2                                             |     |        | and_ln192    | and    | auto      | 0       |
+|      Eke_fu_1855_p2                                                   |     |        | Eke          | xor    | auto      | 0       |
+|      xor_ln193_fu_1861_p2                                             |     |        | xor_ln193    | xor    | auto      | 0       |
+|      and_ln193_fu_1867_p2                                             |     |        | and_ln193    | and    | auto      | 0       |
+|      Eki_fu_1873_p2                                                   |     |        | Eki          | xor    | auto      | 0       |
+|      xor_ln194_fu_1879_p2                                             |     |        | xor_ln194    | xor    | auto      | 0       |
+|      and_ln194_fu_1885_p2                                             |     |        | and_ln194    | and    | auto      | 0       |
+|      Eko_fu_1891_p2                                                   |     |        | Eko          | xor    | auto      | 0       |
+|      xor_ln195_fu_1897_p2                                             |     |        | xor_ln195    | xor    | auto      | 0       |
+|      and_ln195_fu_1903_p2                                             |     |        | and_ln195    | and    | auto      | 0       |
+|      Eku_fu_1909_p2                                                   |     |        | Eku          | xor    | auto      | 0       |
+|      Abu_4_fu_1915_p2                                                 |     |        | Abu_4        | xor    | auto      | 0       |
+|      Aga_4_fu_1943_p2                                                 |     |        | Aga_4        | xor    | auto      | 0       |
+|      Ake_4_fu_1971_p2                                                 |     |        | Ake_4        | xor    | auto      | 0       |
+|      Ami_4_fu_1999_p2                                                 |     |        | Ami_4        | xor    | auto      | 0       |
+|      Aso_4_fu_2027_p2                                                 |     |        | Aso_4        | xor    | auto      | 0       |
+|      xor_ln207_fu_2055_p2                                             |     |        | xor_ln207    | xor    | auto      | 0       |
+|      and_ln207_fu_2061_p2                                             |     |        | and_ln207    | and    | auto      | 0       |
+|      Ema_fu_2067_p2                                                   |     |        | Ema          | xor    | auto      | 0       |
+|      xor_ln208_fu_2073_p2                                             |     |        | xor_ln208    | xor    | auto      | 0       |
+|      and_ln208_fu_2079_p2                                             |     |        | and_ln208    | and    | auto      | 0       |
+|      Eme_fu_2085_p2                                                   |     |        | Eme          | xor    | auto      | 0       |
+|      xor_ln209_fu_2091_p2                                             |     |        | xor_ln209    | xor    | auto      | 0       |
+|      and_ln209_fu_2097_p2                                             |     |        | and_ln209    | and    | auto      | 0       |
+|      Emi_fu_2103_p2                                                   |     |        | Emi          | xor    | auto      | 0       |
+|      xor_ln210_fu_2109_p2                                             |     |        | xor_ln210    | xor    | auto      | 0       |
+|      and_ln210_fu_2115_p2                                             |     |        | and_ln210    | and    | auto      | 0       |
+|      Emo_fu_2121_p2                                                   |     |        | Emo          | xor    | auto      | 0       |
+|      xor_ln211_fu_2127_p2                                             |     |        | xor_ln211    | xor    | auto      | 0       |
+|      and_ln211_fu_2133_p2                                             |     |        | and_ln211    | and    | auto      | 0       |
+|      Emu_fu_2139_p2                                                   |     |        | Emu          | xor    | auto      | 0       |
+|      Abi_4_fu_2145_p2                                                 |     |        | Abi_4        | xor    | auto      | 0       |
+|      Ago_4_fu_2173_p2                                                 |     |        | Ago_4        | xor    | auto      | 0       |
+|      Aku_4_fu_2201_p2                                                 |     |        | Aku_4        | xor    | auto      | 0       |
+|      Ama_4_fu_2229_p2                                                 |     |        | Ama_4        | xor    | auto      | 0       |
+|      Ase_4_fu_2257_p2                                                 |     |        | Ase_4        | xor    | auto      | 0       |
+|      xor_ln223_fu_2285_p2                                             |     |        | xor_ln223    | xor    | auto      | 0       |
+|      and_ln223_fu_2291_p2                                             |     |        | and_ln223    | and    | auto      | 0       |
+|      Esa_fu_2297_p2                                                   |     |        | Esa          | xor    | auto      | 0       |
+|      xor_ln224_fu_2303_p2                                             |     |        | xor_ln224    | xor    | auto      | 0       |
+|      and_ln224_fu_2309_p2                                             |     |        | and_ln224    | and    | auto      | 0       |
+|      Ese_fu_2315_p2                                                   |     |        | Ese          | xor    | auto      | 0       |
+|      xor_ln225_fu_2321_p2                                             |     |        | xor_ln225    | xor    | auto      | 0       |
+|      and_ln225_fu_2327_p2                                             |     |        | and_ln225    | and    | auto      | 0       |
+|      Esi_fu_2333_p2                                                   |     |        | Esi          | xor    | auto      | 0       |
+|      xor_ln226_fu_2339_p2                                             |     |        | xor_ln226    | xor    | auto      | 0       |
+|      and_ln226_fu_2345_p2                                             |     |        | and_ln226    | and    | auto      | 0       |
+|      Eso_fu_2351_p2                                                   |     |        | Eso          | xor    | auto      | 0       |
+|      xor_ln227_fu_2357_p2                                             |     |        | xor_ln227    | xor    | auto      | 0       |
+|      and_ln227_fu_2363_p2                                             |     |        | and_ln227    | and    | auto      | 0       |
+|      Esu_fu_2369_p2                                                   |     |        | Esu          | xor    | auto      | 0       |
+|      xor_ln230_fu_2375_p2                                             |     |        | xor_ln230    | xor    | auto      | 0       |
+|      xor_ln230_1_fu_2381_p2                                           |     |        | xor_ln230_1  | xor    | auto      | 0       |
+|      xor_ln230_2_fu_2387_p2                                           |     |        | xor_ln230_2  | xor    | auto      | 0       |
+|      BCa_13_fu_2393_p2                                                |     |        | BCa_13       | xor    | auto      | 0       |
+|      xor_ln231_1_fu_2399_p2                                           |     |        | xor_ln231_1  | xor    | auto      | 0       |
+|      xor_ln231_fu_2405_p2                                             |     |        | xor_ln231    | xor    | auto      | 0       |
+|      xor_ln231_2_fu_2411_p2                                           |     |        | xor_ln231_2  | xor    | auto      | 0       |
+|      BCe_12_fu_2417_p2                                                |     |        | BCe_12       | xor    | auto      | 0       |
+|      xor_ln232_1_fu_2423_p2                                           |     |        | xor_ln232_1  | xor    | auto      | 0       |
+|      xor_ln232_fu_2429_p2                                             |     |        | xor_ln232    | xor    | auto      | 0       |
+|      xor_ln232_2_fu_2435_p2                                           |     |        | xor_ln232_2  | xor    | auto      | 0       |
+|      BCi_12_fu_2441_p2                                                |     |        | BCi_12       | xor    | auto      | 0       |
+|      xor_ln233_fu_2447_p2                                             |     |        | xor_ln233    | xor    | auto      | 0       |
+|      xor_ln233_1_fu_2453_p2                                           |     |        | xor_ln233_1  | xor    | auto      | 0       |
+|      xor_ln233_2_fu_2459_p2                                           |     |        | xor_ln233_2  | xor    | auto      | 0       |
+|      BCo_12_fu_2465_p2                                                |     |        | BCo_12       | xor    | auto      | 0       |
+|      xor_ln234_fu_2471_p2                                             |     |        | xor_ln234    | xor    | auto      | 0       |
+|      xor_ln234_1_fu_2477_p2                                           |     |        | xor_ln234_1  | xor    | auto      | 0       |
+|      xor_ln234_2_fu_2483_p2                                           |     |        | xor_ln234_2  | xor    | auto      | 0       |
+|      BCu_12_fu_2489_p2                                                |     |        | BCu_12       | xor    | auto      | 0       |
+|      Da_2_fu_2515_p2                                                  |     |        | Da_2         | xor    | auto      | 0       |
+|      De_2_fu_2541_p2                                                  |     |        | De_2         | xor    | auto      | 0       |
+|      Di_2_fu_2567_p2                                                  |     |        | Di_2         | xor    | auto      | 0       |
+|      Do_2_fu_2593_p2                                                  |     |        | Do_2         | xor    | auto      | 0       |
+|      Du_2_fu_2619_p2                                                  |     |        | Du_2         | xor    | auto      | 0       |
+|      Eba_4_fu_2625_p2                                                 |     |        | Eba_4        | xor    | auto      | 0       |
+|      Ege_2_fu_2631_p2                                                 |     |        | Ege_2        | xor    | auto      | 0       |
+|      Eki_2_fu_2651_p2                                                 |     |        | Eki_2        | xor    | auto      | 0       |
+|      Emo_2_fu_2671_p2                                                 |     |        | Emo_2        | xor    | auto      | 0       |
+|      Esu_2_fu_2691_p2                                                 |     |        | Esu_2        | xor    | auto      | 0       |
+|      xor_ln254_fu_3133_p2                                             |     |        | xor_ln254    | xor    | auto      | 0       |
+|      and_ln254_fu_3139_p2                                             |     |        | and_ln254    | and    | auto      | 0       |
+|      xor_ln254_1_fu_3145_p2                                           |     |        | xor_ln254_1  | xor    | auto      | 0       |
+|      Aba_6_fu_3149_p2                                                 |     |        | Aba_6        | xor    | auto      | 0       |
+|      xor_ln255_fu_3155_p2                                             |     |        | xor_ln255    | xor    | auto      | 0       |
+|      and_ln255_fu_3161_p2                                             |     |        | and_ln255    | and    | auto      | 0       |
+|      Abe_5_fu_3167_p2                                                 |     |        | Abe_5        | xor    | auto      | 0       |
+|      xor_ln256_fu_3173_p2                                             |     |        | xor_ln256    | xor    | auto      | 0       |
+|      and_ln256_fu_3179_p2                                             |     |        | and_ln256    | and    | auto      | 0       |
+|      Abi_5_fu_3185_p2                                                 |     |        | Abi_5        | xor    | auto      | 0       |
+|      xor_ln257_fu_3191_p2                                             |     |        | xor_ln257    | xor    | auto      | 0       |
+|      and_ln257_fu_3197_p2                                             |     |        | and_ln257    | and    | auto      | 0       |
+|      Abo_5_fu_3202_p2                                                 |     |        | Abo_5        | xor    | auto      | 0       |
+|      xor_ln258_fu_3208_p2                                             |     |        | xor_ln258    | xor    | auto      | 0       |
+|      and_ln258_fu_3213_p2                                             |     |        | and_ln258    | and    | auto      | 0       |
+|      Abu_5_fu_3219_p2                                                 |     |        | Abu_5        | xor    | auto      | 0       |
+|      Ebo_2_fu_2711_p2                                                 |     |        | Ebo_2        | xor    | auto      | 0       |
+|      Egu_2_fu_2731_p2                                                 |     |        | Egu_2        | xor    | auto      | 0       |
+|      Eka_2_fu_2751_p2                                                 |     |        | Eka_2        | xor    | auto      | 0       |
+|      Eme_2_fu_2771_p2                                                 |     |        | Eme_2        | xor    | auto      | 0       |
+|      Esi_2_fu_2791_p2                                                 |     |        | Esi_2        | xor    | auto      | 0       |
+|      xor_ln270_fu_3255_p2                                             |     |        | xor_ln270    | xor    | auto      | 0       |
+|      and_ln270_fu_3261_p2                                             |     |        | and_ln270    | and    | auto      | 0       |
+|      Aga_5_fu_3267_p2                                                 |     |        | Aga_5        | xor    | auto      | 0       |
+|      xor_ln271_fu_3273_p2                                             |     |        | xor_ln271    | xor    | auto      | 0       |
+|      and_ln271_fu_3279_p2                                             |     |        | and_ln271    | and    | auto      | 0       |
+|      Age_5_fu_3285_p2                                                 |     |        | Age_5        | xor    | auto      | 0       |
+|      xor_ln272_fu_3291_p2                                             |     |        | xor_ln272    | xor    | auto      | 0       |
+|      and_ln272_fu_3297_p2                                             |     |        | and_ln272    | and    | auto      | 0       |
+|      Agi_5_fu_3303_p2                                                 |     |        | Agi_5        | xor    | auto      | 0       |
+|      xor_ln273_fu_3309_p2                                             |     |        | xor_ln273    | xor    | auto      | 0       |
+|      and_ln273_fu_3315_p2                                             |     |        | and_ln273    | and    | auto      | 0       |
+|      Ago_5_fu_3321_p2                                                 |     |        | Ago_5        | xor    | auto      | 0       |
+|      xor_ln274_fu_3327_p2                                             |     |        | xor_ln274    | xor    | auto      | 0       |
+|      and_ln274_fu_3333_p2                                             |     |        | and_ln274    | and    | auto      | 0       |
+|      Agu_5_fu_3339_p2                                                 |     |        | Agu_5        | xor    | auto      | 0       |
+|      Ebe_2_fu_2811_p2                                                 |     |        | Ebe_2        | xor    | auto      | 0       |
+|      Egi_2_fu_2829_p2                                                 |     |        | Egi_2        | xor    | auto      | 0       |
+|      Eko_2_fu_2849_p2                                                 |     |        | Eko_2        | xor    | auto      | 0       |
+|      Emu_2_fu_2869_p2                                                 |     |        | Emu_2        | xor    | auto      | 0       |
+|      Esa_2_fu_2889_p2                                                 |     |        | Esa_2        | xor    | auto      | 0       |
+|      xor_ln286_fu_3375_p2                                             |     |        | xor_ln286    | xor    | auto      | 0       |
+|      and_ln286_fu_3381_p2                                             |     |        | and_ln286    | and    | auto      | 0       |
+|      Aka_5_fu_3387_p2                                                 |     |        | Aka_5        | xor    | auto      | 0       |
+|      xor_ln287_fu_3393_p2                                             |     |        | xor_ln287    | xor    | auto      | 0       |
+|      and_ln287_fu_3399_p2                                             |     |        | and_ln287    | and    | auto      | 0       |
+|      Ake_5_fu_3405_p2                                                 |     |        | Ake_5        | xor    | auto      | 0       |
+|      xor_ln288_fu_3411_p2                                             |     |        | xor_ln288    | xor    | auto      | 0       |
+|      and_ln288_fu_3417_p2                                             |     |        | and_ln288    | and    | auto      | 0       |
+|      Aki_5_fu_3423_p2                                                 |     |        | Aki_5        | xor    | auto      | 0       |
+|      xor_ln289_fu_3429_p2                                             |     |        | xor_ln289    | xor    | auto      | 0       |
+|      and_ln289_fu_3435_p2                                             |     |        | and_ln289    | and    | auto      | 0       |
+|      Ako_5_fu_3441_p2                                                 |     |        | Ako_5        | xor    | auto      | 0       |
+|      xor_ln290_fu_3447_p2                                             |     |        | xor_ln290    | xor    | auto      | 0       |
+|      and_ln290_fu_3453_p2                                             |     |        | and_ln290    | and    | auto      | 0       |
+|      Aku_5_fu_3459_p2                                                 |     |        | Aku_5        | xor    | auto      | 0       |
+|      Ebu_2_fu_2909_p2                                                 |     |        | Ebu_2        | xor    | auto      | 0       |
+|      Ega_2_fu_2929_p2                                                 |     |        | Ega_2        | xor    | auto      | 0       |
+|      Eke_2_fu_2949_p2                                                 |     |        | Eke_2        | xor    | auto      | 0       |
+|      Emi_2_fu_2969_p2                                                 |     |        | Emi_2        | xor    | auto      | 0       |
+|      Eso_2_fu_2989_p2                                                 |     |        | Eso_2        | xor    | auto      | 0       |
+|      xor_ln302_fu_3495_p2                                             |     |        | xor_ln302    | xor    | auto      | 0       |
+|      and_ln302_fu_3501_p2                                             |     |        | and_ln302    | and    | auto      | 0       |
+|      Ama_5_fu_3507_p2                                                 |     |        | Ama_5        | xor    | auto      | 0       |
+|      xor_ln303_fu_3513_p2                                             |     |        | xor_ln303    | xor    | auto      | 0       |
+|      and_ln303_fu_3519_p2                                             |     |        | and_ln303    | and    | auto      | 0       |
+|      Ame_5_fu_3525_p2                                                 |     |        | Ame_5        | xor    | auto      | 0       |
+|      xor_ln304_fu_3531_p2                                             |     |        | xor_ln304    | xor    | auto      | 0       |
+|      and_ln304_fu_3537_p2                                             |     |        | and_ln304    | and    | auto      | 0       |
+|      Ami_5_fu_3543_p2                                                 |     |        | Ami_5        | xor    | auto      | 0       |
+|      xor_ln305_fu_3549_p2                                             |     |        | xor_ln305    | xor    | auto      | 0       |
+|      and_ln305_fu_3555_p2                                             |     |        | and_ln305    | and    | auto      | 0       |
+|      Amo_5_fu_3561_p2                                                 |     |        | Amo_5        | xor    | auto      | 0       |
+|      xor_ln306_fu_3567_p2                                             |     |        | xor_ln306    | xor    | auto      | 0       |
+|      and_ln306_fu_3573_p2                                             |     |        | and_ln306    | and    | auto      | 0       |
+|      Amu_5_fu_3579_p2                                                 |     |        | Amu_5        | xor    | auto      | 0       |
+|      Ebi_2_fu_3009_p2                                                 |     |        | Ebi_2        | xor    | auto      | 0       |
+|      Ego_2_fu_3029_p2                                                 |     |        | Ego_2        | xor    | auto      | 0       |
+|      Eku_2_fu_3049_p2                                                 |     |        | Eku_2        | xor    | auto      | 0       |
+|      Ema_2_fu_3069_p2                                                 |     |        | Ema_2        | xor    | auto      | 0       |
+|      Ese_2_fu_3089_p2                                                 |     |        | Ese_2        | xor    | auto      | 0       |
+|      xor_ln318_fu_3615_p2                                             |     |        | xor_ln318    | xor    | auto      | 0       |
+|      and_ln318_fu_3621_p2                                             |     |        | and_ln318    | and    | auto      | 0       |
+|      Asa_5_fu_3627_p2                                                 |     |        | Asa_5        | xor    | auto      | 0       |
+|      xor_ln319_fu_3633_p2                                             |     |        | xor_ln319    | xor    | auto      | 0       |
+|      and_ln319_fu_3639_p2                                             |     |        | and_ln319    | and    | auto      | 0       |
+|      Ase_5_fu_3645_p2                                                 |     |        | Ase_5        | xor    | auto      | 0       |
+|      xor_ln320_fu_3651_p2                                             |     |        | xor_ln320    | xor    | auto      | 0       |
+|      and_ln320_fu_3657_p2                                             |     |        | and_ln320    | and    | auto      | 0       |
+|      Asi_5_fu_3663_p2                                                 |     |        | Asi_5        | xor    | auto      | 0       |
+|      xor_ln321_fu_3669_p2                                             |     |        | xor_ln321    | xor    | auto      | 0       |
+|      and_ln321_fu_3675_p2                                             |     |        | and_ln321    | and    | auto      | 0       |
+|      Aso_5_fu_3681_p2                                                 |     |        | Aso_5        | xor    | auto      | 0       |
+|      xor_ln322_fu_3687_p2                                             |     |        | xor_ln322    | xor    | auto      | 0       |
+|      and_ln322_fu_3693_p2                                             |     |        | and_ln322    | and    | auto      | 0       |
+|      Asu_5_fu_3699_p2                                                 |     |        | Asu_5        | xor    | auto      | 0       |
+|      add_ln131_fu_907_p2                                              |     |        | add_ln131    | add    | fabric    | 0       |
++-----------------------------------------------------------------------+-----+--------+--------------+--------+-----------+---------+
 
 
 ================================================================
 == Storage Report
 ================================================================
-+-----------------------------+---------------+-----------+------+------+--------+------------------------+------+---------+------------------+
-| Name                        | Usage         | Type      | BRAM | URAM | Pragma | Variable               | Impl | Latency | Bitwidth, Depth, |
-|                             |               |           |      |      |        |                        |      |         | Banks            |
-+-----------------------------+---------------+-----------+------+------+--------+------------------------+------+---------+------------------+
-| + sha3_256_hw               |               |           | 9    | 0    |        |                        |      |         |                  |
-|   control_s_axi_U           | interface     | s_axilite |      |      |        |                        |      |         |                  |
-|   control_r_s_axi_U         | interface     | s_axilite |      |      |        |                        |      |         |                  |
-|   gmem_m_axi_U              | interface     | m_axi     | 3    |      |        |                        |      |         |                  |
-|   s_U                       | ram_t2p array |           | 4    |      |        | s                      | auto | 1       | 64, 25, 1        |
-|  + KeccakF1600_StatePermute |               |           | 2    | 0    |        |                        |      |         |                  |
-|    KeccakF_RoundConstants_U | rom_1p        |           | 2    |      |        | KeccakF_RoundConstants | auto | 1       | 64, 24, 1        |
-+-----------------------------+---------------+-----------+------+------+--------+------------------------+------+---------+------------------+
++--------------------------------------------------------+---------------+-----------+------+------+--------+------------------------+------+---------+------------------+
+| Name                                                   | Usage         | Type      | BRAM | URAM | Pragma | Variable               | Impl | Latency | Bitwidth, Depth, |
+|                                                        |               |           |      |      |        |                        |      |         | Banks            |
++--------------------------------------------------------+---------------+-----------+------+------+--------+------------------------+------+---------+------------------+
+| + sha3_256_hw                                          |               |           | 11   | 0    |        |                        |      |         |                  |
+|   control_s_axi_U                                      | interface     | s_axilite |      |      |        |                        |      |         |                  |
+|   control_r_s_axi_U                                    | interface     | s_axilite |      |      |        |                        |      |         |                  |
+|   gmem_m_axi_U                                         | interface     | m_axi     | 3    |      |        |                        |      |         |                  |
+|  + pqcrystals_kyber_fips202_ref_sha3_256_1             |               |           | 8    | 0    |        |                        |      |         |                  |
+|    s_U                                                 | ram_t2p array |           | 4    |      |        | s                      | auto | 1       | 64, 25, 1        |
+|   + KeccakF1600_StatePermute                           |               |           | 2    | 0    |        |                        |      |         |                  |
+|    + KeccakF1600_StatePermute_Pipeline_state_permute   |               |           | 2    | 0    |        |                        |      |         |                  |
+|      KeccakF_RoundConstants_U                          | rom_2p        |           | 2    |      |        | KeccakF_RoundConstants | auto | 1       | 64, 24, 1        |
+|   + KeccakF1600_StatePermute_1                         |               |           | 2    | 0    |        |                        |      |         |                  |
+|    + KeccakF1600_StatePermute_1_Pipeline_state_permute |               |           | 2    | 0    |        |                        |      |         |                  |
+|      KeccakF_RoundConstants_U                          | rom_2p        |           | 2    |      |        | KeccakF_RoundConstants | auto | 1       | 64, 24, 1        |
++--------------------------------------------------------+---------------+-----------+------+------+--------+------------------------+------+---------+------------------+
 
 
 ================================================================
 == Pragma Report
 ================================================================
 * Valid Pragma Syntax
-+-----------+--------------------------------------------------+-------------------------------------------+
-| Type      | Options                                          | Location                                  |
-+-----------+--------------------------------------------------+-------------------------------------------+
-| pipeline  |                                                  | fips202.c:44 in store64                   |
-| pipeline  | off                                              | fips202.c:128 in keccakf1600_statepermute |
-| unroll    | off=true                                         | fips202.c:129 in keccakf1600_statepermute |
-| pipeline  | off                                              | fips202.c:479 in keccak_absorb_once       |
-| pipeline  | off                                              | fips202.c:487 in keccak_absorb_once       |
-| interface | m_axi port=in offset=slave bundle=gmem depth=64  | sha3_256.c:5 in sha3_256_hw, in           |
-| interface | m_axi port=out offset=slave bundle=gmem depth=32 | sha3_256.c:6 in sha3_256_hw, out          |
-| interface | s_axilite port=inlen bundle=control              | sha3_256.c:7 in sha3_256_hw, inlen        |
-| interface | s_axilite port=return bundle=control             | sha3_256.c:8 in sha3_256_hw, return       |
-+-----------+--------------------------------------------------+-------------------------------------------+
++----------------------+--------------------------------------------------+--------------------------------------------------------+
+| Type                 | Options                                          | Location                                               |
++----------------------+--------------------------------------------------+--------------------------------------------------------+
+| unroll               |                                                  | fips202.c:27 in load64                                 |
+| pipeline             |                                                  | fips202.c:46 in store64                                |
+| inline               | off                                              | fips202.c:87 in keccakf1600_statepermute               |
+| function_instantiate | variable=state                                   | fips202.c:88 in keccakf1600_statepermute, state        |
+| pipeline             |                                                  | fips202.c:132 in keccakf1600_statepermute              |
+| unroll               | off=true                                         | fips202.c:133 in keccakf1600_statepermute              |
+| pipeline             | off                                              | fips202.c:482 in keccak_absorb_once                    |
+| loop_tripcount       | min=0 max=135                                    | fips202.c:483 in keccak_absorb_once                    |
+| pipeline             | off                                              | fips202.c:491 in keccak_absorb_once                    |
+| loop_tripcount       | min=0 max=145                                    | fips202.c:492 in keccak_absorb_once                    |
+| pipeline             | off                                              | fips202.c:765 in pqcrystals_kyber_fips202_ref_sha3_256 |
+| interface            | m_axi port=in offset=slave bundle=gmem depth=64  | sha3_256.c:5 in sha3_256_hw, in                        |
+| interface            | m_axi port=out offset=slave bundle=gmem depth=32 | sha3_256.c:6 in sha3_256_hw, out                       |
+| interface            | s_axilite port=inlen bundle=control              | sha3_256.c:7 in sha3_256_hw, inlen                     |
+| interface            | s_axilite port=return bundle=control             | sha3_256.c:8 in sha3_256_hw, return                    |
++----------------------+--------------------------------------------------+--------------------------------------------------------+
 
 

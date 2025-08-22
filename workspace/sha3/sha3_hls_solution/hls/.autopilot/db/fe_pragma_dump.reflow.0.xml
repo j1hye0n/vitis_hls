@@ -1,9 +1,15 @@
 <pragmas>
-<pragma file="fips202.c" line="44" pragmaType="pipeline" parentfunction="store64" off="0" ii="-1" rewind="0" style=""/>
-<pragma file="fips202.c" line="129" pragmaType="unroll" parentfunction="KeccakF1600_StatePermute" factor="1" skip_exit_check="0"/>
-<pragma file="fips202.c" line="128" pragmaType="pipeline" parentfunction="KeccakF1600_StatePermute" off="1" ii="0" rewind="0" style=""/>
-<pragma file="fips202.c" line="487" pragmaType="pipeline" parentfunction="keccak_absorb_once" off="1" ii="0" rewind="0" style=""/>
-<pragma file="fips202.c" line="479" pragmaType="pipeline" parentfunction="keccak_absorb_once" off="1" ii="0" rewind="0" style=""/>
+<pragma file="fips202.c" line="27" pragmaType="unroll" parentfunction="load64" factor="-1" skip_exit_check="0"/>
+<pragma file="fips202.c" line="87" pragmaType="inline" parentfunction="KeccakF1600_StatePermute" off="1" region="0" recursive="0"/>
+<pragma file="fips202.c" line="133" pragmaType="unroll" parentfunction="KeccakF1600_StatePermute" factor="1" skip_exit_check="0"/>
+<pragma file="fips202.c" line="132" pragmaType="pipeline" parentfunction="KeccakF1600_StatePermute" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="fips202.c" line="88" pragmaType="function_instantiate" parentfunction="KeccakF1600_StatePermute" variable="state"/>
+<pragma file="fips202.c" line="491" pragmaType="pipeline" parentfunction="keccak_absorb_once" off="1" ii="0" rewind="0" style=""/>
+<pragma file="fips202.c" line="492" pragmaType="loop_tripcount" parentfunction="keccak_absorb_once" min="0" max="145" avg="72"/>
+<pragma file="fips202.c" line="482" pragmaType="pipeline" parentfunction="keccak_absorb_once" off="1" ii="0" rewind="0" style=""/>
+<pragma file="fips202.c" line="483" pragmaType="loop_tripcount" parentfunction="keccak_absorb_once" min="0" max="135" avg="67"/>
+<pragma file="fips202.c" line="765" pragmaType="pipeline" parentfunction="pqcrystals_kyber_fips202_ref_sha3_256" off="1" ii="0" rewind="0" style=""/>
+<pragma file="fips202.c" line="46" pragmaType="pipeline" parentfunction="store64" off="0" ii="-1" rewind="0" style=""/>
 <pragma file="sha3_256.c" line="5" pragmaType="interface" parentfunction="sha3_256_hw" mode="m_axi" port="in" bundle="gmem" offset="slave" name="" depth="64" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
 <pragma file="sha3_256.c" line="6" pragmaType="interface" parentfunction="sha3_256_hw" mode="m_axi" port="out" bundle="gmem" offset="slave" name="" depth="32" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
 <pragma file="sha3_256.c" line="7" pragmaType="interface" parentfunction="sha3_256_hw" mode="s_axilite" port="inlen" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>

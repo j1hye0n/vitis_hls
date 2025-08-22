@@ -1,28 +1,5 @@
 # This script segment is generated automatically by AutoPilot
 
-set name sha3_256_hw_mul_32ns_34ns_65_2_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 1 ALLOW_PRAGMA 1
-}
-
-
-set name sha3_256_hw_urem_32ns_9ns_32_36_seq_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {urem} IMPL {auto_seq} LATENCY 35 ALLOW_PRAGMA 1
-}
-
-
-set name sha3_256_hw_urem_32ns_9ns_8_36_seq_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {urem} IMPL {auto_seq} LATENCY 35 ALLOW_PRAGMA 1
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler sha3_256_hw_s_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
-}
-
-
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler sha3_256_hw_gmem_m_axi BINDTYPE {interface} TYPE {adapter} IMPL {m_axi}
 }
@@ -59,7 +36,7 @@ dict set axilite_register_dict control $port_control
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 14 \
+			id 112 \
 			corename sha3_256_hw_control_axilite \
 			name sha3_256_hw_control_s_axi \
 			ports {$port_control} \
@@ -104,7 +81,7 @@ dict set axilite_register_dict control_r $port_control_r
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 15 \
+			id 113 \
 			corename sha3_256_hw_control_r_axilite \
 			name sha3_256_hw_control_r_s_axi \
 			ports {$port_control_r} \

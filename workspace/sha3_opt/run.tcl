@@ -16,7 +16,9 @@
 # edited by hyeon
 
 # Create a project
-open_component -reset sha3_hls -flow_target vivado
+# change to need project name
+set project "sha3_hls"
+open_component -reset $project -flow_target vivado
 
 # Add design files
 add_files fips202.c
@@ -65,15 +67,15 @@ if {$hls_exec == 1} {
 	csynth_design
 }
 
-# GUI analysis files
-set gui_dir "./$sol_name/gui"
-file mkdir $gui_dir
-
-if {[file exists "$sol_name/hls/sim/verilog/$top.wdb"]} {
-	file copy -force "$sol_name/hls/sim/verilog/$top.wdb" "$gui_dir/"
-}
-if {[file exists "$sol_name/hls/hls.log"]} {
-	file copy -force "$sol_name/hls.log" "$gui_dir/"
-}
-
-exit
+## GUI analysis files
+#et gui_dir "./$sol_name/gui"
+#ile mkdir $gui_dir
+#
+#f {[file exists "$project$sol_name/hls/sim/verilog/$top.wdb"]} {
+#   file copy -force "$sol_name/hls/sim/verilog/$top.wdb" "$gui_dir/"
+#
+#f {[file exists "$project$sol_name/hls/hls.log"]} {
+#   file copy -force "$sol_name/hls.log" "$gui_dir/"
+#
+#
+#xit

@@ -1,0 +1,487 @@
+
+
+================================================================
+== Vitis HLS Report for 'KeccakF1600_StatePermute_1'
+================================================================
+* Date:           Wed Aug  6 16:42:25 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        sha3_hls_solution
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.214 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       42|       42|  0.420 us|  0.420 us|   42|   42|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 28
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.25>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%Aso_1_loc = alloca i64 1"   --->   Operation 29 'alloca' 'Aso_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%Asi_1_loc = alloca i64 1"   --->   Operation 30 'alloca' 'Asi_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%Ase_1_loc = alloca i64 1"   --->   Operation 31 'alloca' 'Ase_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%Asa_1_loc = alloca i64 1"   --->   Operation 32 'alloca' 'Asa_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%Amu_1_loc = alloca i64 1"   --->   Operation 33 'alloca' 'Amu_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%Amo_1_loc = alloca i64 1"   --->   Operation 34 'alloca' 'Amo_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%Ami_1_loc = alloca i64 1"   --->   Operation 35 'alloca' 'Ami_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%Ame_1_loc = alloca i64 1"   --->   Operation 36 'alloca' 'Ame_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%Ama_1_loc = alloca i64 1"   --->   Operation 37 'alloca' 'Ama_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%Aku_1_loc = alloca i64 1"   --->   Operation 38 'alloca' 'Aku_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%Ako_1_loc = alloca i64 1"   --->   Operation 39 'alloca' 'Ako_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%Aki_1_loc = alloca i64 1"   --->   Operation 40 'alloca' 'Aki_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%Ake_1_loc = alloca i64 1"   --->   Operation 41 'alloca' 'Ake_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%Aka_1_loc = alloca i64 1"   --->   Operation 42 'alloca' 'Aka_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%Agu_1_loc = alloca i64 1"   --->   Operation 43 'alloca' 'Agu_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%Ago_1_loc = alloca i64 1"   --->   Operation 44 'alloca' 'Ago_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%Agi_1_loc = alloca i64 1"   --->   Operation 45 'alloca' 'Agi_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%Age_1_loc = alloca i64 1"   --->   Operation 46 'alloca' 'Age_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%Aga_1_loc = alloca i64 1"   --->   Operation 47 'alloca' 'Aga_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%Abu_1_loc = alloca i64 1"   --->   Operation 48 'alloca' 'Abu_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%Abo_1_loc = alloca i64 1"   --->   Operation 49 'alloca' 'Abo_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%Abi_1_loc = alloca i64 1"   --->   Operation 50 'alloca' 'Abi_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%Abe_1_loc = alloca i64 1"   --->   Operation 51 'alloca' 'Abe_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%Aba_1_loc = alloca i64 1"   --->   Operation 52 'alloca' 'Aba_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%Asu_1_loc = alloca i64 1"   --->   Operation 53 'alloca' 'Asu_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%state_addr = getelementptr i64 %state, i64 0, i64 0" [fips202.c:85]   --->   Operation 54 'getelementptr' 'state_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [2/2] (3.25ns)   --->   "%Aba = load i5 %state_addr" [fips202.c:105]   --->   Operation 55 'load' 'Aba' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 2 <SV = 1> <Delay = 3.25>
+ST_2 : Operation 56 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Aba = load i5 %state_addr" [fips202.c:105]   --->   Operation 56 'load' 'Aba' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_2 : Operation 57 [1/1] (0.00ns)   --->   "%state_addr_1 = getelementptr i64 %state, i64 0, i64 1" [fips202.c:106]   --->   Operation 57 'getelementptr' 'state_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 58 [2/2] (3.25ns)   --->   "%Abe = load i5 %state_addr_1" [fips202.c:106]   --->   Operation 58 'load' 'Abe' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%state_addr_2 = getelementptr i64 %state, i64 0, i64 2" [fips202.c:107]   --->   Operation 59 'getelementptr' 'state_addr_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 60 [2/2] (3.25ns)   --->   "%Abi = load i5 %state_addr_2" [fips202.c:107]   --->   Operation 60 'load' 'Abi' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 3 <SV = 2> <Delay = 3.25>
+ST_3 : Operation 61 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Abe = load i5 %state_addr_1" [fips202.c:106]   --->   Operation 61 'load' 'Abe' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_3 : Operation 62 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Abi = load i5 %state_addr_2" [fips202.c:107]   --->   Operation 62 'load' 'Abi' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_3 : Operation 63 [1/1] (0.00ns)   --->   "%state_addr_3 = getelementptr i64 %state, i64 0, i64 3" [fips202.c:108]   --->   Operation 63 'getelementptr' 'state_addr_3' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 64 [2/2] (3.25ns)   --->   "%Abo = load i5 %state_addr_3" [fips202.c:108]   --->   Operation 64 'load' 'Abo' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_3 : Operation 65 [1/1] (0.00ns)   --->   "%state_addr_4 = getelementptr i64 %state, i64 0, i64 4" [fips202.c:109]   --->   Operation 65 'getelementptr' 'state_addr_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 66 [2/2] (3.25ns)   --->   "%Abu = load i5 %state_addr_4" [fips202.c:109]   --->   Operation 66 'load' 'Abu' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 4 <SV = 3> <Delay = 3.25>
+ST_4 : Operation 67 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Abo = load i5 %state_addr_3" [fips202.c:108]   --->   Operation 67 'load' 'Abo' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_4 : Operation 68 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Abu = load i5 %state_addr_4" [fips202.c:109]   --->   Operation 68 'load' 'Abu' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_4 : Operation 69 [1/1] (0.00ns)   --->   "%state_addr_5 = getelementptr i64 %state, i64 0, i64 5" [fips202.c:110]   --->   Operation 69 'getelementptr' 'state_addr_5' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 70 [2/2] (3.25ns)   --->   "%Aga = load i5 %state_addr_5" [fips202.c:110]   --->   Operation 70 'load' 'Aga' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_4 : Operation 71 [1/1] (0.00ns)   --->   "%state_addr_6 = getelementptr i64 %state, i64 0, i64 6" [fips202.c:111]   --->   Operation 71 'getelementptr' 'state_addr_6' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 72 [2/2] (3.25ns)   --->   "%Age = load i5 %state_addr_6" [fips202.c:111]   --->   Operation 72 'load' 'Age' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 5 <SV = 4> <Delay = 3.25>
+ST_5 : Operation 73 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Aga = load i5 %state_addr_5" [fips202.c:110]   --->   Operation 73 'load' 'Aga' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_5 : Operation 74 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Age = load i5 %state_addr_6" [fips202.c:111]   --->   Operation 74 'load' 'Age' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_5 : Operation 75 [1/1] (0.00ns)   --->   "%state_addr_7 = getelementptr i64 %state, i64 0, i64 7" [fips202.c:112]   --->   Operation 75 'getelementptr' 'state_addr_7' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 76 [2/2] (3.25ns)   --->   "%Agi = load i5 %state_addr_7" [fips202.c:112]   --->   Operation 76 'load' 'Agi' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_5 : Operation 77 [1/1] (0.00ns)   --->   "%state_addr_8 = getelementptr i64 %state, i64 0, i64 8" [fips202.c:113]   --->   Operation 77 'getelementptr' 'state_addr_8' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 78 [2/2] (3.25ns)   --->   "%Ago = load i5 %state_addr_8" [fips202.c:113]   --->   Operation 78 'load' 'Ago' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 6 <SV = 5> <Delay = 3.25>
+ST_6 : Operation 79 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Agi = load i5 %state_addr_7" [fips202.c:112]   --->   Operation 79 'load' 'Agi' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_6 : Operation 80 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Ago = load i5 %state_addr_8" [fips202.c:113]   --->   Operation 80 'load' 'Ago' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_6 : Operation 81 [1/1] (0.00ns)   --->   "%state_addr_9 = getelementptr i64 %state, i64 0, i64 9" [fips202.c:114]   --->   Operation 81 'getelementptr' 'state_addr_9' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 82 [2/2] (3.25ns)   --->   "%Agu = load i5 %state_addr_9" [fips202.c:114]   --->   Operation 82 'load' 'Agu' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_6 : Operation 83 [1/1] (0.00ns)   --->   "%state_addr_10 = getelementptr i64 %state, i64 0, i64 10" [fips202.c:115]   --->   Operation 83 'getelementptr' 'state_addr_10' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 84 [2/2] (3.25ns)   --->   "%Aka = load i5 %state_addr_10" [fips202.c:115]   --->   Operation 84 'load' 'Aka' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 7 <SV = 6> <Delay = 3.25>
+ST_7 : Operation 85 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Agu = load i5 %state_addr_9" [fips202.c:114]   --->   Operation 85 'load' 'Agu' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_7 : Operation 86 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Aka = load i5 %state_addr_10" [fips202.c:115]   --->   Operation 86 'load' 'Aka' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_7 : Operation 87 [1/1] (0.00ns)   --->   "%state_addr_11 = getelementptr i64 %state, i64 0, i64 11" [fips202.c:116]   --->   Operation 87 'getelementptr' 'state_addr_11' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 88 [2/2] (3.25ns)   --->   "%Ake = load i5 %state_addr_11" [fips202.c:116]   --->   Operation 88 'load' 'Ake' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_7 : Operation 89 [1/1] (0.00ns)   --->   "%state_addr_12 = getelementptr i64 %state, i64 0, i64 12" [fips202.c:117]   --->   Operation 89 'getelementptr' 'state_addr_12' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 90 [2/2] (3.25ns)   --->   "%Aki = load i5 %state_addr_12" [fips202.c:117]   --->   Operation 90 'load' 'Aki' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 8 <SV = 7> <Delay = 3.25>
+ST_8 : Operation 91 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Ake = load i5 %state_addr_11" [fips202.c:116]   --->   Operation 91 'load' 'Ake' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_8 : Operation 92 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Aki = load i5 %state_addr_12" [fips202.c:117]   --->   Operation 92 'load' 'Aki' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_8 : Operation 93 [1/1] (0.00ns)   --->   "%state_addr_13 = getelementptr i64 %state, i64 0, i64 13" [fips202.c:118]   --->   Operation 93 'getelementptr' 'state_addr_13' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 94 [2/2] (3.25ns)   --->   "%Ako = load i5 %state_addr_13" [fips202.c:118]   --->   Operation 94 'load' 'Ako' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_8 : Operation 95 [1/1] (0.00ns)   --->   "%state_addr_14 = getelementptr i64 %state, i64 0, i64 14" [fips202.c:119]   --->   Operation 95 'getelementptr' 'state_addr_14' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 96 [2/2] (3.25ns)   --->   "%Aku = load i5 %state_addr_14" [fips202.c:119]   --->   Operation 96 'load' 'Aku' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 9 <SV = 8> <Delay = 3.25>
+ST_9 : Operation 97 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Ako = load i5 %state_addr_13" [fips202.c:118]   --->   Operation 97 'load' 'Ako' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_9 : Operation 98 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Aku = load i5 %state_addr_14" [fips202.c:119]   --->   Operation 98 'load' 'Aku' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_9 : Operation 99 [1/1] (0.00ns)   --->   "%state_addr_15 = getelementptr i64 %state, i64 0, i64 15" [fips202.c:120]   --->   Operation 99 'getelementptr' 'state_addr_15' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 100 [2/2] (3.25ns)   --->   "%Ama = load i5 %state_addr_15" [fips202.c:120]   --->   Operation 100 'load' 'Ama' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_9 : Operation 101 [1/1] (0.00ns)   --->   "%state_addr_16 = getelementptr i64 %state, i64 0, i64 16" [fips202.c:121]   --->   Operation 101 'getelementptr' 'state_addr_16' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 102 [2/2] (3.25ns)   --->   "%Ame = load i5 %state_addr_16" [fips202.c:121]   --->   Operation 102 'load' 'Ame' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 10 <SV = 9> <Delay = 3.25>
+ST_10 : Operation 103 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Ama = load i5 %state_addr_15" [fips202.c:120]   --->   Operation 103 'load' 'Ama' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_10 : Operation 104 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Ame = load i5 %state_addr_16" [fips202.c:121]   --->   Operation 104 'load' 'Ame' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_10 : Operation 105 [1/1] (0.00ns)   --->   "%state_addr_17 = getelementptr i64 %state, i64 0, i64 17" [fips202.c:122]   --->   Operation 105 'getelementptr' 'state_addr_17' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 106 [2/2] (3.25ns)   --->   "%Ami = load i5 %state_addr_17" [fips202.c:122]   --->   Operation 106 'load' 'Ami' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_10 : Operation 107 [1/1] (0.00ns)   --->   "%state_addr_18 = getelementptr i64 %state, i64 0, i64 18" [fips202.c:123]   --->   Operation 107 'getelementptr' 'state_addr_18' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 108 [2/2] (3.25ns)   --->   "%Amo = load i5 %state_addr_18" [fips202.c:123]   --->   Operation 108 'load' 'Amo' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 11 <SV = 10> <Delay = 3.25>
+ST_11 : Operation 109 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Ami = load i5 %state_addr_17" [fips202.c:122]   --->   Operation 109 'load' 'Ami' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_11 : Operation 110 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Amo = load i5 %state_addr_18" [fips202.c:123]   --->   Operation 110 'load' 'Amo' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_11 : Operation 111 [1/1] (0.00ns)   --->   "%state_addr_19 = getelementptr i64 %state, i64 0, i64 19" [fips202.c:124]   --->   Operation 111 'getelementptr' 'state_addr_19' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 112 [2/2] (3.25ns)   --->   "%Amu = load i5 %state_addr_19" [fips202.c:124]   --->   Operation 112 'load' 'Amu' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_11 : Operation 113 [1/1] (0.00ns)   --->   "%state_addr_20 = getelementptr i64 %state, i64 0, i64 20" [fips202.c:125]   --->   Operation 113 'getelementptr' 'state_addr_20' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 114 [2/2] (3.25ns)   --->   "%Asa = load i5 %state_addr_20" [fips202.c:125]   --->   Operation 114 'load' 'Asa' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 12 <SV = 11> <Delay = 3.25>
+ST_12 : Operation 115 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Amu = load i5 %state_addr_19" [fips202.c:124]   --->   Operation 115 'load' 'Amu' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_12 : Operation 116 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Asa = load i5 %state_addr_20" [fips202.c:125]   --->   Operation 116 'load' 'Asa' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_12 : Operation 117 [1/1] (0.00ns)   --->   "%state_addr_21 = getelementptr i64 %state, i64 0, i64 21" [fips202.c:126]   --->   Operation 117 'getelementptr' 'state_addr_21' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 118 [2/2] (3.25ns)   --->   "%Ase = load i5 %state_addr_21" [fips202.c:126]   --->   Operation 118 'load' 'Ase' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_12 : Operation 119 [1/1] (0.00ns)   --->   "%state_addr_22 = getelementptr i64 %state, i64 0, i64 22" [fips202.c:127]   --->   Operation 119 'getelementptr' 'state_addr_22' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 120 [2/2] (3.25ns)   --->   "%Asi = load i5 %state_addr_22" [fips202.c:127]   --->   Operation 120 'load' 'Asi' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 13 <SV = 12> <Delay = 3.25>
+ST_13 : Operation 121 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Ase = load i5 %state_addr_21" [fips202.c:126]   --->   Operation 121 'load' 'Ase' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_13 : Operation 122 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Asi = load i5 %state_addr_22" [fips202.c:127]   --->   Operation 122 'load' 'Asi' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_13 : Operation 123 [1/1] (0.00ns)   --->   "%state_addr_23 = getelementptr i64 %state, i64 0, i64 23" [fips202.c:128]   --->   Operation 123 'getelementptr' 'state_addr_23' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 124 [2/2] (3.25ns)   --->   "%Aso = load i5 %state_addr_23" [fips202.c:128]   --->   Operation 124 'load' 'Aso' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_13 : Operation 125 [1/1] (0.00ns)   --->   "%state_addr_24 = getelementptr i64 %state, i64 0, i64 24" [fips202.c:129]   --->   Operation 125 'getelementptr' 'state_addr_24' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 126 [2/2] (3.25ns)   --->   "%Asu = load i5 %state_addr_24" [fips202.c:129]   --->   Operation 126 'load' 'Asu' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 14 <SV = 13> <Delay = 4.84>
+ST_14 : Operation 127 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Aso = load i5 %state_addr_23" [fips202.c:128]   --->   Operation 127 'load' 'Aso' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_14 : Operation 128 [1/2] ( I:3.25ns O:3.25ns )   --->   "%Asu = load i5 %state_addr_24" [fips202.c:129]   --->   Operation 128 'load' 'Asu' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_14 : Operation 129 [2/2] (1.58ns)   --->   "%call_ln129 = call void @KeccakF1600_StatePermute.1_Pipeline_state_permute, i64 %Asu, i64 %Aba, i64 %Abe, i64 %Abi, i64 %Abo, i64 %Abu, i64 %Aga, i64 %Age, i64 %Agi, i64 %Ago, i64 %Agu, i64 %Aka, i64 %Ake, i64 %Aki, i64 %Ako, i64 %Aku, i64 %Ama, i64 %Ame, i64 %Ami, i64 %Amo, i64 %Amu, i64 %Asa, i64 %Ase, i64 %Asi, i64 %Aso, i64 %Asu_1_loc, i64 %Aba_1_loc, i64 %Abe_1_loc, i64 %Abi_1_loc, i64 %Abo_1_loc, i64 %Abu_1_loc, i64 %Aga_1_loc, i64 %Age_1_loc, i64 %Agi_1_loc, i64 %Ago_1_loc, i64 %Agu_1_loc, i64 %Aka_1_loc, i64 %Ake_1_loc, i64 %Aki_1_loc, i64 %Ako_1_loc, i64 %Aku_1_loc, i64 %Ama_1_loc, i64 %Ame_1_loc, i64 %Ami_1_loc, i64 %Amo_1_loc, i64 %Amu_1_loc, i64 %Asa_1_loc, i64 %Ase_1_loc, i64 %Asi_1_loc, i64 %Aso_1_loc, i64 %KeccakF_RoundConstants" [fips202.c:129]   --->   Operation 129 'call' 'call_ln129' <Predicate = true> <Delay = 1.58> <CoreType = "Generic">   --->   Generic Core
+
+State 15 <SV = 14> <Delay = 0.00>
+ST_15 : Operation 130 [1/2] (0.00ns)   --->   "%call_ln129 = call void @KeccakF1600_StatePermute.1_Pipeline_state_permute, i64 %Asu, i64 %Aba, i64 %Abe, i64 %Abi, i64 %Abo, i64 %Abu, i64 %Aga, i64 %Age, i64 %Agi, i64 %Ago, i64 %Agu, i64 %Aka, i64 %Ake, i64 %Aki, i64 %Ako, i64 %Aku, i64 %Ama, i64 %Ame, i64 %Ami, i64 %Amo, i64 %Amu, i64 %Asa, i64 %Ase, i64 %Asi, i64 %Aso, i64 %Asu_1_loc, i64 %Aba_1_loc, i64 %Abe_1_loc, i64 %Abi_1_loc, i64 %Abo_1_loc, i64 %Abu_1_loc, i64 %Aga_1_loc, i64 %Age_1_loc, i64 %Agi_1_loc, i64 %Ago_1_loc, i64 %Agu_1_loc, i64 %Aka_1_loc, i64 %Ake_1_loc, i64 %Aki_1_loc, i64 %Ako_1_loc, i64 %Aku_1_loc, i64 %Ama_1_loc, i64 %Ame_1_loc, i64 %Ami_1_loc, i64 %Amo_1_loc, i64 %Amu_1_loc, i64 %Asa_1_loc, i64 %Ase_1_loc, i64 %Asi_1_loc, i64 %Aso_1_loc, i64 %KeccakF_RoundConstants" [fips202.c:129]   --->   Operation 130 'call' 'call_ln129' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 16 <SV = 15> <Delay = 3.25>
+ST_16 : Operation 131 [1/1] (0.00ns)   --->   "%Aba_1_loc_load = load i64 %Aba_1_loc"   --->   Operation 131 'load' 'Aba_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 132 [1/1] (0.00ns)   --->   "%Abe_1_loc_load = load i64 %Abe_1_loc"   --->   Operation 132 'load' 'Abe_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 133 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln326 = store i64 %Aba_1_loc_load, i5 %state_addr" [fips202.c:326]   --->   Operation 133 'store' 'store_ln326' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_16 : Operation 134 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln327 = store i64 %Abe_1_loc_load, i5 %state_addr_1" [fips202.c:327]   --->   Operation 134 'store' 'store_ln327' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 17 <SV = 16> <Delay = 3.25>
+ST_17 : Operation 135 [1/1] (0.00ns)   --->   "%Abi_1_loc_load = load i64 %Abi_1_loc"   --->   Operation 135 'load' 'Abi_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 136 [1/1] (0.00ns)   --->   "%Abo_1_loc_load = load i64 %Abo_1_loc"   --->   Operation 136 'load' 'Abo_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 137 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln328 = store i64 %Abi_1_loc_load, i5 %state_addr_2" [fips202.c:328]   --->   Operation 137 'store' 'store_ln328' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_17 : Operation 138 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln329 = store i64 %Abo_1_loc_load, i5 %state_addr_3" [fips202.c:329]   --->   Operation 138 'store' 'store_ln329' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 18 <SV = 17> <Delay = 3.25>
+ST_18 : Operation 139 [1/1] (0.00ns)   --->   "%Abu_1_loc_load = load i64 %Abu_1_loc"   --->   Operation 139 'load' 'Abu_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 140 [1/1] (0.00ns)   --->   "%Aga_1_loc_load = load i64 %Aga_1_loc"   --->   Operation 140 'load' 'Aga_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 141 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln330 = store i64 %Abu_1_loc_load, i5 %state_addr_4" [fips202.c:330]   --->   Operation 141 'store' 'store_ln330' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_18 : Operation 142 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln331 = store i64 %Aga_1_loc_load, i5 %state_addr_5" [fips202.c:331]   --->   Operation 142 'store' 'store_ln331' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 19 <SV = 18> <Delay = 3.25>
+ST_19 : Operation 143 [1/1] (0.00ns)   --->   "%Age_1_loc_load = load i64 %Age_1_loc"   --->   Operation 143 'load' 'Age_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 144 [1/1] (0.00ns)   --->   "%Agi_1_loc_load = load i64 %Agi_1_loc"   --->   Operation 144 'load' 'Agi_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 145 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln332 = store i64 %Age_1_loc_load, i5 %state_addr_6" [fips202.c:332]   --->   Operation 145 'store' 'store_ln332' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_19 : Operation 146 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln333 = store i64 %Agi_1_loc_load, i5 %state_addr_7" [fips202.c:333]   --->   Operation 146 'store' 'store_ln333' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 20 <SV = 19> <Delay = 3.25>
+ST_20 : Operation 147 [1/1] (0.00ns)   --->   "%Ago_1_loc_load = load i64 %Ago_1_loc"   --->   Operation 147 'load' 'Ago_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 148 [1/1] (0.00ns)   --->   "%Agu_1_loc_load = load i64 %Agu_1_loc"   --->   Operation 148 'load' 'Agu_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 149 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln334 = store i64 %Ago_1_loc_load, i5 %state_addr_8" [fips202.c:334]   --->   Operation 149 'store' 'store_ln334' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_20 : Operation 150 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln335 = store i64 %Agu_1_loc_load, i5 %state_addr_9" [fips202.c:335]   --->   Operation 150 'store' 'store_ln335' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 21 <SV = 20> <Delay = 3.25>
+ST_21 : Operation 151 [1/1] (0.00ns)   --->   "%Aka_1_loc_load = load i64 %Aka_1_loc"   --->   Operation 151 'load' 'Aka_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 152 [1/1] (0.00ns)   --->   "%Ake_1_loc_load = load i64 %Ake_1_loc"   --->   Operation 152 'load' 'Ake_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 153 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln336 = store i64 %Aka_1_loc_load, i5 %state_addr_10" [fips202.c:336]   --->   Operation 153 'store' 'store_ln336' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_21 : Operation 154 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln337 = store i64 %Ake_1_loc_load, i5 %state_addr_11" [fips202.c:337]   --->   Operation 154 'store' 'store_ln337' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 22 <SV = 21> <Delay = 3.25>
+ST_22 : Operation 155 [1/1] (0.00ns)   --->   "%Aki_1_loc_load = load i64 %Aki_1_loc"   --->   Operation 155 'load' 'Aki_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 156 [1/1] (0.00ns)   --->   "%Ako_1_loc_load = load i64 %Ako_1_loc"   --->   Operation 156 'load' 'Ako_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 157 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln338 = store i64 %Aki_1_loc_load, i5 %state_addr_12" [fips202.c:338]   --->   Operation 157 'store' 'store_ln338' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_22 : Operation 158 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln339 = store i64 %Ako_1_loc_load, i5 %state_addr_13" [fips202.c:339]   --->   Operation 158 'store' 'store_ln339' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 23 <SV = 22> <Delay = 3.25>
+ST_23 : Operation 159 [1/1] (0.00ns)   --->   "%Aku_1_loc_load = load i64 %Aku_1_loc"   --->   Operation 159 'load' 'Aku_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 160 [1/1] (0.00ns)   --->   "%Ama_1_loc_load = load i64 %Ama_1_loc"   --->   Operation 160 'load' 'Ama_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 161 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln340 = store i64 %Aku_1_loc_load, i5 %state_addr_14" [fips202.c:340]   --->   Operation 161 'store' 'store_ln340' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_23 : Operation 162 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln341 = store i64 %Ama_1_loc_load, i5 %state_addr_15" [fips202.c:341]   --->   Operation 162 'store' 'store_ln341' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 24 <SV = 23> <Delay = 3.25>
+ST_24 : Operation 163 [1/1] (0.00ns)   --->   "%Ame_1_loc_load = load i64 %Ame_1_loc"   --->   Operation 163 'load' 'Ame_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 164 [1/1] (0.00ns)   --->   "%Ami_1_loc_load = load i64 %Ami_1_loc"   --->   Operation 164 'load' 'Ami_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 165 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln342 = store i64 %Ame_1_loc_load, i5 %state_addr_16" [fips202.c:342]   --->   Operation 165 'store' 'store_ln342' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_24 : Operation 166 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln343 = store i64 %Ami_1_loc_load, i5 %state_addr_17" [fips202.c:343]   --->   Operation 166 'store' 'store_ln343' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 25 <SV = 24> <Delay = 3.25>
+ST_25 : Operation 167 [1/1] (0.00ns)   --->   "%Amo_1_loc_load = load i64 %Amo_1_loc"   --->   Operation 167 'load' 'Amo_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 168 [1/1] (0.00ns)   --->   "%Amu_1_loc_load = load i64 %Amu_1_loc"   --->   Operation 168 'load' 'Amu_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 169 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln344 = store i64 %Amo_1_loc_load, i5 %state_addr_18" [fips202.c:344]   --->   Operation 169 'store' 'store_ln344' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_25 : Operation 170 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln345 = store i64 %Amu_1_loc_load, i5 %state_addr_19" [fips202.c:345]   --->   Operation 170 'store' 'store_ln345' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 26 <SV = 25> <Delay = 3.25>
+ST_26 : Operation 171 [1/1] (0.00ns)   --->   "%Asa_1_loc_load = load i64 %Asa_1_loc"   --->   Operation 171 'load' 'Asa_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 172 [1/1] (0.00ns)   --->   "%Ase_1_loc_load = load i64 %Ase_1_loc"   --->   Operation 172 'load' 'Ase_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 173 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln346 = store i64 %Asa_1_loc_load, i5 %state_addr_20" [fips202.c:346]   --->   Operation 173 'store' 'store_ln346' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_26 : Operation 174 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln347 = store i64 %Ase_1_loc_load, i5 %state_addr_21" [fips202.c:347]   --->   Operation 174 'store' 'store_ln347' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 27 <SV = 26> <Delay = 3.25>
+ST_27 : Operation 175 [1/1] (0.00ns)   --->   "%Asi_1_loc_load = load i64 %Asi_1_loc"   --->   Operation 175 'load' 'Asi_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 176 [1/1] (0.00ns)   --->   "%Aso_1_loc_load = load i64 %Aso_1_loc"   --->   Operation 176 'load' 'Aso_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 177 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln348 = store i64 %Asi_1_loc_load, i5 %state_addr_22" [fips202.c:348]   --->   Operation 177 'store' 'store_ln348' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_27 : Operation 178 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln349 = store i64 %Aso_1_loc_load, i5 %state_addr_23" [fips202.c:349]   --->   Operation 178 'store' 'store_ln349' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+
+State 28 <SV = 27> <Delay = 3.25>
+ST_28 : Operation 179 [1/1] (0.00ns)   --->   "%Asu_1_loc_load = load i64 %Asu_1_loc"   --->   Operation 179 'load' 'Asu_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 180 [1/1] ( I:3.25ns O:3.25ns )   --->   "%store_ln350 = store i64 %Asu_1_loc_load, i5 %state_addr_24" [fips202.c:350]   --->   Operation 180 'store' 'store_ln350' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 25> <RAM>
+ST_28 : Operation 181 [1/1] (0.00ns)   --->   "%ret_ln351 = ret" [fips202.c:351]   --->   Operation 181 'ret' 'ret_ln351' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 3.254ns
+The critical path consists of the following:
+	'getelementptr' operation 5 bit ('state_addr', fips202.c:85) [28]  (0.000 ns)
+	'load' operation 64 bit ('Aba', fips202.c:105) on array 'state' [29]  (3.254 ns)
+
+ <State 2>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Aba', fips202.c:105) on array 'state' [29]  (3.254 ns)
+
+ <State 3>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Abe', fips202.c:106) on array 'state' [31]  (3.254 ns)
+
+ <State 4>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Abo', fips202.c:108) on array 'state' [35]  (3.254 ns)
+
+ <State 5>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Aga', fips202.c:110) on array 'state' [39]  (3.254 ns)
+
+ <State 6>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Agi', fips202.c:112) on array 'state' [43]  (3.254 ns)
+
+ <State 7>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Agu', fips202.c:114) on array 'state' [47]  (3.254 ns)
+
+ <State 8>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Ake', fips202.c:116) on array 'state' [51]  (3.254 ns)
+
+ <State 9>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Ako', fips202.c:118) on array 'state' [55]  (3.254 ns)
+
+ <State 10>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Ama', fips202.c:120) on array 'state' [59]  (3.254 ns)
+
+ <State 11>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Ami', fips202.c:122) on array 'state' [63]  (3.254 ns)
+
+ <State 12>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Amu', fips202.c:124) on array 'state' [67]  (3.254 ns)
+
+ <State 13>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Ase', fips202.c:126) on array 'state' [71]  (3.254 ns)
+
+ <State 14>: 4.842ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Aso', fips202.c:128) on array 'state' [75]  (3.254 ns)
+	'call' operation 0 bit ('call_ln129', fips202.c:129) to 'KeccakF1600_StatePermute.1_Pipeline_state_permute' [78]  (1.588 ns)
+
+ <State 15>: 0.000ns
+The critical path consists of the following:
+
+ <State 16>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Aba_1_loc_load') on local variable 'Aba_1_loc' [80]  (0.000 ns)
+	'store' operation 0 bit ('store_ln326', fips202.c:326) of variable 'Aba_1_loc_load' on array 'state' [104]  (3.254 ns)
+
+ <State 17>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Abi_1_loc_load') on local variable 'Abi_1_loc' [82]  (0.000 ns)
+	'store' operation 0 bit ('store_ln328', fips202.c:328) of variable 'Abi_1_loc_load' on array 'state' [106]  (3.254 ns)
+
+ <State 18>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Abu_1_loc_load') on local variable 'Abu_1_loc' [84]  (0.000 ns)
+	'store' operation 0 bit ('store_ln330', fips202.c:330) of variable 'Abu_1_loc_load' on array 'state' [108]  (3.254 ns)
+
+ <State 19>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Age_1_loc_load') on local variable 'Age_1_loc' [86]  (0.000 ns)
+	'store' operation 0 bit ('store_ln332', fips202.c:332) of variable 'Age_1_loc_load' on array 'state' [110]  (3.254 ns)
+
+ <State 20>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Ago_1_loc_load') on local variable 'Ago_1_loc' [88]  (0.000 ns)
+	'store' operation 0 bit ('store_ln334', fips202.c:334) of variable 'Ago_1_loc_load' on array 'state' [112]  (3.254 ns)
+
+ <State 21>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Aka_1_loc_load') on local variable 'Aka_1_loc' [90]  (0.000 ns)
+	'store' operation 0 bit ('store_ln336', fips202.c:336) of variable 'Aka_1_loc_load' on array 'state' [114]  (3.254 ns)
+
+ <State 22>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Aki_1_loc_load') on local variable 'Aki_1_loc' [92]  (0.000 ns)
+	'store' operation 0 bit ('store_ln338', fips202.c:338) of variable 'Aki_1_loc_load' on array 'state' [116]  (3.254 ns)
+
+ <State 23>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Aku_1_loc_load') on local variable 'Aku_1_loc' [94]  (0.000 ns)
+	'store' operation 0 bit ('store_ln340', fips202.c:340) of variable 'Aku_1_loc_load' on array 'state' [118]  (3.254 ns)
+
+ <State 24>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Ame_1_loc_load') on local variable 'Ame_1_loc' [96]  (0.000 ns)
+	'store' operation 0 bit ('store_ln342', fips202.c:342) of variable 'Ame_1_loc_load' on array 'state' [120]  (3.254 ns)
+
+ <State 25>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Amo_1_loc_load') on local variable 'Amo_1_loc' [98]  (0.000 ns)
+	'store' operation 0 bit ('store_ln344', fips202.c:344) of variable 'Amo_1_loc_load' on array 'state' [122]  (3.254 ns)
+
+ <State 26>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Asa_1_loc_load') on local variable 'Asa_1_loc' [100]  (0.000 ns)
+	'store' operation 0 bit ('store_ln346', fips202.c:346) of variable 'Asa_1_loc_load' on array 'state' [124]  (3.254 ns)
+
+ <State 27>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Asi_1_loc_load') on local variable 'Asi_1_loc' [102]  (0.000 ns)
+	'store' operation 0 bit ('store_ln348', fips202.c:348) of variable 'Asi_1_loc_load' on array 'state' [126]  (3.254 ns)
+
+ <State 28>: 3.254ns
+The critical path consists of the following:
+	'load' operation 64 bit ('Asu_1_loc_load') on local variable 'Asu_1_loc' [79]  (0.000 ns)
+	'store' operation 0 bit ('store_ln350', fips202.c:350) of variable 'Asu_1_loc_load' on array 'state' [128]  (3.254 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

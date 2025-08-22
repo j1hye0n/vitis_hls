@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Mon Aug  4 14:27:39 2025
-# Process ID         : 1059
+# Start of session at: Wed Aug  6 16:42:48 2025
+# Process ID         : 35716
 # Current directory  : /home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog
 # Command line       : xsim -mode tcl -source {xsim.dir/sha3_256_hw/xsim_script.tcl}
 # Log file           : /home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/xsim.log
@@ -13,21 +13,24 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 22.04.5 LTS
 # Processor Detail   : Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
-# CPU Frequency      : 2808.009 MHz
+# CPU Frequency      : 2808.012 MHz
 # CPU Physical cores : 6
 # CPU Logical cores  : 6
 # Host memory        : 4050 MB
 # Swap memory        : 1073 MB
 # Total Virtual      : 5124 MB
-# Available Virtual  : 4179 MB
+# Available Virtual  : 4049 MB
 #-----------------------------------------------------------
 source xsim.dir/sha3_256_hw/xsim_script.tcl
 # xsim {sha3_256_hw} -view {{sha3_256_hw_dataflow_ana.wcfg}} -tclbatch {sha3_256_hw.tcl} -protoinst {sha3_256_hw.protoinst}
 INFO: [Wavedata 42-565] Reading protoinst file sha3_256_hw.protoinst
 INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sha3_256_hw_top/AESL_inst_sha3_256_hw//AESL_inst_sha3_256_hw_activity
-INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sha3_256_hw_top/AESL_inst_sha3_256_hw/grp_KeccakF1600_StatePermute_fu_302/grp_KeccakF1600_StatePermute_fu_302_activity
-INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sha3_256_hw_top/AESL_inst_sha3_256_hw/grp_sha3_256_hw_Pipeline_VITIS_LOOP_472_1_fu_296/grp_sha3_256_hw_Pipeline_VITIS_LOOP_472_1_fu_296_activity
-INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sha3_256_hw_top/AESL_inst_sha3_256_hw/grp_sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1_fu_309/grp_sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1_fu_309_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sha3_256_hw_top/AESL_inst_sha3_256_hw/grp_pqcrystals_kyber_fips202_ref_sha3_256_1_fu_74/grp_KeccakF1600_StatePermute_1_fu_271/grp_KeccakF1600_StatePermute_1_Pipeline_state_permute_fu_390/grp_KeccakF1600_StatePermute_1_Pipeline_state_permute_fu_390_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sha3_256_hw_top/AESL_inst_sha3_256_hw/grp_pqcrystals_kyber_fips202_ref_sha3_256_1_fu_74/grp_KeccakF1600_StatePermute_1_fu_271/grp_KeccakF1600_StatePermute_1_fu_271_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sha3_256_hw_top/AESL_inst_sha3_256_hw/grp_pqcrystals_kyber_fips202_ref_sha3_256_1_fu_74/grp_KeccakF1600_StatePermute_fu_264/grp_KeccakF1600_StatePermute_Pipeline_state_permute_fu_390/grp_KeccakF1600_StatePermute_Pipeline_state_permute_fu_390_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sha3_256_hw_top/AESL_inst_sha3_256_hw/grp_pqcrystals_kyber_fips202_ref_sha3_256_1_fu_74/grp_KeccakF1600_StatePermute_fu_264/grp_KeccakF1600_StatePermute_fu_264_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sha3_256_hw_top/AESL_inst_sha3_256_hw/grp_pqcrystals_kyber_fips202_ref_sha3_256_1_fu_74/grp_pqcrystals_kyber_fips202_ref_sha3_256_1_Pipeline_VITIS_LOOP_476_1_fu_258/grp_pqcrystals_kyber_fips202_ref_sha3_256_1_Pipeline_VITIS_LOOP_476_1_fu_258_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sha3_256_hw_top/AESL_inst_sha3_256_hw/grp_pqcrystals_kyber_fips202_ref_sha3_256_1_fu_74/grp_pqcrystals_kyber_fips202_ref_sha3_256_1_fu_74_activity
 Time resolution is 1 ps
 open_wave_config sha3_256_hw_dataflow_ana.wcfg
 source sha3_256_hw.tcl
@@ -238,9 +241,9 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 //
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 1 [n/a] @ "125000"
-// RTL Simulation : 1 / 1 [n/a] @ "2995000"
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "2815000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 3055 ns : File "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw.autotb.v" Line 497
+$finish called at time : 2875 ns : File "/home/hyeon/vitis_hls/workspace/sha3/sha3_hls_solution/hls/sim/verilog/sha3_256_hw.autotb.v" Line 497
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Aug  4 14:28:02 2025...
+INFO: [Common 17-206] Exiting xsim at Wed Aug  6 16:42:53 2025...

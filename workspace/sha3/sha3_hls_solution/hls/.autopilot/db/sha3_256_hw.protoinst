@@ -13,7 +13,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_KeccakF1600_StatePermute_fu_302/grp_KeccakF1600_StatePermute_fu_302_activity": {
+				"grp_pqcrystals_kyber_fips202_ref_sha3_256_1_fu_74/grp_KeccakF1600_StatePermute_1_fu_271/grp_KeccakF1600_StatePermute_1_Pipeline_state_permute_fu_390/grp_KeccakF1600_StatePermute_1_Pipeline_state_permute_fu_390_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -23,7 +23,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_sha3_256_hw_Pipeline_VITIS_LOOP_472_1_fu_296/grp_sha3_256_hw_Pipeline_VITIS_LOOP_472_1_fu_296_activity": {
+				"grp_pqcrystals_kyber_fips202_ref_sha3_256_1_fu_74/grp_KeccakF1600_StatePermute_1_fu_271/grp_KeccakF1600_StatePermute_1_fu_271_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -33,7 +33,37 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1_fu_309/grp_sha3_256_hw_Pipeline_VITIS_LOOP_759_1_VITIS_LOOP_43_1_fu_309_activity": {
+				"grp_pqcrystals_kyber_fips202_ref_sha3_256_1_fu_74/grp_KeccakF1600_StatePermute_fu_264/grp_KeccakF1600_StatePermute_Pipeline_state_permute_fu_390/grp_KeccakF1600_StatePermute_Pipeline_state_permute_fu_390_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_kyber_fips202_ref_sha3_256_1_fu_74/grp_KeccakF1600_StatePermute_fu_264/grp_KeccakF1600_StatePermute_fu_264_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_kyber_fips202_ref_sha3_256_1_fu_74/grp_pqcrystals_kyber_fips202_ref_sha3_256_1_Pipeline_VITIS_LOOP_476_1_fu_258/grp_pqcrystals_kyber_fips202_ref_sha3_256_1_Pipeline_VITIS_LOOP_476_1_fu_258_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_kyber_fips202_ref_sha3_256_1_fu_74/grp_pqcrystals_kyber_fips202_ref_sha3_256_1_fu_74_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

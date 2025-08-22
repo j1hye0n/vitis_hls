@@ -1,0 +1,9 @@
+{
+  "name": "sha3_hls_solution",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["hls_config.cfg"],
+    "work_dir": "."
+  }
+}

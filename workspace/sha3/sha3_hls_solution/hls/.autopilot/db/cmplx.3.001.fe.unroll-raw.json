@@ -1,19 +1,31 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "5",
+    "calls": "4",
     "file": "sha3_256.c",
     "fileloc": 4,
     "instructions": 7,
     "name": "sha3_256_hw",
-    "total_instructions": 1321
+    "total_instructions": 1338
   },
   "1": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "fips202.c",
+    "fileloc": 22,
+    "instructions": 40,
+    "loads": {
+      "L": 8
+    },
+    "name": "load64",
+    "total_instructions": 40
+  },
+  "2": {
     "basicblocks": 4,
     "calls": "",
     "file": "fips202.c",
-    "fileloc": 83,
-    "instructions": 588,
+    "fileloc": 85,
+    "instructions": 589,
     "loads": {
       "G": 2,
       "L": 25
@@ -22,40 +34,13 @@
     "stores": {
       "L": 25
     },
-    "total_instructions": 588
-  },
-  "2": {
-    "basicblocks": 4,
-    "calls": "",
-    "file": "fips202.c",
-    "fileloc": 22,
-    "instructions": 17,
-    "loads": {
-      "L": 1
-    },
-    "name": "load64",
-    "total_instructions": 17
+    "total_instructions": 589
   },
   "3": {
-    "basicblocks": 17,
-    "calls": "2 1",
-    "file": "fips202.c",
-    "fileloc": 464,
-    "instructions": 88,
-    "loads": {
-      "L": 5
-    },
-    "name": "keccak_absorb_once",
-    "stores": {
-      "L": 5
-    },
-    "total_instructions": 693
-  },
-  "4": {
     "basicblocks": 4,
     "calls": "",
     "file": "fips202.c",
-    "fileloc": 40,
+    "fileloc": 41,
     "instructions": 14,
     "name": "store64",
     "stores": {
@@ -63,16 +48,31 @@
     },
     "total_instructions": 14
   },
-  "5": {
+  "4": {
     "basicblocks": 4,
-    "calls": "3 1 4",
+    "calls": "5 2 3",
     "file": "fips202.c",
-    "fileloc": 752,
+    "fileloc": 757,
     "instructions": 19,
     "loads": {
       "L": 1
     },
     "name": "pqcrystals_kyber_fips202_ref_sha3_256",
-    "total_instructions": 1314
+    "total_instructions": 1331
+  },
+  "5": {
+    "basicblocks": 14,
+    "calls": "1 2",
+    "file": "fips202.c",
+    "fileloc": 468,
+    "instructions": 80,
+    "loads": {
+      "L": 5
+    },
+    "name": "keccak_absorb_once",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 709
   }
 }

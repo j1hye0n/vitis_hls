@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "sha3_256_hw",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "sha3_256_hw"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/hyeon/vitis_hls/workspace/sha3_opt/run.tcl",
+    "sourceLine": 62,
+    "success": true
+  }
+]

@@ -13,7 +13,7 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 6
+set cdfgNum 9
 set C_modelName {KeccakF1600_StatePermute}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
@@ -71,7 +71,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "62", "EstimateLatencyMax" : "62",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "42", "EstimateLatencyMax" : "42",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -81,23 +81,144 @@ set RtlHierarchyInfo {[
 		"IsBlackBox" : "0",
 		"Port" : [
 			{"Name" : "state", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "KeccakF_RoundConstants", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_KeccakF1600_StatePermute_Pipeline_state_permute_fu_390", "Port" : "KeccakF_RoundConstants", "Inst_start_state" : "14", "Inst_end_state" : "15"}]}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_KeccakF1600_StatePermute_Pipeline_state_permute_fu_390", "Parent" : "0", "Child" : ["2", "3"],
+		"CDFG" : "KeccakF1600_StatePermute_Pipeline_state_permute",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "15", "EstimateLatencyMax" : "15",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"IsBlackBox" : "0",
+		"Port" : [
+			{"Name" : "Asu", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Aba", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Abe", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Abi", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Abo", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Abu", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Aga", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Age", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Agi", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Ago", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Agu", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Aka", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Ake", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Aki", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Ako", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Aku", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Ama", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Ame", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Ami", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Amo", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Amu", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Asa", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Ase", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Asi", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Aso", "Type" : "None", "Direction" : "I"},
+			{"Name" : "Asu_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Aba_5_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Abe_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Abi_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Abo_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Abu_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Aga_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Age_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Agi_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Ago_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Agu_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Aka_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Ake_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Aki_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Ako_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Aku_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Ama_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Ame_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Ami_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Amo_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Amu_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Asa_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Ase_03_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Asi_02_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "Aso_01_out", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "KeccakF_RoundConstants", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
-			{"Name" : "state_permute", "PipelineType" : "no",
-				"LoopDec" : {"FSMBitwidth" : "29", "FirstState" : "ap_ST_fsm_state15", "LastState" : ["ap_ST_fsm_state17"], "QuitState" : ["ap_ST_fsm_state15"], "PreState" : ["ap_ST_fsm_state14"], "PostState" : ["ap_ST_fsm_state18"], "OneDepthLoop" : "0", "OneStateBlock": ""}}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.KeccakF_RoundConstants_U", "Parent" : "0"}]}
+			{"Name" : "state_permute", "PipelineType" : "UPC",
+				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_KeccakF1600_StatePermute_Pipeline_state_permute_fu_390.KeccakF_RoundConstants_U", "Parent" : "1"},
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_KeccakF1600_StatePermute_Pipeline_state_permute_fu_390.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	KeccakF1600_StatePermute {
-		state {Type IO LastRead 13 FirstWrite 14}
+		state {Type IO LastRead 13 FirstWrite 15}
+		KeccakF_RoundConstants {Type I LastRead -1 FirstWrite -1}}
+	KeccakF1600_StatePermute_Pipeline_state_permute {
+		Asu {Type I LastRead 0 FirstWrite -1}
+		Aba {Type I LastRead 0 FirstWrite -1}
+		Abe {Type I LastRead 0 FirstWrite -1}
+		Abi {Type I LastRead 0 FirstWrite -1}
+		Abo {Type I LastRead 0 FirstWrite -1}
+		Abu {Type I LastRead 0 FirstWrite -1}
+		Aga {Type I LastRead 0 FirstWrite -1}
+		Age {Type I LastRead 0 FirstWrite -1}
+		Agi {Type I LastRead 0 FirstWrite -1}
+		Ago {Type I LastRead 0 FirstWrite -1}
+		Agu {Type I LastRead 0 FirstWrite -1}
+		Aka {Type I LastRead 0 FirstWrite -1}
+		Ake {Type I LastRead 0 FirstWrite -1}
+		Aki {Type I LastRead 0 FirstWrite -1}
+		Ako {Type I LastRead 0 FirstWrite -1}
+		Aku {Type I LastRead 0 FirstWrite -1}
+		Ama {Type I LastRead 0 FirstWrite -1}
+		Ame {Type I LastRead 0 FirstWrite -1}
+		Ami {Type I LastRead 0 FirstWrite -1}
+		Amo {Type I LastRead 0 FirstWrite -1}
+		Amu {Type I LastRead 0 FirstWrite -1}
+		Asa {Type I LastRead 0 FirstWrite -1}
+		Ase {Type I LastRead 0 FirstWrite -1}
+		Asi {Type I LastRead 0 FirstWrite -1}
+		Aso {Type I LastRead 0 FirstWrite -1}
+		Asu_4_out {Type O LastRead -1 FirstWrite 1}
+		Aba_5_out {Type O LastRead -1 FirstWrite 1}
+		Abe_4_out {Type O LastRead -1 FirstWrite 1}
+		Abi_4_out {Type O LastRead -1 FirstWrite 1}
+		Abo_4_out {Type O LastRead -1 FirstWrite 1}
+		Abu_4_out {Type O LastRead -1 FirstWrite 1}
+		Aga_4_out {Type O LastRead -1 FirstWrite 1}
+		Age_4_out {Type O LastRead -1 FirstWrite 1}
+		Agi_4_out {Type O LastRead -1 FirstWrite 1}
+		Ago_4_out {Type O LastRead -1 FirstWrite 1}
+		Agu_4_out {Type O LastRead -1 FirstWrite 1}
+		Aka_4_out {Type O LastRead -1 FirstWrite 1}
+		Ake_4_out {Type O LastRead -1 FirstWrite 1}
+		Aki_4_out {Type O LastRead -1 FirstWrite 1}
+		Ako_4_out {Type O LastRead -1 FirstWrite 1}
+		Aku_4_out {Type O LastRead -1 FirstWrite 1}
+		Ama_4_out {Type O LastRead -1 FirstWrite 1}
+		Ame_4_out {Type O LastRead -1 FirstWrite 1}
+		Ami_4_out {Type O LastRead -1 FirstWrite 1}
+		Amo_4_out {Type O LastRead -1 FirstWrite 1}
+		Amu_4_out {Type O LastRead -1 FirstWrite 1}
+		Asa_4_out {Type O LastRead -1 FirstWrite 1}
+		Ase_03_out {Type O LastRead -1 FirstWrite 1}
+		Asi_02_out {Type O LastRead -1 FirstWrite 1}
+		Aso_01_out {Type O LastRead -1 FirstWrite 1}
 		KeccakF_RoundConstants {Type I LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "62", "Max" : "62"}
-	, {"Name" : "Interval", "Min" : "62", "Max" : "62"}
+	{"Name" : "Latency", "Min" : "42", "Max" : "42"}
+	, {"Name" : "Interval", "Min" : "42", "Max" : "42"}
 ]}
 
 set PipelineEnableSignalInfo {[

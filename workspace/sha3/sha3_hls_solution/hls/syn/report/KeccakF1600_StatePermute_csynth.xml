@@ -18,50 +18,31 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>6.538</EstimatedClockPeriod>
+<EstimatedClockPeriod>7.214</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>62</Best-caseLatency>
-<Average-caseLatency>62</Average-caseLatency>
-<Worst-caseLatency>62</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.620 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.620 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.620 us</Worst-caseRealTimeLatency>
-<Interval-min>62</Interval-min>
-<Interval-max>62</Interval-max>
+<Best-caseLatency>42</Best-caseLatency>
+<Average-caseLatency>42</Average-caseLatency>
+<Worst-caseLatency>42</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.420 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.420 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.420 us</Worst-caseRealTimeLatency>
+<Interval-min>42</Interval-min>
+<Interval-max>42</Interval-max>
 </SummaryOfOverallLatency>
-<SummaryOfLoopLatency>
-<state_permute>
-<Slack>7.30</Slack>
-<TripCount>12</TripCount>
-<Latency>36</Latency>
-<AbsoluteTimeLatency>360</AbsoluteTimeLatency>
-<IterationLatency>3</IterationLatency>
-<InstanceList>
-</InstanceList>
-</state_permute>
-</SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>fips202.c:91</SourceLocation>
-<SummaryOfLoopViolations>
-<state_permute>
-<Name>state_permute</Name>
-<IssueType>-</IssueType>
-<ViolationType>-</ViolationType>
-<SourceLocation>fips202.c:127</SourceLocation>
-</state_permute>
-</SummaryOfLoopViolations>
+<SourceLocation>fips202.c:85</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
 <BRAM_18K>2</BRAM_18K>
-<FF>3238</FF>
-<LUT>16900</LUT>
+<FF>4904</FF>
+<LUT>17136</LUT>
 <DSP>0</DSP>
 <URAM>0</URAM>
 </Resources>

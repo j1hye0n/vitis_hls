@@ -1,0 +1,317 @@
+[
+    {
+        "name": "sha3_256_hw",
+        "df_function": "%F228",
+        "df_type": "Function",
+        "project": "SLX",
+        "processes": {
+            "1": {
+                "id": "1",
+                "name": "Artificial<Start>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c",
+                        "line": 4,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c",
+                        "line": 12,
+                        "column": 1
+                    }
+                },
+                "display_name": "<START>",
+                "kind": "start"
+            },
+            "2": {
+                "id": "2",
+                "name": "Artificial<End>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c",
+                        "line": 4,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c",
+                        "line": 12,
+                        "column": 1
+                    }
+                },
+                "display_name": "<END>",
+                "kind": "end"
+            },
+            "3": {
+                "id": "3",
+                "name": "Region<OutlineCall(R2 sha3_256_hw) BB 'codeRepl' [Call] 'Outline_T3_F228_R2_Call'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c",
+                        "line": 10,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c",
+                        "line": 10,
+                        "column": 54
+                    }
+                },
+                "display_name": "pqcrystals_kyber_fips202_ref_sha3_256()",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c",
+                                    "line": 4,
+                                    "column": 0
+                                },
+                                "id": "VId_159_*0(0,8)arg+?(?,8)",
+                                "name": "(*out)",
+                                "display_name": "uint8_t *out"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c",
+                                        "line": 46,
+                                        "column": 10
+                                    },
+                                    "access_type": "i8",
+                                    "access_bit_width": 8,
+                                    "exec_count": 32
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 0
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c",
+                                    "line": 4,
+                                    "column": 0
+                                },
+                                "id": "VId_160_*0(0,8)arg+?(?,8)",
+                                "name": "(*in)",
+                                "display_name": "const uint8_t *in"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c",
+                                        "line": 28,
+                                        "column": 20
+                                    },
+                                    "access_type": "i8",
+                                    "access_bit_width": 8,
+                                    "exec_count": 0
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c",
+                                        "line": 518,
+                                        "column": 25
+                                    },
+                                    "access_type": "i8",
+                                    "access_bit_width": 8,
+                                    "exec_count": 4
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 1
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c",
+                                    "line": 4,
+                                    "column": 0
+                                },
+                                "id": "VId_161_!c?(?,?)",
+                                "name": "inlen",
+                                "display_name": "int inlen"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 2
+                        }
+                    ]
+                },
+                "metrics": {
+                    "initiation_interval": 115858
+                },
+                "subregions": [
+                    {
+                        "id": "%F234_R2",
+                        "description": "<call 'pqcrystals_kyber_fips202_ref_sha3_256'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c",
+                                "line": 10,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c",
+                                "line": 10,
+                                "column": 54
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%F229",
+                        "region_type": "Function",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c",
+                                "line": 10,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c",
+                                "line": 10,
+                                "column": 54
+                            }
+                        }
+                    }
+                ],
+                "guidance": [
+                    {
+                        "type": "CallGuidance",
+                        "ti": {
+                            "min": 115857,
+                            "max": 115857
+                        },
+                        "ureg_id": "%F229",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c",
+                                "line": 10,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c",
+                                "line": 10,
+                                "column": 54
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "channels": {
+            "(*in)_RAW_1_3_#0": {
+                "name": "(*in)_RAW_1_3_#0",
+                "variable_id": "VId_160_*0(0,8)arg+?(?,8)",
+                "variable_name": "(*in)",
+                "declaration": "const uint8_t *in",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 8,
+                "src_loc": {
+                    "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c",
+                    "line": 4,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 32,
+                    "channel_rate": 2.762001760776122E-4
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "inlen_RAW_1_3_#1": {
+                "name": "inlen_RAW_1_3_#1",
+                "variable_id": "VId_161_!c?(?,?)",
+                "variable_name": "inlen",
+                "declaration": "int inlen",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c",
+                    "line": 4,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 32,
+                    "channel_rate": 2.762001760776122E-4
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "(*out)_RAW_3_2_#2": {
+                "name": "(*out)_RAW_3_2_#2",
+                "variable_id": "VId_159_*0(0,8)arg+?(?,8)",
+                "variable_name": "(*out)",
+                "declaration": "uint8_t *out",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 8,
+                "src_loc": {
+                    "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c",
+                    "line": 4,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 256,
+                    "channel_rate": 2.209601408620898E-3
+                },
+                "source": "3",
+                "sink": "2"
+            }
+        },
+        "control": [
+            {
+                "source": "1",
+                "sink": "3"
+            },
+            {
+                "source": "3",
+                "sink": "2"
+            }
+        ]
+    }
+]

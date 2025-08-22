@@ -1,0 +1,126 @@
+{
+    "top_level_hw_fn_id": 228,
+    "functions": {
+        "228": {
+            "fn_id": 228,
+            "mangled_name": "sha3_256_hw",
+            "fully_qualified_name": "sha3_256_hw",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c",
+                "line": 4,
+                "column": 1
+            }
+        },
+        "229": {
+            "fn_id": 229,
+            "mangled_name": "pqcrystals_kyber_fips202_ref_sha3_256",
+            "fully_qualified_name": "pqcrystals_kyber_fips202_ref_sha3_256",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c",
+                "line": 782,
+                "column": 1
+            }
+        },
+        "230": {
+            "fn_id": 230,
+            "mangled_name": "keccak_absorb_once",
+            "fully_qualified_name": "keccak_absorb_once",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c",
+                "line": 468,
+                "column": 1
+            }
+        },
+        "231": {
+            "fn_id": 231,
+            "mangled_name": "KeccakF1600_StatePermute",
+            "fully_qualified_name": "KeccakF1600_StatePermute",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c",
+                "line": 84,
+                "column": 1
+            }
+        },
+        "232": {
+            "fn_id": 232,
+            "mangled_name": "store64",
+            "fully_qualified_name": "store64",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c",
+                "line": 41,
+                "column": 1
+            }
+        },
+        "233": {
+            "fn_id": 233,
+            "mangled_name": "load64",
+            "fully_qualified_name": "load64",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c",
+                "line": 22,
+                "column": 1
+            }
+        }
+    },
+    "loops": {
+        "20": {
+            "fn_id": 229,
+            "lp_id": 20
+        },
+        "21": {
+            "fn_id": 230,
+            "lp_id": 21,
+            "label": "absorb_loop3"
+        },
+        "22": {
+            "fn_id": 230,
+            "lp_id": 22,
+            "label": "process_blocks_loop"
+        },
+        "23": {
+            "fn_id": 230,
+            "lp_id": 23,
+            "label": "copy_to_local_loop"
+        },
+        "24": {
+            "fn_id": 230,
+            "lp_id": 24,
+            "label": "absorb_from_local_loop"
+        },
+        "25": {
+            "fn_id": 230,
+            "lp_id": 25
+        },
+        "26": {
+            "fn_id": 231,
+            "lp_id": 26,
+            "label": "state_permute"
+        },
+        "27": {
+            "fn_id": 232,
+            "lp_id": 27
+        },
+        "28": {
+            "fn_id": 233,
+            "lp_id": 28
+        }
+    }
+}

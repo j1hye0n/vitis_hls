@@ -42,6 +42,7 @@ static void store64(uint8_t x[8], uint64_t u) {
   unsigned int i;
 
   for(i=0;i<8;i++)
+//#pragma HLS unroll
 #pragma HLS pipeline
     x[i] = u >> 8*i;
 }
@@ -476,11 +477,10 @@ static void keccak_absorb_once(uint64_t s[25],
     s[i] = 0;
 
   // while-loop is needed to optimization
-  // while(inlen >= r)
-  for (int j=inlen ; j>=r ; j-=r){
-absorb_loop2:for(i=0;i<r/8;i++)
+   while(inlen >= r){
+//absorb_loop2:for(i=0;i<r/8;i++)
 #pragma HLS pipeline off
-#pragma HLS inline off
+#pragma HLS loop_tripcount min=0 max=135
       s[i] ^= load64(in+8*i);
     in += r;
     inlen -= r;
@@ -489,6 +489,7 @@ absorb_loop2:for(i=0;i<r/8;i++)
 
 absorb_loop3 : for(i=0;i<inlen;i++)
 #pragma HLS pipeline off
+#pragma HLS loop_tripcount min=0 max=145
     s[i/8] ^= (uint64_t)in[i] << 8*(i%8);
 
   s[i/8] ^= (uint64_t)p << 8*(i%8);
@@ -761,6 +762,7 @@ void sha3_256(uint8_t h[32], const uint8_t *in, size_t inlen)
   keccak_absorb_once(s, SHA3_256_RATE, in, inlen, 0x06);
   KeccakF1600_StatePermute(s);
   for(i=0;i<4;i++)
+#pragma HLS pipeline off
     store64(h+8*i,s[i]);
 }
 

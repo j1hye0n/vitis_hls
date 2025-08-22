@@ -1,0 +1,64 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sha3_256_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=sha3_256_hw" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../sha3_256.c:5:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha3_256_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=in offset=slave bundle=gmem depth=64" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../sha3_256.c:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha3_256_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=out offset=slave bundle=gmem depth=32" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../sha3_256.c:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha3_256_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=inlen bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../sha3_256.c:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha3_256_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load64" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:45:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="store64" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:132:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="KeccakF1600_StatePermute" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:133:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="KeccakF1600_StatePermute" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:483:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keccak_absorb_once" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=0 max=135" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:488:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keccak_absorb_once" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:489:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keccak_absorb_once" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:495:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keccak_absorb_once" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:516:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keccak_absorb_once" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:517:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keccak_absorb_once" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=0 max=256" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../fips202.c:791:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pqcrystals_kyber_fips202_ref_sha3_256" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../fips202.c:22:0" msg_body="Unrolling loop 'VITIS_LOOP_26_1' (../fips202.c:26:20) in function 'load64' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../fips202.c:26:20" LoopName="VITIS_LOOP_26_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../fips202.c:473:0" msg_body="Inlining function 'load64' into 'keccak_absorb_once'">
+        <args Callee="load64" Callee-DebugLoc="File ../fips202.c Line 22 Column 0" Caller="keccak_absorb_once" Caller-DebugLoc="File ../fips202.c Line 473 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../fips202.c:783:0" msg_body="Inlining function 'store64' into 'pqcrystals_kyber_fips202_ref_sha3_256'">
+        <args Callee="store64" Callee-DebugLoc="File ../fips202.c Line 41 Column 0" Caller="pqcrystals_kyber_fips202_ref_sha3_256" Caller-DebugLoc="File ../fips202.c Line 783 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../sha3_256.c:4:0" msg_body="Inlining function 'pqcrystals_kyber_fips202_ref_sha3_256' into 'sha3_256_hw'">
+        <args Callee="pqcrystals_kyber_fips202_ref_sha3_256" Callee-DebugLoc="File ../fips202.c Line 783 Column 0" Caller="sha3_256_hw" Caller-DebugLoc="File ../sha3_256.c Line 4 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="../fips202.c:28:17" msg_body="The program may have out of bound array access on variable 'in'"/>
+</xilinx:hls_fe_msgs>
+

@@ -1,0 +1,91 @@
+{
+    "1": {
+        "name": "keccak_absorb_once.1_Pipeline_VITIS_LOOP_477_1",
+        "file": "..\/fips202.c",
+        "fileloc": "474",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "KeccakF1600_StatePermute_Pipeline_state_permute",
+        "file": "..\/fips202.c",
+        "fileloc": "89",
+        "instructions": "622",
+        "total_instructions": "622",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "2",
+            "L": "51"
+        },
+        "stores": {
+            "L": "52"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "keccak_absorb_once",
+        "file": "fips202.c",
+        "fileloc": "468",
+        "instructions": "130",
+        "total_instructions": "895",
+        "calls": "1 4",
+        "basicblocks": "13",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "9"
+        },
+        "loops": {
+            "L": "2",
+            "N": "2"
+        }
+    },
+    "4": {
+        "name": "KeccakF1600_StatePermute",
+        "file": "fips202.c",
+        "fileloc": "84",
+        "instructions": "127",
+        "total_instructions": "749",
+        "calls": "2",
+        "basicblocks": "1",
+        "loads": {
+            "L": "50"
+        },
+        "stores": {
+            "L": "25"
+        }
+    },
+    "0": {
+        "name": "sha3_256_hw",
+        "file": "sha3_256.c",
+        "fileloc": "4",
+        "instructions": "68",
+        "total_instructions": "1712",
+        "calls": "3 4",
+        "basicblocks": "5",
+        "loads": {
+            "L": "6"
+        },
+        "stores": {
+            "L": "9"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

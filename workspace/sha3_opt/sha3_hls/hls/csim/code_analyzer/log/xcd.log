@@ -1,0 +1,2 @@
+XILINX_VITIS=/tools/xilinx/Vitis/2024.2
+cmdline: /tools/xilinx/Vitis/2024.2/bin/xcd -p 39087 -t c57a8a3c-728f-11f0-a62a-d93ee7b70595

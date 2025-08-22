@@ -1,0 +1,121 @@
+---
+MainSourceFile:  /home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls/.autopilot/db/fips202.pp.0.c
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_26_1:  '
+    FileOffset:      26
+    FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c
+    Replacements:    
+      - FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls/.autopilot/db/fips202.pp.0.c
+        Offset:          15159
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_26_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_44_1:  '
+    FileOffset:      44
+    FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c
+    Replacements:    
+      - FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls/.autopilot/db/fips202.pp.0.c
+        Offset:          15328
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_44_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_363_1:  '
+    FileOffset:      363
+    FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c
+    Replacements:    
+      - FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls/.autopilot/db/fips202.pp.0.c
+        Offset:          25005
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_363_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_388_1:  '
+    FileOffset:      388
+    FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c
+    Replacements:    
+      - FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls/.autopilot/db/fips202.pp.0.c
+        Offset:          25336
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_388_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_389_2:  '
+    FileOffset:      389
+    FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c
+    Replacements:    
+      - FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls/.autopilot/db/fips202.pp.0.c
+        Offset:          25364
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_389_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_396_3:  '
+    FileOffset:      396
+    FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c
+    Replacements:    
+      - FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls/.autopilot/db/fips202.pp.0.c
+        Offset:          25500
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_396_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_441_1:  '
+    FileOffset:      441
+    FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c
+    Replacements:    
+      - FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls/.autopilot/db/fips202.pp.0.c
+        Offset:          26062
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_441_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_446_2:  '
+    FileOffset:      446
+    FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c
+    Replacements:    
+      - FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls/.autopilot/db/fips202.pp.0.c
+        Offset:          26157
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_446_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_477_1:  '
+    FileOffset:      477
+    FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c
+    Replacements:    
+      - FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls/.autopilot/db/fips202.pp.0.c
+        Offset:          26593
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_477_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_544_1:  '
+    FileOffset:      544
+    FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c
+    Replacements:    
+      - FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls/.autopilot/db/fips202.pp.0.c
+        Offset:          27584
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_544_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_546_2:  '
+    FileOffset:      546
+    FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c
+    Replacements:    
+      - FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls/.autopilot/db/fips202.pp.0.c
+        Offset:          27638
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_546_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_790_1:  '
+    FileOffset:      790
+    FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c
+    Replacements:    
+      - FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls/.autopilot/db/fips202.pp.0.c
+        Offset:          31069
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_790_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_811_1:  '
+    FileOffset:      811
+    FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c
+    Replacements:    
+      - FilePath:        /home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls/.autopilot/db/fips202.pp.0.c
+        Offset:          31365
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_811_1: '
+...

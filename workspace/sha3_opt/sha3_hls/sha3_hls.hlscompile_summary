@@ -1,0 +1,247 @@
+<ENTRY>
+{
+ "thisFile": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/sha3_hls.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Aug  6 15:37:25 2025",
+ "timestampMillis": "1754462245144",
+ "buildStep": {
+  "cmdId": "98ee57b0-c7c9-4802-a551-fa5371119c8f",
+  "name": "v++",
+  "logFile": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/logs/sha3_hls.steps.log",
+  "commandLine": "/tools/xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls_config.cfg --work_dir . ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls_config.cfg",
+   "--work_dir",
+   "."
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls_config.cfg",
+    "content": "part=xa7z010clg400-1I\n\n[hls]\nflow_target=vivado\nsyn.file=/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c\nsyn.file=/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.h\nsyn.file=/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c\ntb.file=/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256_tb.c\nsyn.top=sha3_256_hw\ncsim.code_analyzer=1\ncosim.wave_debug=1\ncosim.trace_level=all"
+   }
+  ],
+  "cwd": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Aug  6 15:37:25 2025",
+ "timestampMillis": "1754462245144",
+ "status": {
+  "cmdId": "98ee57b0-c7c9-4802-a551-fa5371119c8f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Aug  6 15:37:31 2025",
+ "timestampMillis": "1754462251743",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "sha3_256_hw",
+     "file": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/sha3_256_hw.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.c",
+     "/home/hyeon/vitis_hls/workspace/sha3_opt/fips202.h",
+     "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_256.c"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Aug  6 15:37:31 2025",
+ "timestampMillis": "1754462251744",
+ "buildStep": {
+  "cmdId": "b1b2addb-134d-4334-88ea-b85bb3fda0e9",
+  "name": "",
+  "logFile": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Aug  6 15:37:31 2025",
+ "timestampMillis": "1754462251745",
+ "status": {
+  "cmdId": "b1b2addb-134d-4334-88ea-b85bb3fda0e9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Aug  6 15:37:31 2025",
+ "timestampMillis": "1754462251745",
+ "report": {
+  "path": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Aug  6 15:37:31 2025",
+ "timestampMillis": "1754462251745",
+ "report": {
+  "path": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Aug  6 15:37:31 2025",
+ "timestampMillis": "1754462251746",
+ "report": {
+  "path": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Aug  6 15:37:53 2025",
+ "timestampMillis": "1754462273385",
+ "report": {
+  "path": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Aug  6 15:37:53 2025",
+ "timestampMillis": "1754462273386",
+ "report": {
+  "path": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Aug  6 15:37:53 2025",
+ "timestampMillis": "1754462273387",
+ "report": {
+  "path": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Aug  6 15:37:53 2025",
+ "timestampMillis": "1754462273387",
+ "status": {
+  "cmdId": "b1b2addb-134d-4334-88ea-b85bb3fda0e9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Aug  6 15:38:42 2025",
+ "timestampMillis": "1754462322709",
+ "status": {
+  "cmdId": "98ee57b0-c7c9-4802-a551-fa5371119c8f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Aug  6 15:38:43 2025",
+ "timestampMillis": "1754462323795",
+ "report": {
+  "path": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/reports/v++_compile_sha3_hls_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Aug  6 15:38:43 2025",
+ "timestampMillis": "1754462323796",
+ "report": {
+  "path": "/home/hyeon/vitis_hls/workspace/sha3_opt/sha3_hls/reports/.db/v++_compile_sha3_hls_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

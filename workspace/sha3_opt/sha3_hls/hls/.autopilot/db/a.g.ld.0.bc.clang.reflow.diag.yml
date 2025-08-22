@@ -1,0 +1,713 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 490, Column: 19 }
+Function:        keccak_absorb_once
+Args:            
+  - Callee:          load64
+    DebugLoc:        { File: ../fips202.c, Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          keccak_absorb_once
+    DebugLoc:        { File: ../fips202.c, Line: 473, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 499, Column: 9 }
+Function:        keccak_absorb_once
+Args:            
+  - Callee:          KeccakF1600_StatePermute
+    DebugLoc:        { File: ../fips202.c, Line: 85, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          keccak_absorb_once
+    DebugLoc:        { File: ../fips202.c, Line: 473, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 788, Column: 3 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256
+Args:            
+  - Callee:          keccak_absorb_once
+    DebugLoc:        { File: ../fips202.c, Line: 473, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          pqcrystals_kyber_fips202_ref_sha3_256
+    DebugLoc:        { File: ../fips202.c, Line: 783, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 789, Column: 3 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256
+Args:            
+  - Callee:          KeccakF1600_StatePermute
+    DebugLoc:        { File: ../fips202.c, Line: 85, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          pqcrystals_kyber_fips202_ref_sha3_256
+    DebugLoc:        { File: ../fips202.c, Line: 783, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 792, Column: 2 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256
+Args:            
+  - Callee:          store64
+    DebugLoc:        { File: ../fips202.c, Line: 41, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          pqcrystals_kyber_fips202_ref_sha3_256
+    DebugLoc:        { File: ../fips202.c, Line: 783, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../sha3_256.c, Line: 10, Column: 2 }
+Function:        sha3_256_hw
+Args:            
+  - Callee:          pqcrystals_kyber_fips202_ref_sha3_256
+    DebugLoc:        { File: ../fips202.c, Line: 783, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          sha3_256_hw
+    DebugLoc:        { File: ../sha3_256.c, Line: 4, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../fips202.c, Line: 22, Column: 0 }
+Function:        load64
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_26_1
+  - String:          ''' ('
+  - LoopLoc:         '../fips202.c:26:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          load64
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 490, Column: 19 }
+Function:        keccak_absorb_once
+Args:            
+  - Callee:          load64
+    DebugLoc:        { File: ../fips202.c, Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          keccak_absorb_once
+    DebugLoc:        { File: ../fips202.c, Line: 473, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 499, Column: 9 }
+Function:        keccak_absorb_once
+Args:            
+  - Callee:          KeccakF1600_StatePermute
+    DebugLoc:        { File: ../fips202.c, Line: 85, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          keccak_absorb_once
+    DebugLoc:        { File: ../fips202.c, Line: 473, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 788, Column: 3 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256
+Args:            
+  - Callee:          keccak_absorb_once
+    DebugLoc:        { File: ../fips202.c, Line: 473, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          pqcrystals_kyber_fips202_ref_sha3_256
+    DebugLoc:        { File: ../fips202.c, Line: 783, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 789, Column: 3 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256
+Args:            
+  - Callee:          KeccakF1600_StatePermute
+    DebugLoc:        { File: ../fips202.c, Line: 85, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          pqcrystals_kyber_fips202_ref_sha3_256
+    DebugLoc:        { File: ../fips202.c, Line: 783, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 792, Column: 2 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256
+Args:            
+  - Callee:          store64
+    DebugLoc:        { File: ../fips202.c, Line: 41, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          pqcrystals_kyber_fips202_ref_sha3_256
+    DebugLoc:        { File: ../fips202.c, Line: 783, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../sha3_256.c, Line: 10, Column: 2 }
+Function:        sha3_256_hw
+Args:            
+  - Callee:          pqcrystals_kyber_fips202_ref_sha3_256
+    DebugLoc:        { File: ../fips202.c, Line: 783, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          sha3_256_hw
+    DebugLoc:        { File: ../sha3_256.c, Line: 4, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_sha3_256_hw_ir
+Args:            
+  - Callee:          sha3_256_hw
+    DebugLoc:        { File: ../sha3_256.c, Line: 4, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_sha3_256_hw_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../fips202.c, Line: 473, Column: 0 }
+Function:        keccak_absorb_once
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          load64
+    DebugLoc:        { File: ../fips202.c, Line: 22, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          keccak_absorb_once
+    DebugLoc:        { File: ../fips202.c, Line: 473, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../fips202.c, Line: 783, Column: 0 }
+Function:        pqcrystals_kyber_fips202_ref_sha3_256
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          store64
+    DebugLoc:        { File: ../fips202.c, Line: 41, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_kyber_fips202_ref_sha3_256
+    DebugLoc:        { File: ../fips202.c, Line: 783, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../sha3_256.c, Line: 4, Column: 0 }
+Function:        sha3_256_hw
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_kyber_fips202_ref_sha3_256
+    DebugLoc:        { File: ../fips202.c, Line: 783, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          sha3_256_hw
+    DebugLoc:        { File: ../sha3_256.c, Line: 4, Column: 0 }
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: ../fips202.c, Line: 28, Column: 17 }
+Function:        keccak_absorb_once
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          in
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: ../fips202.c, Line: 28, Column: 17 }
+Function:        keccak_absorb_once
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          in
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: ../fips202.c, Line: 28, Column: 17 }
+Function:        keccak_absorb_once
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          in
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: ../fips202.c, Line: 28, Column: 17 }
+Function:        keccak_absorb_once
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          in
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: ../fips202.c, Line: 28, Column: 17 }
+Function:        keccak_absorb_once
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          in
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: ../fips202.c, Line: 28, Column: 17 }
+Function:        keccak_absorb_once
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          in
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: ../fips202.c, Line: 28, Column: 17 }
+Function:        keccak_absorb_once
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          in
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: ../fips202.c, Line: 28, Column: 17 }
+Function:        keccak_absorb_once
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          in
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../fips202.c, Line: 790, Column: 21 }
+Function:        sha3_256_hw
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '32'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        out2seq
+  - ArrayName:       out
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_790_1
+  - String:          ' '
+  - LoopLoc:         '../fips202.c:790:21'
+  - String:          ' '
+  - Function:        sha3_256_hw
+    DebugLoc:        { File: ../sha3_256.c, Line: 4, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: ../fips202.c, Line: 46, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          for.inc.i.i.store.9
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../fips202.c, Line: 482, Column: 5 }
+Function:        keccak_absorb_once
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        in24seq
+  - ArrayName:       in
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        process_blocks_loop
+  - String:          ' '
+  - LoopLoc:         '../fips202.c:482:5'
+  - String:          ' '
+  - Function:        keccak_absorb_once
+    DebugLoc:        { File: ../fips202.c, Line: 473, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ../fips202.c, Line: 28, Column: 17 }
+  - OrigDirection:   read
+  - OrigID:          for.inc7.load.23
+  - OrigAccess:      load
+    DebugLoc:        { File: ../fips202.c, Line: 28, Column: 17 }
+  - OrigDirection:   read
+  - OrigID:          for.inc7.load.30
+  - OrigAccess:      load
+    DebugLoc:        { File: ../fips202.c, Line: 28, Column: 17 }
+  - OrigDirection:   read
+  - OrigID:          for.inc7.load.39
+  - OrigAccess:      load
+    DebugLoc:        { File: ../fips202.c, Line: 28, Column: 17 }
+  - OrigDirection:   read
+  - OrigID:          for.inc7.load.48
+  - OrigAccess:      load
+    DebugLoc:        { File: ../fips202.c, Line: 28, Column: 17 }
+  - OrigDirection:   read
+  - OrigID:          for.inc7.load.57
+  - OrigAccess:      load
+    DebugLoc:        { File: ../fips202.c, Line: 28, Column: 17 }
+  - OrigDirection:   read
+  - OrigID:          for.inc7.load.66
+  - OrigAccess:      load
+    DebugLoc:        { File: ../fips202.c, Line: 28, Column: 17 }
+  - OrigDirection:   read
+  - OrigID:          for.inc7.load.75
+  - OrigAccess:      load
+    DebugLoc:        { File: ../fips202.c, Line: 28, Column: 17 }
+  - OrigDirection:   read
+  - OrigID:          for.inc7.load.84
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../fips202.c, Line: 515, Column: 16 }
+Function:        keccak_absorb_once
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - ArrayName:       in
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        absorb_loop3
+  - String:          ' '
+  - LoopLoc:         '../fips202.c:515:16'
+  - String:          ' '
+  - Function:        keccak_absorb_once
+    DebugLoc:        { File: ../fips202.c, Line: 473, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ../fips202.c, Line: 518, Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          for.inc35.load.7
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../fips202.c, Line: 790, Column: 21 }
+Function:        sha3_256_hw
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../fips202.c, Line: 790, Column: 21 }
+  - OrigDirection:   write
+  - OrigID:          out2seq
+  - ArrayName:       out
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_44_1
+  - String:          ' '
+  - LoopLoc:         '../fips202.c:44:20'
+  - String:          ' '
+  - Function:        sha3_256_hw
+    DebugLoc:        { File: ../sha3_256.c, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../fips202.c, Line: 515, Column: 16 }
+Function:        keccak_absorb_once
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../fips202.c, Line: 515, Column: 16 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       in
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        absorb_loop3
+  - String:          ' '
+  - LoopLoc:         '../fips202.c:515:16'
+  - String:          ' '
+  - Function:        keccak_absorb_once
+    DebugLoc:        { File: ../fips202.c, Line: 473, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../fips202.c, Line: 482, Column: 5 }
+Function:        keccak_absorb_once
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../fips202.c, Line: 482, Column: 5 }
+  - OrigDirection:   read
+  - OrigID:          in24seq
+  - ArrayName:       in
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        copy_to_local_loop
+  - String:          ' '
+  - LoopLoc:         '../fips202.c:487:9'
+  - String:          ' '
+  - Function:        keccak_absorb_once
+    DebugLoc:        { File: ../fips202.c, Line: 473, Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_477_1
+  - String:          '> at '
+  - LoopLoc:         '../fips202.c:477:21'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../fips202.c, Line: 482, Column: 5 }
+Function:        keccak_absorb_once.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '8'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        process_blocks_loop
+  - String:          ' '
+  - LoopLoc:         '../fips202.c:482:5'
+  - String:          ' '
+  - Function:        keccak_absorb_once.1
+    DebugLoc:        { File: ../fips202.c, Line: 473, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../fips202.c, Line: 482, Column: 5 }
+Function:        keccak_absorb_once.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '8'
+  - String:          ' in loop '''
+  - LoopName:        process_blocks_loop
+  - String:          '''('
+  - LoopLoc:         '../fips202.c:482:5'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../fips202.c, Line: 515, Column: 16 }
+Function:        keccak_absorb_once.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '8'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        absorb_loop3
+  - String:          ' '
+  - LoopLoc:         '../fips202.c:515:16'
+  - String:          ' '
+  - Function:        keccak_absorb_once.1
+    DebugLoc:        { File: ../fips202.c, Line: 473, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../fips202.c, Line: 515, Column: 16 }
+Function:        keccak_absorb_once.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '8'
+  - String:          ' in loop '''
+  - LoopName:        absorb_loop3
+  - String:          '''('
+  - LoopLoc:         '../fips202.c:515:16'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../fips202.c, Line: 790, Column: 21 }
+Function:        sha3_256_hw
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '32'
+  - String:          ' and bit width '
+  - Width:           '8'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_790_1
+  - String:          ' '
+  - LoopLoc:         '../fips202.c:790:21'
+  - String:          ' '
+  - Function:        sha3_256_hw
+    DebugLoc:        { File: ../sha3_256.c, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../fips202.c, Line: 790, Column: 21 }
+Function:        sha3_256_hw
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '32'
+  - String:          ' and bit width '
+  - Width:           '8'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_790_1
+  - String:          '''('
+  - LoopLoc:         '../fips202.c:790:21'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 499, Column: 9 }
+Function:        keccak_absorb_once.1
+Args:            
+  - Callee:          KeccakF1600_StatePermute
+    DebugLoc:        { File: ../fips202.c, Line: 85, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          keccak_absorb_once.1
+    DebugLoc:        { File: ../fips202.c, Line: 473, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 788, Column: 3 }
+Function:        sha3_256_hw
+Args:            
+  - Callee:          keccak_absorb_once.1
+    DebugLoc:        { File: ../fips202.c, Line: 473, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          sha3_256_hw
+    DebugLoc:        { File: ../sha3_256.c, Line: 4, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../fips202.c, Line: 789, Column: 3 }
+Function:        sha3_256_hw
+Args:            
+  - Callee:          KeccakF1600_StatePermute
+    DebugLoc:        { File: ../fips202.c, Line: 85, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          sha3_256_hw
+    DebugLoc:        { File: ../sha3_256.c, Line: 4, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

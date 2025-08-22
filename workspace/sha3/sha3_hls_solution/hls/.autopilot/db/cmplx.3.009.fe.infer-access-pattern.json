@@ -1,24 +1,18 @@
 {
   "0": {
-    "basicblocks": 19,
-    "calls": "1 1",
+    "basicblocks": 1,
+    "calls": "3",
     "file": "sha3_256.c",
     "fileloc": 4,
-    "instructions": 134,
-    "loads": {
-      "L": 5
-    },
+    "instructions": 11,
     "name": "sha3_256_hw",
-    "stores": {
-      "L": 5
-    },
-    "total_instructions": 1258
+    "total_instructions": 1261
   },
   "1": {
     "basicblocks": 3,
     "calls": "",
     "file": "fips202.c",
-    "fileloc": 83,
+    "fileloc": 85,
     "instructions": 562,
     "loads": {
       "G": 2,
@@ -29,5 +23,36 @@
       "L": 25
     },
     "total_instructions": 562
+  },
+  "2": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "fips202.c",
+    "fileloc": 85,
+    "instructions": 562,
+    "loads": {
+      "G": 2,
+      "L": 25
+    },
+    "name": "KeccakF1600_StatePermute",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 562
+  },
+  "3": {
+    "basicblocks": 15,
+    "calls": "2 1",
+    "file": "fips202.c",
+    "fileloc": 757,
+    "instructions": 126,
+    "loads": {
+      "L": 5
+    },
+    "name": "pqcrystals_kyber_fips202_ref_sha3_256",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 1250
   }
 }
